@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+/* Circadia Design Tokens for Tailwind CSS v4 */
+@theme {
+  --color-circadia-canvas:         #fffdf8;
+  --color-circadia-surface:        #f6f1e6;
+  --color-circadia-element:        #ece5d7;
+  --color-circadia-border:         #d3c8b4;
+  --color-circadia-text:           #28323a;
+  --color-circadia-muted:          #46535f;
+  --color-circadia-faint:          #5f6d7a;
+  --color-circadia-accent:         #195697;
+
+  /* Dark mode variants */
+  --color-circadia-dark-canvas:    #15141b;
+  --color-circadia-dark-surface:   #1c1a24;
+  --color-circadia-dark-element:   #252330;
+  --color-circadia-dark-border:    #343041;
+  --color-circadia-dark-text:      #eae3d8;
+  --color-circadia-dark-muted:     #b7aca0;
+  --color-circadia-dark-faint:     #92887d;
+  --color-circadia-dark-accent:    #e89a49;
+
+  /* Syntax & Headings */
+  --color-circadia-keyword:        #6b1d8f;
+  --color-circadia-type:           #00677f;
+  --color-circadia-function:       #165084;
+  --color-circadia-string:         #1e6822;
+  --color-circadia-number:         #8d4400;
+  --color-circadia-comment:        #574f46;
+
+  --color-circadia-dark-keyword:   #e59de8;
+  --color-circadia-dark-type:      #f1be85;
+  --color-circadia-dark-function:  #89c8e4;
+  --color-circadia-dark-string:    #a7db76;
+  --color-circadia-dark-number:    #f6a84d;
+  --color-circadia-dark-comment:   #b3aba0;
+}

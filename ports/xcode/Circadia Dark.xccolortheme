@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DVTConsoleTextBackgroundColor</key>
+	<string>0.082 0.078 0.106 1</string>
+	<key>DVTConsoleTextInsertionPointColor</key>
+	<string>0.910 0.604 0.286 1</string>
+	<key>DVTConsoleTextSelectionColor</key>
+	<string>0.145 0.137 0.188 1</string>
+	<key>DVTMarkupTextLinkColor</key>
+	<string>0.910 0.604 0.286 1</string>
+	<key>DVTMarkupTextNormalColor</key>
+	<string>0.918 0.890 0.847 1</string>
+	<key>DVTMarkupTextPrimaryHeadingColor</key>
+	<string>0.973 0.784 0.561 1</string>
+	<key>DVTMarkupTextSecondaryHeadingColor</key>
+	<string>0.949 0.698 0.424 1</string>
+	<key>DVTSourceTextBackground</key>
+	<string>0.082 0.078 0.106 1</string>
+	<key>DVTSourceTextBlockDimColor</key>
+	<string>0.573 0.533 0.490 1</string>
+	<key>DVTSourceTextInsertionPointColor</key>
+	<string>0.910 0.604 0.286 1</string>
+	<key>DVTSourceTextInvisiblesColor</key>
+	<string>0.204 0.188 0.255 1</string>
+	<key>DVTSourceTextSelectionColor</key>
+	<string>0.145 0.137 0.188 1</string>
+	<key>DVTSourceTextSyntaxColors</key>
+	<dict>
+		<key>xcode.syntax.attribute</key>
+		<string>0.910 0.604 0.286 1</string>
+		<key>xcode.syntax.character</key>
+		<string>0.655 0.859 0.463 1</string>
+		<key>xcode.syntax.comment</key>
+		<string>0.702 0.671 0.627 1</string>
+		<key>xcode.syntax.comment.doc</key>
+		<string>0.702 0.671 0.627 1</string>
+		<key>xcode.syntax.identifier.class</key>
+		<string>0.945 0.745 0.522 1</string>
+		<key>xcode.syntax.identifier.class.system</key>
+		<string>0.945 0.745 0.522 1</string>
+		<key>xcode.syntax.identifier.function</key>
+		<string>0.537 0.784 0.894 1</string>
+		<key>xcode.syntax.identifier.function.system</key>
+		<string>0.537 0.784 0.894 1</string>
+		<key>xcode.syntax.identifier.type</key>
+		<string>0.945 0.745 0.522 1</string>
+		<key>xcode.syntax.identifier.type.system</key>
+		<string>0.945 0.745 0.522 1</string>
+		<key>xcode.syntax.identifier.variable</key>
+		<string>0.918 0.890 0.847 1</string>
+		<key>xcode.syntax.identifier.variable.system</key>
+		<string>0.918 0.890 0.847 1</string>
+		<key>xcode.syntax.keyword</key>
+		<string>0.898 0.616 0.910 1</string>
+		<key>xcode.syntax.number</key>
+		<string>0.965 0.659 0.302 1</string>
+		<key>xcode.syntax.plain</key>
+		<string>0.918 0.890 0.847 1</string>
+		<key>xcode.syntax.string</key>
+		<string>0.655 0.859 0.463 1</string>
+		<key>xcode.syntax.url</key>
+		<string>0.910 0.604 0.286 1</string>
+	</dict>
+</dict>
+</plist>

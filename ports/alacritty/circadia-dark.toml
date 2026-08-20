@@ -1,0 +1,34 @@
+# Circadia — Warm Ember & Obsidian (Dark)
+# Perceptually uniform, low-strain night mode
+
+[colors.primary]
+background = "#15141b"
+foreground = "#eae3d8"
+
+[colors.cursor]
+text = "#15141b"
+cursor = "#e89a49"
+
+[colors.selection]
+text = "#eae3d8"
+background = "#252330"
+
+[colors.normal]
+black   = "#252330"
+red     = "#e89a49"
+green   = "#a7db76"
+yellow  = "#f6a84d"
+blue    = "#89c8e4"
+magenta = "#e59de8"
+cyan    = "#f1be85"
+white   = "#eae3d8"
+
+[colors.bright]
+black   = "#92887d"
+red     = "#f8c88f"
+green   = "#a7db76"
+yellow  = "#f6a84d"
+blue    = "#89c8e4"
+magenta = "#e59de8"
+cyan    = "#f1be85"
+white   = "#ffffff"

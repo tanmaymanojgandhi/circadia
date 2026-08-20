@@ -1,0 +1,34 @@
+# Circadia — Warm Parchment (Light)
+# Perceptually uniform, low-strain daylight mode
+
+[colors.primary]
+background = "#fffdf8"
+foreground = "#28323a"
+
+[colors.cursor]
+text = "#fffdf8"
+cursor = "#195697"
+
+[colors.selection]
+text = "#28323a"
+background = "#ece5d7"
+
+[colors.normal]
+black   = "#28323a"
+red     = "#8d4400"
+green   = "#1e6822"
+yellow  = "#8d4400"
+blue    = "#195697"
+magenta = "#6b1d8f"
+cyan    = "#00677f"
+white   = "#5f6d7a"
+
+[colors.bright]
+black   = "#46535f"
+red     = "#8d4400"
+green   = "#1e6822"
+yellow  = "#8d4400"
+blue    = "#236bb5"
+magenta = "#6b1d8f"
+cyan    = "#165084"
+white   = "#28323a"

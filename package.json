@@ -1,0 +1,23 @@
+{
+  "name": "circadia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Obsidian)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.",
+  "license": "MIT",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "generate": "tsx scripts/generate-formats.ts",
+    "build": "tsx scripts/generate-formats.ts",
+    "lint:contrast": "tsx scripts/validate.ts",
+    "build:vscode": "node ports/vscode/scripts/build-theme.js",
+    "build:ports": "node scripts/build-all-ports.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

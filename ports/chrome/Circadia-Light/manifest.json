@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Circadia Light",
+  "description": "Circadia Light theme (Warm Parchment) for Google Chrome",
+  "theme": {
+    "colors": {
+      "frame": [
+        246,
+        241,
+        230
+      ],
+      "frame_inactive": [
+        236,
+        229,
+        215
+      ],
+      "ntp_background": [
+        255,
+        253,
+        248
+      ],
+      "ntp_text": [
+        40,
+        50,
+        58
+      ],
+      "tab_text": [
+        40,
+        50,
+        58
+      ],
+      "tab_background_text": [
+        70,
+        83,
+        95
+      ],
+      "bookmark_text": [
+        40,
+        50,
+        58
+      ],
+      "ntp_link": [
+        25,
+        86,
+        151
+      ],
+      "ntp_header": [
+        70,
+        83,
+        95
+      ],
+      "toolbar": [
+        255,
+        253,
+        248
+      ],
+      "toolbar_text": [
+        40,
+        50,
+        58
+      ],
+      "toolbar_field_text": [
+        70,
+        83,
+        95
+      ],
+      "button_background": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "tints": {}
+  }
+}

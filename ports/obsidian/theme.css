@@ -1,0 +1,1340 @@
+/*
+ * Circadia — Obsidian Theme
+ * Palette: Warm Parchment (Day) / Warm Ember & Obsidian (Night)
+ */
+
+/* ============================================================
+   1. ROOT VARIABLES & PALETTES
+   ============================================================ */
+
+/* --- LIGHT THEME (Warm Parchment / Editorial Day) --- */
+.theme-light {
+    color-scheme: light;
+
+    /* Warm Parchment Palette */
+    --k-bg: #fffdf8;
+    /* Editor surface (Warm Milk Paper) */
+    --k-bg-2: #f6f1e6;
+    /* Secondary surface / tabs */
+    --k-bg-3: #ece5d7;
+    /* Hover / tertiary surface */
+    --k-app-bg: #ece5d7;
+    /* Outer app gutter */
+
+    --k-text: #28323a;
+    --k-text-muted: #46535f;
+    --k-text-faint: #5f6d7a;
+
+    --k-border: #d3c8b4;
+    --k-border-strong: #c2b59e;
+    --k-table-border: #d3c8b4;
+
+    --k-accent: #195697;
+    --k-accent-hover: #165084;
+    --k-accent-rgb: 25, 86, 151;
+
+    --k-code-bg: #ece5d7;
+    --k-code-text: #28323a;
+    --k-mark-bg: #ffebb8;
+
+    /* Semantic Status Colors */
+    --color-red: #dc2626;
+    --color-green: #1e6822;
+    --color-orange: #8d4400;
+    --color-yellow: #ca8a04;
+    --color-cyan: #00677f;
+    --color-blue: #195697;
+    --color-purple: #6b1d8f;
+    --color-pink: #db2777;
+
+    /* Syntax Highlighting (Zero-Red Semantic Cleanliness) */
+    --k-comment: #574f46;
+    --k-keyword: #6b1d8f;
+    --k-number: #8d4400;
+    --k-var2: #165084;
+    --k-var3: #00677f;
+    --k-string: #1e6822;
+    --k-tag: #195697;
+
+    /* Callout RGB Hues */
+    --k-note: 25, 86, 151;
+    --k-caution: 220, 38, 38;
+    --k-tip: 30, 104, 34;
+    --k-important: 107, 29, 143;
+    --k-warning: 141, 68, 0;
+
+    /* Obsidian Core Variable Overrides */
+    --background-primary: var(--k-bg);
+    --background-primary-alt: var(--k-bg-2);
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: var(--k-bg-3);
+
+    --background-modifier-border: var(--k-border);
+    --background-modifier-border-hover: var(--k-accent);
+    --background-modifier-border-focus: var(--k-accent);
+    --background-modifier-form-field: #ffffff;
+    --background-modifier-hover: rgba(var(--k-accent-rgb), 0.08);
+    --background-modifier-active-hover: rgba(var(--k-accent-rgb), 0.16);
+
+    --text-normal: var(--k-text);
+    --text-muted: var(--k-text-muted);
+    --text-faint: var(--k-text-faint);
+    --text-on-accent: #ffffff;
+    --text-on-accent-inverted: var(--k-text);
+    --text-accent: var(--k-accent);
+    --text-accent-hover: var(--k-accent-hover);
+    --text-selection: rgba(var(--k-accent-rgb), 0.22);
+    --text-highlight-bg: var(--k-mark-bg);
+
+    --interactive-normal: #ffffff;
+    --interactive-hover: var(--k-bg-3);
+    --interactive-accent: var(--k-accent);
+    --interactive-accent-hover: var(--k-accent-hover);
+
+    --divider-color: var(--k-border);
+    --hr-color: var(--k-border);
+    --hr-thickness: 1px;
+
+    /* Heading Hierarchy Palette */
+    --h1-color: #1c4470;
+    --h2-color: #20538a;
+    --h3-color: #1c60a2;
+    --h4-color: #236bb5;
+    --h5-color: #2f75c2;
+    --h6-color: #387ccb;
+
+    --link-color: var(--k-accent);
+    --link-color-hover: var(--k-accent-hover);
+    --link-unresolved-color: var(--k-text-faint);
+
+    --code-background: var(--k-code-bg);
+    --code-border: 1px dashed var(--k-border-strong);
+
+    /* Shadows & Modals */
+    --k-card-shadow: 0 1px 3px rgba(40, 50, 58, 0.05), 0 4px 12px rgba(40, 50, 58, 0.04);
+    --k-modal-bg: rgba(255, 253, 248, 0.97);
+    --k-modal-shadow: 0 16px 36px rgba(40, 50, 58, 0.16);
+
+    /* Checkbox & List Tokens */
+    --checkbox-radius: 4px;
+    --checkbox-size: 16px;
+    --checkbox-marker-color: #ffffff;
+    --checkbox-color: var(--color-green);
+    --checkbox-border-color: var(--k-border-strong);
+
+    /* Toggle Switches */
+    --toggle-background: #d3c8b4;
+    --toggle-border-color: #c2b59e;
+    --toggle-thumb-color: #5f6d7a;
+    --toggle-background-active: var(--k-accent);
+    --toggle-border-color-active: var(--k-accent);
+    --toggle-thumb-color-active: #ffffff;
+
+    /* Scrollbars */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(40, 50, 58, 0.15);
+    --scrollbar-active-thumb-bg: rgba(40, 50, 58, 0.28);
+}
+
+/* --- DARK THEME (Warm Ember & Obsidian Circadian Palette) --- */
+.theme-dark {
+    color-scheme: dark;
+
+    /* Warm Ember & Obsidian Palette */
+    --k-bg: #15141b;
+    /* Editor surface (Warm Obsidian Charcoal) */
+    --k-bg-2: #1c1a24;
+    /* Secondary surface / tabs (Subtle Warm Plum Black) */
+    --k-bg-3: #252330;
+    /* Hover / tertiary surface (Dark Heather) */
+    --k-app-bg: #0f0e13;
+    /* Outer app gutter (Near-OLED shadow) */
+
+    --k-text: #eae3d8;
+    --k-text-muted: #b7aca0;
+    --k-text-faint: #92887d;
+
+    --k-border: #343041;
+    --k-border-strong: #454056;
+    --k-table-border: #454056;
+
+    --k-accent: #e89a49;
+    --k-accent-hover: #f2b26c;
+    --k-accent-rgb: 232, 154, 73;
+
+    --k-code-bg: #1c1a24;
+    --k-code-text: #eae3d8;
+    --k-mark-bg: rgba(232, 154, 73, 0.28);
+
+    /* Semantic Status Colors (Warm Tuned) */
+    --color-red: #e06c75;
+    --color-green: #a7db76;
+    --color-orange: #f6a84d;
+    --color-yellow: #f1be85;
+    --color-cyan: #89c8e4;
+    --color-blue: #e89a49;
+    --color-purple: #e59de8;
+    --color-pink: #d27e99;
+
+    /* Syntax Highlighting (Zero-Red Circadian Palette) */
+    --k-comment: #b3aba0;
+    --k-keyword: #e59de8;
+    --k-number: #f6a84d;
+    --k-var2: #89c8e4;
+    --k-var3: #f1be85;
+    --k-string: #a7db76;
+    --k-tag: #e89a49;
+
+    /* Callout RGB Hues */
+    --k-note: 232, 154, 73;
+    --k-caution: 224, 108, 117;
+    --k-tip: 167, 219, 118;
+    --k-important: 229, 157, 232;
+    --k-warning: 246, 168, 77;
+
+    /* Obsidian Core Variable Overrides */
+    --background-primary: var(--k-bg);
+    --background-primary-alt: var(--k-bg-2);
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: var(--k-bg-3);
+
+    --background-modifier-border: var(--k-border);
+    --background-modifier-border-hover: var(--k-accent);
+    --background-modifier-border-focus: var(--k-accent);
+    --background-modifier-form-field: #1c1a24;
+    --background-modifier-hover: rgba(var(--k-accent-rgb), 0.12);
+    --background-modifier-active-hover: rgba(var(--k-accent-rgb), 0.22);
+
+    --text-normal: var(--k-text);
+    --text-muted: var(--k-text-muted);
+    --text-faint: var(--k-text-faint);
+    --text-on-accent: #0f0e13;
+    --text-on-accent-inverted: var(--k-text);
+    --text-accent: var(--k-accent);
+    --text-accent-hover: var(--k-accent-hover);
+    --text-selection: rgba(var(--k-accent-rgb), 0.32);
+    --text-highlight-bg: var(--k-mark-bg);
+
+    --interactive-normal: #1c1a24;
+    --interactive-hover: #252330;
+    --interactive-accent: var(--k-accent);
+    --interactive-accent-hover: var(--k-accent-hover);
+
+    --divider-color: var(--k-border);
+    --hr-color: var(--k-border);
+    --hr-thickness: 1px;
+
+    /* Heading Hierarchy Palette (Zero-Red Warm Honey & Amber) */
+    --h1-color: #f8c88f;
+    --h2-color: #f2b26c;
+    --h3-color: #ea9d49;
+    --h4-color: #db8935;
+    --h5-color: #c7792e;
+    --h6-color: #b56f2b;
+
+    --link-color: var(--k-accent);
+    --link-color-hover: var(--k-accent-hover);
+    --link-unresolved-color: var(--k-text-faint);
+
+    --code-background: var(--k-code-bg);
+    --code-border: 1px dashed var(--k-border-strong);
+
+    /* Shadows & Modals */
+    --k-card-shadow: 0 4px 18px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.35);
+    --k-modal-bg: rgba(21, 20, 27, 0.97);
+    --k-modal-shadow: 0 16px 38px rgba(0, 0, 0, 0.7);
+
+    /* Checkbox & List Tokens */
+    --checkbox-radius: 4px;
+    --checkbox-size: 16px;
+    --checkbox-marker-color: #ffffff;
+    --checkbox-color: var(--color-green);
+    --checkbox-border-color: var(--k-border-strong);
+
+    /* Toggle Switches */
+    --toggle-background: #252330;
+    --toggle-border-color: #454056;
+    --toggle-thumb-color: #92887d;
+    --toggle-background-active: var(--k-accent);
+    --toggle-border-color-active: var(--k-accent);
+    --toggle-thumb-color-active: #ffffff;
+
+    /* Scrollbars */
+    --scrollbar-bg: transparent;
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.10);
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.22);
+}
+
+/* --- SHARED TYPOGRAPHY & SIZING TOKENS --- */
+.theme-light,
+.theme-dark {
+    --font-text-theme: var(--font-text-override), "Lexend", var(--font-default), sans-serif;
+    --font-interface-theme: "Inter", "Lexend", var(--font-default), sans-serif;
+    --font-text: var(--font-text-theme);
+    --font-editor: var(--font-text-theme);
+    --headings-font: var(--font-text-override), var(--font-text-theme), sans-serif;
+
+    --font-text-size: 15px;
+    --line-height-normal: 1.6;
+
+    --bold-color: var(--k-text);
+    --bold-weight: 600;
+    --italic-color: var(--k-text);
+
+    --h1-size: 1.6em;
+    --h2-size: 1.4em;
+    --h3-size: 1.25em;
+    --h4-size: 1.15em;
+    --h5-size: 1.05em;
+    --h6-size: 1em;
+
+    --input-radius: 6px;
+    --button-radius: 6px;
+    --card-border-radius-light: 10px;
+
+    --list-bullet-size: 5px;
+    --list-marker-color: var(--k-text-muted);
+}
+
+/* ================================================================
+   2. ACCURATE TYPOGRAPHY & ZERO-DRIFT CURSOR METRICS
+   ================================================================ */
+
+.cm-editor,
+.cm-scroller,
+.markdown-preview-view {
+    color: var(--k-text);
+    font-family: var(--font-text-theme);
+    line-height: var(--line-height-normal);
+}
+
+body:not(.no-justify) .cm-s-obsidian,
+body:not(.no-justify) .markdown-preview-view,
+.cm-s-obsidian .HyperMD-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    text-align: left;
+}
+
+.markdown-preview-view p,
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view blockquote {
+    margin-top: 0.35em;
+    margin-bottom: 0.6em;
+}
+
+/* Heading Styling */
+.markdown-preview-view h1,
+.cm-header-1 {
+    color: var(--h1-color);
+    font-weight: 700;
+}
+
+.markdown-preview-view h2,
+.cm-header-2 {
+    color: var(--h2-color);
+    font-weight: 700;
+}
+
+.markdown-preview-view h3,
+.cm-header-3 {
+    color: var(--h3-color);
+    font-weight: 700;
+}
+
+.markdown-preview-view h4,
+.cm-header-4 {
+    color: var(--h4-color);
+    font-weight: 700;
+}
+
+.markdown-preview-view h5,
+.cm-header-5 {
+    color: var(--h5-color);
+    font-weight: 700;
+}
+
+.markdown-preview-view h6,
+.cm-header-6 {
+    color: var(--h6-color);
+    font-weight: 700;
+}
+
+.markdown-rendered h1,
+.cm-header-1 {
+    border-bottom: 2px solid var(--h1-color);
+    padding-bottom: 3px;
+}
+
+/* Inline Styles */
+strong,
+.cm-strong {
+    font-weight: var(--bold-weight);
+    color: var(--bold-color);
+}
+
+em,
+.cm-em {
+    font-style: italic;
+    color: var(--italic-color);
+}
+
+mark,
+.cm-highlight {
+    background-color: var(--k-mark-bg);
+    color: inherit;
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+}
+
+del,
+.cm-strikethrough {
+    color: var(--k-text-faint);
+    text-decoration: line-through;
+}
+
+kbd {
+    background-color: var(--k-bg-3);
+    color: var(--k-text);
+    border: 1px solid var(--k-border-strong);
+    border-radius: 4px;
+    padding: 0.15em 0.5em;
+    font-size: 0.85em;
+    font-family: inherit;
+    box-shadow: 0 1px 0 var(--k-border-strong);
+}
+
+sub,
+sup {
+    font-size: 0.75em;
+    line-height: 0;
+}
+
+/* Links & Tags */
+a,
+.internal-link,
+.external-link,
+.cm-link,
+.cm-hmd-internal-link {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 120ms ease;
+}
+
+a:hover,
+.internal-link:hover,
+.external-link:hover,
+.cm-link:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.is-unresolved,
+.is-unresolved:hover {
+    color: var(--link-unresolved-color);
+    opacity: 0.75;
+}
+
+.tag,
+a.tag,
+.cm-hashtag {
+    background-color: var(--k-bg-3);
+    color: var(--k-accent);
+    border: 1px solid var(--k-border);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 120ms ease;
+}
+
+.tag:hover,
+a.tag:hover,
+.cm-hashtag:hover {
+    background-color: rgba(var(--k-accent-rgb), 0.15);
+    border-color: var(--k-accent);
+}
+
+/* ================================================================
+   3. APP SHELL & CLEAN UNDERLINED TABS (SUBTLE RAISED EDITOR)
+   ================================================================ */
+
+.app-container,
+.horizontal-main-container {
+    background-color: var(--k-app-bg);
+}
+
+.workspace {
+    background-color: transparent;
+}
+
+/* Tastefully Raised Editor Island with Subtle Border */
+.workspace-split.mod-root {
+    margin: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.workspace-split.mod-root .workspace-tabs {
+    background-color: var(--k-bg);
+    border: 1px solid var(--k-border-strong);
+    border-radius: 8px;
+    box-shadow: var(--k-card-shadow);
+    overflow: hidden;
+}
+
+/* Sidebars — Clean Flat Surface */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split,
+.workspace-split.mod-left-split .workspace-tabs,
+.workspace-split.mod-right-split .workspace-tabs {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container,
+.workspace-split.mod-right-split .workspace-tab-header-container {
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none;
+    padding-top: 4px;
+}
+
+.workspace-split.mod-left-split .workspace-tab-header,
+.workspace-split.mod-right-split .workspace-tab-header,
+.workspace-split.mod-left-split .workspace-tab-header-inner,
+.workspace-split.mod-right-split .workspace-tab-header-inner {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.workspace-split.mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner,
+.workspace-split.mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner {
+    border-bottom: none;
+    color: var(--k-accent);
+}
+
+/* Windows Frameless Titlebar space for right sidebar icons */
+.mod-windows .workspace-tabs.mod-top-right-space .workspace-tab-header-container,
+.mod-windows .mod-right-split .workspace-tab-header-container {
+    padding-right: 125px;
+}
+
+/* Top Tab Bar for Note Editor */
+.mod-root .workspace-tab-header-container {
+    background-color: var(--k-bg-2);
+    border-bottom: 1px solid var(--k-border);
+    padding: 0 6px;
+    gap: 0;
+    height: 38px;
+}
+
+.mod-root .workspace-tab-header::before,
+.mod-root .workspace-tab-header::after {
+    display: none;
+}
+
+.mod-root .workspace-tab-header {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Inactive Tab Text */
+.mod-root .workspace-tab-header-inner {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 8px 14px;
+    color: var(--k-text-muted);
+    transition: color 100ms ease;
+}
+
+.mod-root .workspace-tab-header:hover .workspace-tab-header-inner {
+    color: var(--k-text);
+}
+
+/* Vertical Separator between tabs */
+.mod-root .workspace-tab-header:not(:last-child):not(.is-active)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 50%;
+    width: 1px;
+    background-color: var(--k-border);
+}
+
+/* Active Tab: Underlined with Accent */
+.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+    background: transparent;
+    box-shadow: none;
+}
+
+.mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner {
+    background: transparent;
+    box-shadow: none;
+    color: var(--h1-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--k-accent);
+    margin-bottom: -1px;
+}
+
+/* ================================================================
+   4. CODE BLOCKS & SYNTAX HIGHLIGHTING
+   ================================================================ */
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.markdown-rendered pre {
+    background: var(--code-background);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top: var(--code-border);
+    border-left: var(--code-border);
+    border-right: var(--code-border);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom: var(--code-border);
+    border-left: var(--code-border);
+    border-right: var(--code-border);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    border-left: var(--code-border);
+    border-right: var(--code-border);
+}
+
+.markdown-rendered pre {
+    border: var(--code-border);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+/* Inline code */
+code,
+.cm-inline-code {
+    background-color: var(--k-code-bg);
+    color: var(--k-code-text);
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+    font-size: 0.9em;
+}
+
+.markdown-rendered pre code {
+    background: transparent;
+    padding: 0;
+}
+
+/* Syntax Highlighting */
+.cm-s-obsidian .cm-comment,
+.token.comment {
+    color: var(--k-comment);
+    font-style: italic;
+}
+
+.cm-s-obsidian .cm-keyword,
+.token.keyword {
+    color: var(--k-keyword);
+    font-weight: 600;
+}
+
+.cm-s-obsidian .cm-number,
+.token.number {
+    color: var(--k-number);
+}
+
+.cm-s-obsidian .cm-string,
+.token.string {
+    color: var(--k-string);
+}
+
+.cm-s-obsidian .cm-def,
+.cm-s-obsidian .cm-variable-2,
+.token.function {
+    color: var(--k-var2);
+}
+
+.cm-s-obsidian .cm-property,
+.cm-s-obsidian .cm-builtin,
+.token.builtin {
+    color: var(--k-var3);
+}
+
+.cm-s-obsidian .cm-tag,
+.token.tag {
+    color: var(--k-tag);
+}
+
+.cm-s-obsidian .cm-operator,
+.token.operator {
+    color: var(--k-text-muted);
+}
+
+/* ================================================================
+   5. DIVIDER (COMPACT ZERO-WASTE + ACCURATE ARROW NAVIGATION)
+   ================================================================ */
+
+hr,
+.markdown-rendered hr {
+    border: none;
+    border-top: 1px solid var(--k-border);
+    margin: 16px 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-hr {
+    cursor: text;
+    pointer-events: auto;
+    min-height: 1.5em;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-hr .hr,
+.markdown-source-view.mod-cm6 .hr {
+    border: none;
+    border-top: 1px solid var(--k-border);
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* ================================================================
+   6. EXTENDED CHECKBOX ENGINE (DIRECT SVG RENDERING)
+   ================================================================ */
+
+.cm-line.HyperMD-task-line {
+    pointer-events: auto;
+    cursor: text;
+}
+
+/* Reset Obsidian's global task-item strikethrough on .is-checked */
+.markdown-rendered .task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line.is-checked,
+.task-list-item.is-checked,
+.HyperMD-task-line.is-checked,
+.task-list-item,
+.HyperMD-task-line {
+    text-decoration: none;
+}
+
+/* Base Checkbox Box Style */
+input[type="checkbox"].task-list-item-checkbox,
+.task-list-item-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--checkbox-radius, 4px);
+    border: 1.5px solid var(--checkbox-border-color, var(--k-text-faint));
+    width: var(--checkbox-size, 16px);
+    height: var(--checkbox-size, 16px);
+    min-width: var(--checkbox-size, 16px);
+    min-height: var(--checkbox-size, 16px);
+    margin: 0 8px 0 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    background-color: var(--k-bg);
+    background-image: none;
+    background-position: center;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    transition: all 120ms ease;
+}
+
+/* Eliminate any ::after pseudo-element collisions */
+.task-list-item-checkbox::after,
+input[type="checkbox"].task-list-item-checkbox::after {
+    display: none;
+    content: none;
+}
+
+/* Dimm completed tasks slightly */
+.markdown-rendered .task-list-item[data-task="x"],
+.markdown-rendered .task-list-item[data-task="X"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+    color: var(--k-text-muted);
+    text-decoration: none;
+}
+
+/* Strikethrough ONLY for cancelled tasks [-] */
+.markdown-rendered .task-list-item[data-task="-"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"] {
+    color: var(--k-text-faint);
+    text-decoration: line-through;
+}
+
+/* 1. [x] / [X] Completed (Green Checkmark) */
+li[data-task="x"]>input.task-list-item-checkbox,
+li[data-task="X"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="x"] input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="X"] input.task-list-item-checkbox,
+input[data-task="x"].task-list-item-checkbox,
+input[data-task="X"].task-list-item-checkbox,
+li:not([data-task])>input.task-list-item-checkbox:checked,
+.HyperMD-task-line:not([data-task]) input.task-list-item-checkbox:checked {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' d='M13.5 4.5L6.5 11.5L3 8'/%3E%3C/svg%3E");
+}
+
+/* 2. [/] In-Progress (Yellow Progress Pie) */
+li[data-task="/"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="/"] input.task-list-item-checkbox,
+input[data-task="/"].task-list-item-checkbox {
+    background-color: var(--k-bg);
+    border-color: var(--color-yellow);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ca8a04' d='M8 1a7 7 0 1 0 0 14V1z'/%3E%3C/svg%3E");
+}
+
+/* 3. [-] Cancelled (Faint Minus) */
+li[data-task="-"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="-"] input.task-list-item-checkbox,
+input[data-task="-"].task-list-item-checkbox {
+    background-color: var(--k-bg-3);
+    border-color: var(--k-text-faint);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%2392887d' stroke-width='2.5' stroke-linecap='round' d='M3 8h10'/%3E%3C/svg%3E");
+}
+
+/* 4. [!] Important / Urgent (Orange Exclamation) */
+li[data-task="!"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="!"] input.task-list-item-checkbox,
+input[data-task="!"].task-list-item-checkbox {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M8 2a1.25 1.25 0 0 0-1.25 1.25v5a1.25 1.25 0 0 0 2.5 0v-5A1.25 1.25 0 0 0 8 2zm0 8.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z'/%3E%3C/svg%3E");
+}
+
+/* 5. [?] Question / Review (Pink Question Mark) */
+li[data-task="?"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="?"] input.task-list-item-checkbox,
+input[data-task="?"].task-list-item-checkbox {
+    background-color: var(--color-pink);
+    border-color: var(--color-pink);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M8 2a4 4 0 0 0-4 4 .75.75 0 0 0 1.5 0 2.5 2.5 0 1 1 3.5 2.29V9a.75.75 0 0 0 1.5 0v-.85A3.99 3.99 0 0 0 8 2zm0 9.25a1 1 0 1 0 0 2 1 1 0 0 0 0-2z'/%3E%3C/svg%3E");
+}
+
+/* 6. [*] Starred (Yellow Star) */
+li[data-task="*"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="*"] input.task-list-item-checkbox,
+input[data-task="*"].task-list-item-checkbox {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M8 .5l2.2 4.5 4.9.7-3.6 3.5.8 4.9L8 11.8 3.7 14.1l.8-4.9L.9 5.7l4.9-.7L8 .5z'/%3E%3C/svg%3E");
+}
+
+/* 7. [i] Information (Cyan Info) */
+li[data-task="i"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="i"] input.task-list-item-checkbox,
+input[data-task="i"].task-list-item-checkbox {
+    background-color: var(--color-cyan);
+    border-color: var(--color-cyan);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='3.75' r='1.25' fill='%23ffffff'/%3E%3Crect x='6.75' y='6.5' width='2.5' height='6.5' rx='1' fill='%23ffffff'/%3E%3C/svg%3E");
+}
+
+/* 8. [l] Location (Red Map Pin) */
+li[data-task="l"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="l"] input.task-list-item-checkbox,
+input[data-task="l"].task-list-item-checkbox {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M8 1a5 5 0 0 0-5 5c0 3.5 5 9 5 9s5-5.5 5-9a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z'/%3E%3C/svg%3E");
+}
+
+/* 9. [b] Bookmark (Blue Ribbon) */
+li[data-task="b"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="b"] input.task-list-item-checkbox,
+input[data-task="b"].task-list-item-checkbox {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v12.5a.5.5 0 0 1-.8.4L8 11.5l-4.2 3.4a.5.5 0 0 1-.8-.4V2z'/%3E%3C/svg%3E");
+}
+
+/* 10. [u] Up (Green Arrow Up) */
+li[data-task="u"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="u"] input.task-list-item-checkbox,
+input[data-task="u"].task-list-item-checkbox {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M8 13V3m-4 4l4-4 4 4'/%3E%3C/svg%3E");
+}
+
+/* 11. [d] Down (Red Arrow Down) */
+li[data-task="d"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="d"] input.task-list-item-checkbox,
+input[data-task="d"].task-list-item-checkbox {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M8 3v10m-4-4l4 4 4-4'/%3E%3C/svg%3E");
+}
+
+/* 12. ["] Quote (Purple Quote) */
+li[data-task='"']>input.task-list-item-checkbox,
+li[data-task='“']>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task='"'] input.task-list-item-checkbox,
+.HyperMD-task-line[data-task='“'] input.task-list-item-checkbox,
+input[data-task='"'].task-list-item-checkbox,
+input[data-task='“'].task-list-item-checkbox {
+    background-color: var(--color-purple);
+    border-color: var(--color-purple);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23ffffff' d='M3 4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H3V6a1 1 0 0 1 1-1h1V3H3zm8 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1V6a1 1 0 0 1 1-1h1V3h-2z'/%3E%3C/svg%3E");
+}
+
+/* 13. [>] Forwarded (Purple Arrow Right) */
+li[data-task=">"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task=">"] input.task-list-item-checkbox,
+input[data-task=">"].task-list-item-checkbox {
+    background-color: var(--color-purple);
+    border-color: var(--color-purple);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M3 8h10m-4-4l4 4-4 4'/%3E%3C/svg%3E");
+}
+
+/* 14. [<] Scheduled (Cyan Arrow Left) */
+li[data-task="<"]>input.task-list-item-checkbox,
+.HyperMD-task-line[data-task="<"] input.task-list-item-checkbox,
+input[data-task="<"].task-list-item-checkbox {
+    background-color: var(--color-cyan);
+    border-color: var(--color-cyan);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M13 8H3m4-4L3 8l4 4'/%3E%3C/svg%3E");
+}
+
+/* ================================================================
+   7. FILE EXPLORER & NAVIGATION
+   ================================================================ */
+
+.workspace-leaf-content .tree-item-self {
+    margin-bottom: 2px;
+    border-radius: 4px;
+    align-items: center;
+    transition: background-color 100ms ease, color 100ms ease;
+}
+
+.nav-file-title.is-active:not(.is-being-dragged),
+.nav-folder-title.is-active:not(.is-being-dragged) {
+    background: transparent;
+    color: var(--k-accent);
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: rgba(var(--k-accent-rgb), 0.08);
+}
+
+/* Sidebar Footer & Vault Switcher (Clean Zero-Line Overflow) */
+.workspace-drawer-header,
+.workspace-drawer-active-tab-header,
+.workspace-drawer-vault-switcher,
+.workspace-drawer-actions,
+.workspace-drawer-inner,
+.workspace-ribbon.mod-left.mod-bottom,
+.side-dock-settings,
+.nav-buttons-container,
+.nav-action-button {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.workspace-drawer-header,
+.workspace-drawer-active-tab-header {
+    border-top: 1px solid var(--k-border);
+    min-height: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.workspace-drawer-vault-switcher,
+.workspace-drawer-actions,
+.side-dock-settings {
+    border-top: none;
+    border-bottom: none;
+}
+
+.workspace-drawer-vault-switcher::before,
+.workspace-drawer-vault-switcher::after,
+.workspace-drawer-header::before,
+.workspace-drawer-header::after,
+.workspace-drawer-actions::before,
+.workspace-drawer-actions::after,
+.side-dock-settings::before,
+.side-dock-settings::after {
+    display: none;
+    border: none;
+    content: none;
+}
+
+.nav-files-container {
+    border-bottom: none;
+}
+
+/* ================================================================
+   8. NESTED LIST BULLETS (Geometric Hierarchy)
+   ================================================================ */
+
+/* Level 1: Solid Circle */
+.markdown-rendered .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet::after {
+    border-radius: 50%;
+    width: var(--list-bullet-size);
+    height: var(--list-bullet-size);
+    background-color: var(--list-marker-color);
+}
+
+/* Level 2: Solid Square */
+.markdown-rendered .has-list-bullet .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet::after {
+    border-radius: 0;
+    width: var(--list-bullet-size);
+    height: var(--list-bullet-size);
+    background-color: var(--list-marker-color);
+}
+
+/* Level 3: Rotated Diamond */
+.markdown-rendered .has-list-bullet .has-list-bullet .list-bullet::after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet::after {
+    border-radius: 0;
+    transform: rotate(45deg);
+    width: var(--list-bullet-size);
+    height: var(--list-bullet-size);
+    background-color: var(--list-marker-color);
+}
+
+/* ================================================================
+   9. UI CONTROLS & FLOATING MODALS
+   ================================================================ */
+
+/* Frosted Floating Modals */
+.modal,
+.prompt,
+.suggestion-container,
+.menu {
+    background-color: var(--k-modal-bg);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--k-border-strong);
+    box-shadow: var(--k-modal-shadow);
+    border-radius: 10px;
+}
+
+input.prompt-input {
+    background: transparent;
+    border-bottom: 2px solid var(--k-accent);
+    padding: 8px 12px;
+}
+
+/* Auto-fading Slender Scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    border-radius: 10px;
+    transition: background-color 150ms ease;
+}
+
+:hover::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-active-thumb-bg);
+}
+
+/* ================================================================
+   10. TABLES (CLEAN SLEEK MATRIX)
+   ================================================================ */
+
+body:not(.mod-rtl) table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--k-table-border);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin: 1em 0;
+}
+
+thead tr {
+    background-color: var(--k-bg-3);
+}
+
+th {
+    color: var(--k-text);
+    font-weight: 600;
+    border-bottom: 1px solid var(--k-table-border);
+    padding: 8px 14px;
+}
+
+td {
+    padding: 7px 14px;
+    border-bottom: 1px solid var(--k-border);
+}
+
+tbody tr:hover {
+    background-color: rgba(var(--k-accent-rgb), 0.06);
+}
+
+/* ================================================================
+   11. CALLOUTS (CLEAN BORDERED, FLAT & NOT RAISED)
+   ================================================================ */
+
+.callout {
+    border-radius: 6px;
+    margin: 1.2em 0;
+    padding: 12px 16px;
+    border: 1px solid rgba(var(--callout-color, var(--k-note)), 0.35);
+    border-left: 3.5px solid rgb(var(--callout-color, var(--k-note)));
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.theme-dark .callout {
+    background-color: transparent;
+    border: 1px solid rgba(var(--callout-color, var(--k-note)), 0.4);
+    border-left: 3.5px solid rgb(var(--callout-color, var(--k-note)));
+    box-shadow: none;
+}
+
+/* Explicit Semantic Callout Colors (Note, Tip, Warning, Danger, Important, Question, Quote) */
+.callout[data-callout="note"],
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+    --callout-color: var(--k-note);
+    border-color: rgba(var(--k-note), 0.35);
+    border-left-color: rgb(var(--k-note));
+}
+
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"] {
+    --callout-color: var(--k-tip);
+    border-color: rgba(var(--k-tip), 0.35);
+    border-left-color: rgb(var(--k-tip));
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] {
+    --callout-color: var(--k-warning);
+    border-color: rgba(var(--k-warning), 0.4);
+    border-left-color: rgb(var(--k-warning));
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"],
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"] {
+    --callout-color: var(--k-caution);
+    border-color: rgba(var(--k-caution), 0.4);
+    border-left-color: rgb(var(--k-caution));
+}
+
+.callout[data-callout="important"] {
+    --callout-color: var(--k-important);
+    border-color: rgba(var(--k-important), 0.4);
+    border-left-color: rgb(var(--k-important));
+}
+
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"] {
+    --callout-color: var(--k-important);
+    border-color: rgba(var(--k-important), 0.35);
+    border-left-color: rgb(var(--k-important));
+}
+
+.callout[data-callout="quote"],
+.callout[data-callout="cite"],
+.callout[data-callout="example"] {
+    --callout-color: var(--k-important);
+    border-color: rgba(var(--k-important), 0.3);
+    border-left-color: rgb(var(--k-important));
+}
+
+.callout[data-callout="summary"],
+.callout[data-callout="abstract"],
+.callout[data-callout="tldr"] {
+    --callout-color: var(--k-note);
+    border-color: rgba(var(--k-note), 0.3);
+    border-left-color: rgb(var(--k-note));
+}
+
+.callout-title {
+    font-weight: 700;
+    color: rgb(var(--callout-color, var(--k-note)));
+}
+
+.callout-icon svg {
+    color: rgb(var(--callout-color, var(--k-note)));
+}
+
+.callout-content {
+    color: var(--k-text);
+}
+
+/* ================================================================
+   11b. TOGGLE SWITCHES (CLEAN ZERO-DRIFT NATIVE ALIGNMENT)
+   ================================================================ */
+
+.checkbox-container {
+    background-color: var(--toggle-background, var(--k-bg-3));
+    border: 1px solid var(--toggle-border-color, var(--k-border-strong));
+    box-shadow: none;
+    transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+.checkbox-container:not(.is-enabled) {
+    background-color: var(--toggle-background, var(--k-bg-3));
+    border-color: var(--toggle-border-color, var(--k-border-strong));
+}
+
+.checkbox-container:not(.is-enabled) .checkbox-toggle-thumb {
+    background-color: var(--toggle-thumb-color, var(--k-text-faint));
+}
+
+.checkbox-container.is-enabled {
+    background-color: var(--toggle-background-active, var(--k-accent));
+    border-color: var(--toggle-border-color-active, var(--k-accent));
+}
+
+.checkbox-container.is-enabled .checkbox-toggle-thumb {
+    background-color: var(--toggle-thumb-color-active, #ffffff);
+}
+
+
+
+/* ================================================================
+   12. EMBEDS, FRONTMATTER, MERMAID & MEDIA
+   ================================================================ */
+
+/* File & Note Transclusions */
+.markdown-embed,
+.file-embed {
+    background-color: var(--k-bg-2);
+    border: 1px solid var(--k-border-strong);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 1em 0;
+    box-shadow: var(--k-card-shadow);
+}
+
+.markdown-embed-link,
+.file-embed-link {
+    color: var(--k-text-muted);
+}
+
+/* Frontmatter Properties Container */
+.metadata-container {
+    background-color: var(--k-bg-2);
+    border: 1px solid var(--k-border);
+    border-radius: 8px;
+    margin-bottom: 1.5em;
+    padding: 8px 12px;
+}
+
+.metadata-property-key {
+    color: var(--k-text-muted);
+    font-weight: 500;
+}
+
+/* Images */
+.markdown-rendered img,
+.markdown-preview-view img {
+    border-radius: 8px;
+    box-shadow: var(--k-card-shadow);
+    max-width: 100%;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 3px solid var(--k-accent);
+    background-color: rgba(var(--k-accent-rgb), 0.05);
+    border-radius: 0 6px 6px 0;
+    padding: 8px 16px;
+    margin: 1em 0;
+    color: var(--k-text);
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: var(--k-text-muted);
+}
+
+/* Math Blocks */
+.math-block,
+.math-inline {
+    color: var(--k-text);
+}
+
+.math-block {
+    overflow-x: auto;
+    padding: 0.5em 0;
+}
+
+/* Footnotes */
+.footnotes {
+    border-top: 1px dashed var(--k-border-strong);
+    margin-top: 2em;
+    padding-top: 1em;
+    font-size: 0.9em;
+    color: var(--k-text-muted);
+}
+
+/* ================================================================
+   13. WINDOW TITLEBAR / FRAME DRAG FIX
+   ================================================================ */
+
+.titlebar,
+.workspace-frameless-titlebar {
+    -webkit-app-region: drag;
+}
+
+.titlebar-button,
+.workspace-tab-header-container,
+.workspace-action-option {
+    -webkit-app-region: no-drag;
+}

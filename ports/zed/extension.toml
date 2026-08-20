@@ -1,0 +1,7 @@
+id = "circadia"
+name = "Circadia"
+version = "1.0.0"
+schema_version = 1
+authors = ["Tanmay <https://github.com/tanmaymanojgandhi>"]
+description = "Perceptually uniform, low-strain themes engineered for continuous focus."
+repository = "https://github.com/tanmaymanojgandhi/circadia"

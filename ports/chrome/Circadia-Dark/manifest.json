@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Circadia Dark",
+  "description": "Circadia Dark theme (Warm Ember & Obsidian) for Google Chrome",
+  "theme": {
+    "colors": {
+      "frame": [
+        28,
+        26,
+        36
+      ],
+      "frame_inactive": [
+        37,
+        35,
+        48
+      ],
+      "ntp_background": [
+        21,
+        20,
+        27
+      ],
+      "ntp_text": [
+        234,
+        227,
+        216
+      ],
+      "tab_text": [
+        234,
+        227,
+        216
+      ],
+      "tab_background_text": [
+        183,
+        172,
+        160
+      ],
+      "bookmark_text": [
+        234,
+        227,
+        216
+      ],
+      "ntp_link": [
+        232,
+        154,
+        73
+      ],
+      "ntp_header": [
+        183,
+        172,
+        160
+      ],
+      "toolbar": [
+        21,
+        20,
+        27
+      ],
+      "toolbar_text": [
+        234,
+        227,
+        216
+      ],
+      "toolbar_field_text": [
+        183,
+        172,
+        160
+      ],
+      "button_background": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "tints": {}
+  }
+}

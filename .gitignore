@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.vsix
+.DS_Store
+*.log
+.pnpm-store/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# Editor & OS files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+Thumbs.db

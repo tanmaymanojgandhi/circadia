@@ -1,0 +1,34 @@
+// Circadia Light (Warm Parchment) Telegram Theme
+circadiaBg: #fffdf8;
+circadiaBg2: #f6f1e6;
+circadiaUi: #ece5d7;
+circadiaUi2: #d3c8b4;
+circadiaTx: #28323a;
+circadiaTx2: #46535f;
+circadiaTx3: #5f6d7a;
+circadiaAccent: #195697;
+
+circadiaRe: #dc2626;
+circadiaOr: #8d4400;
+circadiaYe: #ca8a04;
+circadiaGr: #1e6822;
+circadiaCy: #00677f;
+circadiaBl: #165084;
+circadiaPu: #6b1d8f;
+
+windowBg: circadiaBg;
+windowFg: circadiaTx;
+windowBgOver: circadiaBg2;
+windowBgRipple: circadiaUi;
+windowFgOver: windowFg;
+windowSubTextFg: circadiaTx2;
+windowSubTextFgOver: circadiaTx;
+windowBoldFg: circadiaTx;
+windowBoldFgOver: circadiaTx;
+windowBgActive: circadiaAccent;
+windowFgActive: #fffdf8;
+windowActiveTextFg: circadiaAccent;
+activeButtonBg: circadiaAccent;
+activeButtonBgOver: circadiaAccent;
+activeButtonFg: #fffdf8;
+activeButtonSecondaryFg: circadiaTx2;

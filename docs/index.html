@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circadia — OKLCH Color Specification & Theme Engine</title>
+  <meta name="description" content="Circadia is an open color specification engineered in OKLCH for code editors, terminals, and document renderers with strict WCAG 2.1 AAA contrast.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Sticky Navbar (Reveals on Scroll Past Hero) -->
+  <header id="stickyNavbar" class="navbar navbar-hidden" aria-label="Main Navigation">
+    <div class="nav-inner">
+      <div class="brand">
+        <a href="#hero" class="brand-link">
+          <span class="brand-dot"></span>
+          <span class="brand-name">circadia</span>
+        </a>
+        <span class="badge-spec">spec v1.0.0</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#palette">Palette</a>
+        <a href="#preview">Preview</a>
+        <a href="#contrast">Contrast</a>
+        <a href="#ports">Ports (18)</a>
+        <a href="#downloads">Spec Files</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="themeToggleNav" class="btn-toggle" aria-label="Toggle theme mode">
+          <span id="themeToggleTextNav">Warm Ember</span>
+        </button>
+        <a href="https://github.com/tanmaymanojgandhi/circadia" target="_blank" rel="noopener noreferrer" class="btn-gh">
+          GitHub &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Landing Section (Full Front Cover) -->
+  <section id="hero" class="hero-cover">
+    <div class="hero-wrapper">
+
+      <!-- Hero Main Content -->
+      <div class="hero-body">
+        <div class="hero-meta-row">
+          <span class="hero-tag">OKLCH Color Specification</span>
+          <span class="hero-divider">/</span>
+          <span class="hero-tag">Strict WCAG 2.1 AAA</span>
+          <span class="hero-divider">/</span>
+          <span class="hero-tag">18 Official Ports</span>
+        </div>
+
+        <!-- Brand Name Prominence -->
+        <div class="hero-brand-block">
+          <h1 class="hero-brand-name">Circadia</h1>
+          <h2 class="hero-tagline">Perceptually uniform, low-strain themes engineered for continuous focus.</h2>
+        </div>
+
+        <p class="hero-lead">
+          Built with circadian optical science in <strong>OKLCH</strong> with strict <strong>WCAG 2.1 AAA</strong> contrast. Glare-free daylight contrast (<strong>Warm Parchment</strong>) and halation-free evening warmth (<strong>Warm Ember &amp; Obsidian</strong>) for 18+ code editors, terminals, and document tools.
+        </p>
+
+        <!-- Consolidated Explore Buttons + Clone Snippet -->
+        <div class="hero-explore-strip">
+          <div class="explore-group">
+            <span class="explore-label">Explore:</span>
+            <div class="explore-buttons">
+              <button class="btn-explore" data-target="palette">Palette Tokens &darr;</button>
+              <button class="btn-explore" data-target="preview">Live Preview</button>
+              <button class="btn-explore" data-target="contrast">Contrast Matrix</button>
+              <button class="btn-explore" data-target="ports">Ports (18+)</button>
+              <button class="btn-explore" data-target="downloads">Spec Files</button>
+            </div>
+          </div>
+
+          <div class="hero-quick-command" id="heroCopyCommand" role="button" tabindex="0" title="Click to copy clone command">
+            <code>git clone https://github.com/tanmaymanojgandhi/circadia.git</code>
+            <span class="command-copy-icon">📋</span>
+          </div>
+        </div>
+
+        <!-- Interactive Dual-Mode Comparison Cards -->
+        <div class="hero-dual-modes">
+          <!-- Light Card -->
+          <div class="hero-mode-card" id="modeCardLight" role="button" tabindex="0" title="Click to switch to Warm Parchment (Light Mode)">
+            <div class="mode-card-header">
+              <div class="mode-card-title-group">
+                <span class="mode-dot light-dot"></span>
+                <span class="mode-name">Warm Parchment</span>
+              </div>
+              <span class="mode-stat-badge">12.85:1 AAA</span>
+            </div>
+
+            <div class="mode-card-lux">Daylight Ambient &bull; 300–800+ lux</div>
+            <p class="mode-card-desc">Warm paper undertones engineered to eliminate retinal glare under bright ambient light.</p>
+
+            <!-- Compact Half-Height & Half-Width Color Ribbon -->
+            <div class="mode-ribbon-compact light-ribbon">
+              <span class="ribbon-chip-compact" style="background:#fffdf8; border:1px solid #d3c8b4;" title="bg_canvas: #fffdf8"></span>
+              <span class="ribbon-chip-compact" style="background:#f6f1e6;" title="bg_surface: #f6f1e6"></span>
+              <span class="ribbon-chip-compact" style="background:#28323a;" title="text_primary: #28323a"></span>
+              <span class="ribbon-chip-compact" style="background:#195697;" title="accent: #195697"></span>
+              <span class="ribbon-chip-compact" style="background:#6b1d8f;" title="syntax.keyword: #6b1d8f"></span>
+              <span class="ribbon-chip-compact" style="background:#00677f;" title="syntax.type: #00677f"></span>
+              <span class="ribbon-chip-compact" style="background:#1e6822;" title="syntax.string: #1e6822"></span>
+            </div>
+
+            <div class="mode-card-footer">
+              <span class="mode-click-hint">Click to activate Light mode</span>
+              <span class="mode-active-indicator">&check; Active</span>
+            </div>
+          </div>
+
+          <!-- Dark Card -->
+          <div class="hero-mode-card" id="modeCardDark" role="button" tabindex="0" title="Click to switch to Warm Ember & Obsidian (Dark Mode)">
+            <div class="mode-card-header">
+              <div class="mode-card-title-group">
+                <span class="mode-dot dark-dot"></span>
+                <span class="mode-name">Warm Ember &amp; Obsidian</span>
+              </div>
+              <span class="mode-stat-badge">14.36:1 AAA</span>
+            </div>
+
+            <div class="mode-card-lux">Evening Ambient &bull; 0–50 lux</div>
+            <p class="mode-card-desc">Deep obsidian canvas with warm amber accents that minimize blue-light disruption.</p>
+
+            <!-- Compact Half-Height & Half-Width Color Ribbon -->
+            <div class="mode-ribbon-compact dark-ribbon">
+              <span class="ribbon-chip-compact" style="background:#15141b; border:1px solid #343041;" title="bg_canvas: #15141b"></span>
+              <span class="ribbon-chip-compact" style="background:#1c1a24;" title="bg_surface: #1c1a24"></span>
+              <span class="ribbon-chip-compact" style="background:#eae3d8;" title="text_primary: #eae3d8"></span>
+              <span class="ribbon-chip-compact" style="background:#e89a49;" title="accent: #e89a49"></span>
+              <span class="ribbon-chip-compact" style="background:#e59de8;" title="syntax.keyword: #e59de8"></span>
+              <span class="ribbon-chip-compact" style="background:#f1be85;" title="syntax.type: #f1be85"></span>
+              <span class="ribbon-chip-compact" style="background:#a7db76;" title="syntax.string: #a7db76"></span>
+            </div>
+
+            <div class="mode-card-footer">
+              <span class="mode-click-hint">Click to activate Dark mode</span>
+              <span class="mode-active-indicator">&check; Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Page Content Container (Max Width 1200px) -->
+  <main class="page-content">
+
+    <!-- Palette Swatches & Table -->
+    <section id="palette" class="section-block">
+      <div class="section-header">
+        <div>
+          <h2 class="section-heading">Tokens &amp; Color Palette</h2>
+          <p class="section-subtext">Click any token cell to copy its value.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ui">UI</button>
+            <button class="filter-btn" data-filter="syntax">Syntax</button>
+            <button class="filter-btn" data-filter="headings">Headings</button>
+          </div>
+
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Filter tokens..." autocomplete="off">
+          </div>
+
+          <div class="format-select">
+            <select id="formatSelect" aria-label="Copy format">
+              <option value="hex">HEX (#hex)</option>
+              <option value="oklch">OKLCH (oklch)</option>
+              <option value="rgb">RGB (rgb)</option>
+              <option value="css">CSS Var (var(--...))</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="swatchContainer" class="token-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- Code Editor Preview -->
+    <section id="preview" class="section-block">
+      <div class="section-header">
+        <div>
+          <h2 class="section-heading">Syntax Highlight Preview</h2>
+          <p class="section-subtext">Perceptually balanced syntax weight across languages.</p>
+        </div>
+
+        <div class="tab-group" role="tablist">
+          <button class="tab-btn active" data-lang="markdown">Markdown</button>
+          <button class="tab-btn" data-lang="typescript">TypeScript</button>
+          <button class="tab-btn" data-lang="rust">Rust</button>
+          <button class="tab-btn" data-lang="python">Python</button>
+          <button class="tab-btn" data-lang="html">HTML</button>
+        </div>
+      </div>
+
+      <div class="editor-frame">
+        <div class="editor-bar">
+          <div class="editor-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="editor-file-title" id="editorFileName">spec.md</div>
+          <div class="editor-lang-badge" id="editorLangBadge">Markdown</div>
+        </div>
+        <div class="editor-content">
+          <div class="editor-gutters" id="editorGutters"></div>
+          <pre class="editor-code"><code id="codeArea"></code></pre>
+        </div>
+        <div class="editor-inspector" id="inspectorBar">
+          <span class="inspector-status">Hover a syntax symbol to inspect its token mapping</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contrast Matrix -->
+    <section id="contrast" class="section-block">
+      <div class="section-header">
+        <div>
+          <h2 class="section-heading">WCAG 2.1 Accessibility Ratios</h2>
+          <p class="section-subtext">Relative luminance verified against canvas background (<code>bg_canvas</code>).</p>
+        </div>
+      </div>
+
+      <div class="table-frame">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Category</th>
+              <th>Sample</th>
+              <th>Hex / OKLCH</th>
+              <th>Contrast Ratio</th>
+              <th>WCAG Invariant</th>
+            </tr>
+          </thead>
+          <tbody id="contrastTbody">
+            <!-- Populated by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ports Directory -->
+    <section id="ports" class="section-block">
+      <div class="section-header">
+        <div>
+          <h2 class="section-heading">Ports &amp; Ecosystem</h2>
+          <p class="section-subtext">18 unified themes for editors, terminals, and tools.</p>
+        </div>
+
+        <div class="port-filters">
+          <button class="port-filter-btn active" data-pcat="all">All (18)</button>
+          <button class="port-filter-btn" data-pcat="editor">Editors</button>
+          <button class="port-filter-btn" data-pcat="terminal">Terminals</button>
+          <button class="port-filter-btn" data-pcat="desktop">Desktop</button>
+          <button class="port-filter-btn" data-pcat="web">Web &amp; Notes</button>
+        </div>
+      </div>
+
+      <div class="ports-list" id="portsContainer">
+        <!-- Populated by app.js -->
+      </div>
+    </section>
+
+    <!-- Downloads / Spec -->
+    <section id="downloads" class="section-block">
+      <div class="section-header">
+        <div>
+          <h2 class="section-heading">Specification Files</h2>
+          <p class="section-subtext">Canonical palette data, normative rules, and token mapping docs.</p>
+        </div>
+      </div>
+
+      <div class="spec-file-grid">
+        <a href="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/spec/palette.json" target="_blank" class="file-item">
+          <div class="file-info">
+            <span class="file-name">spec/palette.json</span>
+            <span class="file-desc">Canonical OKLCH and Hex palette definitions</span>
+          </div>
+          <span class="file-action">Raw JSON &rarr;</span>
+        </a>
+
+        <a href="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/spec/rules.md" target="_blank" class="file-item">
+          <div class="file-info">
+            <span class="file-name">spec/rules.md</span>
+            <span class="file-desc">Normative palette and accessibility invariants</span>
+          </div>
+          <span class="file-action">Markdown &rarr;</span>
+        </a>
+
+        <a href="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/spec/token-map.md" target="_blank" class="file-item">
+          <div class="file-info">
+            <span class="file-name">spec/token-map.md</span>
+            <span class="file-desc">Semantic mapping guide for port creators</span>
+          </div>
+          <span class="file-action">Markdown &rarr;</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer-inner">
+      <div class="footer-meta">
+        <span class="brand-name">circadia</span>
+        <span class="footer-note">&bull; Engineered in OKLCH &bull; MIT License</span>
+      </div>
+      <div class="footer-nav">
+        <a href="https://github.com/tanmaymanojgandhi/circadia">Repository</a>
+        <a href="https://github.com/tanmaymanojgandhi/circadia/blob/main/CONTRIBUTING.md">Contribute Port</a>
+        <a href="https://github.com/tanmaymanojgandhi/circadia/blob/main/LICENSE">License</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

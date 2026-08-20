@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+/* Replaces default Tailwind neutral & theme palettes with Circadia */
+@theme {
+  --color-background:              #fffdf8;
+  --color-foreground:              #28323a;
+  --color-surface:                 #f6f1e6;
+  --color-element:                 #ece5d7;
+  --color-border:                  #d3c8b4;
+  --color-primary:                 #195697;
+}
+
+@layer base {
+  .dark {
+    --color-background:            #15141b;
+    --color-foreground:            #eae3d8;
+    --color-surface:               #1c1a24;
+    --color-element:               #252330;
+    --color-border:                #343041;
+    --color-primary:               #e89a49;
+  }
+}
