@@ -214,28 +214,19 @@ function generateSvgMatrix() {
     }
   ];
 
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
-  <style>
-    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 700; fill: #eae3d8; }
-    .subtitle { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; fill: #e89a49; }
-    .mode-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; }
-    .cat-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #b7aca0; text-transform: uppercase; letter-spacing: 0.5px; }
-    .chip-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #eae3d8; }
-    .chip-mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 10px; fill: #b7aca0; }
-    .chip-border { stroke: rgba(255,255,255,0.12); stroke-width: 1; }
-    .chip-border-light { stroke: rgba(0,0,0,0.10); stroke-width: 1; }
-  </style>
+  let svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
   <rect width="${width}" height="${height}" fill="#15141b" rx="16"/>
   <rect x="18" y="18" width="${width - 36}" height="${height - 36}" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
   
   <!-- Header -->
-  <text x="40" y="55" class="title">Circadia OKLCH Color Palette Matrix</text>
-  <text x="40" y="76" class="subtitle">Complete 42-Token Semantic Specification with Strict WCAG 2.1 AAA Contrast</text>
+  <text x="40" y="55" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
+  <text x="40" y="76" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">Complete 42-Token Semantic Specification with Strict WCAG 2.1 AAA Contrast</text>
 
   <!-- Light Mode Section -->
   <g transform="translate(40, 105)">
     <rect x="-10" y="-10" width="${width - 60}" height="320" rx="10" fill="#f4eee1" opacity="0.04" stroke="#343041" stroke-width="1"/>
-    <text x="0" y="15" class="mode-header" fill="#f4eee1">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
+    <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f4eee1">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
 `;
 
   let xOffset = 0;
@@ -245,16 +236,16 @@ function generateSvgMatrix() {
 
   categories.forEach((cat) => {
     svg += `
-    <text x="${xOffset}" y="45" class="cat-header">${cat.name}</text>
+    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${cat.name.toUpperCase()}</text>
     <g transform="translate(${xOffset}, 55)">
 `;
     cat.tokens.forEach((t, i) => {
       const cx = i * (chipW + gap);
       svg += `
       <g transform="translate(${cx}, 0)">
-        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.lHex}" class="chip-border-light"/>
-        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" class="chip-label">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" class="chip-mono">${t.lHex}</text>
+        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.lHex}" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
+        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
+        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.lHex}</text>
       </g>`;
     });
     svg += `\n    </g>`;
@@ -268,22 +259,22 @@ function generateSvgMatrix() {
   <!-- Dark Mode Section -->
   <g transform="translate(40, 445)">
     <rect x="-10" y="-10" width="${width - 60}" height="320" rx="10" fill="#15141b" opacity="0.4" stroke="#343041" stroke-width="1"/>
-    <text x="0" y="15" class="mode-header" fill="#f8c88f">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
+    <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8c88f">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
 `;
 
   xOffset = 0;
   categories.forEach((cat) => {
     svg += `
-    <text x="${xOffset}" y="45" class="cat-header">${cat.name}</text>
+    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${cat.name.toUpperCase()}</text>
     <g transform="translate(${xOffset}, 55)">
 `;
     cat.tokens.forEach((t, i) => {
       const cx = i * (chipW + gap);
       svg += `
       <g transform="translate(${cx}, 0)">
-        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.dHex}" class="chip-border"/>
-        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" class="chip-label">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" class="chip-mono">${t.dHex}</text>
+        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.dHex}" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
+        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.dHex}</text>
       </g>`;
     });
     svg += `\n    </g>`;

@@ -10,22 +10,22 @@ Circadia is an open color specification engineered in OKLCH for cross-platform e
 
 ## 🎨 Palette Specification & Swatch Matrix
 
-| Token | Semantic Role | ☀️ Light (`Warm Parchment`) | ☀️ Light OKLCH | 🌙 Dark (`Warm Ember`) | 🌙 Dark OKLCH |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **`bg_canvas`** | Canvas Background | `#f4eee1` | `oklch(95.2% 0.015 85)` | `#15141b` | `oklch(19.0% 0.012 290)` |
-| **`bg_surface`** | Sidebars & Inactive Tabs | `#ece4d4` | `oklch(91.8% 0.018 85)` | `#1c1a24` | `oklch(22.0% 0.015 290)` |
-| **`bg_element`** | Active Line & Selection | `#e2d8c3` | `oklch(87.5% 0.022 85)` | `#252330` | `oklch(26.0% 0.018 290)` |
-| **`border`** | 1px Panel Dividers | `#d4c8b2` | `oklch(81.5% 0.024 85)` | `#343041` | `oklch(33.0% 0.020 290)` |
-| **`text_primary`** | Body Text & Punctuation | `#28323a` | `oklch(30.0% 0.020 250)` | `#eae3d8` | `oklch(91.0% 0.015 85)` |
-| **`text_muted`** | Secondary Text / Operators | `#46535f` | `oklch(43.0% 0.025 250)` | `#b7aca0` | `oklch(76.0% 0.020 85)` |
-| **`text_faint`** | Line Numbers & Guides | `#5f6d7a` | `oklch(53.0% 0.020 250)` | `#92887d` | `oklch(64.0% 0.018 85)` |
-| **`accent`** | Focus Rings & Links | `#09489a` | `oklch(41.0% 0.145 255)` | `#e89a49` | `oklch(75.0% 0.130 65)` |
-| **`keyword`** | Keywords & Flow Control | `#631c84` | `oklch(39.0% 0.165 312)` | `#e59de8` | `oklch(80.0% 0.130 320)` |
-| **`type`** | Types, Classes & Structs | `#7f3500` | `oklch(42.5% 0.140 65)` | `#f1be85` | `oklch(82.0% 0.090 75)` |
-| **`function`** | Functions & Methods | `#09489a` | `oklch(41.0% 0.145 255)` | `#89c8e4` | `oklch(79.0% 0.080 230)` |
-| **`string`** | String Literals | `#085802` | `oklch(40.5% 0.145 142)` | `#a7db76` | `oklch(80.0% 0.130 135)` |
-| **`number`** | Numeric & Constant Literals | `#8a2d00` | `oklch(43.0% 0.155 48)` | `#f6a84d` | `oklch(79.0% 0.140 60)` |
-| **`comment`** | Code Comments | `#574f46` | `oklch(43.5% 0.025 60)` | `#b3aba0` | `oklch(75.5% 0.020 60)` |
+| Token | Semantic Role | ☀️ Light (`Warm Parchment`) | 🌙 Dark (`Warm Ember & Obsidian`) |
+| :--- | :--- | :--- | :--- |
+| **`bg_canvas`** | Canvas Background | `#f4eee1`<br>`oklch(95.2% 0.015 85)`<br>*(Base Canvas)* | `#15141b`<br>`oklch(19.0% 0.012 290)`<br>*(Base Canvas)* |
+| **`bg_surface`** | Sidebars & Inactive Tabs | `#ece4d4`<br>`oklch(91.8% 0.018 85)`<br>*(UI Surface)* | `#1c1a24`<br>`oklch(22.0% 0.015 290)`<br>*(UI Surface)* |
+| **`bg_element`** | Active Line & Selection | `#e2d8c3`<br>`oklch(87.5% 0.022 85)`<br>*(UI Element)* | `#252330`<br>`oklch(26.0% 0.018 290)`<br>*(UI Element)* |
+| **`border`** | 1px Panel Dividers | `#d4c8b2`<br>`oklch(81.5% 0.024 85)`<br>*(UI Border)* | `#343041`<br>`oklch(33.0% 0.020 290)`<br>*(UI Border)* |
+| **`text_primary`** | Body Text & Punctuation | `#28323a`<br>`oklch(30.0% 0.020 250)`<br>**11.30:1 (AAA)** | `#eae3d8`<br>`oklch(91.0% 0.015 85)`<br>**14.36:1 (AAA)** |
+| **`text_muted`** | Secondary Text / Operators | `#46535f`<br>`oklch(43.0% 0.025 250)`<br>**6.82:1 (AA)** | `#b7aca0`<br>`oklch(76.0% 0.020 85)`<br>**8.21:1 (AAA)** |
+| **`text_faint`** | Line Numbers & Guides | `#5f6d7a`<br>`oklch(53.0% 0.020 250)`<br>**4.59:1 (AA)** | `#92887d`<br>`oklch(64.0% 0.018 85)`<br>**5.26:1 (AA)** |
+| **`accent`** | Focus Rings & Links | `#09489a`<br>`oklch(41.0% 0.145 255)`<br>**7.55:1 (AAA)** | `#e89a49`<br>`oklch(75.0% 0.130 65)`<br>**7.97:1 (AAA)** |
+| **`keyword`** | Keywords & Flow Control | `#631c84`<br>`oklch(39.0% 0.165 312)`<br>**8.95:1 (AAA)** | `#e59de8`<br>`oklch(80.0% 0.130 320)`<br>**8.99:1 (AAA)** |
+| **`type`** | Types, Classes & Structs | `#7f3500`<br>`oklch(42.5% 0.140 65)`<br>**7.53:1 (AAA)** | `#f1be85`<br>`oklch(82.0% 0.090 75)`<br>**9.94:1 (AAA)** |
+| **`function`** | Functions & Methods | `#09489a`<br>`oklch(41.0% 0.145 255)`<br>**7.55:1 (AAA)** | `#89c8e4`<br>`oklch(79.0% 0.080 230)`<br>**10.22:1 (AAA)** |
+| **`string`** | String Literals | `#085802`<br>`oklch(40.5% 0.145 142)`<br>**7.55:1 (AAA)** | `#a7db76`<br>`oklch(80.0% 0.130 135)`<br>**11.36:1 (AAA)** |
+| **`number`** | Numeric & Constant Literals | `#8a2d00`<br>`oklch(43.0% 0.155 48)`<br>**7.40:1 (AAA)** | `#f6a84d`<br>`oklch(79.0% 0.140 60)`<br>**9.26:1 (AAA)** |
+| **`comment`** | Code Comments | `#574f46`<br>`oklch(43.5% 0.025 60)`<br>**6.95:1 (AA)** | `#b3aba0`<br>`oklch(75.5% 0.020 60)`<br>**8.06:1 (AAA)** |
 
 ---
 
