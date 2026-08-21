@@ -221,20 +221,20 @@
         "terminal.background": "#f4eee1",
         "terminal.foreground": "#28323a",
         "terminal.ansi.black": "#e2d8c3",
-        "terminal.ansi.red": "#8d4400",
-        "terminal.ansi.green": "#1e6822",
+        "terminal.ansi.red": "#8a2d00",
+        "terminal.ansi.green": "#085802",
         "terminal.ansi.yellow": "#236bb5",
-        "terminal.ansi.blue": "#165084",
-        "terminal.ansi.magenta": "#6b1d8f",
-        "terminal.ansi.cyan": "#00677f",
+        "terminal.ansi.blue": "#09489a",
+        "terminal.ansi.magenta": "#631c84",
+        "terminal.ansi.cyan": "#7f3500",
         "terminal.ansi.white": "#28323a",
         "terminal.ansi.bright_black": "#5f6d7a",
-        "terminal.ansi.bright_red": "#8d4400",
-        "terminal.ansi.bright_green": "#1e6822",
+        "terminal.ansi.bright_red": "#8a2d00",
+        "terminal.ansi.bright_green": "#085802",
         "terminal.ansi.bright_yellow": "#195697",
         "terminal.ansi.bright_blue": "#1c60a2",
-        "terminal.ansi.bright_magenta": "#6b1d8f",
-        "terminal.ansi.bright_cyan": "#00677f",
+        "terminal.ansi.bright_magenta": "#631c84",
+        "terminal.ansi.bright_cyan": "#7f3500",
         "terminal.ansi.bright_white": "#28323a",
         "syntax": {
           "comment": {
@@ -242,50 +242,50 @@
             "font_style": "italic"
           },
           "keyword": {
-            "color": "#6b1d8f",
+            "color": "#631c84",
             "font_weight": 700
           },
           "type.builtin": {
-            "color": "#00677f"
+            "color": "#7f3500"
           },
           "type": {
-            "color": "#00677f"
+            "color": "#7f3500"
           },
           "function": {
-            "color": "#165084"
+            "color": "#09489a"
           },
           "function.method": {
-            "color": "#165084"
+            "color": "#09489a"
           },
           "string": {
-            "color": "#1e6822"
+            "color": "#085802"
           },
           "string.regex": {
-            "color": "#1e6822"
+            "color": "#085802"
           },
           "string.escape": {
-            "color": "#00677f"
+            "color": "#7f3500"
           },
           "number": {
-            "color": "#8d4400"
+            "color": "#8a2d00"
           },
           "boolean": {
-            "color": "#8d4400"
+            "color": "#8a2d00"
           },
           "tag": {
-            "color": "#195697"
+            "color": "#09489a"
           },
           "operator": {
             "color": "#46535f"
           },
           "property": {
-            "color": "#00677f"
+            "color": "#7f3500"
           },
           "variable": {
             "color": "#28323a"
           },
           "variable.special": {
-            "color": "#00677f"
+            "color": "#7f3500"
           },
           "title": {
             "color": "#1c4470",

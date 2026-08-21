@@ -27,10 +27,10 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [Colors:Complementary]
 BackgroundAlternate=226,216,195
@@ -41,10 +41,10 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [Colors:Header]
 BackgroundAlternate=226,216,195
@@ -55,9 +55,9 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
+ForegroundPositive=8,88,2
 
 [Colors:Selection]
 BackgroundAlternate=25,86,151
@@ -68,10 +68,10 @@ ForegroundActive=40,50,58
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=255,253,248
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [Colors:Tooltip]
 BackgroundAlternate=226,216,195
@@ -82,10 +82,10 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [Colors:View]
 BackgroundAlternate=236,228,212
@@ -96,10 +96,10 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [Colors:Window]
 BackgroundAlternate=226,216,195
@@ -110,10 +110,10 @@ ForegroundActive=25,86,151
 ForegroundInactive=95,109,122
 ForegroundLink=25,86,151
 ForegroundNegative=220,38,38
-ForegroundNeutral=141,68,0
+ForegroundNeutral=138,45,0
 ForegroundNormal=40,50,58
-ForegroundPositive=30,104,34
-ForegroundVisited=107,29,143
+ForegroundPositive=8,88,2
+ForegroundVisited=99,28,132
 
 [General]
 ColorScheme=CircadiaLight

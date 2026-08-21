@@ -49,12 +49,12 @@
 
     /* Syntax Highlighting (Zero-Red Semantic Cleanliness) */
     --k-comment: #574f46;
-    --k-keyword: #6b1d8f;
-    --k-number: #8d4400;
-    --k-var2: #165084;
-    --k-var3: #00677f;
-    --k-string: #1e6822;
-    --k-tag: #195697;
+    --k-keyword: #631c84;
+    --k-number: #8a2d00;
+    --k-var2: #09489a;
+    --k-var3: #7f3500;
+    --k-string: #085802;
+    --k-tag: #09489a;
 
     /* Callout RGB Hues */
     --k-note: 25, 86, 151;

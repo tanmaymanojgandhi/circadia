@@ -37,12 +37,12 @@ $$\text{Color} = \text{oklch}(L \quad C \quad H)$$
 | **Faint Text (`--k-text-faint`)** | `#5f6d7a` | `95, 109, 122` | `oklch(53.0% 0.020 250)` | 🌫️ Slate Mist (4.6:1 Contrast) |
 | **Border / Divider (`--k-border`)** | `#d4c8b2` | `212, 200, 178` | `oklch(81.5% 0.024 85)` | 📏 Soft Parchment Border |
 | **Accent / Links (`--k-accent`)** | `#195697` | `25, 86, 151` | `oklch(44.0% 0.120 250)` | 🔷 Deep Sapphire Indigo |
-| **Keywords (`--k-keyword`)** | `#6b1d8f` | `107, 29, 143` | `oklch(40.0% 0.150 310)` | 🔮 Royal Amethyst (Zero-Red) |
-| **Classes / Types (`--k-var3`)** | `#00677f` | `0, 103, 127` | `oklch(42.0% 0.100 215)` | 🌊 Deep Sea Teal |
-| **Functions (`--k-var2`)** | `#165084` | `22, 80, 132` | `oklch(41.0% 0.110 250)` | 🔷 Steel Azure |
-| **Strings (`--k-string`)** | `#1e6822` | `30, 104, 34` | `oklch(43.0% 0.120 145)` | 🌿 Forest Olive |
-| **Numbers / Math (`--k-number`)** | `#8d4400` | `141, 68, 0` | `oklch(45.0% 0.140 55)` | 🍯 Warm Ochre |
-| **Tags / HTML (`--k-tag`)** | `#195697` | `25, 86, 151` | `oklch(44.0% 0.120 250)` | 📐 Sapphire Indigo |
+| **Keywords (`--k-keyword`)** | `#631c84` | `99, 28, 132` | `oklch(39.0% 0.165 312)` | 🔮 Royal Imperial Amethyst |
+| **Classes / Types (`--k-var3`)** | `#7f3500` | `127, 53, 0` | `oklch(42.5% 0.140 65)` | 🏺 Warm Venetian Sienna |
+| **Functions (`--k-var2`)** | `#09489a` | `9, 72, 154` | `oklch(41.0% 0.145 255)` | 🔷 Vivid Royal Cobalt |
+| **Strings (`--k-string`)** | `#085802` | `8, 88, 2` | `oklch(40.5% 0.145 142)` | 🌿 Deep Imperial Emerald |
+| **Numbers / Math (`--k-number`)** | `#8a2d00` | `138, 45, 0` | `oklch(43.0% 0.155 48)` | 🍯 Rich Terracotta Copper |
+| **Tags / HTML (`--k-tag`)** | `#09489a` | `9, 72, 154` | `oklch(41.0% 0.145 255)` | 📐 Royal Cobalt Tag |
 | **Comments (`--k-comment`)** | `#574f46` | `87, 79, 70` | `oklch(43.5% 0.025 60)` | 🪵 Driftwood Gray |
 
 ---

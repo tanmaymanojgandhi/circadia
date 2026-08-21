@@ -168,3 +168,82 @@ console.log(`Generated ${jsonOutPath}`);
 const csvOutPath = path.join(distDir, "palette.csv");
 fs.writeFileSync(csvOutPath, csvRows.join("\n"), "utf-8");
 console.log(`Generated ${csvOutPath}`);
+
+function generateSvgMatrix() {
+  const light = rawSpec.modes.light;
+  const dark = rawSpec.modes.dark;
+  const width = 1140;
+  const height = 540;
+
+  const tokens = [
+    { key: "Canvas", light: light.ui.bg_canvas.hex, dark: dark.ui.bg_canvas.hex },
+    { key: "Surface", light: light.ui.bg_surface.hex, dark: dark.ui.bg_surface.hex },
+    { key: "Element", light: light.ui.bg_element.hex, dark: dark.ui.bg_element.hex },
+    { key: "Text", light: light.ui.text_primary.hex, dark: dark.ui.text_primary.hex },
+    { key: "Muted", light: light.ui.text_muted.hex, dark: dark.ui.text_muted.hex },
+    { key: "Accent", light: light.ui.accent.hex, dark: dark.ui.accent.hex },
+    { key: "Keyword", light: light.syntax.keyword.hex, dark: dark.syntax.keyword.hex },
+    { key: "Type", light: light.syntax.type.hex, dark: dark.syntax.type.hex },
+    { key: "Function", light: light.syntax.function.hex, dark: dark.syntax.function.hex },
+    { key: "String", light: light.syntax.string.hex, dark: dark.syntax.string.hex },
+    { key: "Number", light: light.syntax.number.hex, dark: dark.syntax.number.hex },
+    { key: "Comment", light: light.syntax.comment.hex, dark: dark.syntax.comment.hex },
+  ];
+
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
+  <style>
+    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 12px; font-weight: 600; fill: #eae3d8; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #b7aca0; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 18px; font-weight: 700; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; }
+    .chip-border { stroke: rgba(255,255,255,0.12); stroke-width: 1; }
+    .chip-border-light { stroke: rgba(0,0,0,0.10); stroke-width: 1; }
+  </style>
+  <rect width="${width}" height="${height}" fill="#15141b" rx="16"/>
+  <rect x="20" y="20" width="${width - 40}" height="${height - 40}" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
+  
+  <text x="45" y="60" class="title" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
+  <text x="45" y="82" class="mono subtitle" fill="#e89a49">Single-source specification with strict WCAG 2.1 AAA contrast</text>
+  
+  <!-- Headers -->
+  <text x="45" y="125" class="title" fill="#f4eee1" font-size="14">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
+  <text x="45" y="325" class="title" fill="#f8c88f" font-size="14">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
+`;
+
+  const startX = 45;
+  const chipW = 78;
+  const chipH = 65;
+  const gap = 10;
+
+  tokens.forEach((t, i) => {
+    const x = startX + i * (chipW + gap);
+    
+    // Light Row
+    svg += `
+    <g transform="translate(${x}, 140)">
+      <rect width="${chipW}" height="${chipH}" rx="8" fill="${t.light}" class="chip-border-light"/>
+      <text x="${chipW/2}" y="${chipH + 18}" text-anchor="middle" class="label" fill="#eae3d8">${t.key}</text>
+      <text x="${chipW/2}" y="${chipH + 34}" text-anchor="middle" class="mono">${t.light}</text>
+    </g>`;
+
+    // Dark Row
+    svg += `
+    <g transform="translate(${x}, 340)">
+      <rect width="${chipW}" height="${chipH}" rx="8" fill="${t.dark}" class="chip-border"/>
+      <text x="${chipW/2}" y="${chipH + 18}" text-anchor="middle" class="label" fill="#eae3d8">${t.key}</text>
+      <text x="${chipW/2}" y="${chipH + 34}" text-anchor="middle" class="mono">${t.dark}</text>
+    </g>`;
+  });
+
+  svg += `\n</svg>\n`;
+
+  const assetsDir = path.join(__dirname, "..", "assets");
+  if (!fs.existsSync(assetsDir)) {
+    fs.mkdirSync(assetsDir, { recursive: true });
+  }
+  const svgOutPath = path.join(assetsDir, "swatch-matrix.svg");
+  fs.writeFileSync(svgOutPath, svg, "utf-8");
+  console.log(`Generated ${svgOutPath}`);
+}
+
+generateSvgMatrix();

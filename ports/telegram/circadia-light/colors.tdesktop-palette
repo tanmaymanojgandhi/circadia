@@ -9,12 +9,12 @@ circadiaTx3: #5f6d7a;
 circadiaAccent: #195697;
 
 circadiaRe: #dc2626;
-circadiaOr: #8d4400;
+circadiaOr: #8a2d00;
 circadiaYe: #ca8a04;
-circadiaGr: #1e6822;
-circadiaCy: #00677f;
-circadiaBl: #165084;
-circadiaPu: #6b1d8f;
+circadiaGr: #085802;
+circadiaCy: #7f3500;
+circadiaBl: #09489a;
+circadiaPu: #631c84;
 
 windowBg: circadiaBg;
 windowFg: circadiaTx;

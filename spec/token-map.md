@@ -50,7 +50,7 @@ Explicit mappings for document structures and markdown viewports (Obsidian, Typo
 | **H5**         | `headings.h5`     | `#286fc0` | `headings.h5`    | `#c7792e` | Regular                         |
 | **H6**         | `headings.h6`     | `#2f75c6` | `headings.h6`    | `#b56f2b` | Regular / Small caps            |
 | **Blockquote** | `text_muted`      | `#46535f` | `text_muted`     | `#b7aca0` | _Italic_, left border: `accent` |
-| **Code Span**  | `syntax.function` | `#165084` | `syntax.type`    | `#f1be85` | Background: `bg_element`        |
+| **Code Span**  | `syntax.function` | `#09489a` | `syntax.type`    | `#f1be85` | Background: `bg_element`        |
 
 ---
 
@@ -61,18 +61,18 @@ Direct color slots for terminal emulators (Alacritty, Kitty, WezTerm, iTerm2, Wi
 | ANSI Slot | Color Name       | Day Mode Mapping  | Day Hex   | Night Mode Mapping | Night Hex |
 | --------- | ---------------- | ----------------- | --------- | ------------------ | --------- |
 | **0**     | Black (Normal)   | `ui.bg_element`   | `#e2d8c3` | `ui.bg_canvas`     | `#15141b` |
-| **1**     | Red (Normal)     | `syntax.number`   | `#8d4400` | `headings.h4`      | `#db8935` |
-| **2**     | Green (Normal)   | `syntax.string`   | `#1e6822` | `syntax.string`    | `#a7db76` |
-| **3**     | Yellow (Normal)  | `headings.h4`     | `#236bb5` | `syntax.number`    | `#f6a84d` |
-| **4**     | Blue (Normal)    | `syntax.function` | `#165084` | `syntax.function`  | `#89c8e4` |
-| **5**     | Magenta (Normal) | `syntax.keyword`  | `#6b1d8f` | `syntax.keyword`   | `#e59de8` |
-| **6**     | Cyan (Normal)    | `syntax.type`     | `#00677f` | `syntax.type`      | `#f1be85` |
+| **1**     | Red (Normal)     | `syntax.number`   | `#8a2d00` | `headings.h4`      | `#db8935` |
+| **2**     | Green (Normal)   | `syntax.string`   | `#085802` | `syntax.string`    | `#a7db76` |
+| **3**     | Yellow (Normal)  | `syntax.type`     | `#7f3500` | `syntax.number`    | `#f6a84d` |
+| **4**     | Blue (Normal)    | `syntax.function` | `#09489a` | `syntax.function`  | `#89c8e4` |
+| **5**     | Magenta (Normal) | `syntax.keyword`  | `#631c84` | `syntax.keyword`   | `#e59de8` |
+| **6**     | Cyan (Normal)    | `syntax.type`     | `#7f3500` | `syntax.type`      | `#f1be85` |
 | **7**     | White (Normal)   | `ui.text_primary` | `#28323a` | `ui.text_primary`  | `#eae3d8` |
 | **8**     | Bright Black     | `ui.text_faint`   | `#5f6d7a` | `ui.text_faint`    | `#92887d` |
-| **9**     | Bright Red       | `syntax.number`   | `#8d4400` | `headings.h3`      | `#ea9d49` |
-| **10**    | Bright Green     | `syntax.string`   | `#1e6822` | `syntax.string`    | `#a7db76` |
-| **11**    | Bright Yellow    | `ui.accent`       | `#195697` | `headings.h1`      | `#f8c88f` |
-| **12**    | Bright Blue      | `headings.h3`     | `#1c60a2` | `syntax.function`  | `#89c8e4` |
-| **13**    | Bright Magenta   | `syntax.keyword`  | `#6b1d8f` | `syntax.keyword`   | `#e59de8` |
-| **14**    | Bright Cyan      | `syntax.type`     | `#00677f` | `syntax.type`      | `#f1be85` |
+| **9**     | Bright Red       | `syntax.number`   | `#8a2d00` | `headings.h3`      | `#ea9d49` |
+| **10**    | Bright Green     | `syntax.string`   | `#085802` | `syntax.string`    | `#a7db76` |
+| **11**    | Bright Yellow    | `syntax.type`     | `#7f3500` | `headings.h1`      | `#f8c88f` |
+| **12**    | Bright Blue      | `syntax.function` | `#09489a` | `syntax.function`  | `#89c8e4` |
+| **13**    | Bright Magenta   | `syntax.keyword`  | `#631c84` | `syntax.keyword`   | `#e59de8` |
+| **14**    | Bright Cyan      | `syntax.type`     | `#7f3500` | `syntax.type`      | `#f1be85` |
 | **15**    | Bright White     | `ui.text_primary` | `#28323a` | `ui.text_primary`  | `#eae3d8` |

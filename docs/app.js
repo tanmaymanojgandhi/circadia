@@ -62,13 +62,13 @@ const PALETTE = {
         h6: { hex: "#2f75c6", oklch: "oklch(52.5% 0.115 250)", rgb: [47, 117, 198], role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#6b1d8f", oklch: "oklch(40.0% 0.150 310)", rgb: [107, 29, 143], role: "Keywords & control" },
-        type:     { hex: "#00677f", oklch: "oklch(42.0% 0.100 215)", rgb: [0, 103, 127],   role: "Types & interfaces" },
-        function: { hex: "#165084", oklch: "oklch(41.0% 0.110 250)", rgb: [22, 80, 132],  role: "Functions & methods" },
-        string:   { hex: "#1e6822", oklch: "oklch(43.0% 0.120 145)", rgb: [30, 104, 34],   role: "String literals" },
-        number:   { hex: "#8d4400", oklch: "oklch(45.0% 0.140 55)",  rgb: [141, 68, 0],    role: "Numeric literals" },
-        tag:      { hex: "#195697", oklch: "oklch(44.0% 0.120 250)", rgb: [25, 86, 151],  role: "HTML/JSX tags" },
-        comment:  { hex: "#574f46", oklch: "oklch(43.5% 0.025 60)",  rgb: [87, 79, 70],    role: "Comments" }
+        keyword:  { hex: "#631c84", oklch: "oklch(39.0% 0.165 312)", rgb: [99, 28, 132], role: "Keywords & control" },
+        type:     { hex: "#7f3500", oklch: "oklch(42.5% 0.140 65)",  rgb: [127, 53, 0],   role: "Types & interfaces" },
+        function: { hex: "#09489a", oklch: "oklch(41.0% 0.145 255)", rgb: [9, 72, 154],  role: "Functions & methods" },
+        string:   { hex: "#085802", oklch: "oklch(40.5% 0.145 142)", rgb: [8, 88, 2],    role: "String literals" },
+        number:   { hex: "#8a2d00", oklch: "oklch(43.0% 0.155 48)",  rgb: [138, 45, 0],   role: "Numeric literals" },
+        tag:      { hex: "#09489a", oklch: "oklch(41.0% 0.145 255)", rgb: [9, 72, 154],  role: "HTML/JSX tags" },
+        comment:  { hex: "#574f46", oklch: "oklch(43.5% 0.025 60)",  rgb: [87, 79, 70],   role: "Comments" }
       }
     }
   }
