@@ -4,7 +4,9 @@
 
 Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Obsidian)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.
 
-![Circadia Color Palette Swatch Matrix](assets/swatch-matrix.svg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/assets/swatch-matrix.svg" alt="Circadia Color Palette Swatch Matrix" width="100%">
+</p>
 
 ---
 

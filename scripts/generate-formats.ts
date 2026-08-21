@@ -172,120 +172,129 @@ console.log(`Generated ${csvOutPath}`);
 function generateSvgMatrix() {
   const light = rawSpec.modes.light;
   const dark = rawSpec.modes.dark;
-  const width = 1200;
-  const height = 820;
+  const width = 960;
+  const height = 900;
 
-  const categories = [
+  const rows = [
     {
-      name: "UI Surfaces & Typography",
-      tokens: [
-        { key: "Canvas", lHex: light.ui.bg_canvas.hex, dHex: dark.ui.bg_canvas.hex },
-        { key: "Surface", lHex: light.ui.bg_surface.hex, dHex: dark.ui.bg_surface.hex },
-        { key: "Element", lHex: light.ui.bg_element.hex, dHex: dark.ui.bg_element.hex },
-        { key: "Border", lHex: light.ui.border.hex, dHex: dark.ui.border.hex },
-        { key: "Text Pri", lHex: light.ui.text_primary.hex, dHex: dark.ui.text_primary.hex },
-        { key: "Text Mut", lHex: light.ui.text_muted.hex, dHex: dark.ui.text_muted.hex },
-        { key: "Text Fnt", lHex: light.ui.text_faint.hex, dHex: dark.ui.text_faint.hex },
-        { key: "Accent", lHex: light.ui.accent.hex, dHex: dark.ui.accent.hex },
+      name: "UI Surfaces and Typography",
+      tokensL: [
+        { key: "Canvas", hex: light.ui.bg_canvas.hex },
+        { key: "Surface", hex: light.ui.bg_surface.hex },
+        { key: "Element", hex: light.ui.bg_element.hex },
+        { key: "Border", hex: light.ui.border.hex },
+        { key: "Primary", hex: light.ui.text_primary.hex },
+        { key: "Muted", hex: light.ui.text_muted.hex },
+        { key: "Faint", hex: light.ui.text_faint.hex },
+        { key: "Accent", hex: light.ui.accent.hex }
+      ],
+      tokensD: [
+        { key: "Canvas", hex: dark.ui.bg_canvas.hex },
+        { key: "Surface", hex: dark.ui.bg_surface.hex },
+        { key: "Element", hex: dark.ui.bg_element.hex },
+        { key: "Border", hex: dark.ui.border.hex },
+        { key: "Primary", hex: dark.ui.text_primary.hex },
+        { key: "Muted", hex: dark.ui.text_muted.hex },
+        { key: "Faint", hex: dark.ui.text_faint.hex },
+        { key: "Accent", hex: dark.ui.accent.hex }
       ]
     },
     {
       name: "Syntax Highlighting (Jewel Tones)",
-      tokens: [
-        { key: "Keyword", lHex: light.syntax.keyword.hex, dHex: dark.syntax.keyword.hex },
-        { key: "Type", lHex: light.syntax.type.hex, dHex: dark.syntax.type.hex },
-        { key: "Function", lHex: light.syntax.function.hex, dHex: dark.syntax.function.hex },
-        { key: "String", lHex: light.syntax.string.hex, dHex: dark.syntax.string.hex },
-        { key: "Number", lHex: light.syntax.number.hex, dHex: dark.syntax.number.hex },
-        { key: "Tag", lHex: light.syntax.tag.hex, dHex: dark.syntax.tag.hex },
-        { key: "Comment", lHex: light.syntax.comment.hex, dHex: dark.syntax.comment.hex },
+      tokensL: [
+        { key: "Keyword", hex: light.syntax.keyword.hex },
+        { key: "Type", hex: light.syntax.type.hex },
+        { key: "Function", hex: light.syntax.function.hex },
+        { key: "String", hex: light.syntax.string.hex },
+        { key: "Number", hex: light.syntax.number.hex },
+        { key: "Tag", hex: light.syntax.tag.hex },
+        { key: "Comment", hex: light.syntax.comment.hex }
+      ],
+      tokensD: [
+        { key: "Keyword", hex: dark.syntax.keyword.hex },
+        { key: "Type", hex: dark.syntax.type.hex },
+        { key: "Function", hex: dark.syntax.function.hex },
+        { key: "String", hex: dark.syntax.string.hex },
+        { key: "Number", hex: dark.syntax.number.hex },
+        { key: "Tag", hex: dark.syntax.tag.hex },
+        { key: "Comment", hex: dark.syntax.comment.hex }
       ]
     },
     {
       name: "Heading Scale (H1–H6)",
-      tokens: [
-        { key: "H1", lHex: light.headings.h1.hex, dHex: dark.headings.h1.hex },
-        { key: "H2", lHex: light.headings.h2.hex, dHex: dark.headings.h2.hex },
-        { key: "H3", lHex: light.headings.h3.hex, dHex: dark.headings.h3.hex },
-        { key: "H4", lHex: light.headings.h4.hex, dHex: dark.headings.h4.hex },
-        { key: "H5", lHex: light.headings.h5.hex, dHex: dark.headings.h5.hex },
-        { key: "H6", lHex: light.headings.h6.hex, dHex: dark.headings.h6.hex },
+      tokensL: [
+        { key: "H1", hex: light.headings.h1.hex },
+        { key: "H2", hex: light.headings.h2.hex },
+        { key: "H3", hex: light.headings.h3.hex },
+        { key: "H4", hex: light.headings.h4.hex },
+        { key: "H5", hex: light.headings.h5.hex },
+        { key: "H6", hex: light.headings.h6.hex }
+      ],
+      tokensD: [
+        { key: "H1", hex: dark.headings.h1.hex },
+        { key: "H2", hex: dark.headings.h2.hex },
+        { key: "H3", hex: dark.headings.h3.hex },
+        { key: "H4", hex: dark.headings.h4.hex },
+        { key: "H5", hex: dark.headings.h5.hex },
+        { key: "H6", hex: dark.headings.h6.hex }
       ]
     }
   ];
 
   let svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
+  <!-- Outer Container -->
   <rect width="${width}" height="${height}" fill="#15141b" rx="16"/>
-  <rect x="18" y="18" width="${width - 36}" height="${height - 36}" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
+  <rect x="16" y="16" width="${width - 32}" height="${height - 32}" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
   
-  <!-- Header -->
-  <text x="40" y="55" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
-  <text x="40" y="76" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">Complete 42-Token Semantic Specification with Strict WCAG 2.1 AAA Contrast</text>
-
-  <!-- Light Mode Section -->
-  <g transform="translate(40, 105)">
-    <rect x="-10" y="-10" width="${width - 60}" height="320" rx="10" fill="#f4eee1" opacity="0.04" stroke="#343041" stroke-width="1"/>
-    <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f4eee1">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
+  <!-- Header Title -->
+  <text x="40" y="52" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
+  <text x="40" y="72" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">Complete 42-Token Semantic Specification • Strict WCAG 2.1 AAA Contrast</text>
 `;
 
-  let xOffset = 0;
-  const chipW = 46;
-  const chipH = 50;
-  const gap = 8;
-
-  categories.forEach((cat) => {
-    const headerText = cat.name.toUpperCase().replace(/&/g, "&amp;");
-    svg += `
-    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${headerText}</text>
-    <g transform="translate(${xOffset}, 55)">
+  function renderMode(modeName: string, modeColor: string, isDark: boolean, startY: number): string {
+    const cardH = 370;
+    let s = `
+  <!-- ${modeName} -->
+  <g transform="translate(35, ${startY})">
+    <rect width="890" height="${cardH}" rx="10" fill="${isDark ? "#15141b" : "#f4eee1"}" opacity="${isDark ? "0.6" : "0.05"}" stroke="#343041" stroke-width="1"/>
+    <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="${modeColor}">${modeName}</text>
 `;
-    cat.tokens.forEach((t, i) => {
-      const cx = i * (chipW + gap);
-      svg += `
-      <g transform="translate(${cx}, 0)">
-        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.lHex}" stroke="rgba(0,0,0,0.10)" stroke-width="1"/>
-        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.lHex}</text>
-      </g>`;
+
+    let rowY = 48;
+    const gap = 10;
+    const totalW = 850;
+
+    rows.forEach((r) => {
+      const tokens = isDark ? r.tokensD : r.tokensL;
+      const count = tokens.length;
+      const chipW = Math.floor((totalW - (count - 1) * gap) / count);
+      const chipH = 38;
+
+      s += `
+    <!-- ${r.name} -->
+    <text x="20" y="${rowY + 12}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${r.name.toUpperCase().replace(/&/g, "&amp;")}</text>
+    <g transform="translate(20, ${rowY + 20})">
+`;
+      tokens.forEach((t, i) => {
+        const cx = i * (chipW + gap);
+        s += `      <g transform="translate(${cx}, 0)">
+        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.hex}" stroke="${isDark ? "rgba(255,255,255,0.12)" : "rgba(0,0,0,0.12)"}" stroke-width="1"/>
+        <text x="${chipW/2}" y="${chipH + 15}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
+        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.hex}</text>
+      </g>\n`;
+      });
+      s += `    </g>\n`;
+      rowY += 100;
     });
-    svg += `\n    </g>`;
-    xOffset += cat.tokens.length * (chipW + gap) + 24;
-  });
 
-  svg += `\n  </g>`;
+    s += `  </g>\n`;
+    return s;
+  }
 
-  // Dark Mode Section
-  svg += `
-  <!-- Dark Mode Section -->
-  <g transform="translate(40, 445)">
-    <rect x="-10" y="-10" width="${width - 60}" height="320" rx="10" fill="#15141b" opacity="0.4" stroke="#343041" stroke-width="1"/>
-    <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8c88f">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
-`;
-
-  xOffset = 0;
-  categories.forEach((cat) => {
-    const headerText = cat.name.toUpperCase().replace(/&/g, "&amp;");
-    svg += `
-    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${headerText}</text>
-    <g transform="translate(${xOffset}, 55)">
-`;
-    cat.tokens.forEach((t, i) => {
-      const cx = i * (chipW + gap);
-      svg += `
-      <g transform="translate(${cx}, 0)">
-        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.dHex}" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="${chipW/2}" y="${chipH + 16}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.dHex}</text>
-      </g>`;
-    });
-    svg += `\n    </g>`;
-    xOffset += cat.tokens.length * (chipW + gap) + 24;
-  });
-
-  svg += `\n  </g>`;
-
-  svg += `\n</svg>\n`;
+  svg += renderMode("☀️ Warm Parchment (Light Mode • 300–800+ lux)", "#f4eee1", false, 95);
+  svg += renderMode("🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)", "#f8c88f", true, 490);
+  svg += `</svg>\n`;
 
   const assetsDir = path.join(__dirname, "..", "assets");
   if (!fs.existsSync(assetsDir)) {
