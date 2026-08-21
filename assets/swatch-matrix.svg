@@ -12,7 +12,7 @@
     <rect x="-10" y="-10" width="1140" height="320" rx="10" fill="#f4eee1" opacity="0.04" stroke="#343041" stroke-width="1"/>
     <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f4eee1">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
 
-    <text x="0" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">UI SURFACES & TYPOGRAPHY</text>
+    <text x="0" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
     <g transform="translate(0, 55)">
 
       <g transform="translate(0, 0)">
@@ -135,7 +135,7 @@
     <rect x="-10" y="-10" width="1140" height="320" rx="10" fill="#15141b" opacity="0.4" stroke="#343041" stroke-width="1"/>
     <text x="0" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#f8c88f">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
 
-    <text x="0" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">UI SURFACES & TYPOGRAPHY</text>
+    <text x="0" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
     <g transform="translate(0, 55)">
 
       <g transform="translate(0, 0)">

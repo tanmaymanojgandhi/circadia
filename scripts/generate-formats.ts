@@ -235,8 +235,9 @@ function generateSvgMatrix() {
   const gap = 8;
 
   categories.forEach((cat) => {
+    const headerText = cat.name.toUpperCase().replace(/&/g, "&amp;");
     svg += `
-    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${cat.name.toUpperCase()}</text>
+    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${headerText}</text>
     <g transform="translate(${xOffset}, 55)">
 `;
     cat.tokens.forEach((t, i) => {
@@ -264,8 +265,9 @@ function generateSvgMatrix() {
 
   xOffset = 0;
   categories.forEach((cat) => {
+    const headerText = cat.name.toUpperCase().replace(/&/g, "&amp;");
     svg += `
-    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${cat.name.toUpperCase()}</text>
+    <text x="${xOffset}" y="45" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${headerText}</text>
     <g transform="translate(${xOffset}, 55)">
 `;
     cat.tokens.forEach((t, i) => {
