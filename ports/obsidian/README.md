@@ -28,14 +28,14 @@ $$\text{Color} = \text{oklch}(L \quad C \quad H)$$
 
 | Role / Token | Hex | RGB (32-bit) | OKLCH | Visual Swatch & Character |
 | :--- | :--- | :--- | :--- | :--- |
-| **Editor Canvas (`--k-bg`)** | `#fffdf8` | `255, 253, 248` | `oklch(99.2% 0.007 85)` | 🥛 Warm Milk Paper (Anti-glare) |
-| **Sidebar / Tabs (`--k-bg-2`)** | `#f6f1e6` | `246, 241, 230` | `oklch(96.5% 0.012 85)` | 📜 Soft Parchment |
-| **Hover / Cards (`--k-bg-3`)** | `#ece5d7` | `236, 229, 215` | `oklch(93.0% 0.015 85)` | 🌾 Muted Linen |
-| **App Gutter (`--k-app-bg`)** | `#ece5d7` | `236, 229, 215` | `oklch(93.0% 0.015 85)` | 🏜️ Warm Sand Frame |
-| **Primary Text (`--k-text`)** | `#28323a` | `40, 50, 58` | `oklch(30.0% 0.020 250)` | ✒️ Deep Slate Ink (12.8:1 Contrast) |
-| **Muted Text (`--k-text-muted`)** | `#46535f` | `70, 83, 95` | `oklch(43.0% 0.025 250)` | 🌫️ Warm Graphite (7.7:1 Contrast) |
-| **Faint Text (`--k-text-faint`)** | `#5f6d7a` | `95, 109, 122` | `oklch(53.0% 0.020 250)` | 🌫️ Slate Mist (5.2:1 Contrast) |
-| **Border / Divider (`--k-border`)** | `#d3c8b4` | `211, 200, 180` | `oklch(84.0% 0.020 85)` | 📏 Soft Parchment Border |
+| **Editor Canvas (`--k-bg`)** | `#f4eee1` | `244, 238, 225` | `oklch(95.2% 0.015 85)` | 📜 Warm Linen Paper (Anti-glare) |
+| **Sidebar / Tabs (`--k-bg-2`)** | `#ece4d4` | `236, 228, 212` | `oklch(91.8% 0.018 85)` | 🌾 Soft Parchment |
+| **Hover / Cards (`--k-bg-3`)** | `#e2d8c3` | `226, 216, 195` | `oklch(87.5% 0.022 85)` | 🌾 Muted Linen |
+| **App Gutter (`--k-app-bg`)** | `#e2d8c3` | `226, 216, 195` | `oklch(87.5% 0.022 85)` | 🏜️ Warm Sand Frame |
+| **Primary Text (`--k-text`)** | `#28323a` | `40, 50, 58` | `oklch(30.0% 0.020 250)` | ✒️ Deep Slate Ink (11.3:1 Contrast) |
+| **Muted Text (`--k-text-muted`)** | `#46535f` | `70, 83, 95` | `oklch(43.0% 0.025 250)` | 🌫️ Warm Graphite (6.8:1 Contrast) |
+| **Faint Text (`--k-text-faint`)** | `#5f6d7a` | `95, 109, 122` | `oklch(53.0% 0.020 250)` | 🌫️ Slate Mist (4.6:1 Contrast) |
+| **Border / Divider (`--k-border`)** | `#d4c8b2` | `212, 200, 178` | `oklch(81.5% 0.024 85)` | 📏 Soft Parchment Border |
 | **Accent / Links (`--k-accent`)** | `#195697` | `25, 86, 151` | `oklch(44.0% 0.120 250)` | 🔷 Deep Sapphire Indigo |
 | **Keywords (`--k-keyword`)** | `#6b1d8f` | `107, 29, 143` | `oklch(40.0% 0.150 310)` | 🔮 Royal Amethyst (Zero-Red) |
 | **Classes / Types (`--k-var3`)** | `#00677f` | `0, 103, 127` | `oklch(42.0% 0.100 215)` | 🌊 Deep Sea Teal |
@@ -86,8 +86,8 @@ Both Day and Night themes employ a continuous, non-jarring stepped hierarchy:
 | **H2** | `#20538a` *(Royal Sapphire)* | `#f2b26c` *(Warm Amber)* |
 | **H3** | `#1c60a2` *(Bright Sapphire)* | `#ea9d49` *(Amber Gold)* |
 | **H4** | `#236bb5` *(Sky Sapphire)* | `#db8935` *(Ochre Amber)* |
-| **H5** | `#2f75c2` *(Soft Cornflower)* | `#c7792e` *(Tawny Amber)* |
-| **H6** | `#387ccb` *(Frost Ice)* | `#b56f2b` *(Deep Amber Cinnamon)* |
+| **H5** | `#286fc0` *(Soft Cornflower)* | `#c7792e` *(Tawny Amber)* |
+| **H6** | `#2f75c6` *(Frost Ice)* | `#b56f2b` *(Deep Amber Cinnamon)* |
 
 ---
 

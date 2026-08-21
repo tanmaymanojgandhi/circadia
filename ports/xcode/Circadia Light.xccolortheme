@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>DVTConsoleTextBackgroundColor</key>
-	<string>1.000 0.992 0.973 1</string>
+	<string>0.957 0.933 0.882 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>
 	<string>0.098 0.337 0.592 1</string>
 	<key>DVTConsoleTextSelectionColor</key>
-	<string>0.925 0.898 0.843 1</string>
+	<string>0.886 0.847 0.765 1</string>
 	<key>DVTMarkupTextLinkColor</key>
 	<string>0.098 0.337 0.592 1</string>
 	<key>DVTMarkupTextNormalColor</key>
@@ -17,15 +17,15 @@
 	<key>DVTMarkupTextSecondaryHeadingColor</key>
 	<string>0.125 0.325 0.541 1</string>
 	<key>DVTSourceTextBackground</key>
-	<string>1.000 0.992 0.973 1</string>
+	<string>0.957 0.933 0.882 1</string>
 	<key>DVTSourceTextBlockDimColor</key>
 	<string>0.373 0.427 0.478 1</string>
 	<key>DVTSourceTextInsertionPointColor</key>
 	<string>0.098 0.337 0.592 1</string>
 	<key>DVTSourceTextInvisiblesColor</key>
-	<string>0.827 0.784 0.706 1</string>
+	<string>0.831 0.784 0.698 1</string>
 	<key>DVTSourceTextSelectionColor</key>
-	<string>0.925 0.898 0.843 1</string>
+	<string>0.886 0.847 0.765 1</string>
 	<key>DVTSourceTextSyntaxColors</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>

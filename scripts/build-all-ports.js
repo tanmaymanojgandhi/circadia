@@ -314,34 +314,34 @@ function buildIntellij() {
     <option name="ADDED_LINES_COLOR" value="1e6822" />
     <option name="ANNOTATIONS_COLOR" value="46535f" />
     <option name="CARET_COLOR" value="195697" />
-    <option name="CARET_ROW_COLOR" value="f6f1e6" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="fffdf8" />
+    <option name="CARET_ROW_COLOR" value="ece4d4" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="f4eee1" />
     <option name="DELETED_LINES_COLOR" value="dc2626" />
-    <option name="DOCUMENTATION_COLOR" value="f6f1e6" />
+    <option name="DOCUMENTATION_COLOR" value="ece4d4" />
     <option name="ERROR_HINT" value="dc2626" />
     <option name="FILESTATUS_ADDED" value="1e6822" />
     <option name="FILESTATUS_MODIFIED" value="8d4400" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="165084" />
     <option name="FILESTATUS_UNKNOWN" value="6b1d8f" />
-    <option name="FOLDED_TEXT_BORDER_COLOR" value="d3c8b4" />
-    <option name="GUTTER_BACKGROUND" value="fffdf8" />
-    <option name="INDENT_GUIDE" value="d3c8b4" />
-    <option name="INFORMATION_HINT" value="f6f1e6" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="d4c8b2" />
+    <option name="GUTTER_BACKGROUND" value="f4eee1" />
+    <option name="INDENT_GUIDE" value="d4c8b2" />
+    <option name="INFORMATION_HINT" value="ece4d4" />
     <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="28323a" />
-    <option name="METHOD_SEPARATORS_COLOR" value="d3c8b4" />
+    <option name="METHOD_SEPARATORS_COLOR" value="d4c8b2" />
     <option name="MODIFIED_LINES_COLOR" value="8d4400" />
-    <option name="NOTIFICATION_BACKGROUND" value="ece5d7" />
+    <option name="NOTIFICATION_BACKGROUND" value="e2d8c3" />
     <option name="QUESTION_HINT" value="165084" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="00677f" />
-    <option name="RIGHT_MARGIN_COLOR" value="d3c8b4" />
+    <option name="RIGHT_MARGIN_COLOR" value="d4c8b2" />
     <option name="SELECTED_INDENT_GUIDE" value="5f6d7a" />
     <option name="SELECTED_TEARLINE_COLOR" value="5f6d7a" />
-    <option name="SELECTION_BACKGROUND" value="ece5d7" />
+    <option name="SELECTION_BACKGROUND" value="e2d8c3" />
     <option name="SELECTION_FOREGROUND" value="28323a" />
-    <option name="TEARLINE_COLOR" value="d3c8b4" />
-    <option name="VISUAL_INDENT_GUIDE" value="d3c8b4" />
-    <option name="WHITESPACES" value="d3c8b4" />
+    <option name="TEARLINE_COLOR" value="d4c8b2" />
+    <option name="VISUAL_INDENT_GUIDE" value="d4c8b2" />
+    <option name="WHITESPACES" value="d4c8b2" />
   </colors>
   <attributes>
     <option name="DEFAULT_BLOCK_COMMENT">
@@ -468,7 +468,7 @@ function buildIntellij() {
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="BACKGROUND" value="f6f1e6" />
+        <option name="BACKGROUND" value="ece4d4" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
@@ -479,7 +479,7 @@ function buildIntellij() {
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="28323a" />
-        <option name="BACKGROUND" value="fffdf8" />
+        <option name="BACKGROUND" value="f4eee1" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -536,7 +536,7 @@ function buildIterm2() {
           "#ffffff"               // 15: Bright White
         ]
       : [
-          ui.bg_element.hex,     // 0: Black (#ece5d7)
+          ui.bg_element.hex,     // 0: Black (#e2d8c3)
           syntax.number.hex,      // 1: Red (#8d4400)
           syntax.string.hex,      // 2: Green (#1e6822)
           headings.h4.hex,        // 3: Yellow (#236bb5)
@@ -1044,11 +1044,11 @@ windowSubTextFgOver: circadiaTx;
 windowBoldFg: circadiaTx;
 windowBoldFgOver: circadiaTx;
 windowBgActive: circadiaAccent;
-windowFgActive: ${isDark ? "#15141b" : "#fffdf8"};
+windowFgActive: ${isDark ? "#15141b" : "#f4eee1"};
 windowActiveTextFg: circadiaAccent;
 activeButtonBg: circadiaAccent;
 activeButtonBgOver: circadiaAccent;
-activeButtonFg: ${isDark ? "#15141b" : "#fffdf8"};
+activeButtonFg: ${isDark ? "#15141b" : "#f4eee1"};
 activeButtonSecondaryFg: circadiaTx2;
 `;
   }

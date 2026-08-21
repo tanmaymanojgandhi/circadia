@@ -44,10 +44,10 @@ const PALETTE = {
       tagline: "Daylight • 300–800+ lux",
       type: "light",
       ui: {
-        bg_canvas:     { hex: "#fffdf8", oklch: "oklch(99.2% 0.007 85)",  rgb: [255, 253, 248], role: "Primary canvas" },
-        bg_surface:    { hex: "#f6f1e6", oklch: "oklch(96.5% 0.012 85)",  rgb: [246, 241, 230], role: "Panels & sidebars" },
-        bg_element:    { hex: "#ece5d7", oklch: "oklch(93.0% 0.015 85)",  rgb: [236, 229, 215], role: "Inputs & active states" },
-        border:        { hex: "#d3c8b4", oklch: "oklch(84.0% 0.020 85)",  rgb: [211, 200, 180], role: "Dividers & borders" },
+        bg_canvas:     { hex: "#f4eee1", oklch: "oklch(95.2% 0.015 85)",  rgb: [244, 238, 225], role: "Primary canvas" },
+        bg_surface:    { hex: "#ece4d4", oklch: "oklch(91.8% 0.018 85)",  rgb: [236, 228, 212], role: "Panels & sidebars" },
+        bg_element:    { hex: "#e2d8c3", oklch: "oklch(87.5% 0.022 85)",  rgb: [226, 216, 195], role: "Inputs & active states" },
+        border:        { hex: "#d4c8b2", oklch: "oklch(81.5% 0.024 85)",  rgb: [212, 200, 178], role: "Dividers & borders" },
         text_primary:  { hex: "#28323a", oklch: "oklch(30.0% 0.020 250)", rgb: [40, 50, 58],   role: "Body text" },
         text_muted:    { hex: "#46535f", oklch: "oklch(43.0% 0.025 250)", rgb: [70, 83, 95],   role: "Secondary labels" },
         text_faint:    { hex: "#5f6d7a", oklch: "oklch(53.0% 0.020 250)", rgb: [95, 109, 122], role: "Metadata & disabled" },
@@ -58,8 +58,8 @@ const PALETTE = {
         h2: { hex: "#20538a", oklch: "oklch(42.0% 0.100 250)", rgb: [32, 83, 138],  role: "Section Header (h2)" },
         h3: { hex: "#1c60a2", oklch: "oklch(46.0% 0.110 250)", rgb: [28, 96, 162],  role: "Subsection Header (h3)" },
         h4: { hex: "#236bb5", oklch: "oklch(49.0% 0.115 250)", rgb: [35, 107, 181], role: "Sub-subsection (h4)" },
-        h5: { hex: "#2f75c2", oklch: "oklch(52.0% 0.115 250)", rgb: [47, 117, 194], role: "Minor Header (h5)" },
-        h6: { hex: "#387ccb", oklch: "oklch(54.0% 0.115 250)", rgb: [56, 124, 203], role: "Caption / Detail (h6)" }
+        h5: { hex: "#286fc0", oklch: "oklch(51.0% 0.115 250)", rgb: [40, 111, 192], role: "Minor Header (h5)" },
+        h6: { hex: "#2f75c6", oklch: "oklch(52.5% 0.115 250)", rgb: [47, 117, 198], role: "Caption / Detail (h6)" }
       },
       syntax: {
         keyword:  { hex: "#6b1d8f", oklch: "oklch(40.0% 0.150 310)", rgb: [107, 29, 143], role: "Keywords & control" },

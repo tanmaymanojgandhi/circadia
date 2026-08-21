@@ -2,16 +2,16 @@
 # Perceptually uniform, low-strain daylight mode
 
 [colors.primary]
-background = "#fffdf8"
+background = "#f4eee1"
 foreground = "#28323a"
 
 [colors.cursor]
-text = "#fffdf8"
+text = "#f4eee1"
 cursor = "#195697"
 
 [colors.selection]
 text = "#28323a"
-background = "#ece5d7"
+background = "#e2d8c3"
 
 [colors.normal]
 black   = "#28323a"

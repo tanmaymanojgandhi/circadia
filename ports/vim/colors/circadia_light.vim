@@ -14,10 +14,10 @@ endif
 
 let g:color_name = "circadia_light"
 
-let s:bg        = "#fffdf8"
-let s:bg_surf   = "#f6f1e6"
-let s:bg_elem   = "#ece5d7"
-let s:border    = "#d3c8b4"
+let s:bg        = "#f4eee1"
+let s:bg_surf   = "#ece4d4"
+let s:bg_elem   = "#e2d8c3"
+let s:border    = "#d4c8b2"
 let s:fg        = "#28323a"
 let s:muted     = "#46535f"
 let s:faint     = "#5f6d7a"

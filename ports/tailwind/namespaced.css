@@ -2,10 +2,10 @@
 
 /* Circadia Design Tokens for Tailwind CSS v4 */
 @theme {
-  --color-circadia-canvas:         #fffdf8;
-  --color-circadia-surface:        #f6f1e6;
-  --color-circadia-element:        #ece5d7;
-  --color-circadia-border:         #d3c8b4;
+  --color-circadia-canvas:         #f4eee1;
+  --color-circadia-surface:        #ece4d4;
+  --color-circadia-element:        #e2d8c3;
+  --color-circadia-border:         #d4c8b2;
   --color-circadia-text:           #28323a;
   --color-circadia-muted:          #46535f;
   --color-circadia-faint:          #5f6d7a;

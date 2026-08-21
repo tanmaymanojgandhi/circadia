@@ -12,28 +12,28 @@
     color-scheme: light;
 
     /* Warm Parchment Palette */
-    --k-bg: #fffdf8;
-    /* Editor surface (Warm Milk Paper) */
-    --k-bg-2: #f6f1e6;
+    --k-bg: #f4eee1;
+    /* Editor surface (Warm Linen Paper) */
+    --k-bg-2: #ece4d4;
     /* Secondary surface / tabs */
-    --k-bg-3: #ece5d7;
+    --k-bg-3: #e2d8c3;
     /* Hover / tertiary surface */
-    --k-app-bg: #ece5d7;
+    --k-app-bg: #e2d8c3;
     /* Outer app gutter */
 
     --k-text: #28323a;
     --k-text-muted: #46535f;
     --k-text-faint: #5f6d7a;
 
-    --k-border: #d3c8b4;
-    --k-border-strong: #c2b59e;
-    --k-table-border: #d3c8b4;
+    --k-border: #d4c8b2;
+    --k-border-strong: #c4b79f;
+    --k-table-border: #d4c8b2;
 
     --k-accent: #195697;
     --k-accent-hover: #165084;
     --k-accent-rgb: 25, 86, 151;
 
-    --k-code-bg: #ece5d7;
+    --k-code-bg: #e2d8c3;
     --k-code-text: #28323a;
     --k-mark-bg: #ffebb8;
 
@@ -101,8 +101,8 @@
     --h2-color: #20538a;
     --h3-color: #1c60a2;
     --h4-color: #236bb5;
-    --h5-color: #2f75c2;
-    --h6-color: #387ccb;
+    --h5-color: #286fc0;
+    --h6-color: #2f75c6;
 
     --link-color: var(--k-accent);
     --link-color-hover: var(--k-accent-hover);
@@ -113,7 +113,7 @@
 
     /* Shadows & Modals */
     --k-card-shadow: 0 1px 3px rgba(40, 50, 58, 0.05), 0 4px 12px rgba(40, 50, 58, 0.04);
-    --k-modal-bg: rgba(255, 253, 248, 0.97);
+    --k-modal-bg: rgba(244, 238, 225, 0.97);
     --k-modal-shadow: 0 16px 36px rgba(40, 50, 58, 0.16);
 
     /* Checkbox & List Tokens */
@@ -124,8 +124,8 @@
     --checkbox-border-color: var(--k-border-strong);
 
     /* Toggle Switches */
-    --toggle-background: #d3c8b4;
-    --toggle-border-color: #c2b59e;
+    --toggle-background: #d4c8b2;
+    --toggle-border-color: #c4b79f;
     --toggle-thumb-color: #5f6d7a;
     --toggle-background-active: var(--k-accent);
     --toggle-border-color-active: var(--k-accent);

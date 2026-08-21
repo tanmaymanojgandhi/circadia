@@ -1,10 +1,10 @@
 -- Circadia Color Palette Definitions (Derived from spec/palette.json)
 local M = {
   light = {
-    bg_canvas = "#fffdf8",
-    bg_surface = "#f6f1e6",
-    bg_element = "#ece5d7",
-    border = "#d3c8b4",
+    bg_canvas = "#f4eee1",
+    bg_surface = "#ece4d4",
+    bg_element = "#e2d8c3",
+    border = "#d4c8b2",
     text_primary = "#28323a",
     text_muted = "#46535f",
     text_faint = "#5f6d7a",
@@ -20,8 +20,8 @@ local M = {
     h2 = "#20538a",
     h3 = "#1c60a2",
     h4 = "#236bb5",
-    h5 = "#2f75c2",
-    h6 = "#387ccb",
+    h5 = "#286fc0",
+    h6 = "#2f75c6",
   },
   dark = {
     bg_canvas = "#15141b",

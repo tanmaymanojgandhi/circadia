@@ -47,8 +47,8 @@ Explicit mappings for document structures and markdown viewports (Obsidian, Typo
 | **H2**         | `headings.h2`     | `#20538a` | `headings.h2`    | `#f2b26c` | **Bold**                        |
 | **H3**         | `headings.h3`     | `#1c60a2` | `headings.h3`    | `#ea9d49` | **Semi-bold**                   |
 | **H4**         | `headings.h4`     | `#236bb5` | `headings.h4`    | `#db8935` | Regular/Medium                  |
-| **H5**         | `headings.h5`     | `#2f75c2` | `headings.h5`    | `#c7792e` | Regular                         |
-| **H6**         | `headings.h6`     | `#387ccb` | `headings.h6`    | `#b56f2b` | Regular / Small caps            |
+| **H5**         | `headings.h5`     | `#286fc0` | `headings.h5`    | `#c7792e` | Regular                         |
+| **H6**         | `headings.h6`     | `#2f75c6` | `headings.h6`    | `#b56f2b` | Regular / Small caps            |
 | **Blockquote** | `text_muted`      | `#46535f` | `text_muted`     | `#b7aca0` | _Italic_, left border: `accent` |
 | **Code Span**  | `syntax.function` | `#165084` | `syntax.type`    | `#f1be85` | Background: `bg_element`        |
 
@@ -60,7 +60,7 @@ Direct color slots for terminal emulators (Alacritty, Kitty, WezTerm, iTerm2, Wi
 
 | ANSI Slot | Color Name       | Day Mode Mapping  | Day Hex   | Night Mode Mapping | Night Hex |
 | --------- | ---------------- | ----------------- | --------- | ------------------ | --------- |
-| **0**     | Black (Normal)   | `ui.bg_element`   | `#ece5d7` | `ui.bg_canvas`     | `#15141b` |
+| **0**     | Black (Normal)   | `ui.bg_element`   | `#e2d8c3` | `ui.bg_canvas`     | `#15141b` |
 | **1**     | Red (Normal)     | `syntax.number`   | `#8d4400` | `headings.h4`      | `#db8935` |
 | **2**     | Green (Normal)   | `syntax.string`   | `#1e6822` | `syntax.string`    | `#a7db76` |
 | **3**     | Yellow (Normal)  | `headings.h4`     | `#236bb5` | `syntax.number`    | `#f6a84d` |

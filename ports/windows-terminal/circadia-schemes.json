@@ -2,10 +2,10 @@
   "schemes": [
     {
       "name": "Circadia Light",
-      "background": "#FFFDF8",
+      "background": "#F4EEE1",
       "foreground": "#28323A",
       "cursorColor": "#195697",
-      "selectionBackground": "#ECE5D7",
+      "selectionBackground": "#E2D8C3",
       "black": "#28323A",
       "red": "#8D4400",
       "green": "#1E6822",

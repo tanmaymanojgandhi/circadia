@@ -12,7 +12,7 @@ Circadia is an open color specification engineered in OKLCH for cross-platform e
 
 | Mode                               | Environment      | Target Lux   | Canvas Background                    | Primary Foreground                   | Primary Accent                       |
 | :--------------------------------- | :--------------- | :----------- | :----------------------------------- | :----------------------------------- | :----------------------------------- |
-| **Light** (`Warm Parchment`)       | Bright ambient   | 300–800+ lux | `#fffdf8` (`oklch(99.2% 0.007 85)`)  | `#28323a` (`oklch(30.0% 0.020 250)`) | `#195697` (`oklch(44.0% 0.120 250)`) |
+| **Light** (`Warm Parchment`)       | Bright ambient   | 300–800+ lux | `#f4eee1` (`oklch(95.2% 0.015 85)`)  | `#28323a` (`oklch(30.0% 0.020 250)`) | `#195697` (`oklch(44.0% 0.120 250)`) |
 | **Dark** (`Warm Ember & Obsidian`) | Low light / dark | 0–50 lux     | `#15141b` (`oklch(19.0% 0.012 290)`) | `#eae3d8` (`oklch(91.0% 0.015 85)`)  | `#e89a49` (`oklch(75.0% 0.130 65)`)  |
 
 ---

@@ -2,35 +2,35 @@
   "name": "Circadia — Warm Parchment",
   "type": "light",
   "colors": {
-    "editor.background": "#fffdf8",
+    "editor.background": "#f4eee1",
     "editor.foreground": "#28323a",
     "editorLineNumber.foreground": "#5f6d7a",
     "editorLineNumber.activeForeground": "#46535f",
-    "editor.selectionBackground": "#ece5d7",
+    "editor.selectionBackground": "#e2d8c3",
     "editorCursor.foreground": "#195697",
-    "sideBar.background": "#f6f1e6",
+    "sideBar.background": "#ece4d4",
     "sideBar.foreground": "#46535f",
-    "sideBar.border": "#d3c8b4",
-    "activityBar.background": "#f6f1e6",
+    "sideBar.border": "#d4c8b2",
+    "activityBar.background": "#ece4d4",
     "activityBar.foreground": "#28323a",
-    "tab.activeBackground": "#fffdf8",
-    "tab.inactiveBackground": "#f6f1e6",
+    "tab.activeBackground": "#f4eee1",
+    "tab.inactiveBackground": "#ece4d4",
     "tab.activeBorder": "#195697",
-    "editorGroupHeader.tabsBackground": "#f6f1e6",
-    "panel.background": "#f6f1e6",
-    "panel.border": "#d3c8b4",
-    "editorWidget.background": "#f6f1e6",
-    "input.background": "#ece5d7",
+    "editorGroupHeader.tabsBackground": "#ece4d4",
+    "panel.background": "#ece4d4",
+    "panel.border": "#d4c8b2",
+    "editorWidget.background": "#ece4d4",
+    "input.background": "#e2d8c3",
     "input.foreground": "#28323a",
-    "input.border": "#d3c8b4",
+    "input.border": "#d4c8b2",
     "focusBorder": "#195697",
     "textLink.foreground": "#195697",
-    "editorIndentGuide.background": "#d3c8b4",
+    "editorIndentGuide.background": "#d4c8b2",
     "editorIndentGuide.activeBackground": "#5f6d7a",
     "editorBracketMatch.border": "#195697",
-    "statusBar.background": "#f6f1e6",
+    "statusBar.background": "#ece4d4",
     "statusBar.foreground": "#46535f",
-    "titleBar.activeBackground": "#f6f1e6",
+    "titleBar.activeBackground": "#ece4d4",
     "titleBar.activeForeground": "#28323a"
   },
   "tokenColors": [
@@ -136,7 +136,7 @@
         "markup.heading.5"
       ],
       "settings": {
-        "foreground": "#2f75c2"
+        "foreground": "#286fc0"
       }
     },
     {
@@ -144,7 +144,7 @@
         "markup.heading.6"
       ],
       "settings": {
-        "foreground": "#387ccb"
+        "foreground": "#2f75c6"
       }
     }
   ]
