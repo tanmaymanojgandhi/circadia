@@ -172,8 +172,10 @@ console.log(`Generated ${csvOutPath}`);
 function generateSvgMatrix() {
   const light = rawSpec.modes.light;
   const dark = rawSpec.modes.dark;
-  const width = 960;
-  const height = 900;
+  const width = 1120;
+  const height = 520;
+  const cardW = 520;
+  const cardH = 405;
 
   const rows = [
     {
@@ -183,9 +185,9 @@ function generateSvgMatrix() {
         { key: "Surface", hex: light.ui.bg_surface.hex },
         { key: "Element", hex: light.ui.bg_element.hex },
         { key: "Border", hex: light.ui.border.hex },
-        { key: "Primary", hex: light.ui.text_primary.hex },
-        { key: "Muted", hex: light.ui.text_muted.hex },
-        { key: "Faint", hex: light.ui.text_faint.hex },
+        { key: "Text Pri", hex: light.ui.text_primary.hex },
+        { key: "Text Mut", hex: light.ui.text_muted.hex },
+        { key: "Text Fnt", hex: light.ui.text_faint.hex },
         { key: "Accent", hex: light.ui.accent.hex }
       ],
       tokensD: [
@@ -193,9 +195,9 @@ function generateSvgMatrix() {
         { key: "Surface", hex: dark.ui.bg_surface.hex },
         { key: "Element", hex: dark.ui.bg_element.hex },
         { key: "Border", hex: dark.ui.border.hex },
-        { key: "Primary", hex: dark.ui.text_primary.hex },
-        { key: "Muted", hex: dark.ui.text_muted.hex },
-        { key: "Faint", hex: dark.ui.text_faint.hex },
+        { key: "Text Pri", hex: dark.ui.text_primary.hex },
+        { key: "Text Mut", hex: dark.ui.text_muted.hex },
+        { key: "Text Fnt", hex: dark.ui.text_faint.hex },
         { key: "Accent", hex: dark.ui.accent.hex }
       ]
     },
@@ -243,57 +245,69 @@ function generateSvgMatrix() {
 
   let svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
-  <!-- Outer Container -->
-  <rect width="${width}" height="${height}" fill="#15141b" rx="16"/>
-  <rect x="16" y="16" width="${width - 32}" height="${height - 32}" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
+  <!-- Background Frame -->
+  <rect width="${width}" height="${height}" fill="#0f0e13" rx="16"/>
   
   <!-- Header Title -->
-  <text x="40" y="52" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
-  <text x="40" y="72" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">Complete 42-Token Semantic Specification • Strict WCAG 2.1 AAA Contrast</text>
+  <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="20" font-weight="700" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
+  <text x="30" y="62" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">42-Token Semantic Specification • Native Canvas Comparison • Strict WCAG 2.1 AAA</text>
 `;
 
-  function renderMode(modeName: string, modeColor: string, isDark: boolean, startY: number): string {
-    const cardH = 370;
+  function renderColumn(isDark: boolean, startX: number): string {
+    const bg = isDark ? "#15141b" : "#f4eee1";
+    const border = isDark ? "#343041" : "#d4c8b2";
+    const titleCol = isDark ? "#eae3d8" : "#28323a";
+    const subCol = isDark ? "#e89a49" : "#09489a";
+    const headerTitle = isDark ? "🌙 Warm Ember &amp; Obsidian (Dark)" : "☀️ Warm Parchment (Light)";
+    const luxText = isDark ? "0–50 lux • Halation-Free Night" : "300–800+ lux • Anti-Glare Day";
+    const labelCol = isDark ? "#eae3d8" : "#28323a";
+    const monoCol = isDark ? "#b7aca0" : "#5f6d7a";
+    const chipBorder = isDark ? "rgba(255,255,255,0.12)" : "rgba(0,0,0,0.12)";
+    const catCol = isDark ? "#b7aca0" : "#46535f";
+
     let s = `
-  <!-- ${modeName} -->
-  <g transform="translate(35, ${startY})">
-    <rect width="890" height="${cardH}" rx="10" fill="${isDark ? "#15141b" : "#f4eee1"}" opacity="${isDark ? "0.6" : "0.05"}" stroke="#343041" stroke-width="1"/>
-    <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="${modeColor}">${modeName}</text>
+  <!-- ${isDark ? "Dark Column" : "Light Column"} -->
+  <g transform="translate(${startX}, 80)">
+    <rect width="${cardW}" height="${cardH}" rx="12" fill="${bg}" stroke="${border}" stroke-width="1.5"/>
+    
+    <!-- Column Title -->
+    <text x="22" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="${titleCol}">${headerTitle}</text>
+    <text x="22" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="${subCol}">${luxText}</text>
 `;
 
-    let rowY = 48;
-    const gap = 10;
-    const totalW = 850;
+    let rowY = 62;
+    const totalW = cardW - 44; // 476px usable
 
     rows.forEach((r) => {
       const tokens = isDark ? r.tokensD : r.tokensL;
       const count = tokens.length;
+      const gap = 8;
       const chipW = Math.floor((totalW - (count - 1) * gap) / count);
-      const chipH = 38;
+      const chipH = 42;
 
       s += `
-    <!-- ${r.name} -->
-    <text x="20" y="${rowY + 12}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#b7aca0" letter-spacing="0.5">${r.name.toUpperCase().replace(/&/g, "&amp;")}</text>
-    <g transform="translate(20, ${rowY + 20})">
+    <!-- Row: ${r.name} -->
+    <text x="22" y="${rowY + 12}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10.5" font-weight="600" fill="${catCol}" letter-spacing="0.5">${r.name.toUpperCase()}</text>
+    <g transform="translate(22, ${rowY + 20})">
 `;
       tokens.forEach((t, i) => {
         const cx = i * (chipW + gap);
         s += `      <g transform="translate(${cx}, 0)">
-        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.hex}" stroke="${isDark ? "rgba(255,255,255,0.12)" : "rgba(0,0,0,0.12)"}" stroke-width="1"/>
-        <text x="${chipW/2}" y="${chipH + 15}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="11" font-weight="600" fill="#eae3d8">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 28}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="10" fill="#b7aca0">${t.hex}</text>
+        <rect width="${chipW}" height="${chipH}" rx="6" fill="${t.hex}" stroke="${chipBorder}" stroke-width="1"/>
+        <text x="${chipW/2}" y="${chipH + 15}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="${labelCol}">${t.key}</text>
+        <text x="${chipW/2}" y="${chipH + 27}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="9" fill="${monoCol}">${t.hex}</text>
       </g>\n`;
       });
       s += `    </g>\n`;
-      rowY += 100;
+      rowY += 105;
     });
 
     s += `  </g>\n`;
     return s;
   }
 
-  svg += renderMode("☀️ Warm Parchment (Light Mode • 300–800+ lux)", "#f4eee1", false, 95);
-  svg += renderMode("🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)", "#f8c88f", true, 490);
+  svg += renderColumn(false, 25);  // Light Column Left
+  svg += renderColumn(true, 575);  // Dark Column Right
   svg += `</svg>\n`;
 
   const assetsDir = path.join(__dirname, "..", "assets");
