@@ -1,140 +1,265 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 540" width="1140" height="540">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="1200" height="820">
   <style>
-    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 12px; font-weight: 600; fill: #eae3d8; }
-    .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; fill: #b7aca0; }
-    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 18px; font-weight: 700; }
-    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 700; fill: #eae3d8; }
+    .subtitle { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px; fill: #e89a49; }
+    .mode-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; font-weight: 700; }
+    .cat-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; font-weight: 600; fill: #b7aca0; text-transform: uppercase; letter-spacing: 0.5px; }
+    .chip-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; font-weight: 600; fill: #eae3d8; }
+    .chip-mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 10px; fill: #b7aca0; }
     .chip-border { stroke: rgba(255,255,255,0.12); stroke-width: 1; }
     .chip-border-light { stroke: rgba(0,0,0,0.10); stroke-width: 1; }
   </style>
-  <rect width="1140" height="540" fill="#15141b" rx="16"/>
-  <rect x="20" y="20" width="1100" height="500" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
+  <rect width="1200" height="820" fill="#15141b" rx="16"/>
+  <rect x="18" y="18" width="1164" height="784" fill="#1c1a24" rx="12" stroke="#343041" stroke-width="1.5"/>
   
-  <text x="45" y="60" class="title" fill="#eae3d8">Circadia OKLCH Color Palette Matrix</text>
-  <text x="45" y="82" class="mono subtitle" fill="#e89a49">Single-source specification with strict WCAG 2.1 AAA contrast</text>
-  
-  <!-- Headers -->
-  <text x="45" y="125" class="title" fill="#f4eee1" font-size="14">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
-  <text x="45" y="325" class="title" fill="#f8c88f" font-size="14">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
+  <!-- Header -->
+  <text x="40" y="55" class="title">Circadia OKLCH Color Palette Matrix</text>
+  <text x="40" y="76" class="subtitle">Complete 42-Token Semantic Specification with Strict WCAG 2.1 AAA Contrast</text>
 
-    <g transform="translate(45, 140)">
-      <rect width="78" height="65" rx="8" fill="#f4eee1" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Canvas</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#f4eee1</text>
+  <!-- Light Mode Section -->
+  <g transform="translate(40, 105)">
+    <rect x="-10" y="-10" width="1140" height="320" rx="10" fill="#f4eee1" opacity="0.04" stroke="#343041" stroke-width="1"/>
+    <text x="0" y="15" class="mode-header" fill="#f4eee1">☀️ Warm Parchment (Light Mode • 300–800+ lux)</text>
+
+    <text x="0" y="45" class="cat-header">UI Surfaces & Typography</text>
+    <g transform="translate(0, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#f4eee1" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Canvas</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#f4eee1</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#ece4d4" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Surface</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#ece4d4</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#e2d8c3" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Element</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#e2d8c3</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#d4c8b2" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Border</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#d4c8b2</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#28323a" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Pri</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#28323a</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#46535f" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Mut</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#46535f</text>
+      </g>
+      <g transform="translate(324, 0)">
+        <rect width="46" height="50" rx="6" fill="#5f6d7a" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Fnt</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#5f6d7a</text>
+      </g>
+      <g transform="translate(378, 0)">
+        <rect width="46" height="50" rx="6" fill="#195697" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Accent</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#195697</text>
+      </g>
     </g>
-    <g transform="translate(45, 340)">
-      <rect width="78" height="65" rx="8" fill="#15141b" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Canvas</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#15141b</text>
+    <text x="456" y="45" class="cat-header">Syntax Highlighting (Jewel Tones)</text>
+    <g transform="translate(456, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#631c84" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Keyword</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#631c84</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#7f3500" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Type</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#7f3500</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#09489a" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Function</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#09489a</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#085802" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">String</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#085802</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#8a2d00" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Number</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#8a2d00</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#09489a" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Tag</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#09489a</text>
+      </g>
+      <g transform="translate(324, 0)">
+        <rect width="46" height="50" rx="6" fill="#574f46" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Comment</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#574f46</text>
+      </g>
     </g>
-    <g transform="translate(133, 140)">
-      <rect width="78" height="65" rx="8" fill="#ece4d4" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Surface</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#ece4d4</text>
+    <text x="858" y="45" class="cat-header">Heading Scale (H1–H6)</text>
+    <g transform="translate(858, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#1c4470" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H1</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#1c4470</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#20538a" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H2</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#20538a</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#1c60a2" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H3</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#1c60a2</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#236bb5" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H4</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#236bb5</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#286fc0" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H5</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#286fc0</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#2f75c6" class="chip-border-light"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H6</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#2f75c6</text>
+      </g>
     </g>
-    <g transform="translate(133, 340)">
-      <rect width="78" height="65" rx="8" fill="#1c1a24" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Surface</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#1c1a24</text>
+  </g>
+  <!-- Dark Mode Section -->
+  <g transform="translate(40, 445)">
+    <rect x="-10" y="-10" width="1140" height="320" rx="10" fill="#15141b" opacity="0.4" stroke="#343041" stroke-width="1"/>
+    <text x="0" y="15" class="mode-header" fill="#f8c88f">🌙 Warm Ember &amp; Obsidian (Dark Mode • 0–50 lux)</text>
+
+    <text x="0" y="45" class="cat-header">UI Surfaces & Typography</text>
+    <g transform="translate(0, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#15141b" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Canvas</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#15141b</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#1c1a24" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Surface</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#1c1a24</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#252330" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Element</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#252330</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#343041" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Border</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#343041</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#eae3d8" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Pri</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#eae3d8</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#b7aca0" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Mut</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#b7aca0</text>
+      </g>
+      <g transform="translate(324, 0)">
+        <rect width="46" height="50" rx="6" fill="#92887d" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Text Fnt</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#92887d</text>
+      </g>
+      <g transform="translate(378, 0)">
+        <rect width="46" height="50" rx="6" fill="#e89a49" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Accent</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#e89a49</text>
+      </g>
     </g>
-    <g transform="translate(221, 140)">
-      <rect width="78" height="65" rx="8" fill="#e2d8c3" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Element</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#e2d8c3</text>
+    <text x="456" y="45" class="cat-header">Syntax Highlighting (Jewel Tones)</text>
+    <g transform="translate(456, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#e59de8" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Keyword</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#e59de8</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#f1be85" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Type</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#f1be85</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#89c8e4" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Function</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#89c8e4</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#a7db76" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">String</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#a7db76</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#f6a84d" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Number</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#f6a84d</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#e89a49" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Tag</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#e89a49</text>
+      </g>
+      <g transform="translate(324, 0)">
+        <rect width="46" height="50" rx="6" fill="#b3aba0" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">Comment</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#b3aba0</text>
+      </g>
     </g>
-    <g transform="translate(221, 340)">
-      <rect width="78" height="65" rx="8" fill="#252330" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Element</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#252330</text>
+    <text x="858" y="45" class="cat-header">Heading Scale (H1–H6)</text>
+    <g transform="translate(858, 55)">
+
+      <g transform="translate(0, 0)">
+        <rect width="46" height="50" rx="6" fill="#f8c88f" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H1</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#f8c88f</text>
+      </g>
+      <g transform="translate(54, 0)">
+        <rect width="46" height="50" rx="6" fill="#f2b26c" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H2</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#f2b26c</text>
+      </g>
+      <g transform="translate(108, 0)">
+        <rect width="46" height="50" rx="6" fill="#ea9d49" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H3</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#ea9d49</text>
+      </g>
+      <g transform="translate(162, 0)">
+        <rect width="46" height="50" rx="6" fill="#db8935" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H4</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#db8935</text>
+      </g>
+      <g transform="translate(216, 0)">
+        <rect width="46" height="50" rx="6" fill="#c7792e" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H5</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#c7792e</text>
+      </g>
+      <g transform="translate(270, 0)">
+        <rect width="46" height="50" rx="6" fill="#b56f2b" class="chip-border"/>
+        <text x="23" y="66" text-anchor="middle" class="chip-label">H6</text>
+        <text x="23" y="78" text-anchor="middle" class="chip-mono">#b56f2b</text>
+      </g>
     </g>
-    <g transform="translate(309, 140)">
-      <rect width="78" height="65" rx="8" fill="#28323a" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Text</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#28323a</text>
-    </g>
-    <g transform="translate(309, 340)">
-      <rect width="78" height="65" rx="8" fill="#eae3d8" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Text</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#eae3d8</text>
-    </g>
-    <g transform="translate(397, 140)">
-      <rect width="78" height="65" rx="8" fill="#46535f" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Muted</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#46535f</text>
-    </g>
-    <g transform="translate(397, 340)">
-      <rect width="78" height="65" rx="8" fill="#b7aca0" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Muted</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#b7aca0</text>
-    </g>
-    <g transform="translate(485, 140)">
-      <rect width="78" height="65" rx="8" fill="#195697" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Accent</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#195697</text>
-    </g>
-    <g transform="translate(485, 340)">
-      <rect width="78" height="65" rx="8" fill="#e89a49" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Accent</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#e89a49</text>
-    </g>
-    <g transform="translate(573, 140)">
-      <rect width="78" height="65" rx="8" fill="#631c84" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Keyword</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#631c84</text>
-    </g>
-    <g transform="translate(573, 340)">
-      <rect width="78" height="65" rx="8" fill="#e59de8" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Keyword</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#e59de8</text>
-    </g>
-    <g transform="translate(661, 140)">
-      <rect width="78" height="65" rx="8" fill="#7f3500" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Type</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#7f3500</text>
-    </g>
-    <g transform="translate(661, 340)">
-      <rect width="78" height="65" rx="8" fill="#f1be85" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Type</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#f1be85</text>
-    </g>
-    <g transform="translate(749, 140)">
-      <rect width="78" height="65" rx="8" fill="#09489a" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Function</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#09489a</text>
-    </g>
-    <g transform="translate(749, 340)">
-      <rect width="78" height="65" rx="8" fill="#89c8e4" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Function</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#89c8e4</text>
-    </g>
-    <g transform="translate(837, 140)">
-      <rect width="78" height="65" rx="8" fill="#085802" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">String</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#085802</text>
-    </g>
-    <g transform="translate(837, 340)">
-      <rect width="78" height="65" rx="8" fill="#a7db76" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">String</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#a7db76</text>
-    </g>
-    <g transform="translate(925, 140)">
-      <rect width="78" height="65" rx="8" fill="#8a2d00" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Number</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#8a2d00</text>
-    </g>
-    <g transform="translate(925, 340)">
-      <rect width="78" height="65" rx="8" fill="#f6a84d" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Number</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#f6a84d</text>
-    </g>
-    <g transform="translate(1013, 140)">
-      <rect width="78" height="65" rx="8" fill="#574f46" class="chip-border-light"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Comment</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#574f46</text>
-    </g>
-    <g transform="translate(1013, 340)">
-      <rect width="78" height="65" rx="8" fill="#b3aba0" class="chip-border"/>
-      <text x="39" y="83" text-anchor="middle" class="label" fill="#eae3d8">Comment</text>
-      <text x="39" y="99" text-anchor="middle" class="mono">#b3aba0</text>
-    </g>
+  </g>
 </svg>
