@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "version": "1.0.0",
   "name": "Circadia Dark",
-  "description": "Circadia Dark theme (Warm Ember & Obsidian) for Google Chrome",
+  "description": "Circadia Dark theme (Warm Ember & Espresso) for Google Chrome",
   "theme": {
     "colors": {
       "frame": [

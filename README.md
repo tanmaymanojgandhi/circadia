@@ -2,7 +2,7 @@
 
 > **Perceptually uniform, low-strain themes engineered for continuous focus.**
 
-Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Obsidian)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.
+Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Espresso)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/assets/swatch-matrix.svg" alt="Circadia Color Palette Swatch Matrix" width="100%">
@@ -12,7 +12,7 @@ Circadia is an open color specification engineered in OKLCH for cross-platform e
 
 ## 🎨 Palette Specification & Swatch Matrix
 
-| Token | Semantic Role | ☀️ Light (`Warm Parchment`) | 🌙 Dark (`Warm Ember & Obsidian`) |
+| Token | Semantic Role | ☀️ Light (`Warm Parchment`) | 🌙 Dark (`Warm Ember & Espresso`) |
 | :--- | :--- | :--- | :--- |
 | **`bg_canvas`** | Canvas Background | `#f7f2e6`<br>`oklch(96.0% 0.013 85)`<br>*(Base Canvas)* | `#17130f`<br>`oklch(19.0% 0.010 67)`<br>*(Base Canvas)* |
 | **`bg_surface`** | Sidebars & Inactive Tabs | `#eee7d6`<br>`oklch(92.5% 0.016 85)`<br>*(UI Surface)* | `#1e1a15`<br>`oklch(22.0% 0.012 67)`<br>*(UI Surface)* |
@@ -47,7 +47,7 @@ A well-documented optical phenomenon discovered by physicist Hermann von Helmhol
 * **Why Dark themes excel on computer monitors:** Computer screens are *active light emitters* (thousands of LEDs blasting lumens). In Light Mode, 90% of the screen acts as a backlight shining directly into your pupils, triggering pupil constriction. In Dark Mode, only the glyphs emit light.
 
 ### 3. Circadian Ambient Lux Targeting
-* **Circadia Dark (*Warm Ember & Obsidian*):** Calibrated for 0–50 lux (evening, night, or low-light rooms). Matches your relaxed pupil dilation and eliminates blue-light melatonin suppression.
+* **Circadia Dark (*Warm Ember & Espresso*):** Calibrated for 0–50 lux (evening, night, or low-light rooms). Matches your relaxed pupil dilation and eliminates blue-light melatonin suppression.
 * **Circadia Light (*Warm Parchment*):** Calibrated for 300–800+ lux (daylight near windows or bright offices), where strong ambient light balances out display luminance to eliminate retinal glare.
 
 > [!TIP]

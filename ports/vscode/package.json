@@ -1,7 +1,7 @@
 {
   "name": "circadia-vscode",
   "displayName": "Circadia Theme",
-  "description": "Perceptually uniform, low-strain themes engineered for continuous focus (Warm Parchment & Warm Ember & Obsidian)",
+  "description": "Perceptually uniform, low-strain themes engineered for continuous focus (Warm Parchment & Warm Ember & Espresso)",
   "version": "1.0.0",
   "publisher": "circadia",
   "engines": {
@@ -21,7 +21,7 @@
         "path": "./themes/circadia-light.json"
       },
       {
-        "label": "Circadia — Warm Ember & Obsidian (Dark)",
+        "label": "Circadia — Warm Ember & Espresso (Dark)",
         "uiTheme": "vs-dark",
         "path": "./themes/circadia-dark.json"
       }

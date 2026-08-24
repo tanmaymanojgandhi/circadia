@@ -23,7 +23,7 @@ Headings must progress in visual weight from H1 down to H6 without contrast inve
   - H6 is the lightest blue (`L = 54%`, ~4.5:1 contrast).
   - _Hierarchy:_ Higher levels = Darker / Higher Contrast.
 
-- **Dark Mode (Warm Ember & Obsidian):**
+- **Dark Mode (Warm Ember & Espresso):**
   - H1 is the brightest amber (`L = 86%`, ~11.2:1 contrast).
   - H6 is the deepest amber (`L = 62%`, ~4.5:1 contrast).
   - _Hierarchy:_ Higher levels = Brighter / Higher Contrast.

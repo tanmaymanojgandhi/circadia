@@ -2,7 +2,7 @@
 
 Perceptually uniform, low-strain colorscheme engineered for continuous focus in Neovim.
 
-- **Circadia Dark** (`circadia-dark`): Warm Ember & Obsidian
+- **Circadia Dark** (`circadia-dark`): Warm Ember & Espresso
 - **Circadia Light** (`circadia-light`): Warm Parchment
 
 ---

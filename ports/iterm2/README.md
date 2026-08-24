@@ -2,7 +2,7 @@
 
 Circadian terminal color schemes for iTerm2 on macOS.
 
-- **Circadia Dark** (`Circadia Dark.itermcolors`): Warm Ember & Obsidian
+- **Circadia Dark** (`Circadia Dark.itermcolors`): Warm Ember & Espresso
 - **Circadia Light** (`Circadia Light.itermcolors`): Warm Parchment
 
 ## Installation

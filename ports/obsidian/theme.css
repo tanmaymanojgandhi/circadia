@@ -1,6 +1,6 @@
 /*
  * Circadia — Obsidian Theme
- * Palette: Warm Parchment (Day) / Warm Ember & Obsidian (Night)
+ * Palette: Warm Parchment (Day) / Warm Ember & Espresso (Night)
  */
 
 /* ============================================================
@@ -137,11 +137,11 @@
     --scrollbar-active-thumb-bg: rgba(40, 50, 58, 0.28);
 }
 
-/* --- DARK THEME (Warm Ember & Obsidian Circadian Palette) --- */
+/* --- DARK THEME (Warm Ember & Espresso Circadian Palette) --- */
 .theme-dark {
     color-scheme: dark;
 
-    /* Warm Ember & Obsidian Palette */
+    /* Warm Ember & Espresso Palette */
     --k-bg: #15141b;
     /* Editor surface (Warm Obsidian Charcoal) */
     --k-bg-2: #1c1a24;

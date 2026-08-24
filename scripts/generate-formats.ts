@@ -261,7 +261,7 @@ function generateSvgMatrix() {
     const border = mode.ui.border.hex;
     const titleCol = mode.ui.text_primary.hex;
     const subCol = mode.ui.accent.hex;
-    const headerTitle = isDark ? "🌙 Warm Ember &amp; Obsidian (Dark)" : "☀️ Warm Parchment (Light)";
+    const headerTitle = isDark ? "🌙 Warm Ember &amp; Espresso (Dark)" : "☀️ Warm Parchment (Light)";
     const luxText = isDark ? "0–50 lux • Halation-Free Night" : "300–800+ lux • Anti-Glare Day";
     const labelCol = isDark ? "#eae3d8" : "#28323a";
     const monoCol = isDark ? "#b7aca0" : "#5f6d7a";

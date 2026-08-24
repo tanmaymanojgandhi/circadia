@@ -47,7 +47,7 @@ $$\text{Color} = \text{oklch}(L \quad C \quad H)$$
 
 ---
 
-### 🌙 2. Night Mode: Warm Ember & Obsidian (Circadian Night)
+### 🌙 2. Night Mode: Warm Ember & Espresso (Circadian Night)
 *Calibrated for dark rooms, night shifts, and low ambient light (0–50 lux).*
 
 | Role / Token | Hex | RGB (32-bit) | OKLCH | Visual Swatch & Character |

@@ -2,7 +2,7 @@
 
 Official Circadia theme extension for Zed Editor.
 
-- **Circadia Dark**: Warm Ember & Obsidian
+- **Circadia Dark**: Warm Ember & Espresso
 - **Circadia Light**: Warm Parchment
 
 ## Installation

@@ -2,7 +2,7 @@
 
 Circadia color themes for KDE Plasma Desktop.
 
-- **Circadia Dark** (`CircadiaDark.colors`): Warm Ember & Obsidian
+- **Circadia Dark** (`CircadiaDark.colors`): Warm Ember & Espresso
 - **Circadia Light** (`CircadiaLight.colors`): Warm Parchment
 
 ## Installation

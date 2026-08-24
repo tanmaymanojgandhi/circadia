@@ -47,7 +47,7 @@ function buildChrome() {
     manifest_version: 3,
     version: "1.0.0",
     name: "Circadia Dark",
-    description: "Circadia Dark theme (Warm Ember & Obsidian) for Google Chrome",
+    description: "Circadia Dark theme (Warm Ember & Espresso) for Google Chrome",
     theme: {
       colors: {
         frame: hexToRgb(dark.ui.bg_surface.hex),
@@ -101,7 +101,7 @@ function buildChrome() {
 Perceptually calibrated, low-strain browser themes for Google Chrome.
 
 - **Circadia Light**: Warm Parchment (\`${light.ui.bg_canvas.hex}\`)
-- **Circadia Dark**: Warm Ember & Obsidian (\`${dark.ui.bg_canvas.hex}\`)
+- **Circadia Dark**: Warm Ember & Espresso (\`${dark.ui.bg_canvas.hex}\`)
 
 ## Installation
 
@@ -124,7 +124,7 @@ function buildIntellij() {
 <scheme name="Circadia Dark" parent_scheme="Darcula" version="142">
   <metaInfo>
     <property name="created">2026-08-19</property>
-    <property name="description">Circadia Dark (Warm Ember &amp; Obsidian)</property>
+    <property name="description">Circadia Dark (Warm Ember &amp; Espresso)</property>
     <property name="vendor">Circadia</property>
   </metaInfo>
   <colors>
@@ -493,7 +493,7 @@ function buildIntellij() {
 
 Perceptually calibrated color schemes for IntelliJ IDEA, PyCharm, WebStorm, CLion, Rider, GoLand, and Android Studio.
 
-- **Circadia Dark** (\`circadia-dark.icls\`): Warm Ember & Obsidian
+- **Circadia Dark** (\`circadia-dark.icls\`): Warm Ember & Espresso
 - **Circadia Light** (\`circadia-light.icls\`): Warm Parchment
 
 ## Installation
@@ -600,7 +600,7 @@ function buildIterm2() {
 
 Circadian terminal color schemes for iTerm2 on macOS.
 
-- **Circadia Dark** (\`Circadia Dark.itermcolors\`): Warm Ember & Obsidian
+- **Circadia Dark** (\`Circadia Dark.itermcolors\`): Warm Ember & Espresso
 - **Circadia Light** (\`Circadia Light.itermcolors\`): Warm Parchment
 
 ## Installation
@@ -765,7 +765,7 @@ shadeSortColumn=true
 
 Circadia color themes for KDE Plasma Desktop.
 
-- **Circadia Dark** (\`CircadiaDark.colors\`): Warm Ember & Obsidian
+- **Circadia Dark** (\`CircadiaDark.colors\`): Warm Ember & Espresso
 - **Circadia Light** (\`CircadiaLight.colors\`): Warm Parchment
 
 ## Installation
@@ -910,7 +910,7 @@ Copy and paste the strings below into Slack's **Preferences → Themes → Custo
 ${lightTheme}
 \`\`\`
 
-### 🌙 Dark Mode (Warm Ember & Obsidian)
+### 🌙 Dark Mode (Warm Ember & Espresso)
 \`\`\`text
 ${darkTheme}
 \`\`\`
@@ -1016,7 +1016,7 @@ function buildTelegram() {
     const ui = mode.ui;
     const syntax = mode.syntax;
 
-    return `// Circadia ${isDark ? "Dark (Warm Ember & Obsidian)" : "Light (Warm Parchment)"} Telegram Theme
+    return `// Circadia ${isDark ? "Dark (Warm Ember & Espresso)" : "Light (Warm Parchment)"} Telegram Theme
 circadiaBg: ${ui.bg_canvas.hex};
 circadiaBg2: ${ui.bg_surface.hex};
 circadiaUi: ${ui.bg_element.hex};
@@ -1527,7 +1527,7 @@ repository = "https://github.com/tanmaymanojgandhi/circadia"
 
 Official Circadia theme extension for Zed Editor.
 
-- **Circadia Dark**: Warm Ember & Obsidian
+- **Circadia Dark**: Warm Ember & Espresso
 - **Circadia Light**: Warm Parchment
 
 ## Installation

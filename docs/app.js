@@ -8,7 +8,7 @@ const PALETTE = {
   version: "1.0.0",
   modes: {
     dark: {
-      name: "Warm Ember & Obsidian",
+      name: "Warm Ember & Espresso",
       tagline: "Evening • 0–50 lux",
       type: "dark",
       ui: {
