@@ -86,6 +86,9 @@
     --text-accent-hover: var(--k-accent-hover);
     --text-selection: rgba(var(--k-accent-rgb), 0.22);
     --text-highlight-bg: var(--k-mark-bg);
+    --caret-color: var(--k-accent);
+    --tab-active-border-color: var(--k-accent);
+    --tab-active-border-width: 2px;
 
     --interactive-normal: #ffffff;
     --interactive-hover: var(--k-bg-3);
@@ -216,6 +219,9 @@
     --text-accent-hover: var(--k-accent-hover);
     --text-selection: rgba(var(--k-accent-rgb), 0.32);
     --text-highlight-bg: var(--k-mark-bg);
+    --caret-color: var(--k-accent);
+    --tab-active-border-color: var(--k-accent);
+    --tab-active-border-width: 2px;
 
     --interactive-normal: #1c1a24;
     --interactive-hover: #252330;
@@ -693,6 +699,12 @@ code,
 .cm-s-obsidian .cm-operator,
 .token.operator {
     color: var(--k-text-muted);
+}
+
+.cm-matchingBracket,
+.cm-s-obsidian .cm-matchingBracket {
+    outline: 1px solid var(--k-accent) !important;
+    background-color: transparent !important;
 }
 
 /* ================================================================

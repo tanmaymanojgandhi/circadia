@@ -23,7 +23,7 @@
     <option name="INDENT_GUIDE" value="3b342b" />
     <option name="INFORMATION_HINT" value="1e1a15" />
     <option name="LINE_NUMBERS_COLOR" value="92887d" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="eae3d8" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="e89a49" />
     <option name="METHOD_SEPARATORS_COLOR" value="3b342b" />
     <option name="MODIFIED_LINES_COLOR" value="f6a84d" />
     <option name="NOTIFICATION_BACKGROUND" value="29241e" />
@@ -39,6 +39,18 @@
     <option name="WHITESPACES" value="3b342b" />
   </colors>
   <attributes>
+    <option name="MATCHED_BRACE_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="e89a49" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="29241e" />
+        <option name="ERROR_STRIPE_COLOR" value="3b342b" />
+      </value>
+    </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="b3aba0" />

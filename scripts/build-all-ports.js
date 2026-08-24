@@ -145,7 +145,7 @@ function buildIntellij() {
     <option name="INDENT_GUIDE" value="${dark.ui.border.hex.replace('#', '')}" />
     <option name="INFORMATION_HINT" value="${dark.ui.bg_surface.hex.replace('#', '')}" />
     <option name="LINE_NUMBERS_COLOR" value="92887d" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="eae3d8" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="${dark.ui.accent.hex.replace('#', '')}" />
     <option name="METHOD_SEPARATORS_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
     <option name="MODIFIED_LINES_COLOR" value="f6a84d" />
     <option name="NOTIFICATION_BACKGROUND" value="${dark.ui.bg_element.hex.replace('#', '')}" />
@@ -161,6 +161,18 @@ function buildIntellij() {
     <option name="WHITESPACES" value="${dark.ui.border.hex.replace('#', '')}" />
   </colors>
   <attributes>
+    <option name="MATCHED_BRACE_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="${dark.ui.accent.hex.replace('#', '')}" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="${dark.ui.bg_element.hex.replace('#', '')}" />
+        <option name="ERROR_STRIPE_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
+      </value>
+    </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="b3aba0" />
@@ -328,7 +340,7 @@ function buildIntellij() {
     <option name="INDENT_GUIDE" value="${light.ui.border.hex.replace('#', '')}" />
     <option name="INFORMATION_HINT" value="${light.ui.bg_surface.hex.replace('#', '')}" />
     <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="28323a" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="${light.ui.accent.hex.replace('#', '')}" />
     <option name="METHOD_SEPARATORS_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
     <option name="MODIFIED_LINES_COLOR" value="8d4400" />
     <option name="NOTIFICATION_BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
@@ -344,6 +356,18 @@ function buildIntellij() {
     <option name="WHITESPACES" value="${light.ui.border.hex.replace('#', '')}" />
   </colors>
   <attributes>
+    <option name="MATCHED_BRACE_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="${light.ui.accent.hex.replace('#', '')}" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
+      <value>
+        <option name="BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
+        <option name="ERROR_STRIPE_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
+      </value>
+    </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
         <option name="FOREGROUND" value="574f46" />
@@ -1137,11 +1161,13 @@ function! s:hi(group, guifg, guibg, attr)
 endfunction
 
 call s:hi("Normal",        s:fg,       s:bg,      "")
+call s:hi("Cursor",        s:bg,       s:accent,  "")
 call s:hi("CursorLine",    "",         s:bg_surf, "")
 call s:hi("CursorColumn",  "",         s:bg_surf, "")
 call s:hi("ColorColumn",   "",         s:bg_surf, "")
 call s:hi("LineNr",        s:faint,    s:bg,      "")
-call s:hi("CursorLineNr",  s:muted,    s:bg_surf, "bold")
+call s:hi("CursorLineNr",  s:accent,   s:bg_surf, "bold")
+call s:hi("MatchParen",    s:accent,   "none",    "bold")
 call s:hi("VertSplit",     s:border,   s:bg,      "none")
 call s:hi("StatusLine",    s:fg,       s:bg_surf, "none")
 call s:hi("StatusLineNC",  s:faint,    s:bg_surf, "none")
@@ -1459,7 +1485,7 @@ repository = "https://github.com/tanmaymanojgandhi/circadia"
         "editor.active_line.background": ui.bg_surface.hex,
         "editor.highlighted_line.background": ui.bg_surface.hex,
         "editor.line_number": ui.text_faint.hex,
-        "editor.active_line_number": ui.text_primary.hex,
+        "editor.active_line_number": ui.accent.hex,
         "editor.invisible": ui.border.hex,
         "editor.wrap_guide": ui.border.hex,
         "editor.active_wrap_guide": ui.text_faint.hex,

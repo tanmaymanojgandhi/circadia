@@ -23,8 +23,9 @@ function M.setup(opts)
     FloatBorder = { fg = c.border, bg = c.bg_surface },
     Cursor = { fg = c.bg_canvas, bg = c.accent },
     CursorLine = { bg = c.bg_surface },
-    CursorLineNr = { fg = c.text_muted, bold = true },
+    CursorLineNr = { fg = c.accent, bold = true },
     LineNr = { fg = c.text_faint },
+    MatchParen = { fg = c.accent, bg = "NONE", bold = true },
     Visual = { bg = c.bg_element },
     Search = { fg = c.bg_canvas, bg = c.accent },
     IncSearch = { fg = c.bg_canvas, bg = c.number },
@@ -34,6 +35,16 @@ function M.setup(opts)
     WinSeparator = { fg = c.border },
     Pmenu = { fg = c.text_primary, bg = c.bg_surface },
     PmenuSel = { fg = c.text_primary, bg = c.bg_element },
+    PmenuThumb = { bg = c.accent },
+
+    -- LSP & Diagnostics
+    LspReferenceText = { bg = c.bg_element },
+    LspReferenceRead = { bg = c.bg_element },
+    LspReferenceWrite = { bg = c.bg_element },
+
+    -- Telescope / Quick Open
+    TelescopeSelection = { bg = c.bg_element },
+    TelescopeMatching = { fg = c.accent, bold = true },
 
     -- Syntax
     Comment = { fg = c.comment, italic = true },
