@@ -77,7 +77,7 @@
         "support.function"
       ],
       "settings": {
-        "foreground": "#6a1b9a"
+        "foreground": "#7a1f7a"
       }
     },
     {
@@ -90,7 +90,7 @@
         "entity.name.tag.yaml"
       ],
       "settings": {
-        "foreground": "#7a1f7a"
+        "foreground": "#4b1fa3"
       }
     },
     {
@@ -118,7 +118,7 @@
         "constant.language"
       ],
       "settings": {
-        "foreground": "#8e3600"
+        "foreground": "#095b62"
       }
     },
     {

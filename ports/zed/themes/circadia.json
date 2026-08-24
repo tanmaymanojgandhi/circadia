@@ -221,15 +221,15 @@
         "terminal.background": "#f7f2e6",
         "terminal.foreground": "#28323a",
         "terminal.ansi.black": "#e5dcc6",
-        "terminal.ansi.red": "#8e3600",
+        "terminal.ansi.red": "#095b62",
         "terminal.ansi.green": "#005f2f",
         "terminal.ansi.yellow": "#236bb5",
-        "terminal.ansi.blue": "#6a1b9a",
+        "terminal.ansi.blue": "#7a1f7a",
         "terminal.ansi.magenta": "#0048b3",
         "terminal.ansi.cyan": "#843900",
         "terminal.ansi.white": "#28323a",
         "terminal.ansi.bright_black": "#5f6d7a",
-        "terminal.ansi.bright_red": "#8e3600",
+        "terminal.ansi.bright_red": "#095b62",
         "terminal.ansi.bright_green": "#005f2f",
         "terminal.ansi.bright_yellow": "#0048b3",
         "terminal.ansi.bright_blue": "#1c60a2",
@@ -252,10 +252,10 @@
             "color": "#843900"
           },
           "function": {
-            "color": "#6a1b9a"
+            "color": "#7a1f7a"
           },
           "function.method": {
-            "color": "#6a1b9a"
+            "color": "#7a1f7a"
           },
           "string": {
             "color": "#005f2f"
@@ -267,10 +267,10 @@
             "color": "#843900"
           },
           "number": {
-            "color": "#8e3600"
+            "color": "#095b62"
           },
           "boolean": {
-            "color": "#8e3600"
+            "color": "#095b62"
           },
           "tag": {
             "color": "#0048b3"

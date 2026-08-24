@@ -25,9 +25,9 @@ let s:accent    = "#0048b3"
 
 let s:keyword   = "#0048b3"
 let s:type      = "#843900"
-let s:func      = "#6a1b9a"
+let s:func      = "#7a1f7a"
 let s:string    = "#005f2f"
-let s:number    = "#8e3600"
+let s:number    = "#095b62"
 let s:tag       = "#0048b3"
 let s:comment   = "#5e564d"
 
