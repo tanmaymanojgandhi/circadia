@@ -1,20 +1,20 @@
 // Circadia Light (Warm Parchment) Telegram Theme
-circadiaBg: #f4eee1;
-circadiaBg2: #ece4d4;
-circadiaUi: #e2d8c3;
-circadiaUi2: #d4c8b2;
+circadiaBg: #f7f2e6;
+circadiaBg2: #eee7d6;
+circadiaUi: #e5dcc6;
+circadiaUi2: #d7cdb7;
 circadiaTx: #28323a;
 circadiaTx2: #46535f;
 circadiaTx3: #5f6d7a;
-circadiaAccent: #195697;
+circadiaAccent: #0048b3;
 
 circadiaRe: #dc2626;
-circadiaOr: #8a2d00;
+circadiaOr: #8e3600;
 circadiaYe: #ca8a04;
-circadiaGr: #085802;
-circadiaCy: #7f3500;
-circadiaBl: #09489a;
-circadiaPu: #631c84;
+circadiaGr: #005f2f;
+circadiaCy: #843900;
+circadiaBl: #6a1b9a;
+circadiaPu: #0048b3;
 
 windowBg: circadiaBg;
 windowFg: circadiaTx;
@@ -26,9 +26,9 @@ windowSubTextFgOver: circadiaTx;
 windowBoldFg: circadiaTx;
 windowBoldFgOver: circadiaTx;
 windowBgActive: circadiaAccent;
-windowFgActive: #f4eee1;
+windowFgActive: #f7f2e6;
 windowActiveTextFg: circadiaAccent;
 activeButtonBg: circadiaAccent;
 activeButtonBgOver: circadiaAccent;
-activeButtonFg: #f4eee1;
+activeButtonFg: #f7f2e6;
 activeButtonSecondaryFg: circadiaTx2;

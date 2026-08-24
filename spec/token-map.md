@@ -30,9 +30,11 @@ Maps code syntax, AST nodes, TextMate scopes, and Treesitter highlight queries.
 | `keyword`  | Control flow, declarations (`if`, `return`, `class`, `import`) | `keyword.control`, `storage.type`               | `@keyword`, `@conditional`, `@repeat`    |
 | `type`     | Types, structs, classes, interfaces, built-ins                 | `entity.name.type`, `support.type`              | `@type`, `@type.builtin`                 |
 | `function` | Function definitions, method calls, routines                   | `entity.name.function`, `support.function`      | `@function`, `@function.call`, `@method` |
+| `property` | Object keys, DTO fields, struct fields, named arguments        | `variable.other.property`, `meta.object-literal.key` | `@property`, `@field`, `@variable.member` |
+| `variable` | Parameters, local variables, instance references               | `variable`, `variable.other`, `variable.parameter` | `@variable`, `@variable.parameter`      |
 | `string`   | String literals, regex literals, characters                    | `string.quoted`, `string.regexp`                | `@string`, `@string.regex`               |
 | `number`   | Integer, floating point, boolean constants                     | `constant.numeric`, `constant.language.boolean` | `@number`, `@boolean`                    |
-| `tag`      | HTML/XML tags, JSX elements, YAML keys                         | `entity.name.tag`, `entity.name.tag.yaml`       | `@tag`, `@tag.delimiter`, `@field`       |
+| `tag`      | HTML/XML tags, JSX elements, YAML keys                         | `entity.name.tag`, `entity.name.tag.yaml`       | `@tag`, `@tag.delimiter`                 |
 | `comment`  | Single-line and block comments, docstrings                     | `comment.line`, `comment.block`                 | `@comment`, `@comment.documentation`     |
 
 ---

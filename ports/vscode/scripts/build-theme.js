@@ -51,27 +51,63 @@ function buildTheme(modeKey, mode) {
     },
     tokenColors: [
       {
-        scope: ["comment"],
+        scope: ["comment", "punctuation.definition.comment"],
         settings: { foreground: syntax.comment.hex, fontStyle: "italic" }
       },
       {
-        scope: ["keyword", "storage.type", "storage.modifier"],
-        settings: { foreground: syntax.keyword.hex }
+        scope: [
+          "keyword",
+          "keyword.control",
+          "storage.type",
+          "storage.modifier",
+          "keyword.operator.new",
+          "keyword.operator.expression",
+          "keyword.declaration"
+        ],
+        settings: { foreground: syntax.keyword.hex, fontStyle: "bold" }
       },
       {
-        scope: ["entity.name.type", "entity.name.class", "support.class"],
+        scope: [
+          "entity.name.type",
+          "entity.name.class",
+          "entity.other.inherited-class",
+          "support.class",
+          "support.type"
+        ],
         settings: { foreground: syntax.type.hex }
       },
       {
-        scope: ["entity.name.function", "support.function"],
+        scope: [
+          "entity.name.function",
+          "support.function"
+        ],
         settings: { foreground: syntax.function.hex }
       },
       {
-        scope: ["string"],
+        scope: [
+          "variable.other.property",
+          "entity.name.variable.property",
+          "variable.other.object.property",
+          "meta.object-literal.key",
+          "support.type.property-name",
+          "entity.name.tag.yaml"
+        ],
+        settings: { foreground: (syntax.property && syntax.property.hex) || syntax.function.hex }
+      },
+      {
+        scope: [
+          "variable",
+          "variable.other",
+          "variable.parameter"
+        ],
+        settings: { foreground: (syntax.variable && syntax.variable.hex) || ui.text_primary.hex }
+      },
+      {
+        scope: ["string", "string.quoted"],
         settings: { foreground: syntax.string.hex }
       },
       {
-        scope: ["constant.numeric"],
+        scope: ["constant.numeric", "constant.language"],
         settings: { foreground: syntax.number.hex }
       },
       {

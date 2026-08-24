@@ -314,34 +314,34 @@ function buildIntellij() {
     <option name="ADDED_LINES_COLOR" value="1e6822" />
     <option name="ANNOTATIONS_COLOR" value="46535f" />
     <option name="CARET_COLOR" value="195697" />
-    <option name="CARET_ROW_COLOR" value="ece4d4" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="f4eee1" />
+    <option name="CARET_ROW_COLOR" value="${light.ui.bg_surface.hex.replace('#', '')}" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
     <option name="DELETED_LINES_COLOR" value="dc2626" />
-    <option name="DOCUMENTATION_COLOR" value="ece4d4" />
+    <option name="DOCUMENTATION_COLOR" value="${light.ui.bg_surface.hex.replace('#', '')}" />
     <option name="ERROR_HINT" value="dc2626" />
     <option name="FILESTATUS_ADDED" value="1e6822" />
     <option name="FILESTATUS_MODIFIED" value="8d4400" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="165084" />
     <option name="FILESTATUS_UNKNOWN" value="6b1d8f" />
-    <option name="FOLDED_TEXT_BORDER_COLOR" value="d4c8b2" />
-    <option name="GUTTER_BACKGROUND" value="f4eee1" />
-    <option name="INDENT_GUIDE" value="d4c8b2" />
-    <option name="INFORMATION_HINT" value="ece4d4" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
+    <option name="GUTTER_BACKGROUND" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
+    <option name="INDENT_GUIDE" value="${light.ui.border.hex.replace('#', '')}" />
+    <option name="INFORMATION_HINT" value="${light.ui.bg_surface.hex.replace('#', '')}" />
     <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="28323a" />
-    <option name="METHOD_SEPARATORS_COLOR" value="d4c8b2" />
+    <option name="METHOD_SEPARATORS_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
     <option name="MODIFIED_LINES_COLOR" value="8d4400" />
-    <option name="NOTIFICATION_BACKGROUND" value="e2d8c3" />
+    <option name="NOTIFICATION_BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
     <option name="QUESTION_HINT" value="165084" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="00677f" />
-    <option name="RIGHT_MARGIN_COLOR" value="d4c8b2" />
+    <option name="RIGHT_MARGIN_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
     <option name="SELECTED_INDENT_GUIDE" value="5f6d7a" />
     <option name="SELECTED_TEARLINE_COLOR" value="5f6d7a" />
-    <option name="SELECTION_BACKGROUND" value="e2d8c3" />
+    <option name="SELECTION_BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
     <option name="SELECTION_FOREGROUND" value="28323a" />
-    <option name="TEARLINE_COLOR" value="d4c8b2" />
-    <option name="VISUAL_INDENT_GUIDE" value="d4c8b2" />
-    <option name="WHITESPACES" value="d4c8b2" />
+    <option name="TEARLINE_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
+    <option name="VISUAL_INDENT_GUIDE" value="${light.ui.border.hex.replace('#', '')}" />
+    <option name="WHITESPACES" value="${light.ui.border.hex.replace('#', '')}" />
   </colors>
   <attributes>
     <option name="DEFAULT_BLOCK_COMMENT">
@@ -468,7 +468,7 @@ function buildIntellij() {
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="BACKGROUND" value="ece4d4" />
+        <option name="BACKGROUND" value="${light.ui.bg_surface.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
@@ -479,7 +479,7 @@ function buildIntellij() {
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="28323a" />
-        <option name="BACKGROUND" value="f4eee1" />
+        <option name="BACKGROUND" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
@@ -1044,11 +1044,11 @@ windowSubTextFgOver: circadiaTx;
 windowBoldFg: circadiaTx;
 windowBoldFgOver: circadiaTx;
 windowBgActive: circadiaAccent;
-windowFgActive: ${isDark ? "#15141b" : "#f4eee1"};
+windowFgActive: ${isDark ? "#15141b" : light.ui.bg_canvas.hex};
 windowActiveTextFg: circadiaAccent;
 activeButtonBg: circadiaAccent;
 activeButtonBgOver: circadiaAccent;
-activeButtonFg: ${isDark ? "#15141b" : "#f4eee1"};
+activeButtonFg: ${isDark ? "#15141b" : light.ui.bg_canvas.hex};
 activeButtonSecondaryFg: circadiaTx2;
 `;
   }

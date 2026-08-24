@@ -4,7 +4,7 @@ Copy and paste the strings below into Slack's **Preferences → Themes → Custo
 
 ### ☀️ Light Mode (Warm Parchment)
 ```text
-#ece4d4,#28323a,#f4eee1,#e2d8c3,#28323a,#085802,#195697,#195697,#e2d8c3,#28323a
+#eee7d6,#28323a,#f7f2e6,#e5dcc6,#28323a,#005f2f,#0048b3,#0048b3,#e5dcc6,#28323a
 ```
 
 ### 🌙 Dark Mode (Warm Ember & Obsidian)

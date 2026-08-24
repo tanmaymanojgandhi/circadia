@@ -2,7 +2,7 @@
 
 Perceptually calibrated, low-strain browser themes for Google Chrome.
 
-- **Circadia Light**: Warm Parchment (`#f4eee1`)
+- **Circadia Light**: Warm Parchment (`#f7f2e6`)
 - **Circadia Dark**: Warm Ember & Obsidian (`#15141b`)
 
 ## Installation

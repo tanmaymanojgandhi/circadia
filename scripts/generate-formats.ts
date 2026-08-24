@@ -207,18 +207,20 @@ function generateSvgMatrix() {
         { key: "Keyword", hex: light.syntax.keyword.hex },
         { key: "Type", hex: light.syntax.type.hex },
         { key: "Function", hex: light.syntax.function.hex },
+        { key: "Property", hex: light.syntax.property.hex },
+        { key: "Variable", hex: light.syntax.variable.hex },
         { key: "String", hex: light.syntax.string.hex },
         { key: "Number", hex: light.syntax.number.hex },
-        { key: "Tag", hex: light.syntax.tag.hex },
         { key: "Comment", hex: light.syntax.comment.hex }
       ],
       tokensD: [
         { key: "Keyword", hex: dark.syntax.keyword.hex },
         { key: "Type", hex: dark.syntax.type.hex },
         { key: "Function", hex: dark.syntax.function.hex },
+        { key: "Property", hex: dark.syntax.property.hex },
+        { key: "Variable", hex: dark.syntax.variable.hex },
         { key: "String", hex: dark.syntax.string.hex },
         { key: "Number", hex: dark.syntax.number.hex },
-        { key: "Tag", hex: dark.syntax.tag.hex },
         { key: "Comment", hex: dark.syntax.comment.hex }
       ]
     },
@@ -254,10 +256,11 @@ function generateSvgMatrix() {
 `;
 
   function renderColumn(isDark: boolean, startX: number): string {
-    const bg = isDark ? "#15141b" : "#f4eee1";
-    const border = isDark ? "#343041" : "#d4c8b2";
-    const titleCol = isDark ? "#eae3d8" : "#28323a";
-    const subCol = isDark ? "#e89a49" : "#09489a";
+    const mode = isDark ? dark : light;
+    const bg = mode.ui.bg_canvas.hex;
+    const border = mode.ui.border.hex;
+    const titleCol = mode.ui.text_primary.hex;
+    const subCol = mode.ui.accent.hex;
     const headerTitle = isDark ? "🌙 Warm Ember &amp; Obsidian (Dark)" : "☀️ Warm Parchment (Light)";
     const luxText = isDark ? "0–50 lux • Halation-Free Night" : "300–800+ lux • Anti-Glare Day";
     const labelCol = isDark ? "#eae3d8" : "#28323a";

@@ -48,10 +48,10 @@
 }
 
 [data-theme="light"] {
-  --bg-canvas: #f4eee1;
-  --bg-surface: #ece4d4;
-  --bg-element: #e2d8c3;
-  --border: #d4c8b2;
+  --bg-canvas: #f7f2e6;
+  --bg-surface: #eee7d6;
+  --bg-element: #e5dcc6;
+  --border: #d7cdb7;
   --border-subtle: #dbcfb9;
 
   --text-primary: #28323a;
