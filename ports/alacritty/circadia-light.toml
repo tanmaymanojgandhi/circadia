@@ -2,33 +2,33 @@
 # Perceptually uniform, low-strain daylight mode
 
 [colors.primary]
-background = "#f4eee1"
+background = "#f7f2e6"
 foreground = "#28323a"
 
 [colors.cursor]
-text = "#f4eee1"
-cursor = "#195697"
+text = "#f7f2e6"
+cursor = "#0048b3"
 
 [colors.selection]
 text = "#28323a"
-background = "#e2d8c3"
+background = "#e5dcc6"
 
 [colors.normal]
 black   = "#28323a"
-red     = "#8a2d00"
-green   = "#085802"
-yellow  = "#7f3500"
-blue    = "#09489a"
-magenta = "#631c84"
-cyan    = "#7f3500"
+red     = "#843900"
+green   = "#005f2f"
+yellow  = "#095b62"
+blue    = "#0048b3"
+magenta = "#7a1f7a"
+cyan    = "#4b1fa3"
 white   = "#5f6d7a"
 
 [colors.bright]
 black   = "#46535f"
-red     = "#8a2d00"
-green   = "#085802"
-yellow  = "#7f3500"
+red     = "#843900"
+green   = "#005f2f"
+yellow  = "#095b62"
 blue    = "#236bb5"
-magenta = "#631c84"
-cyan    = "#09489a"
+magenta = "#7a1f7a"
+cyan    = "#0048b3"
 white   = "#28323a"

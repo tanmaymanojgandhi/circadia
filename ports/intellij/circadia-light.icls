@@ -6,18 +6,18 @@
     <property name="vendor">Circadia</property>
   </metaInfo>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="1e6822" />
+    <option name="ADDED_LINES_COLOR" value="005f2f" />
     <option name="ANNOTATIONS_COLOR" value="46535f" />
-    <option name="CARET_COLOR" value="195697" />
+    <option name="CARET_COLOR" value="0048b3" />
     <option name="CARET_ROW_COLOR" value="eee7d6" />
     <option name="CONSOLE_BACKGROUND_KEY" value="f7f2e6" />
     <option name="DELETED_LINES_COLOR" value="dc2626" />
     <option name="DOCUMENTATION_COLOR" value="eee7d6" />
     <option name="ERROR_HINT" value="dc2626" />
-    <option name="FILESTATUS_ADDED" value="1e6822" />
-    <option name="FILESTATUS_MODIFIED" value="8d4400" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="165084" />
-    <option name="FILESTATUS_UNKNOWN" value="6b1d8f" />
+    <option name="FILESTATUS_ADDED" value="005f2f" />
+    <option name="FILESTATUS_MODIFIED" value="095b62" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="0048b3" />
+    <option name="FILESTATUS_UNKNOWN" value="7a1f7a" />
     <option name="FOLDED_TEXT_BORDER_COLOR" value="d7cdb7" />
     <option name="GUTTER_BACKGROUND" value="f7f2e6" />
     <option name="INDENT_GUIDE" value="d7cdb7" />
@@ -25,10 +25,10 @@
     <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="0048b3" />
     <option name="METHOD_SEPARATORS_COLOR" value="d7cdb7" />
-    <option name="MODIFIED_LINES_COLOR" value="8d4400" />
+    <option name="MODIFIED_LINES_COLOR" value="095b62" />
     <option name="NOTIFICATION_BACKGROUND" value="e5dcc6" />
-    <option name="QUESTION_HINT" value="165084" />
-    <option name="RECURSIVE_CALL_ATTRIBUTES" value="00677f" />
+    <option name="QUESTION_HINT" value="0048b3" />
+    <option name="RECURSIVE_CALL_ATTRIBUTES" value="843900" />
     <option name="RIGHT_MARGIN_COLOR" value="d7cdb7" />
     <option name="SELECTED_INDENT_GUIDE" value="5f6d7a" />
     <option name="SELECTED_TEARLINE_COLOR" value="5f6d7a" />
@@ -53,34 +53,34 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="574f46" />
+        <option name="FOREGROUND" value="5e564d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="00677f" />
+        <option name="FOREGROUND" value="843900" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="00677f" />
+        <option name="FOREGROUND" value="843900" />
       </value>
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="8d4400" />
+        <option name="FOREGROUND" value="095b62" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="574f46" />
+        <option name="FOREGROUND" value="5e564d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="FOREGROUND" value="195697" />
+        <option name="FOREGROUND" value="0048b3" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
@@ -91,12 +91,12 @@
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="165084" />
+        <option name="FOREGROUND" value="7a1f7a" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="165084" />
+        <option name="FOREGROUND" value="7a1f7a" />
       </value>
     </option>
     <option name="DEFAULT_GLOBAL_VARIABLE">
@@ -116,7 +116,7 @@
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="00677f" />
+        <option name="FOREGROUND" value="843900" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
@@ -128,13 +128,13 @@
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="6b1d8f" />
+        <option name="FOREGROUND" value="0048b3" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="574f46" />
+        <option name="FOREGROUND" value="5e564d" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -145,7 +145,7 @@
     </option>
     <option name="DEFAULT_NUMBER">
       <value>
-        <option name="FOREGROUND" value="8d4400" />
+        <option name="FOREGROUND" value="095b62" />
       </value>
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
@@ -165,12 +165,12 @@
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="1e6822" />
+        <option name="FOREGROUND" value="005f2f" />
       </value>
     </option>
     <option name="DEFAULT_TAG">
       <value>
-        <option name="FOREGROUND" value="195697" />
+        <option name="FOREGROUND" value="0048b3" />
       </value>
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
@@ -180,7 +180,7 @@
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="00677f" />
+        <option name="FOREGROUND" value="843900" />
       </value>
     </option>
     <option name="TEXT">

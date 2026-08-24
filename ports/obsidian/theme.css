@@ -12,56 +12,56 @@
     color-scheme: light;
 
     /* Warm Parchment Palette */
-    --k-bg: #f4eee1;
-    /* Editor surface (Warm Linen Paper) */
-    --k-bg-2: #ece4d4;
-    /* Secondary surface / tabs */
-    --k-bg-3: #e2d8c3;
-    /* Hover / tertiary surface */
-    --k-app-bg: #e2d8c3;
+    --k-bg: #f7f2e6;
+    /* Editor surface (Warm Parchment Canvas) */
+    --k-bg-2: #eee7d6;
+    /* Secondary surface / tabs (Warm Parchment Surface) */
+    --k-bg-3: #e5dcc6;
+    /* Hover / tertiary surface (Warm Parchment Element) */
+    --k-app-bg: #e5dcc6;
     /* Outer app gutter */
 
     --k-text: #28323a;
     --k-text-muted: #46535f;
     --k-text-faint: #5f6d7a;
 
-    --k-border: #d4c8b2;
-    --k-border-strong: #c4b79f;
-    --k-table-border: #d4c8b2;
+    --k-border: #d7cdb7;
+    --k-border-strong: #c9c0b1;
+    --k-table-border: #d7cdb7;
 
-    --k-accent: #195697;
-    --k-accent-hover: #165084;
-    --k-accent-rgb: 25, 86, 151;
+    --k-accent: #0048b3;
+    --k-accent-hover: #1c60a2;
+    --k-accent-rgb: 0, 72, 179;
 
-    --k-code-bg: #e2d8c3;
+    --k-code-bg: #e5dcc6;
     --k-code-text: #28323a;
     --k-mark-bg: #ffebb8;
 
     /* Semantic Status Colors */
     --color-red: #dc2626;
-    --color-green: #1e6822;
-    --color-orange: #8d4400;
+    --color-green: #005f2f;
+    --color-orange: #843900;
     --color-yellow: #ca8a04;
-    --color-cyan: #00677f;
-    --color-blue: #195697;
-    --color-purple: #6b1d8f;
-    --color-pink: #db2777;
+    --color-cyan: #095b62;
+    --color-blue: #0048b3;
+    --color-purple: #7a1f7a;
+    --color-pink: #4b1fa3;
 
-    /* Syntax Highlighting (Zero-Red Semantic Cleanliness) */
-    --k-comment: #574f46;
-    --k-keyword: #631c84;
-    --k-number: #8a2d00;
-    --k-var2: #09489a;
-    --k-var3: #7f3500;
-    --k-string: #085802;
-    --k-tag: #09489a;
+    /* Syntax Highlighting */
+    --k-comment: #5e564d;
+    --k-keyword: #0048b3;
+    --k-number: #095b62;
+    --k-var2: #7a1f7a;
+    --k-var3: #4b1fa3;
+    --k-string: #005f2f;
+    --k-tag: #0048b3;
 
     /* Callout RGB Hues */
-    --k-note: 25, 86, 151;
+    --k-note: 0, 72, 179;
     --k-caution: 220, 38, 38;
-    --k-tip: 30, 104, 34;
-    --k-important: 107, 29, 143;
-    --k-warning: 141, 68, 0;
+    --k-tip: 0, 95, 47;
+    --k-important: 122, 31, 122;
+    --k-warning: 132, 57, 0;
 
     /* Obsidian Core Variable Overrides */
     --background-primary: var(--k-bg);
@@ -116,7 +116,7 @@
 
     /* Shadows & Modals */
     --k-card-shadow: 0 1px 3px rgba(40, 50, 58, 0.05), 0 4px 12px rgba(40, 50, 58, 0.04);
-    --k-modal-bg: rgba(244, 238, 225, 0.97);
+    --k-modal-bg: rgba(247, 242, 230, 0.97);
     --k-modal-shadow: 0 16px 36px rgba(40, 50, 58, 0.16);
 
     /* Checkbox & List Tokens */
@@ -127,8 +127,8 @@
     --checkbox-border-color: var(--k-border-strong);
 
     /* Toggle Switches */
-    --toggle-background: #d4c8b2;
-    --toggle-border-color: #c4b79f;
+    --toggle-background: #d7cdb7;
+    --toggle-border-color: #c9c0b1;
     --toggle-thumb-color: #5f6d7a;
     --toggle-background-active: var(--k-accent);
     --toggle-border-color-active: var(--k-accent);
@@ -145,56 +145,56 @@
     color-scheme: dark;
 
     /* Warm Ember & Espresso Palette */
-    --k-bg: #15141b;
-    /* Editor surface (Warm Obsidian Charcoal) */
-    --k-bg-2: #1c1a24;
-    /* Secondary surface / tabs (Subtle Warm Plum Black) */
-    --k-bg-3: #252330;
-    /* Hover / tertiary surface (Dark Heather) */
-    --k-app-bg: #0f0e13;
-    /* Outer app gutter (Near-OLED shadow) */
+    --k-bg: #17130f;
+    /* Editor surface (Warm Ember & Espresso Canvas) */
+    --k-bg-2: #1e1a15;
+    /* Secondary surface / tabs (Espresso Surface) */
+    --k-bg-3: #29241e;
+    /* Hover / tertiary surface (Espresso Element) */
+    --k-app-bg: #120e0b;
+    /* Outer app gutter */
 
-    --k-text: #eae3d8;
-    --k-text-muted: #b7aca0;
-    --k-text-faint: #92887d;
+    --k-text: #c9c0b1;
+    --k-text-muted: #b5aba0;
+    --k-text-faint: #91887d;
 
-    --k-border: #343041;
-    --k-border-strong: #454056;
-    --k-table-border: #454056;
+    --k-border: #3b342b;
+    --k-border-strong: #4f463b;
+    --k-table-border: #3b342b;
 
     --k-accent: #e89a49;
     --k-accent-hover: #f2b26c;
     --k-accent-rgb: 232, 154, 73;
 
-    --k-code-bg: #1c1a24;
-    --k-code-text: #eae3d8;
+    --k-code-bg: #1e1a15;
+    --k-code-text: #c9c0b1;
     --k-mark-bg: rgba(232, 154, 73, 0.28);
 
     /* Semantic Status Colors (Warm Tuned) */
     --color-red: #e06c75;
-    --color-green: #a7db76;
-    --color-orange: #f6a84d;
-    --color-yellow: #f1be85;
-    --color-cyan: #89c8e4;
+    --color-green: #8cbb62;
+    --color-orange: #d99148;
+    --color-yellow: #d9a86e;
+    --color-cyan: #66abc6;
     --color-blue: #e89a49;
-    --color-purple: #e59de8;
-    --color-pink: #d27e99;
+    --color-purple: #b991db;
+    --color-pink: #de88a6;
 
     /* Syntax Highlighting (Zero-Red Circadian Palette) */
-    --k-comment: #b3aba0;
-    --k-keyword: #e59de8;
-    --k-number: #f6a84d;
-    --k-var2: #89c8e4;
-    --k-var3: #f1be85;
-    --k-string: #a7db76;
-    --k-tag: #e89a49;
+    --k-comment: #a9a093;
+    --k-keyword: #66abc6;
+    --k-number: #d99148;
+    --k-var2: #b991db;
+    --k-var3: #de88a6;
+    --k-string: #8cbb62;
+    --k-tag: #66abc6;
 
     /* Callout RGB Hues */
     --k-note: 232, 154, 73;
     --k-caution: 224, 108, 117;
-    --k-tip: 167, 219, 118;
-    --k-important: 229, 157, 232;
-    --k-warning: 246, 168, 77;
+    --k-tip: 140, 187, 98;
+    --k-important: 185, 145, 219;
+    --k-warning: 217, 145, 72;
 
     /* Obsidian Core Variable Overrides */
     --background-primary: var(--k-bg);
@@ -206,14 +206,14 @@
     --background-modifier-border: var(--k-border);
     --background-modifier-border-hover: var(--k-accent);
     --background-modifier-border-focus: var(--k-accent);
-    --background-modifier-form-field: #1c1a24;
+    --background-modifier-form-field: #1e1a15;
     --background-modifier-hover: rgba(var(--k-accent-rgb), 0.12);
     --background-modifier-active-hover: rgba(var(--k-accent-rgb), 0.22);
 
     --text-normal: var(--k-text);
     --text-muted: var(--k-text-muted);
     --text-faint: var(--k-text-faint);
-    --text-on-accent: #0f0e13;
+    --text-on-accent: #17130f;
     --text-on-accent-inverted: var(--k-text);
     --text-accent: var(--k-accent);
     --text-accent-hover: var(--k-accent-hover);
@@ -223,8 +223,8 @@
     --tab-active-border-color: var(--k-accent);
     --tab-active-border-width: 2px;
 
-    --interactive-normal: #1c1a24;
-    --interactive-hover: #252330;
+    --interactive-normal: #1e1a15;
+    --interactive-hover: #29241e;
     --interactive-accent: var(--k-accent);
     --interactive-accent-hover: var(--k-accent-hover);
 
@@ -249,7 +249,7 @@
 
     /* Shadows & Modals */
     --k-card-shadow: 0 4px 18px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.35);
-    --k-modal-bg: rgba(21, 20, 27, 0.97);
+    --k-modal-bg: rgba(23, 19, 15, 0.97);
     --k-modal-shadow: 0 16px 38px rgba(0, 0, 0, 0.7);
 
     /* Checkbox & List Tokens */
@@ -260,16 +260,16 @@
     --checkbox-border-color: var(--k-border-strong);
 
     /* Toggle Switches */
-    --toggle-background: #252330;
-    --toggle-border-color: #454056;
-    --toggle-thumb-color: #92887d;
+    --toggle-background: #3b342b;
+    --toggle-border-color: #4f463b;
+    --toggle-thumb-color: #91887d;
     --toggle-background-active: var(--k-accent);
     --toggle-border-color-active: var(--k-accent);
-    --toggle-thumb-color-active: #ffffff;
+    --toggle-thumb-color-active: #17130f;
 
     /* Scrollbars */
     --scrollbar-bg: transparent;
-    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.10);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
     --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.22);
 }
 

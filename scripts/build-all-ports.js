@@ -120,398 +120,211 @@ function buildIntellij() {
   const outDir = path.join(rootDir, "ports", "intellij");
   ensureDir(outDir);
 
-  const darkIcls = `<?xml version="1.0" encoding="UTF-8"?>
-<scheme name="Circadia Dark" parent_scheme="Darcula" version="142">
+  function generateIcls(mode, isDark) {
+    const ui = mode.ui;
+    const syntax = mode.syntax;
+    const headings = mode.headings;
+    const name = `Circadia ${isDark ? "Dark" : "Light"}`;
+    const parentScheme = isDark ? "Darcula" : "Default";
+
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<scheme name="${name}" parent_scheme="${parentScheme}" version="142">
   <metaInfo>
     <property name="created">2026-08-19</property>
-    <property name="description">Circadia Dark (Warm Ember &amp; Espresso)</property>
+    <property name="description">${name} (${mode.name})</property>
     <property name="vendor">Circadia</property>
   </metaInfo>
   <colors>
-    <option name="ADDED_LINES_COLOR" value="a7db76" />
-    <option name="ANNOTATIONS_COLOR" value="b7aca0" />
-    <option name="CARET_COLOR" value="e89a49" />
-    <option name="CARET_ROW_COLOR" value="${dark.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="${dark.ui.bg_canvas.hex.replace('#', '')}" />
-    <option name="DELETED_LINES_COLOR" value="e06c75" />
-    <option name="DOCUMENTATION_COLOR" value="${dark.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="ERROR_HINT" value="e06c75" />
-    <option name="FILESTATUS_ADDED" value="a7db76" />
-    <option name="FILESTATUS_MODIFIED" value="f6a84d" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="89c8e4" />
-    <option name="FILESTATUS_UNKNOWN" value="e59de8" />
-    <option name="FOLDED_TEXT_BORDER_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="GUTTER_BACKGROUND" value="${dark.ui.bg_canvas.hex.replace('#', '')}" />
-    <option name="INDENT_GUIDE" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="INFORMATION_HINT" value="${dark.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="LINE_NUMBERS_COLOR" value="92887d" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="${dark.ui.accent.hex.replace('#', '')}" />
-    <option name="METHOD_SEPARATORS_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="MODIFIED_LINES_COLOR" value="f6a84d" />
-    <option name="NOTIFICATION_BACKGROUND" value="${dark.ui.bg_element.hex.replace('#', '')}" />
-    <option name="QUESTION_HINT" value="89c8e4" />
-    <option name="RECURSIVE_CALL_ATTRIBUTES" value="f1be85" />
-    <option name="RIGHT_MARGIN_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="SELECTED_INDENT_GUIDE" value="92887d" />
-    <option name="SELECTED_TEARLINE_COLOR" value="92887d" />
-    <option name="SELECTION_BACKGROUND" value="${dark.ui.bg_element.hex.replace('#', '')}" />
-    <option name="SELECTION_FOREGROUND" value="eae3d8" />
-    <option name="TEARLINE_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="VISUAL_INDENT_GUIDE" value="${dark.ui.border.hex.replace('#', '')}" />
-    <option name="WHITESPACES" value="${dark.ui.border.hex.replace('#', '')}" />
+    <option name="ADDED_LINES_COLOR" value="${syntax.string.hex.replace('#', '')}" />
+    <option name="ANNOTATIONS_COLOR" value="${ui.text_muted.hex.replace('#', '')}" />
+    <option name="CARET_COLOR" value="${ui.accent.hex.replace('#', '')}" />
+    <option name="CARET_ROW_COLOR" value="${ui.bg_surface.hex.replace('#', '')}" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="${ui.bg_canvas.hex.replace('#', '')}" />
+    <option name="DELETED_LINES_COLOR" value="${isDark ? "e06c75" : "dc2626"}" />
+    <option name="DOCUMENTATION_COLOR" value="${ui.bg_surface.hex.replace('#', '')}" />
+    <option name="ERROR_HINT" value="${isDark ? "e06c75" : "dc2626"}" />
+    <option name="FILESTATUS_ADDED" value="${syntax.string.hex.replace('#', '')}" />
+    <option name="FILESTATUS_MODIFIED" value="${syntax.number.hex.replace('#', '')}" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="${syntax.keyword.hex.replace('#', '')}" />
+    <option name="FILESTATUS_UNKNOWN" value="${syntax.function.hex.replace('#', '')}" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="${ui.border.hex.replace('#', '')}" />
+    <option name="GUTTER_BACKGROUND" value="${ui.bg_canvas.hex.replace('#', '')}" />
+    <option name="INDENT_GUIDE" value="${ui.border.hex.replace('#', '')}" />
+    <option name="INFORMATION_HINT" value="${ui.bg_surface.hex.replace('#', '')}" />
+    <option name="LINE_NUMBERS_COLOR" value="${ui.text_faint.hex.replace('#', '')}" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="${ui.accent.hex.replace('#', '')}" />
+    <option name="METHOD_SEPARATORS_COLOR" value="${ui.border.hex.replace('#', '')}" />
+    <option name="MODIFIED_LINES_COLOR" value="${syntax.number.hex.replace('#', '')}" />
+    <option name="NOTIFICATION_BACKGROUND" value="${ui.bg_element.hex.replace('#', '')}" />
+    <option name="QUESTION_HINT" value="${syntax.keyword.hex.replace('#', '')}" />
+    <option name="RECURSIVE_CALL_ATTRIBUTES" value="${syntax.type.hex.replace('#', '')}" />
+    <option name="RIGHT_MARGIN_COLOR" value="${ui.border.hex.replace('#', '')}" />
+    <option name="SELECTED_INDENT_GUIDE" value="${ui.text_faint.hex.replace('#', '')}" />
+    <option name="SELECTED_TEARLINE_COLOR" value="${ui.text_faint.hex.replace('#', '')}" />
+    <option name="SELECTION_BACKGROUND" value="${ui.bg_element.hex.replace('#', '')}" />
+    <option name="SELECTION_FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
+    <option name="TEARLINE_COLOR" value="${ui.border.hex.replace('#', '')}" />
+    <option name="VISUAL_INDENT_GUIDE" value="${ui.border.hex.replace('#', '')}" />
+    <option name="WHITESPACES" value="${ui.border.hex.replace('#', '')}" />
   </colors>
   <attributes>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="${dark.ui.accent.hex.replace('#', '')}" />
+        <option name="EFFECT_COLOR" value="${ui.accent.hex.replace('#', '')}" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="${dark.ui.bg_element.hex.replace('#', '')}" />
-        <option name="ERROR_STRIPE_COLOR" value="${dark.ui.border.hex.replace('#', '')}" />
+        <option name="BACKGROUND" value="${ui.bg_element.hex.replace('#', '')}" />
+        <option name="ERROR_STRIPE_COLOR" value="${ui.border.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="b3aba0" />
+        <option name="FOREGROUND" value="${syntax.comment.hex.replace('#', '')}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_NAME">
       <value>
-        <option name="FOREGROUND" value="f1be85" />
+        <option name="FOREGROUND" value="${syntax.type.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
-        <option name="FOREGROUND" value="f1be85" />
+        <option name="FOREGROUND" value="${syntax.type.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_CONSTANT">
       <value>
-        <option name="FOREGROUND" value="f6a84d" />
+        <option name="FOREGROUND" value="${syntax.number.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="b3aba0" />
+        <option name="FOREGROUND" value="${syntax.comment.hex.replace('#', '')}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT_TAG">
       <value>
-        <option name="FOREGROUND" value="e89a49" />
+        <option name="FOREGROUND" value="${ui.accent.hex.replace('#', '')}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_DOT">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_CALL">
       <value>
-        <option name="FOREGROUND" value="89c8e4" />
+        <option name="FOREGROUND" value="${syntax.function.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_FUNCTION_DECLARATION">
       <value>
-        <option name="FOREGROUND" value="89c8e4" />
+        <option name="FOREGROUND" value="${syntax.function.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_GLOBAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_IDENTIFIER">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_INSTANCE_FIELD">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_INTERFACE_NAME">
       <value>
-        <option name="FOREGROUND" value="f1be85" />
+        <option name="FOREGROUND" value="${syntax.type.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="e06c75" />
-        <option name="EFFECT_COLOR" value="e06c75" />
+        <option name="FOREGROUND" value="${isDark ? "e06c75" : "dc2626"}" />
+        <option name="EFFECT_COLOR" value="${isDark ? "e06c75" : "dc2626"}" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="e59de8" />
+        <option name="FOREGROUND" value="${syntax.keyword.hex.replace('#', '')}" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="b3aba0" />
+        <option name="FOREGROUND" value="${syntax.comment.hex.replace('#', '')}" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="DEFAULT_LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_NUMBER">
       <value>
-        <option name="FOREGROUND" value="f6a84d" />
+        <option name="FOREGROUND" value="${syntax.number.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
       <value>
-        <option name="FOREGROUND" value="b7aca0" />
+        <option name="FOREGROUND" value="${ui.text_muted.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_PARAMETER">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_SEMICOLON">
       <value>
-        <option name="FOREGROUND" value="b7aca0" />
+        <option name="FOREGROUND" value="${ui.text_muted.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_STRING">
       <value>
-        <option name="FOREGROUND" value="a7db76" />
+        <option name="FOREGROUND" value="${syntax.string.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_TAG">
       <value>
-        <option name="FOREGROUND" value="e89a49" />
+        <option name="FOREGROUND" value="${syntax.tag.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="BACKGROUND" value="${dark.ui.bg_surface.hex.replace('#', '')}" />
+        <option name="BACKGROUND" value="${ui.bg_surface.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="f1be85" />
+        <option name="FOREGROUND" value="${syntax.type.hex.replace('#', '')}" />
       </value>
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="eae3d8" />
-        <option name="BACKGROUND" value="${dark.ui.bg_canvas.hex.replace('#', '')}" />
+        <option name="FOREGROUND" value="${ui.text_primary.hex.replace('#', '')}" />
+        <option name="BACKGROUND" value="${ui.bg_canvas.hex.replace('#', '')}" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
   </attributes>
 </scheme>`;
+  }
 
-  const lightIcls = `<?xml version="1.0" encoding="UTF-8"?>
-<scheme name="Circadia Light" parent_scheme="Default" version="142">
-  <metaInfo>
-    <property name="created">2026-08-19</property>
-    <property name="description">Circadia Light (Warm Parchment)</property>
-    <property name="vendor">Circadia</property>
-  </metaInfo>
-  <colors>
-    <option name="ADDED_LINES_COLOR" value="1e6822" />
-    <option name="ANNOTATIONS_COLOR" value="46535f" />
-    <option name="CARET_COLOR" value="195697" />
-    <option name="CARET_ROW_COLOR" value="${light.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
-    <option name="DELETED_LINES_COLOR" value="dc2626" />
-    <option name="DOCUMENTATION_COLOR" value="${light.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="ERROR_HINT" value="dc2626" />
-    <option name="FILESTATUS_ADDED" value="1e6822" />
-    <option name="FILESTATUS_MODIFIED" value="8d4400" />
-    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="165084" />
-    <option name="FILESTATUS_UNKNOWN" value="6b1d8f" />
-    <option name="FOLDED_TEXT_BORDER_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="GUTTER_BACKGROUND" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
-    <option name="INDENT_GUIDE" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="INFORMATION_HINT" value="${light.ui.bg_surface.hex.replace('#', '')}" />
-    <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="${light.ui.accent.hex.replace('#', '')}" />
-    <option name="METHOD_SEPARATORS_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="MODIFIED_LINES_COLOR" value="8d4400" />
-    <option name="NOTIFICATION_BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
-    <option name="QUESTION_HINT" value="165084" />
-    <option name="RECURSIVE_CALL_ATTRIBUTES" value="00677f" />
-    <option name="RIGHT_MARGIN_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="SELECTED_INDENT_GUIDE" value="5f6d7a" />
-    <option name="SELECTED_TEARLINE_COLOR" value="5f6d7a" />
-    <option name="SELECTION_BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
-    <option name="SELECTION_FOREGROUND" value="28323a" />
-    <option name="TEARLINE_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="VISUAL_INDENT_GUIDE" value="${light.ui.border.hex.replace('#', '')}" />
-    <option name="WHITESPACES" value="${light.ui.border.hex.replace('#', '')}" />
-  </colors>
-  <attributes>
-    <option name="MATCHED_BRACE_ATTRIBUTES">
-      <value>
-        <option name="EFFECT_COLOR" value="${light.ui.accent.hex.replace('#', '')}" />
-        <option name="EFFECT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
-      <value>
-        <option name="BACKGROUND" value="${light.ui.bg_element.hex.replace('#', '')}" />
-        <option name="ERROR_STRIPE_COLOR" value="${light.ui.border.hex.replace('#', '')}" />
-      </value>
-    </option>
-    <option name="DEFAULT_BLOCK_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="574f46" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="DEFAULT_CLASS_NAME">
-      <value>
-        <option name="FOREGROUND" value="00677f" />
-      </value>
-    </option>
-    <option name="DEFAULT_CLASS_REFERENCE">
-      <value>
-        <option name="FOREGROUND" value="00677f" />
-      </value>
-    </option>
-    <option name="DEFAULT_CONSTANT">
-      <value>
-        <option name="FOREGROUND" value="8d4400" />
-      </value>
-    </option>
-    <option name="DEFAULT_DOC_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="574f46" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="DEFAULT_DOC_COMMENT_TAG">
-      <value>
-        <option name="FOREGROUND" value="195697" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="DEFAULT_DOT">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_FUNCTION_CALL">
-      <value>
-        <option name="FOREGROUND" value="165084" />
-      </value>
-    </option>
-    <option name="DEFAULT_FUNCTION_DECLARATION">
-      <value>
-        <option name="FOREGROUND" value="165084" />
-      </value>
-    </option>
-    <option name="DEFAULT_GLOBAL_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_IDENTIFIER">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_INSTANCE_FIELD">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_INTERFACE_NAME">
-      <value>
-        <option name="FOREGROUND" value="00677f" />
-      </value>
-    </option>
-    <option name="DEFAULT_INVALID_STRING_ESCAPE">
-      <value>
-        <option name="FOREGROUND" value="dc2626" />
-        <option name="EFFECT_COLOR" value="dc2626" />
-        <option name="EFFECT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="DEFAULT_KEYWORD">
-      <value>
-        <option name="FOREGROUND" value="6b1d8f" />
-        <option name="FONT_TYPE" value="1" />
-      </value>
-    </option>
-    <option name="DEFAULT_LINE_COMMENT">
-      <value>
-        <option name="FOREGROUND" value="574f46" />
-        <option name="FONT_TYPE" value="2" />
-      </value>
-    </option>
-    <option name="DEFAULT_LOCAL_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_NUMBER">
-      <value>
-        <option name="FOREGROUND" value="8d4400" />
-      </value>
-    </option>
-    <option name="DEFAULT_OPERATION_SIGN">
-      <value>
-        <option name="FOREGROUND" value="46535f" />
-      </value>
-    </option>
-    <option name="DEFAULT_PARAMETER">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-      </value>
-    </option>
-    <option name="DEFAULT_SEMICOLON">
-      <value>
-        <option name="FOREGROUND" value="46535f" />
-      </value>
-    </option>
-    <option name="DEFAULT_STRING">
-      <value>
-        <option name="FOREGROUND" value="1e6822" />
-      </value>
-    </option>
-    <option name="DEFAULT_TAG">
-      <value>
-        <option name="FOREGROUND" value="195697" />
-      </value>
-    </option>
-    <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
-      <value>
-        <option name="BACKGROUND" value="${light.ui.bg_surface.hex.replace('#', '')}" />
-      </value>
-    </option>
-    <option name="DEFAULT_VALID_STRING_ESCAPE">
-      <value>
-        <option name="FOREGROUND" value="00677f" />
-      </value>
-    </option>
-    <option name="TEXT">
-      <value>
-        <option name="FOREGROUND" value="28323a" />
-        <option name="BACKGROUND" value="${light.ui.bg_canvas.hex.replace('#', '')}" />
-        <option name="EFFECT_TYPE" value="5" />
-      </value>
-    </option>
-  </attributes>
-</scheme>`;
-
-  fs.writeFileSync(path.join(outDir, "circadia-dark.icls"), darkIcls);
-  fs.writeFileSync(path.join(outDir, "circadia-light.icls"), lightIcls);
+  fs.writeFileSync(path.join(outDir, "circadia-dark.icls"), generateIcls(dark, true));
+  fs.writeFileSync(path.join(outDir, "circadia-light.icls"), generateIcls(light, false));
 
   const readme = `# Circadia for JetBrains IDEs
 
