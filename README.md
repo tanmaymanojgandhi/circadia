@@ -14,22 +14,22 @@ Circadia is an open color specification engineered in OKLCH for cross-platform e
 
 | Token | Semantic Role | ☀️ Light (`Warm Parchment`) | 🌙 Dark (`Warm Ember & Obsidian`) |
 | :--- | :--- | :--- | :--- |
-| **`bg_canvas`** | Canvas Background | `#f7f2e6`<br>`oklch(96.0% 0.013 85)`<br>*(Base Canvas)* | `#15141b`<br>`oklch(19.0% 0.012 290)`<br>*(Base Canvas)* |
-| **`bg_surface`** | Sidebars & Inactive Tabs | `#eee7d6`<br>`oklch(92.5% 0.016 85)`<br>*(UI Surface)* | `#1c1a24`<br>`oklch(22.0% 0.015 290)`<br>*(UI Surface)* |
-| **`bg_element`** | Active Line & Selection | `#e5dcc6`<br>`oklch(88.5% 0.020 85)`<br>*(UI Element)* | `#252330`<br>`oklch(26.0% 0.018 290)`<br>*(UI Element)* |
-| **`border`** | 1px Panel Dividers | `#d7cdb7`<br>`oklch(83.0% 0.022 85)`<br>*(UI Border)* | `#343041`<br>`oklch(33.0% 0.020 290)`<br>*(UI Border)* |
-| **`text_primary`** | Body Text & Punctuation | `#28323a`<br>`oklch(30.0% 0.020 250)`<br>**11.69:1 (AAA)** | `#eae3d8`<br>`oklch(91.0% 0.015 85)`<br>**14.36:1 (AAA)** |
-| **`text_muted`** | Secondary Text / Operators | `#46535f`<br>`oklch(43.0% 0.025 250)`<br>**7.06:1 (AAA)** | `#b7aca0`<br>`oklch(76.0% 0.020 85)`<br>**8.21:1 (AAA)** |
-| **`text_faint`** | Line Numbers & Guides | `#5f6d7a`<br>`oklch(53.0% 0.020 250)`<br>**4.75:1 (AA)** | `#92887d`<br>`oklch(64.0% 0.018 85)`<br>**5.26:1 (AA)** |
-| **`accent`** | Focus Rings & Links | `#0048b3`<br>`oklch(43.8% 0.181 260)`<br>**7.29:1 (AAA)** | `#e89a49`<br>`oklch(75.0% 0.130 65)`<br>**7.97:1 (AAA)** |
-| **`keyword`** | Keywords & Flow Control | `#0048b3`<br>`oklch(43.8% 0.181 260)`<br>**7.29:1 (AAA)** | `#e59de8`<br>`oklch(80.0% 0.130 320)`<br>**8.99:1 (AAA)** |
-| **`type`** | Types, Classes & Structs | `#843900`<br>`oklch(44.2% 0.162 62)`<br>**7.32:1 (AAA)** | `#f1be85`<br>`oklch(82.0% 0.090 75)`<br>**10.84:1 (AAA)** |
-| **`function`** | Functions & Methods | `#7a1f7a`<br>`oklch(42.4% 0.164 328)`<br>**8.16:1 (AAA)** | `#89c8e4`<br>`oklch(79.0% 0.080 230)`<br>**9.97:1 (AAA)** |
-| **`property`** | Properties & Object Keys | `#4b1fa3`<br>`oklch(39.4% 0.192 290)`<br>**9.29:1 (AAA)** | `#f2a2b8`<br>`oklch(80.0% 0.120 350)`<br>**9.27:1 (AAA)** |
-| **`variable`** | Variables & Parameters | `#364450`<br>`oklch(37.9% 0.027 245)`<br>**8.95:1 (AAA)** | `#eae3d8`<br>`oklch(91.0% 0.015 85)`<br>**14.36:1 (AAA)** |
-| **`string`** | String Literals | `#005f2f`<br>`oklch(42.5% 0.110 153)`<br>**7.02:1 (AAA)** | `#a7db76`<br>`oklch(80.0% 0.130 135)`<br>**11.36:1 (AAA)** |
-| **`number`** | Numeric & Constant Literals | `#095b62`<br>`oklch(42.5% 0.080 204)`<br>**7.00:1 (AAA)** | `#f6a84d`<br>`oklch(79.0% 0.140 60)`<br>**9.26:1 (AAA)** |
-| **`comment`** | Code Comments | `#5e564d`<br>`oklch(45.8% 0.018 71)`<br>**6.45:1 (AA)** | `#b3aba0`<br>`oklch(75.5% 0.020 60)`<br>**8.06:1 (AAA)** |
+| **`bg_canvas`** | Canvas Background | `#f7f2e6`<br>`oklch(96.0% 0.013 85)`<br>*(Base Canvas)* | `#17130f`<br>`oklch(19.0% 0.010 67)`<br>*(Base Canvas)* |
+| **`bg_surface`** | Sidebars & Inactive Tabs | `#eee7d6`<br>`oklch(92.5% 0.016 85)`<br>*(UI Surface)* | `#1e1a15`<br>`oklch(22.0% 0.012 67)`<br>*(UI Surface)* |
+| **`bg_element`** | Active Line & Selection | `#e5dcc6`<br>`oklch(88.5% 0.020 85)`<br>*(UI Element)* | `#29241e`<br>`oklch(26.0% 0.015 67)`<br>*(UI Element)* |
+| **`border`** | 1px Panel Dividers | `#d7cdb7`<br>`oklch(83.0% 0.022 85)`<br>*(UI Border)* | `#3b342b`<br>`oklch(33.0% 0.018 67)`<br>*(UI Border)* |
+| **`text_primary`** | Body Text & Punctuation | `#28323a`<br>`oklch(30.0% 0.020 250)`<br>**11.69:1 (AAA)** | `#c9c0b1`<br>`oklch(81.1% 0.023 81)`<br>**10.26:1 (AAA)** |
+| **`text_muted`** | Secondary Text / Operators | `#46535f`<br>`oklch(43.0% 0.025 250)`<br>**7.06:1 (AAA)** | `#b5aba0`<br>`oklch(75.0% 0.020 81)`<br>**8.18:1 (AAA)** |
+| **`text_faint`** | Line Numbers & Guides | `#5f6d7a`<br>`oklch(53.0% 0.020 250)`<br>**4.75:1 (AA)** | `#91887d`<br>`oklch(63.0% 0.018 75)`<br>**5.30:1 (AA)** |
+| **`accent`** | Focus Rings & Links | `#0048b3`<br>`oklch(43.8% 0.181 260)`<br>**7.29:1 (AAA)** | `#e89a49`<br>`oklch(75.0% 0.130 65)`<br>**8.05:1 (AAA)** |
+| **`keyword`** | Keywords & Flow Control | `#0048b3`<br>`oklch(43.8% 0.181 260)`<br>**7.29:1 (AAA)** | `#66abc6`<br>`oklch(70.6% 0.080 225)`<br>**7.22:1 (AAA)** |
+| **`type`** | Types, Classes & Structs | `#843900`<br>`oklch(44.2% 0.162 62)`<br>**7.32:1 (AAA)** | `#d9a86e`<br>`oklch(76.4% 0.095 70)`<br>**8.60:1 (AAA)** |
+| **`function`** | Functions & Methods | `#7a1f7a`<br>`oklch(42.4% 0.164 328)`<br>**8.16:1 (AAA)** | `#b991db`<br>`oklch(72.0% 0.114 308.5)`<br>**7.16:1 (AAA)** |
+| **`property`** | Properties & Object Keys | `#4b1fa3`<br>`oklch(39.4% 0.192 290)`<br>**9.29:1 (AAA)** | `#de88a6`<br>`oklch(72.4% 0.111 358)`<br>**7.20:1 (AAA)** |
+| **`variable`** | Variables & Parameters | `#364450`<br>`oklch(37.9% 0.027 245)`<br>**8.95:1 (AAA)** | `#c9c0b1`<br>`oklch(81.1% 0.023 81)`<br>**10.26:1 (AAA)** |
+| **`string`** | String Literals | `#005f2f`<br>`oklch(42.5% 0.110 153)`<br>**7.02:1 (AAA)** | `#8cbb62`<br>`oklch(73.8% 0.129 132)`<br>**8.27:1 (AAA)** |
+| **`number`** | Numeric & Constant Literals | `#095b62`<br>`oklch(42.5% 0.080 204)`<br>**7.00:1 (AAA)** | `#d99148`<br>`oklch(71.5% 0.124 64)`<br>**7.12:1 (AAA)** |
+| **`comment`** | Code Comments | `#5e564d`<br>`oklch(45.8% 0.018 71)`<br>**6.45:1 (AA)** | `#a9a093`<br>`oklch(71.0% 0.021 75)`<br>**7.16:1 (AAA)** |
 
 ---
 

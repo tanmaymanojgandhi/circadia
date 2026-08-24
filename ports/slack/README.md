@@ -9,5 +9,5 @@ Copy and paste the strings below into Slack's **Preferences → Themes → Custo
 
 ### 🌙 Dark Mode (Warm Ember & Obsidian)
 ```text
-#1c1a24,#eae3d8,#15141b,#252330,#eae3d8,#a7db76,#e89a49,#e89a49,#252330,#eae3d8
+#1e1a15,#c9c0b1,#17130f,#29241e,#c9c0b1,#8cbb62,#e89a49,#e89a49,#29241e,#c9c0b1
 ```

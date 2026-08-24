@@ -17,15 +17,15 @@
    -------------------------------------------------------------------------- */
 
 [data-theme="dark"] {
-  --bg-canvas: #15141b;
-  --bg-surface: #1c1a24;
-  --bg-element: #252330;
-  --border: #343041;
+  --bg-canvas: #17130f;
+  --bg-surface: #1e1a15;
+  --bg-element: #29241e;
+  --border: #3b342b;
   --border-subtle: #252230;
 
-  --text-primary: #eae3d8;
-  --text-muted: #b7aca0;
-  --text-faint: #92887d;
+  --text-primary: #c9c0b1;
+  --text-muted: #b5aba0;
+  --text-faint: #91887d;
   --accent: #e89a49;
   --accent-glow: rgba(232, 154, 73, 0.12);
 

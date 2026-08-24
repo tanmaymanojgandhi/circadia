@@ -1,6 +1,6 @@
 {
   "name": "Circadia",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "tagline": "Perceptually uniform, low-strain themes engineered for continuous focus.",
   "description": "Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Obsidian)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.",
   "modes": {
@@ -226,64 +226,64 @@
       "type": "dark",
       "ui": {
         "bg_canvas": {
-          "hex": "#15141b",
-          "oklch": "oklch(19.0% 0.012 290)",
+          "hex": "#17130f",
+          "oklch": "oklch(19.0% 0.010 67)",
           "rgb": [
-            21,
-            20,
-            27
+            23,
+            19,
+            15
           ]
         },
         "bg_surface": {
-          "hex": "#1c1a24",
-          "oklch": "oklch(22.0% 0.015 290)",
+          "hex": "#1e1a15",
+          "oklch": "oklch(22.0% 0.012 67)",
           "rgb": [
-            28,
+            30,
             26,
-            36
+            21
           ]
         },
         "bg_element": {
-          "hex": "#252330",
-          "oklch": "oklch(26.0% 0.018 290)",
+          "hex": "#29241e",
+          "oklch": "oklch(26.0% 0.015 67)",
           "rgb": [
-            37,
-            35,
-            48
+            41,
+            36,
+            30
           ]
         },
         "border": {
-          "hex": "#343041",
-          "oklch": "oklch(33.0% 0.020 290)",
+          "hex": "#3b342b",
+          "oklch": "oklch(33.0% 0.018 67)",
           "rgb": [
+            59,
             52,
-            48,
-            65
+            43
           ]
         },
         "text_primary": {
-          "hex": "#eae3d8",
-          "oklch": "oklch(91.0% 0.015 85)",
+          "hex": "#c9c0b1",
+          "oklch": "oklch(81.1% 0.023 81)",
           "rgb": [
-            234,
-            227,
-            216
+            201,
+            192,
+            177
           ]
         },
         "text_muted": {
-          "hex": "#b7aca0",
-          "oklch": "oklch(76.0% 0.020 85)",
+          "hex": "#b5aba0",
+          "oklch": "oklch(75.0% 0.020 81)",
           "rgb": [
-            183,
-            172,
+            181,
+            171,
             160
           ]
         },
         "text_faint": {
-          "hex": "#92887d",
-          "oklch": "oklch(64.0% 0.018 85)",
+          "hex": "#91887d",
+          "oklch": "oklch(63.0% 0.018 75)",
           "rgb": [
-            146,
+            145,
             136,
             125
           ]
@@ -356,84 +356,84 @@
       },
       "syntax": {
         "keyword": {
-          "hex": "#e59de8",
-          "oklch": "oklch(80.0% 0.130 320)",
+          "hex": "#66abc6",
+          "oklch": "oklch(70.6% 0.080 225)",
           "rgb": [
-            229,
-            157,
-            232
+            102,
+            171,
+            198
           ]
         },
         "type": {
-          "hex": "#f1be85",
-          "oklch": "oklch(82.0% 0.090 75)",
+          "hex": "#d9a86e",
+          "oklch": "oklch(76.4% 0.095 70)",
           "rgb": [
-            241,
-            190,
-            133
+            217,
+            168,
+            110
           ]
         },
         "function": {
-          "hex": "#89c8e4",
-          "oklch": "oklch(79.0% 0.080 230)",
+          "hex": "#b991db",
+          "oklch": "oklch(72.0% 0.114 308.5)",
           "rgb": [
-            137,
-            200,
-            228
+            185,
+            145,
+            219
           ]
         },
         "property": {
-          "hex": "#f2a2b8",
-          "oklch": "oklch(80.0% 0.120 350)",
+          "hex": "#de88a6",
+          "oklch": "oklch(72.4% 0.111 358)",
           "rgb": [
-            242,
-            162,
-            184
+            222,
+            136,
+            166
           ]
         },
         "variable": {
-          "hex": "#eae3d8",
-          "oklch": "oklch(91.0% 0.015 85)",
+          "hex": "#c9c0b1",
+          "oklch": "oklch(81.1% 0.023 81)",
           "rgb": [
-            234,
-            227,
-            216
+            201,
+            192,
+            177
           ]
         },
         "string": {
-          "hex": "#a7db76",
-          "oklch": "oklch(80.0% 0.130 135)",
+          "hex": "#8cbb62",
+          "oklch": "oklch(73.8% 0.129 132)",
           "rgb": [
-            167,
-            219,
-            118
+            140,
+            187,
+            98
           ]
         },
         "number": {
-          "hex": "#f6a84d",
-          "oklch": "oklch(79.0% 0.140 60)",
+          "hex": "#d99148",
+          "oklch": "oklch(71.5% 0.124 64)",
           "rgb": [
-            246,
-            168,
-            77
+            217,
+            145,
+            72
           ]
         },
         "tag": {
-          "hex": "#e89a49",
-          "oklch": "oklch(75.0% 0.130 65)",
+          "hex": "#66abc6",
+          "oklch": "oklch(70.6% 0.080 225)",
           "rgb": [
-            232,
-            154,
-            73
+            102,
+            171,
+            198
           ]
         },
         "comment": {
-          "hex": "#b3aba0",
-          "oklch": "oklch(75.5% 0.020 60)",
+          "hex": "#a9a093",
+          "oklch": "oklch(71.0% 0.021 75)",
           "rgb": [
-            179,
-            171,
-            160
+            169,
+            160,
+            147
           ]
         }
       }

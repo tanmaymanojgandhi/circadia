@@ -12,11 +12,11 @@
 
 @layer base {
   .dark {
-    --color-background:            #15141b;
-    --color-foreground:            #eae3d8;
-    --color-surface:               #1c1a24;
-    --color-element:               #252330;
-    --color-border:                #343041;
+    --color-background:            #17130f;
+    --color-foreground:            #c9c0b1;
+    --color-surface:               #1e1a15;
+    --color-element:               #29241e;
+    --color-border:                #3b342b;
     --color-primary:               #e89a49;
   }
 }

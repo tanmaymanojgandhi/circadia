@@ -9,34 +9,34 @@
     <option name="ADDED_LINES_COLOR" value="a7db76" />
     <option name="ANNOTATIONS_COLOR" value="b7aca0" />
     <option name="CARET_COLOR" value="e89a49" />
-    <option name="CARET_ROW_COLOR" value="1c1a24" />
-    <option name="CONSOLE_BACKGROUND_KEY" value="15141b" />
+    <option name="CARET_ROW_COLOR" value="1e1a15" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="17130f" />
     <option name="DELETED_LINES_COLOR" value="e06c75" />
-    <option name="DOCUMENTATION_COLOR" value="1c1a24" />
+    <option name="DOCUMENTATION_COLOR" value="1e1a15" />
     <option name="ERROR_HINT" value="e06c75" />
     <option name="FILESTATUS_ADDED" value="a7db76" />
     <option name="FILESTATUS_MODIFIED" value="f6a84d" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="89c8e4" />
     <option name="FILESTATUS_UNKNOWN" value="e59de8" />
-    <option name="FOLDED_TEXT_BORDER_COLOR" value="343041" />
-    <option name="GUTTER_BACKGROUND" value="15141b" />
-    <option name="INDENT_GUIDE" value="343041" />
-    <option name="INFORMATION_HINT" value="1c1a24" />
+    <option name="FOLDED_TEXT_BORDER_COLOR" value="3b342b" />
+    <option name="GUTTER_BACKGROUND" value="17130f" />
+    <option name="INDENT_GUIDE" value="3b342b" />
+    <option name="INFORMATION_HINT" value="1e1a15" />
     <option name="LINE_NUMBERS_COLOR" value="92887d" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="eae3d8" />
-    <option name="METHOD_SEPARATORS_COLOR" value="343041" />
+    <option name="METHOD_SEPARATORS_COLOR" value="3b342b" />
     <option name="MODIFIED_LINES_COLOR" value="f6a84d" />
-    <option name="NOTIFICATION_BACKGROUND" value="252330" />
+    <option name="NOTIFICATION_BACKGROUND" value="29241e" />
     <option name="QUESTION_HINT" value="89c8e4" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="f1be85" />
-    <option name="RIGHT_MARGIN_COLOR" value="343041" />
+    <option name="RIGHT_MARGIN_COLOR" value="3b342b" />
     <option name="SELECTED_INDENT_GUIDE" value="92887d" />
     <option name="SELECTED_TEARLINE_COLOR" value="92887d" />
-    <option name="SELECTION_BACKGROUND" value="252330" />
+    <option name="SELECTION_BACKGROUND" value="29241e" />
     <option name="SELECTION_FOREGROUND" value="eae3d8" />
-    <option name="TEARLINE_COLOR" value="343041" />
-    <option name="VISUAL_INDENT_GUIDE" value="343041" />
-    <option name="WHITESPACES" value="343041" />
+    <option name="TEARLINE_COLOR" value="3b342b" />
+    <option name="VISUAL_INDENT_GUIDE" value="3b342b" />
+    <option name="WHITESPACES" value="3b342b" />
   </colors>
   <attributes>
     <option name="DEFAULT_BLOCK_COMMENT">
@@ -163,7 +163,7 @@
     </option>
     <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR">
       <value>
-        <option name="BACKGROUND" value="1c1a24" />
+        <option name="BACKGROUND" value="1e1a15" />
       </value>
     </option>
     <option name="DEFAULT_VALID_STRING_ESCAPE">
@@ -174,7 +174,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="eae3d8" />
-        <option name="BACKGROUND" value="15141b" />
+        <option name="BACKGROUND" value="17130f" />
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
