@@ -22,7 +22,7 @@
     <option name="GUTTER_BACKGROUND" value="f7f2e6" />
     <option name="INDENT_GUIDE" value="d7cdb7" />
     <option name="INFORMATION_HINT" value="eee7d6" />
-    <option name="LINE_NUMBERS_COLOR" value="5f6d7a" />
+    <option name="LINE_NUMBERS_COLOR" value="43505c" />
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="0048b3" />
     <option name="METHOD_SEPARATORS_COLOR" value="d7cdb7" />
     <option name="MODIFIED_LINES_COLOR" value="095b62" />
@@ -30,8 +30,8 @@
     <option name="QUESTION_HINT" value="0048b3" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="843900" />
     <option name="RIGHT_MARGIN_COLOR" value="d7cdb7" />
-    <option name="SELECTED_INDENT_GUIDE" value="5f6d7a" />
-    <option name="SELECTED_TEARLINE_COLOR" value="5f6d7a" />
+    <option name="SELECTED_INDENT_GUIDE" value="43505c" />
+    <option name="SELECTED_TEARLINE_COLOR" value="43505c" />
     <option name="SELECTION_BACKGROUND" value="e5dcc6" />
     <option name="SELECTION_FOREGROUND" value="28323a" />
     <option name="TEARLINE_COLOR" value="d7cdb7" />
@@ -53,7 +53,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="5e564d" />
+        <option name="FOREGROUND" value="524b42" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -74,7 +74,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="5e564d" />
+        <option name="FOREGROUND" value="524b42" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -134,7 +134,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="5e564d" />
+        <option name="FOREGROUND" value="524b42" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>

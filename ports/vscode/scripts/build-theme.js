@@ -168,4 +168,11 @@ for (const [modeKey, mode] of Object.entries(spec.modes)) {
   const outPath = path.join(outDir, `circadia-${modeKey}.json`);
   fs.writeFileSync(outPath, JSON.stringify(themeJson, null, 2), "utf-8");
   console.log(`Generated ${outPath}`);
+
+  if (modeKey === "light_parchment") {
+    fs.writeFileSync(path.join(outDir, "circadia-light.json"), JSON.stringify(themeJson, null, 2), "utf-8");
+  }
+  if (modeKey === "dark_ember") {
+    fs.writeFileSync(path.join(outDir, "circadia-dark.json"), JSON.stringify(themeJson, null, 2), "utf-8");
+  }
 }

@@ -12,22 +12,23 @@
   --radius-lg: 10px;
 }
 
+
 /* --------------------------------------------------------------------------
-   Themes: Exact Circadia Spec Mapping
+   Themes: Exact Circadia 2.0 Spec Mapping (4 Circadian Modes)
    -------------------------------------------------------------------------- */
 
-[data-theme="dark"] {
+[data-theme="dark"], [data-theme="dark_ember"] {
   --bg-canvas: #17130f;
   --bg-surface: #1e1a15;
   --bg-element: #29241e;
   --border: #3b342b;
-  --border-subtle: #252230;
+  --border-subtle: #2d261f;
 
   --text-primary: #c9c0b1;
-  --text-muted: #b5aba0;
+  --text-muted: #aba195;
   --text-faint: #91887d;
   --accent: #e89a49;
-  --accent-glow: rgba(232, 154, 73, 0.12);
+  --accent-glow: rgba(232, 154, 73, 0.15);
 
   --h1: #f8c88f;
   --h2: #f2b26c;
@@ -36,29 +37,97 @@
   --h5: #c7792e;
   --h6: #b56f2b;
 
-  --syn-keyword: #e59de8;
-  --syn-type: #f1be85;
-  --syn-function: #89c8e4;
-  --syn-string: #a7db76;
-  --syn-number: #f6a84d;
-  --syn-tag: #e89a49;
-  --syn-comment: #b3aba0;
+  --syn-keyword: #66abc6;
+  --syn-type: #d9a86e;
+  --syn-function: #b991db;
+  --syn-property: #de88a6;
+  --syn-variable: #c9c0b1;
+  --syn-string: #8cbb62;
+  --syn-number: #d99148;
+  --syn-tag: #66abc6;
+  --syn-comment: #a69c91;
 
   color-scheme: dark;
 }
 
-[data-theme="light"] {
+[data-theme="dark_plum"] {
+  --bg-canvas: #140e12;
+  --bg-surface: #1b1419;
+  --bg-element: #261e23;
+  --border: #3d3039;
+  --border-subtle: #2d2028;
+
+  --text-primary: #d8c8d2;
+  --text-muted: #b4a3af;
+  --text-faint: #9a8b96;
+  --accent: #e88cb8;
+  --accent-glow: rgba(232, 140, 184, 0.15);
+
+  --h1: #f5b8d0;
+  --h2: #e89bb8;
+  --h3: #da7ea0;
+  --h4: #c96588;
+  --h5: #b84e72;
+  --h6: #bd5478;
+
+  --syn-keyword: #82b4ea;
+  --syn-type: #e5b084;
+  --syn-function: #cb94f0;
+  --syn-property: #f08bb2;
+  --syn-variable: #d8c8d2;
+  --syn-string: #9ec97b;
+  --syn-number: #f0a256;
+  --syn-tag: #82b4ea;
+  --syn-comment: #ad9ca8;
+
+  color-scheme: dark;
+}
+
+[data-theme="dark_forest"] {
+  --bg-canvas: #131714;
+  --bg-surface: #1a1e1b;
+  --bg-element: #242a25;
+  --border: #353c36;
+  --border-subtle: #252b26;
+
+  --text-primary: #c4ccc5;
+  --text-muted: #9fa9a1;
+  --text-faint: #838d85;
+  --accent: #6ec28a;
+  --accent-glow: rgba(110, 194, 138, 0.15);
+
+  --h1: #b8e2c4;
+  --h2: #9ecfae;
+  --h3: #83bc97;
+  --h4: #69a881;
+  --h5: #569970;
+  --h6: #45875e;
+
+  --syn-keyword: #72b6d1;
+  --syn-type: #d6b07c;
+  --syn-function: #b599de;
+  --syn-property: #d98fa8;
+  --syn-variable: #c4ccc5;
+  --syn-string: #86cc7e;
+  --syn-number: #e0a255;
+  --syn-tag: #72b6d1;
+  --syn-comment: #95a097;
+
+  color-scheme: dark;
+}
+
+[data-theme="light"], [data-theme="light_parchment"] {
   --bg-canvas: #f7f2e6;
   --bg-surface: #eee7d6;
   --bg-element: #e5dcc6;
   --border: #d7cdb7;
-  --border-subtle: #dbcfb9;
+  --border-subtle: #e0d6c0;
 
   --text-primary: #28323a;
   --text-muted: #46535f;
-  --text-faint: #5f6d7a;
-  --accent: #195697;
-  --accent-glow: rgba(25, 86, 151, 0.12);
+  --text-faint: #43505c;
+  --accent: #0048b3;
+  --accent-glow: rgba(0, 72, 179, 0.12);
 
   --h1: #1c4470;
   --h2: #20538a;
@@ -67,16 +136,19 @@
   --h5: #286fc0;
   --h6: #2f75c6;
 
-  --syn-keyword: #631c84;
-  --syn-type: #7f3500;
-  --syn-function: #09489a;
-  --syn-string: #085802;
-  --syn-number: #8a2d00;
-  --syn-tag: #09489a;
-  --syn-comment: #574f46;
+  --syn-keyword: #0048b3;
+  --syn-type: #843900;
+  --syn-function: #7a1f7a;
+  --syn-property: #4b1fa3;
+  --syn-variable: #364450;
+  --syn-string: #005f2f;
+  --syn-number: #095b62;
+  --syn-tag: #0048b3;
+  --syn-comment: #524b42;
 
   color-scheme: light;
 }
+
 
 /* --------------------------------------------------------------------------
    Reset & Document Base
@@ -425,24 +497,24 @@ code, pre {
   opacity: 0.7;
 }
 
-/* Dual Mode Toggle Cards */
+/* 4-Mode Toggle Cards */
 .hero-dual-modes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 4px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
 }
 
 .hero-mode-card {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 16px 18px;
+  padding: 14px 16px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 8px;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
@@ -469,11 +541,13 @@ code, pre {
   border-radius: 50%;
 }
 
-.light-dot { background: #195697; }
-.dark-dot { background: #e89a49; }
+.light-dot { background: #0048b3; }
+.dark-ember-dot { background: #e89a49; }
+.dark-plum-dot { background: #e88cb8; }
+.dark-forest-dot { background: #6ec28a; }
 
 .mode-name {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
 }

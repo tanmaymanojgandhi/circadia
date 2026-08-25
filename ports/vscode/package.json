@@ -1,8 +1,8 @@
 {
   "name": "circadia-vscode",
   "displayName": "Circadia Theme",
-  "description": "Perceptually uniform, low-strain themes engineered for continuous focus (Warm Parchment & Warm Ember & Espresso)",
-  "version": "1.0.0",
+  "description": "Perceptually uniform, circadian-aligned design tokens engineered in OKLCH (Warm Parchment, Warm Ember & Espresso, Plum Noir, Obsidian Pine)",
+  "version": "2.0.0",
   "publisher": "circadia",
   "engines": {
     "vscode": "^1.80.0"
@@ -18,12 +18,22 @@
       {
         "label": "Circadia — Warm Parchment (Light)",
         "uiTheme": "vs",
-        "path": "./themes/circadia-light.json"
+        "path": "./themes/circadia-light_parchment.json"
       },
       {
-        "label": "Circadia — Warm Ember & Espresso (Dark)",
+        "label": "Circadia — Warm Ember & Espresso (Dark Classic)",
         "uiTheme": "vs-dark",
-        "path": "./themes/circadia-dark.json"
+        "path": "./themes/circadia-dark_ember.json"
+      },
+      {
+        "label": "Circadia — Plum Noir (Dark Modern)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/circadia-dark_plum.json"
+      },
+      {
+        "label": "Circadia — Obsidian Pine (Dark Focus)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/circadia-dark_forest.json"
       }
     ]
   }

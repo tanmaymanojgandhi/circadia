@@ -8,7 +8,7 @@
   --color-circadia-border:         #d7cdb7;
   --color-circadia-text:           #28323a;
   --color-circadia-muted:          #46535f;
-  --color-circadia-faint:          #5f6d7a;
+  --color-circadia-faint:          #43505c;
   --color-circadia-accent:         #0048b3;
 
   /* Dark mode variants */
@@ -17,7 +17,7 @@
   --color-circadia-dark-element:   #29241e;
   --color-circadia-dark-border:    #3b342b;
   --color-circadia-dark-text:      #c9c0b1;
-  --color-circadia-dark-muted:     #b5aba0;
+  --color-circadia-dark-muted:     #aba195;
   --color-circadia-dark-faint:     #91887d;
   --color-circadia-dark-accent:    #e89a49;
 
@@ -27,12 +27,12 @@
   --color-circadia-function:       #7a1f7a;
   --color-circadia-string:         #005f2f;
   --color-circadia-number:         #095b62;
-  --color-circadia-comment:        #5e564d;
+  --color-circadia-comment:        #524b42;
 
   --color-circadia-dark-keyword:   #66abc6;
   --color-circadia-dark-type:      #d9a86e;
   --color-circadia-dark-function:  #b991db;
   --color-circadia-dark-string:    #8cbb62;
   --color-circadia-dark-number:    #d99148;
-  --color-circadia-dark-comment:   #a9a093;
+  --color-circadia-dark-comment:   #a69c91;
 }

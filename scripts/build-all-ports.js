@@ -9,8 +9,10 @@ const rootDir = path.join(__dirname, "..");
 const specPath = path.join(rootDir, "spec", "palette.json");
 const spec = JSON.parse(fs.readFileSync(specPath, "utf-8"));
 
-const light = spec.modes.light;
-const dark = spec.modes.dark;
+const light = spec.modes.light_parchment || spec.modes.light;
+const dark = spec.modes.dark_ember || spec.modes.dark;
+const plum = spec.modes.dark_plum;
+const forest = spec.modes.dark_forest;
 
 function hexToRgb(hex) {
   const clean = hex.replace("#", "");
@@ -1354,8 +1356,10 @@ repository = "https://github.com/tanmaymanojgandhi/circadia"
     name: "Circadia",
     author: "Tanmay",
     themes: [
-      zedTheme("dark", dark.ui, dark.syntax, dark.headings, true),
-      zedTheme("light", light.ui, light.syntax, light.headings, false)
+      zedTheme("Circadia — Warm Ember & Espresso (Dark Classic)", dark.ui, dark.syntax, dark.headings, true),
+      zedTheme("Circadia — Warm Parchment (Light)", light.ui, light.syntax, light.headings, false),
+      zedTheme("Circadia — Plum Noir (Dark Modern)", plum.ui, plum.syntax, plum.headings, true),
+      zedTheme("Circadia — Obsidian Pine (Dark Focus)", forest.ui, forest.syntax, forest.headings, true)
     ]
   };
 
@@ -1366,18 +1370,138 @@ repository = "https://github.com/tanmaymanojgandhi/circadia"
 
 Official Circadia theme extension for Zed Editor.
 
-- **Circadia Dark**: Warm Ember & Espresso
-- **Circadia Light**: Warm Parchment
+- **Circadia — Warm Parchment (Light)**
+- **Circadia — Warm Ember & Espresso (Dark Classic)**
+- **Circadia — Plum Noir (Dark Modern)**
+- **Circadia — Obsidian Pine (Dark Focus)**
 
 ## Installation
 
 1. Open Zed.
 2. Open the command palette (\`Cmd+Shift+P\` / \`Ctrl+Shift+P\`) and run **zed: extensions**.
 3. Search for **Circadia** and click **Install**.
-4. Open the theme switcher (\`Cmd+K Cmd+T\` / \`Ctrl+K Ctrl+T\`) and select **Circadia Dark** or **Circadia Light**.
+4. Open the theme switcher (\`Cmd+K Cmd+T\` / \`Ctrl+K Ctrl+T\`) and select your desired Circadia flavour.
 `;
   fs.writeFileSync(path.join(outDir, "README.md"), readme);
   console.log("Built zed port");
+}
+
+// -------------------------------------------------------------
+// 13. TMUX
+// -------------------------------------------------------------
+function buildTmux() {
+  const outDir = path.join(rootDir, "ports", "tmux");
+  ensureDir(outDir);
+
+  function generateTmuxConfig(modeKey, mode) {
+    const ui = mode.ui;
+    return [
+      `# Circadia — ${mode.name}`,
+      `# Theme configuration for tmux (100% Strict WCAG AAA)`,
+      ``,
+      `# Status bar`,
+      `set -g status-style "bg=${ui.bg_surface.hex},fg=${ui.text_primary.hex}"`,
+      `set -g status-left-length 40`,
+      `set -g status-right-length 80`,
+      `set -g status-left "#[bg=${ui.accent.hex},fg=${ui.bg_canvas.hex},bold] #S #[bg=${ui.bg_surface.hex},fg=${ui.accent.hex}] "`,
+      `set -g status-right "#[bg=${ui.bg_element.hex},fg=${ui.text_muted.hex}] %Y-%m-%d #[fg=${ui.text_faint.hex}]|#[fg=${ui.text_primary.hex},bold] %H:%M #[bg=${ui.accent.hex},fg=${ui.bg_canvas.hex},bold] #h "`,
+      ``,
+      `# Window status`,
+      `set -g window-status-format "#[bg=${ui.bg_surface.hex},fg=${ui.text_muted.hex}]  #I:#W  "`,
+      `set -g window-status-current-format "#[bg=${ui.bg_element.hex},fg=${ui.accent.hex},bold]  #I:#W  "`,
+      `set -g window-status-separator ""`,
+      ``,
+      `# Panes`,
+      `set -g pane-border-style "fg=${ui.border.hex}"`,
+      `set -g pane-active-border-style "fg=${ui.accent.hex}"`,
+      ``,
+      `# Messages / Command prompt`,
+      `set -g message-style "bg=${ui.bg_element.hex},fg=${ui.text_primary.hex},bold"`,
+      `set -g message-command-style "bg=${ui.bg_element.hex},fg=${ui.text_primary.hex}"`,
+      ``,
+      `# Mode / Copy mode selection`,
+      `set -g mode-style "bg=${ui.bg_element.hex},fg=${ui.accent.hex},bold"`,
+      ``,
+      `# Clock mode`,
+      `set -g clock-mode-colour "${ui.accent.hex}"`,
+      ``
+    ].join("\n");
+  }
+
+  for (const [modeKey, mode] of Object.entries(spec.modes)) {
+    const filename = `circadia-${modeKey.replace(/_/g, "-")}.tmux`;
+    fs.writeFileSync(path.join(outDir, filename), generateTmuxConfig(modeKey, mode));
+  }
+
+  fs.copyFileSync(path.join(outDir, "circadia-light-parchment.tmux"), path.join(outDir, "circadia-light.tmux"));
+  fs.copyFileSync(path.join(outDir, "circadia-dark-ember.tmux"), path.join(outDir, "circadia-dark.tmux"));
+
+  const tpmEntry = `#!/usr/bin/env bash
+# Circadia tmux TPM plugin entrypoint
+CURRENT_DIR="$( cd "$( dirname "\${BASH_SOURCE[0]}" )" && pwd )"
+
+FLAVOUR=$(tmux show-option -gqv "@circadia_flavour")
+if [ -z "$FLAVOUR" ]; then
+  FLAVOUR=$(tmux show-option -gqv "@circadia_mode")
+fi
+if [ -z "$FLAVOUR" ]; then
+  FLAVOUR="dark-ember"
+fi
+
+FLAVOUR_CLEAN=$(echo "$FLAVOUR" | tr "_" "-")
+
+if [ -f "$CURRENT_DIR/circadia-$FLAVOUR_CLEAN.tmux" ]; then
+  tmux source-file "$CURRENT_DIR/circadia-$FLAVOUR_CLEAN.tmux"
+else
+  tmux source-file "$CURRENT_DIR/circadia-dark-ember.tmux"
+fi
+`;
+  fs.writeFileSync(path.join(outDir, "circadia.tmux"), tpmEntry);
+
+  const tmuxReadme = `# Circadia for tmux
+
+Circadian-aligned status bar and pane styling engineered in OKLCH for tmux.
+
+## Available Flavours
+
+* **\`light-parchment\`**: ☀️ Warm Parchment (Daylight Reading, \`#f7f2e6\`)
+* **\`dark-ember\`**: ☕ Dark Classic — Warm Ember & Espresso (\`#17130f\`)
+* **\`dark-plum\`**: 🍇 Dark Modern — Plum Noir (\`#140e12\`)
+* **\`dark-forest\`**: 🌲 Dark Focus — Obsidian Pine (\`#131714\`)
+
+---
+
+## Installation via TPM (Tmux Plugin Manager)
+
+1. Add the plugin to your \`~/.tmux.conf\`:
+   \`\`\`tmux
+   set -g @plugin 'tanmaymanojgandhi/circadia'
+   set -g @circadia_flavour 'dark-ember' # Options: light-parchment, dark-ember, dark-plum, dark-forest
+   \`\`\`
+2. Press \`prefix + I\` to install the plugin and refresh your tmux session.
+
+---
+
+## Manual Installation
+
+Source your chosen flavour directly in your \`~/.tmux.conf\`:
+
+\`\`\`tmux
+# Example: Dark Classic (Warm Ember & Espresso)
+source-file "/path/to/circadia/ports/tmux/circadia-dark-ember.tmux"
+
+# Or Dark Modern (Plum Noir)
+# source-file "/path/to/circadia/ports/tmux/circadia-dark-plum.tmux"
+
+# Or Dark Focus (Obsidian Pine)
+# source-file "/path/to/circadia/ports/tmux/circadia-dark-forest.tmux"
+
+# Or Warm Parchment (Light)
+# source-file "/path/to/circadia/ports/tmux/circadia-light-parchment.tmux"
+\`\`\`
+`;
+  fs.writeFileSync(path.join(outDir, "README.md"), tmuxReadme);
+  console.log("Built tmux port");
 }
 
 // -------------------------------------------------------------
@@ -1396,4 +1520,5 @@ buildVim();
 buildVitepress();
 buildXcode();
 buildZed();
-console.log("All 12 ports built successfully!");
+buildTmux();
+console.log("All 13 ports built successfully!");

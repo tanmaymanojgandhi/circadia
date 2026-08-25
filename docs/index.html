@@ -90,64 +90,108 @@
           </div>
         </div>
 
-        <!-- Interactive Dual-Mode Comparison Cards -->
+        <!-- Interactive 4-Mode Circadian Selection Cards -->
         <div class="hero-dual-modes">
-          <!-- Light Card -->
-          <div class="hero-mode-card" id="modeCardLight" role="button" tabindex="0" title="Click to switch to Warm Parchment (Light Mode)">
+          <!-- Light Card: Warm Parchment -->
+          <div class="hero-mode-card" id="modeCard_light_parchment" role="button" tabindex="0" title="Click to activate Warm Parchment (Light Mode)">
             <div class="mode-card-header">
               <div class="mode-card-title-group">
                 <span class="mode-dot light-dot"></span>
-                <span class="mode-name">Warm Parchment</span>
+                <span class="mode-name">☀️ Warm Parchment</span>
               </div>
-              <span class="mode-stat-badge">11.30:1 AAA</span>
+              <span class="mode-stat-badge">11.69:1 AAA</span>
             </div>
-
             <div class="mode-card-lux">Daylight Ambient &bull; 300–800+ lux</div>
-            <p class="mode-card-desc">Warm paper undertones engineered to eliminate retinal glare under bright ambient light.</p>
-
-            <!-- Compact Half-Height & Half-Width Color Ribbon -->
+            <p class="mode-card-desc">Glare-free cellulose warm paper canvas (#f7f2e6) engineered for bright daylight environments.</p>
             <div class="mode-ribbon-compact light-ribbon">
               <span class="ribbon-chip-compact" style="background:#f7f2e6; border:1px solid #d7cdb7;" title="bg_canvas: #f7f2e6"></span>
               <span class="ribbon-chip-compact" style="background:#eee7d6;" title="bg_surface: #eee7d6"></span>
               <span class="ribbon-chip-compact" style="background:#28323a;" title="text_primary: #28323a"></span>
-              <span class="ribbon-chip-compact" style="background:#195697;" title="accent: #195697"></span>
-              <span class="ribbon-chip-compact" style="background:#631c84;" title="syntax.keyword: #631c84"></span>
-              <span class="ribbon-chip-compact" style="background:#7f3500;" title="syntax.type: #7f3500"></span>
-              <span class="ribbon-chip-compact" style="background:#085802;" title="syntax.string: #085802"></span>
+              <span class="ribbon-chip-compact" style="background:#0048b3;" title="keyword: #0048b3"></span>
+              <span class="ribbon-chip-compact" style="background:#843900;" title="type: #843900"></span>
+              <span class="ribbon-chip-compact" style="background:#7a1f7a;" title="function: #7a1f7a"></span>
+              <span class="ribbon-chip-compact" style="background:#005f2f;" title="string: #005f2f"></span>
             </div>
-
             <div class="mode-card-footer">
-              <span class="mode-click-hint">Click to activate Light mode</span>
+              <span class="mode-click-hint">Click to activate</span>
               <span class="mode-active-indicator">&check; Active</span>
             </div>
           </div>
 
-          <!-- Dark Card -->
-          <div class="hero-mode-card" id="modeCardDark" role="button" tabindex="0" title="Click to switch to Warm Ember & Espresso (Dark Mode)">
+          <!-- Dark Classic Card: Warm Ember & Espresso -->
+          <div class="hero-mode-card" id="modeCard_dark_ember" role="button" tabindex="0" title="Click to activate Warm Ember & Espresso (Dark Classic)">
             <div class="mode-card-header">
               <div class="mode-card-title-group">
-                <span class="mode-dot dark-dot"></span>
-                <span class="mode-name">Warm Ember &amp; Espresso</span>
+                <span class="mode-dot dark-ember-dot"></span>
+                <span class="mode-name">☕ Dark Classic</span>
               </div>
-              <span class="mode-stat-badge">14.36:1 AAA</span>
+              <span class="mode-stat-badge">10.26:1 AAA</span>
             </div>
-
-            <div class="mode-card-lux">Evening Ambient &bull; 0–50 lux</div>
-            <p class="mode-card-desc">Deep obsidian canvas with warm amber accents that minimize blue-light disruption.</p>
-
-            <!-- Compact Half-Height & Half-Width Color Ribbon -->
+            <div class="mode-card-lux">Warm Candlelight &bull; 0–50 lux</div>
+            <p class="mode-card-desc">Warm espresso charcoal (#17130f) with glowing ember accents that completely prevent IPS bleed.</p>
             <div class="mode-ribbon-compact dark-ribbon">
               <span class="ribbon-chip-compact" style="background:#17130f; border:1px solid #3b342b;" title="bg_canvas: #17130f"></span>
               <span class="ribbon-chip-compact" style="background:#1e1a15;" title="bg_surface: #1e1a15"></span>
-              <span class="ribbon-chip-compact" style="background:#eae3d8;" title="text_primary: #eae3d8"></span>
+              <span class="ribbon-chip-compact" style="background:#c9c0b1;" title="text_primary: #c9c0b1"></span>
               <span class="ribbon-chip-compact" style="background:#e89a49;" title="accent: #e89a49"></span>
-              <span class="ribbon-chip-compact" style="background:#e59de8;" title="syntax.keyword: #e59de8"></span>
-              <span class="ribbon-chip-compact" style="background:#f1be85;" title="syntax.type: #f1be85"></span>
-              <span class="ribbon-chip-compact" style="background:#a7db76;" title="syntax.string: #a7db76"></span>
+              <span class="ribbon-chip-compact" style="background:#66abc6;" title="keyword: #66abc6"></span>
+              <span class="ribbon-chip-compact" style="background:#d9a86e;" title="type: #d9a86e"></span>
+              <span class="ribbon-chip-compact" style="background:#8cbb62;" title="string: #8cbb62"></span>
             </div>
-
             <div class="mode-card-footer">
-              <span class="mode-click-hint">Click to activate Dark mode</span>
+              <span class="mode-click-hint">Click to activate</span>
+              <span class="mode-active-indicator">&check; Active</span>
+            </div>
+          </div>
+
+          <!-- Dark Modern Card: Plum Noir -->
+          <div class="hero-mode-card" id="modeCard_dark_plum" role="button" tabindex="0" title="Click to activate Plum Noir (Dark Modern)">
+            <div class="mode-card-header">
+              <div class="mode-card-title-group">
+                <span class="mode-dot dark-plum-dot"></span>
+                <span class="mode-name">🍇 Dark Modern</span>
+              </div>
+              <span class="mode-stat-badge">11.91:1 AAA</span>
+            </div>
+            <div class="mode-card-lux">Velvet Plum &bull; Modern UI</div>
+            <p class="mode-card-desc">Deep velvet wine canvas (#140e12) with saturated pastels for modern web and application development.</p>
+            <div class="mode-ribbon-compact dark-ribbon">
+              <span class="ribbon-chip-compact" style="background:#140e12; border:1px solid #3d3039;" title="bg_canvas: #140e12"></span>
+              <span class="ribbon-chip-compact" style="background:#1b1419;" title="bg_surface: #1b1419"></span>
+              <span class="ribbon-chip-compact" style="background:#d8c8d2;" title="text_primary: #d8c8d2"></span>
+              <span class="ribbon-chip-compact" style="background:#e88cb8;" title="accent: #e88cb8"></span>
+              <span class="ribbon-chip-compact" style="background:#82b4ea;" title="keyword: #82b4ea"></span>
+              <span class="ribbon-chip-compact" style="background:#e5b084;" title="type: #e5b084"></span>
+              <span class="ribbon-chip-compact" style="background:#9ec97b;" title="string: #9ec97b"></span>
+            </div>
+            <div class="mode-card-footer">
+              <span class="mode-click-hint">Click to activate</span>
+              <span class="mode-active-indicator">&check; Active</span>
+            </div>
+          </div>
+
+          <!-- Dark Focus Card: Obsidian Pine -->
+          <div class="hero-mode-card" id="modeCard_dark_forest" role="button" tabindex="0" title="Click to activate Obsidian Pine (Dark Focus)">
+            <div class="mode-card-header">
+              <div class="mode-card-title-group">
+                <span class="mode-dot dark-forest-dot"></span>
+                <span class="mode-name">🌲 Dark Focus</span>
+              </div>
+              <span class="mode-stat-badge">11.02:1 AAA</span>
+            </div>
+            <div class="mode-card-lux">Obsidian Pine &bull; Deep Terminal</div>
+            <p class="mode-card-desc">Restorative evergreen moss canvas (#131714) calibrated for deep data science and long terminal sessions.</p>
+            <div class="mode-ribbon-compact dark-ribbon">
+              <span class="ribbon-chip-compact" style="background:#131714; border:1px solid #353c36;" title="bg_canvas: #131714"></span>
+              <span class="ribbon-chip-compact" style="background:#1a1e1b;" title="bg_surface: #1a1e1b"></span>
+              <span class="ribbon-chip-compact" style="background:#c4ccc5;" title="text_primary: #c4ccc5"></span>
+              <span class="ribbon-chip-compact" style="background:#6ec28a;" title="accent: #6ec28a"></span>
+              <span class="ribbon-chip-compact" style="background:#72b6d1;" title="keyword: #72b6d1"></span>
+              <span class="ribbon-chip-compact" style="background:#d6b07c;" title="type: #d6b07c"></span>
+              <span class="ribbon-chip-compact" style="background:#86cc7e;" title="string: #86cc7e"></span>
+            </div>
+            <div class="mode-card-footer">
+              <span class="mode-click-hint">Click to activate</span>
               <span class="mode-active-indicator">&check; Active</span>
             </div>
           </div>

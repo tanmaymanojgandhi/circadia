@@ -11,7 +11,7 @@ Color=247,242,230
 Color=40,50,58
 
 [ForegroundFaint]
-Color=95,109,122
+Color=67,80,92
 
 [ForegroundIntense]
 Color=40,50,58
@@ -89,13 +89,13 @@ Color=40,50,58
 Color=40,50,58
 
 [Color8]
-Color=95,109,122
+Color=67,80,92
 
 [Color8Faint]
-Color=95,109,122
+Color=67,80,92
 
 [Color8Intense]
-Color=95,109,122
+Color=67,80,92
 
 [Color9]
 Color=9,91,98

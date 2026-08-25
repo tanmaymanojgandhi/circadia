@@ -33,9 +33,9 @@
 		<key>xcode.syntax.character</key>
 		<string>0.549 0.733 0.384 1</string>
 		<key>xcode.syntax.comment</key>
-		<string>0.663 0.627 0.576 1</string>
+		<string>0.651 0.612 0.569 1</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>0.663 0.627 0.576 1</string>
+		<string>0.651 0.612 0.569 1</string>
 		<key>xcode.syntax.identifier.class</key>
 		<string>0.851 0.659 0.431 1</string>
 		<key>xcode.syntax.identifier.class.system</key>

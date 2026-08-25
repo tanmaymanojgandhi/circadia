@@ -2,12 +2,12 @@
 <scheme name="Circadia Dark" parent_scheme="Darcula" version="142">
   <metaInfo>
     <property name="created">2026-08-19</property>
-    <property name="description">Circadia Dark (Warm Ember & Espresso)</property>
+    <property name="description">Circadia Dark (Dark Classic (Warm Ember & Espresso))</property>
     <property name="vendor">Circadia</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="8cbb62" />
-    <option name="ANNOTATIONS_COLOR" value="b5aba0" />
+    <option name="ANNOTATIONS_COLOR" value="aba195" />
     <option name="CARET_COLOR" value="e89a49" />
     <option name="CARET_ROW_COLOR" value="1e1a15" />
     <option name="CONSOLE_BACKGROUND_KEY" value="17130f" />
@@ -53,7 +53,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="a9a093" />
+        <option name="FOREGROUND" value="a69c91" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -74,7 +74,7 @@
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="a9a093" />
+        <option name="FOREGROUND" value="a69c91" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -134,7 +134,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="a9a093" />
+        <option name="FOREGROUND" value="a69c91" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -150,7 +150,7 @@
     </option>
     <option name="DEFAULT_OPERATION_SIGN">
       <value>
-        <option name="FOREGROUND" value="b5aba0" />
+        <option name="FOREGROUND" value="aba195" />
       </value>
     </option>
     <option name="DEFAULT_PARAMETER">
@@ -160,7 +160,7 @@
     </option>
     <option name="DEFAULT_SEMICOLON">
       <value>
-        <option name="FOREGROUND" value="b5aba0" />
+        <option name="FOREGROUND" value="aba195" />
       </value>
     </option>
     <option name="DEFAULT_STRING">
