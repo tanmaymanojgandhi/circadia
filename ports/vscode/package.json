@@ -3,7 +3,7 @@
   "displayName": "Circadia Color Theme",
   "icon": "icon.png",
   "description": "Perceptually uniform, circadian-aligned design tokens engineered in OKLCH (Warm Parchment, Warm Ember & Espresso, Plum Noir, Obsidian Pine)",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "publisher": "tanmay-gandhi",
   "license": "MIT",
   "homepage": "https://github.com/tanmaymanojgandhi/circadia#readme",
