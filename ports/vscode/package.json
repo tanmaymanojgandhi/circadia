@@ -3,15 +3,42 @@
   "displayName": "Circadia Theme",
   "description": "Perceptually uniform, circadian-aligned design tokens engineered in OKLCH (Warm Parchment, Warm Ember & Espresso, Plum Noir, Obsidian Pine)",
   "version": "2.0.0",
-  "publisher": "circadia",
+  "publisher": "tanmay-gandhi",
+  "license": "MIT",
+  "homepage": "https://github.com/tanmaymanojgandhi/circadia#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanmaymanojgandhi/circadia.git",
+    "directory": "ports/vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/tanmaymanojgandhi/circadia/issues"
+  },
   "engines": {
     "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "color-theme",
+    "circadia",
+    "dark",
+    "light",
+    "oklch",
+    "accessible",
+    "wcag",
+    "cvd"
+  ],
+  "galleryBanner": {
+    "color": "#f7f2e6",
+    "theme": "light"
+  },
   "scripts": {
-    "build": "node scripts/build-theme.js"
+    "build": "node scripts/build-theme.js",
+    "package": "npx @vscode/vsce package",
+    "publish": "npx @vscode/vsce publish"
   },
   "contributes": {
     "themes": [

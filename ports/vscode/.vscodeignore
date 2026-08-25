@@ -1,0 +1,6 @@
+.vscode/**
+.vscode-test/**
+scripts/**
+*.vsix
+.DS_Store
+Thumbs.db
