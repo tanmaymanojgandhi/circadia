@@ -406,7 +406,6 @@ code, pre {
   border-radius: var(--radius-md);
   object-fit: contain;
   flex-shrink: 0;
-  box-shadow: 0 4px 20px var(--accent-glow);
 }
 
 .hero-brand-text {
