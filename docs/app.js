@@ -92,12 +92,12 @@ const PALETTE = {
         accent:        { hex: "#cf8aa4", oklch: "oklch(71.0% 0.090 355)", rgb: [207, 138, 164], role: "Interactive accent" }
       },
       headings: {
-        h1: { hex: "#f5b8d0", oklch: "oklch(84.0% 0.090 350)", rgb: [245, 184, 208], role: "Document Title (h1)" },
-        h2: { hex: "#e89bb8", oklch: "oklch(76.0% 0.100 350)", rgb: [232, 155, 184], role: "Section Header (h2)" },
-        h3: { hex: "#da7ea0", oklch: "oklch(68.0% 0.110 350)", rgb: [218, 126, 160], role: "Subsection Header (h3)" },
-        h4: { hex: "#c96588", oklch: "oklch(60.0% 0.110 350)", rgb: [201, 101, 136], role: "Sub-subsection (h4)" },
-        h5: { hex: "#b84e72", oklch: "oklch(53.0% 0.100 350)", rgb: [184, 78, 114],  role: "Minor Header (h5)" },
-        h6: { hex: "#bd5478", oklch: "oklch(55.0% 0.100 350)", rgb: [189, 84, 120],  role: "Caption / Detail (h6)" }
+        h1: { hex: "#fabcd8", oklch: "oklch(86.0% 0.080 350)", rgb: [250, 188, 216], role: "Document Title (h1)" },
+        h2: { hex: "#e8a8c5", oklch: "oklch(80.0% 0.085 350)", rgb: [232, 168, 197], role: "Section Header (h2)" },
+        h3: { hex: "#d793b3", oklch: "oklch(74.0% 0.090 350)", rgb: [215, 147, 179], role: "Subsection Header (h3)" },
+        h4: { hex: "#c381a0", oklch: "oklch(68.0% 0.090 350)", rgb: [195, 129, 160], role: "Sub-subsection (h4)" },
+        h5: { hex: "#ad718d", oklch: "oklch(62.0% 0.085 350)", rgb: [173, 113, 141], role: "Minor Header (h5)" },
+        h6: { hex: "#9b647e", oklch: "oklch(57.0% 0.080 350)", rgb: [155, 100, 126], role: "Caption / Detail (h6)" }
       },
       syntax: {
         keyword:  { hex: "#75acd2", oklch: "oklch(72.0% 0.080 240)", rgb: [117, 172, 210], role: "Keywords & control" },

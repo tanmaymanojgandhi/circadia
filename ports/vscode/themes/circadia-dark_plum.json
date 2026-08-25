@@ -152,7 +152,7 @@
         "markup.heading.1"
       ],
       "settings": {
-        "foreground": "#f5b8d0",
+        "foreground": "#fabcd8",
         "fontStyle": "bold"
       }
     },
@@ -161,7 +161,7 @@
         "markup.heading.2"
       ],
       "settings": {
-        "foreground": "#e89bb8",
+        "foreground": "#e8a8c5",
         "fontStyle": "bold"
       }
     },
@@ -170,7 +170,7 @@
         "markup.heading.3"
       ],
       "settings": {
-        "foreground": "#da7ea0",
+        "foreground": "#d793b3",
         "fontStyle": "bold"
       }
     },
@@ -179,7 +179,7 @@
         "markup.heading.4"
       ],
       "settings": {
-        "foreground": "#c96588"
+        "foreground": "#c381a0"
       }
     },
     {
@@ -187,7 +187,7 @@
         "markup.heading.5"
       ],
       "settings": {
-        "foreground": "#b84e72"
+        "foreground": "#ad718d"
       }
     },
     {
@@ -195,7 +195,7 @@
         "markup.heading.6"
       ],
       "settings": {
-        "foreground": "#bd5478"
+        "foreground": "#9b647e"
       }
     }
   ]

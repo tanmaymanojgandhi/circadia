@@ -15,12 +15,12 @@ body.theme-dark {
     --k-code-bg: #1b1419;
     --k-code-text: #d8c8d2;
     --k-mark-bg: rgba(207, 138, 164, 0.28);
-    --h1-color: #f5b8d0;
-    --h2-color: #e89bb8;
-    --h3-color: #da7ea0;
-    --h4-color: #c96588;
-    --h5-color: #b84e72;
-    --h6-color: #bd5478;
+    --h1-color: #fabcd8;
+    --h2-color: #e8a8c5;
+    --h3-color: #d793b3;
+    --h4-color: #c381a0;
+    --h5-color: #ad718d;
+    --h6-color: #9b647e;
     --k-comment: #a5999f;
     --k-keyword: #75acd2;
     --k-number: #d49969;
