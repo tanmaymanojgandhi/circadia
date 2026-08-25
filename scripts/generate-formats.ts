@@ -169,14 +169,23 @@ const csvOutPath = path.join(distDir, "palette.csv");
 fs.writeFileSync(csvOutPath, csvRows.join("\n"), "utf-8");
 console.log(`Generated ${csvOutPath}`);
 
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 function generateSvgMatrix() {
-  const width = 1160;
+  const width = 1180;
   const height = 980;
   const cardW = 540;
-  const cardH = 415;
+  const cardH = 430;
 
   const modeKeys = [
-    { id: "light_parchment", icon: "☀️", x: 25, y: 85, lux: "300–800+ lux • Daylight Reading" },
+    { id: "light_parchment", icon: "☀️", x: 25, y: 85, lux: "300–800+ lux • Daylight & High Ambient" },
     { id: "dark_ember", icon: "☕", x: 595, y: 85, lux: "0–50 lux • Candlelight & Warm Lighting" },
     { id: "dark_plum", icon: "🍇", x: 25, y: 530, lux: "0–50 lux • Velvet Plum & Modern UI" },
     { id: "dark_forest", icon: "🌲", x: 595, y: 530, lux: "0–50 lux • Obsidian Pine & Deep Focus" }
@@ -246,11 +255,11 @@ function generateSvgMatrix() {
     ];
 
     svg += `
-  <!-- Card: ${mode.name} -->
+  <!-- Card: ${escapeXml(mode.name)} -->
   <g transform="translate(${cfg.x}, ${cfg.y})">
     <rect width="${cardW}" height="${cardH}" rx="12" fill="${bg}" stroke="${border}" stroke-width="1.5"/>
-    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="${titleCol}">${cfg.icon} ${mode.name}</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="${subCol}">${cfg.lux}</text>
+    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="${titleCol}">${escapeXml(cfg.icon + " " + mode.name)}</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="${subCol}">${escapeXml(cfg.lux)}</text>
 `;
 
     let rowY = 62;
@@ -263,16 +272,16 @@ function generateSvgMatrix() {
       const chipH = 38;
 
       svg += `
-    <!-- Row: ${r.name} -->
-    <text x="20" y="${rowY + 12}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="${catCol}" letter-spacing="0.5">${r.name.toUpperCase()}</text>
+    <!-- Row: ${escapeXml(r.name)} -->
+    <text x="20" y="${rowY + 12}" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="${catCol}" letter-spacing="0.5">${escapeXml(r.name.toUpperCase())}</text>
     <g transform="translate(20, ${rowY + 20})">
 `;
       r.tokens.forEach((t, i) => {
         const cx = i * (chipW + gap);
         svg += `      <g transform="translate(${cx}, 0)">
         <rect width="${chipW}" height="${chipH}" rx="5" fill="${t.hex}" stroke="${chipBorder}" stroke-width="1"/>
-        <text x="${chipW/2}" y="${chipH + 14}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="${labelCol}">${t.key}</text>
-        <text x="${chipW/2}" y="${chipH + 25}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="${monoCol}">${t.hex}</text>
+        <text x="${chipW/2}" y="${chipH + 14}" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="${labelCol}">${escapeXml(t.key)}</text>
+        <text x="${chipW/2}" y="${chipH + 25}" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="${monoCol}">${escapeXml(t.hex)}</text>
       </g>\n`;
       });
       svg += `    </g>\n`;

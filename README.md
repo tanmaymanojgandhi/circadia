@@ -73,33 +73,12 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 ## 📁 Repository Structure
 
 ```
-├── spec/                           # The Single Source of Truth
-│   ├── palette.json                # Raw OKLCH + Hex values for all 4 modes
-│   ├── rules.md                    # Normative accessibility & CVD invariants
-│   └── token-map.md                # Semantic UI/syntax mapping guide
-│
+├── spec/                           # The Single Source of Truth (palette.json, rules.md, token-map.md)
 ├── ports/                          # 19 official ports (VS Code, tmux, Neovim, Zed, Obsidian, etc.)
-│   ├── vscode/                     # Official VS Code extension
-│   ├── tmux/                       # Tmux status bar & pane styling (TPM-compatible)
-│   ├── neovim/                     # Neovim Treesitter & LSP lua plugin
-│   ├── zed/                        # Zed editor native extension
-│   ├── obsidian/                   # Obsidian note-taking CSS theme
-│   ├── alacritty/                  # Alacritty terminal TOML configurations
-│   ├── kitty/                      # Kitty terminal conf files
-│   ├── windows-terminal/           # Windows Terminal JSON schemes
-│   └── ...                         # Vim, JetBrains, Xcode, Chrome, Slack, etc.
-│
-├── scripts/                        # Automated Build & Validation Pipeline
-│   ├── validate.ts                 # Validates 100% AAA/AA contrast against spec
-│   ├── generate-formats.ts         # Generates dist/ exports & 4-mode vector swatch matrix
-│   └── build-all-ports.js          # Synchronously compiles all 19 ports
-│
-├── dist/                           # Multi-format exports for third-party tools
-│   ├── palette.json                # Flattened JSON export
-│   └── palette.csv                 # Tabular CSV export
-│
-└── assets/                         # Vector assets and swatch matrix
-    └── swatch-matrix.svg           # 4-mode 2x2 vector swatch matrix
+├── scripts/                        # Automated Build & Validation Pipeline (validate.ts, generate-formats.ts, build-all-ports.js)
+├── dist/                           # Multi-format exports for third-party tools (palette.json, palette.csv)
+├── docs/                           # Interactive documentation & token inspector (GitHub Pages)
+└── assets/                         # Vector assets and 4-mode swatch matrix (swatch-matrix.svg)
 ```
 
 ---
