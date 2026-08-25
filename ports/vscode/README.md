@@ -44,7 +44,7 @@ Circadia provides 4 distinct modes calibrated for different ambient environments
 
 1. Open Visual Studio Code.
 2. Go to the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`).
-3. Search for `Circadia Theme` or `circadia-vscode-theme`.
+3. Search for `Circadia Color Theme` or `circadia-color-theme`.
 4. Click **Install**.
 
 ### Via Quick Open
@@ -52,13 +52,13 @@ Circadia provides 4 distinct modes calibrated for different ambient environments
 Press `Ctrl+P` / `Cmd+P` and paste:
 
 ```shell
-ext install tanmay-gandhi.circadia-vscode-theme
+ext install tanmay-gandhi.circadia-color-theme
 ```
 
 ### Via VSIX File
 
 ```shell
-code --install-extension circadia-vscode-theme-2.0.0.vsix
+code --install-extension circadia-color-theme-2.0.0.vsix
 ```
 
 ---
