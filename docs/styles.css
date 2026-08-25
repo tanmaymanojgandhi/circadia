@@ -60,8 +60,8 @@
   --text-primary: #d8c8d2;
   --text-muted: #b4a3af;
   --text-faint: #9a8b96;
-  --accent: #e88cb8;
-  --accent-glow: rgba(232, 140, 184, 0.15);
+  --accent: #cf8aa4;
+  --accent-glow: rgba(207, 138, 164, 0.15);
 
   --h1: #f5b8d0;
   --h2: #e89bb8;
@@ -70,15 +70,15 @@
   --h5: #b84e72;
   --h6: #bd5478;
 
-  --syn-keyword: #82b4ea;
-  --syn-type: #e5b084;
-  --syn-function: #cb94f0;
-  --syn-property: #f08bb2;
+  --syn-keyword: #75acd2;
+  --syn-type: #daa97a;
+  --syn-function: #b695cf;
+  --syn-property: #d38da4;
   --syn-variable: #d8c8d2;
-  --syn-string: #9ec97b;
-  --syn-number: #f0a256;
-  --syn-tag: #82b4ea;
-  --syn-comment: #ad9ca8;
+  --syn-string: #96b77b;
+  --syn-number: #d49969;
+  --syn-tag: #75acd2;
+  --syn-comment: #a5999f;
 
   color-scheme: dark;
 }
@@ -93,8 +93,8 @@
   --text-primary: #c4ccc5;
   --text-muted: #9fa9a1;
   --text-faint: #838d85;
-  --accent: #6ec28a;
-  --accent-glow: rgba(110, 194, 138, 0.15);
+  --accent: #83b384;
+  --accent-glow: rgba(131, 179, 132, 0.15);
 
   --h1: #b8e2c4;
   --h2: #9ecfae;
@@ -103,15 +103,15 @@
   --h5: #569970;
   --h6: #45875e;
 
-  --syn-keyword: #72b6d1;
-  --syn-type: #d6b07c;
-  --syn-function: #b599de;
-  --syn-property: #d98fa8;
+  --syn-keyword: #6cb0c5;
+  --syn-type: #d1aa73;
+  --syn-function: #b29ace;
+  --syn-property: #d092a9;
   --syn-variable: #c4ccc5;
-  --syn-string: #86cc7e;
-  --syn-number: #e0a255;
-  --syn-tag: #72b6d1;
-  --syn-comment: #95a097;
+  --syn-string: #92b87e;
+  --syn-number: #d19b66;
+  --syn-tag: #6cb0c5;
+  --syn-comment: #909890;
 
   color-scheme: dark;
 }

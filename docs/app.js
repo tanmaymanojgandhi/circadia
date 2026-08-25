@@ -89,7 +89,7 @@ const PALETTE = {
         text_primary:  { hex: "#d8c8d2", oklch: "oklch(82.5% 0.022 345)", rgb: [216, 200, 210], role: "Body text" },
         text_muted:    { hex: "#b4a3af", oklch: "oklch(71.5% 0.018 345)", rgb: [180, 163, 175], role: "Secondary labels" },
         text_faint:    { hex: "#9a8b96", oklch: "oklch(63.5% 0.016 345)", rgb: [154, 139, 150], role: "Metadata & disabled" },
-        accent:        { hex: "#e88cb8", oklch: "oklch(73.0% 0.145 355)", rgb: [232, 140, 184], role: "Interactive accent" }
+        accent:        { hex: "#cf8aa4", oklch: "oklch(71.0% 0.090 355)", rgb: [207, 138, 164], role: "Interactive accent" }
       },
       headings: {
         h1: { hex: "#f5b8d0", oklch: "oklch(84.0% 0.090 350)", rgb: [245, 184, 208], role: "Document Title (h1)" },
@@ -100,15 +100,15 @@ const PALETTE = {
         h6: { hex: "#bd5478", oklch: "oklch(55.0% 0.100 350)", rgb: [189, 84, 120],  role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#82b4ea", oklch: "oklch(74.0% 0.100 240)", rgb: [130, 180, 234], role: "Keywords & control" },
-        type:     { hex: "#e5b084", oklch: "oklch(77.0% 0.100 65)",  rgb: [229, 176, 132], role: "Types & interfaces" },
-        function: { hex: "#cb94f0", oklch: "oklch(73.5% 0.130 310)", rgb: [203, 148, 240], role: "Functions & methods" },
-        property: { hex: "#f08bb2", oklch: "oklch(74.0% 0.135 358)", rgb: [240, 139, 178], role: "Properties & keys" },
+        keyword:  { hex: "#75acd2", oklch: "oklch(72.0% 0.080 240)", rgb: [117, 172, 210], role: "Keywords & control" },
+        type:     { hex: "#daa97a", oklch: "oklch(77.0% 0.085 65)",  rgb: [218, 169, 122], role: "Types & interfaces" },
+        function: { hex: "#b695cf", oklch: "oklch(72.0% 0.090 310)", rgb: [182, 149, 207], role: "Functions & methods" },
+        property: { hex: "#d38da4", oklch: "oklch(72.0% 0.090 358)", rgb: [211, 141, 164], role: "Properties & keys" },
         variable: { hex: "#d8c8d2", oklch: "oklch(82.5% 0.022 345)", rgb: [216, 200, 210], role: "Variables & parameters" },
-        string:   { hex: "#9ec97b", oklch: "oklch(76.0% 0.135 132)", rgb: [158, 201, 123], role: "String literals" },
-        number:   { hex: "#f0a256", oklch: "oklch(74.5% 0.135 60)",  rgb: [240, 162, 86],  role: "Numeric literals" },
-        tag:      { hex: "#82b4ea", oklch: "oklch(74.0% 0.100 240)", rgb: [130, 180, 234], role: "HTML/JSX tags" },
-        comment:  { hex: "#ad9ca8", oklch: "oklch(69.5% 0.016 345)", rgb: [173, 156, 168], role: "Comments" }
+        string:   { hex: "#96b77b", oklch: "oklch(74.0% 0.090 132)", rgb: [150, 183, 123], role: "String literals" },
+        number:   { hex: "#d49969", oklch: "oklch(73.0% 0.095 60)",  rgb: [212, 153, 105], role: "Numeric literals" },
+        tag:      { hex: "#75acd2", oklch: "oklch(72.0% 0.080 240)", rgb: [117, 172, 210], role: "HTML/JSX tags" },
+        comment:  { hex: "#a5999f", oklch: "oklch(69.5% 0.016 345)", rgb: [165, 153, 159], role: "Comments" }
       }
     },
     dark_forest: {
@@ -123,7 +123,7 @@ const PALETTE = {
         text_primary:  { hex: "#c4ccc5", oklch: "oklch(81.5% 0.018 145)", rgb: [196, 204, 197], role: "Body text" },
         text_muted:    { hex: "#9fa9a1", oklch: "oklch(69.5% 0.016 145)", rgb: [159, 169, 161], role: "Secondary labels" },
         text_faint:    { hex: "#838d85", oklch: "oklch(60.0% 0.014 145)", rgb: [131, 141, 133], role: "Metadata & disabled" },
-        accent:        { hex: "#6ec28a", oklch: "oklch(74.0% 0.130 145)", rgb: [110, 194, 138], role: "Interactive accent" }
+        accent:        { hex: "#83b384", oklch: "oklch(72.0% 0.085 145)", rgb: [131, 179, 132], role: "Interactive accent" }
       },
       headings: {
         h1: { hex: "#b8e2c4", oklch: "oklch(86.0% 0.090 145)", rgb: [184, 226, 196], role: "Document Title (h1)" },
@@ -134,15 +134,15 @@ const PALETTE = {
         h6: { hex: "#45875e", oklch: "oklch(49.0% 0.080 145)", rgb: [69, 135, 94],   role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#72b6d1", oklch: "oklch(73.0% 0.090 220)", rgb: [114, 182, 209], role: "Keywords & control" },
-        type:     { hex: "#d6b07c", oklch: "oklch(76.0% 0.090 75)",  rgb: [214, 176, 124], role: "Types & interfaces" },
-        function: { hex: "#b599de", oklch: "oklch(72.5% 0.110 305)", rgb: [181, 153, 222], role: "Functions & methods" },
-        property: { hex: "#d98fa8", oklch: "oklch(72.0% 0.105 355)", rgb: [217, 143, 168], role: "Properties & keys" },
+        keyword:  { hex: "#6cb0c5", oklch: "oklch(72.0% 0.075 220)", rgb: [108, 176, 197], role: "Keywords & control" },
+        type:     { hex: "#d1aa73", oklch: "oklch(76.0% 0.085 75)",  rgb: [209, 170, 115], role: "Types & interfaces" },
+        function: { hex: "#b29ace", oklch: "oklch(72.5% 0.080 305)", rgb: [178, 154, 206], role: "Functions & methods" },
+        property: { hex: "#d092a9", oklch: "oklch(72.5% 0.080 355)", rgb: [208, 146, 169], role: "Properties & keys" },
         variable: { hex: "#c4ccc5", oklch: "oklch(81.5% 0.018 145)", rgb: [196, 204, 197], role: "Variables & parameters" },
-        string:   { hex: "#86cc7e", oklch: "oklch(75.0% 0.130 135)", rgb: [134, 204, 126], role: "String literals" },
-        number:   { hex: "#e0a255", oklch: "oklch(73.5% 0.125 65)",  rgb: [224, 162, 85],  role: "Numeric literals" },
-        tag:      { hex: "#72b6d1", oklch: "oklch(73.0% 0.090 220)", rgb: [114, 182, 209], role: "HTML/JSX tags" },
-        comment:  { hex: "#95a097", oklch: "oklch(67.0% 0.014 145)", rgb: [149, 160, 151], role: "Comments" }
+        string:   { hex: "#92b87e", oklch: "oklch(74.0% 0.090 135)", rgb: [146, 184, 126], role: "String literals" },
+        number:   { hex: "#d19b66", oklch: "oklch(73.0% 0.095 65)",  rgb: [209, 155, 102], role: "Numeric literals" },
+        tag:      { hex: "#6cb0c5", oklch: "oklch(72.0% 0.075 220)", rgb: [108, 176, 197], role: "HTML/JSX tags" },
+        comment:  { hex: "#909890", oklch: "oklch(67.0% 0.014 145)", rgb: [144, 152, 144], role: "Comments" }
       }
     }
   }
