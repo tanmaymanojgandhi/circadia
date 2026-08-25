@@ -1,6 +1,12 @@
-# Circadia
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/assets/circadia-logo.png" alt="Circadia Theme Logo" width="160" height="160">
+</p>
 
-> **Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.**
+<h1 align="center">Circadia</h1>
+
+<p align="center">
+  <em>Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.</em>
+</p>
 
 Circadia is an open color specification and multi-platform theme system engineered in OKLCH for cross-platform editors, terminal emulators, and document renderers. Built around human ocular biophysics, circadian light cycles, and strict mathematical accessibility, Circadia delivers **100% Strict WCAG 2.1 AAA contrast (>= 7.0:1)** across all UI and syntax tokens with **multi-dimensional Color Vision Deficiency (CVD) support**.
 

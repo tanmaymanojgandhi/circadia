@@ -1,6 +1,12 @@
-# Circadia for Visual Studio Code
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/assets/circadia-logo.png" alt="Circadia Theme Logo" width="140" height="140">
+</p>
 
-> **Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.**
+<h1 align="center">Circadia for Visual Studio Code</h1>
+
+<p align="center">
+  <em>Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.</em>
+</p>
 
 Circadia is an open color specification and multi-platform theme system engineered in OKLCH for cross-platform editors, terminal emulators, and document renderers. Built around human ocular biophysics, circadian light cycles, and strict mathematical accessibility, Circadia delivers **100% Strict WCAG 2.1 AAA contrast (>= 7.0:1)** across all UI and syntax tokens with **multi-dimensional Color Vision Deficiency (CVD) support**.
 
@@ -14,12 +20,12 @@ Circadia is an open color specification and multi-platform theme system engineer
 
 Circadia provides 4 distinct modes calibrated for different ambient environments, monitor hardware, and developer workflows:
 
-| Theme Name | Mode | Canvas Background | Target Workflow / Lighting |
-| :--- | :--- | :--- | :--- |
-| **Circadia — Warm Parchment** | Light | `#f7f2e6` (Warm Cellulose Linen) | Daylight & bright ambient lighting (300–800+ lux). Glare-free editorial reading. |
+| Theme Name                           | Mode         | Canvas Background                  | Target Workflow / Lighting                                                             |
+| :----------------------------------- | :----------- | :--------------------------------- | :------------------------------------------------------------------------------------- |
+| **Circadia — Warm Parchment**        | Light        | `#f7f2e6` (Warm Cellulose Linen)   | Daylight & bright ambient lighting (300–800+ lux). Glare-free editorial reading.       |
 | **Circadia — Warm Ember & Espresso** | Dark Classic | `#17130f` (Warm Espresso Charcoal) | Evening & night lighting (0–50 lux, 2700K ambient). Halation-free candlelight harmony. |
-| **Circadia — Plum Noir** | Dark Modern | `#140e12` (Velvet Wine Noir) | Low ambient light. High spectral distinction for full-stack & frontend development. |
-| **Circadia — Obsidian Pine** | Dark Focus | `#131714` (Obsidian Forest Moss) | Deep terminal sessions & night shifts. Ultra-low eye excitation for long marathons. |
+| **Circadia — Plum Noir**             | Dark Modern  | `#140e12` (Velvet Wine Noir)       | Low ambient light. High spectral distinction for full-stack & frontend development.    |
+| **Circadia — Obsidian Pine**         | Dark Focus   | `#131714` (Obsidian Forest Moss)   | Deep terminal sessions & night shifts. Ultra-low eye excitation for long marathons.    |
 
 ---
 
@@ -35,20 +41,24 @@ Circadia provides 4 distinct modes calibrated for different ambient environments
 ## 🚀 Installation
 
 ### Via VS Code Marketplace
+
 1. Open Visual Studio Code.
 2. Go to the Extensions view (`Ctrl+Shift+X` / `Cmd+Shift+X`).
-3. Search for `Circadia Theme` or `circadia-vscode`.
+3. Search for `Circadia Theme` or `circadia-vscode-theme`.
 4. Click **Install**.
 
 ### Via Quick Open
+
 Press `Ctrl+P` / `Cmd+P` and paste:
+
 ```shell
-ext install tanmay-gandhi.circadia-vscode
+ext install tanmay-gandhi.circadia-vscode-theme
 ```
 
 ### Via VSIX File
+
 ```shell
-code --install-extension circadia-vscode-2.0.0.vsix
+code --install-extension circadia-vscode-theme-2.0.0.vsix
 ```
 
 ---

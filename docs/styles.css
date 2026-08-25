@@ -262,16 +262,17 @@ code, pre {
 .brand-link {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   color: var(--text-primary);
   text-decoration: none;
 }
 
-.brand-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
+.brand-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-xs);
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 .brand-name {
@@ -391,6 +392,27 @@ code, pre {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.hero-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.hero-logo {
+  width: clamp(68px, 9vw, 92px);
+  height: clamp(68px, 9vw, 92px);
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.hero-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .hero-brand-name {
@@ -1216,8 +1238,18 @@ code, pre {
 }
 
 .footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.82rem;
   color: var(--text-muted);
+}
+
+.footer-logo {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-xs);
+  object-fit: contain;
 }
 
 .footer-note {
