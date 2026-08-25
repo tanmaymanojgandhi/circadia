@@ -1,0 +1,28 @@
+/* Circadia — Obsidian Pine (Dark Focus) Snippet */
+body.theme-dark {
+    --k-bg: #131714;
+    --k-bg-2: #1a1e1b;
+    --k-bg-3: #242a25;
+    --k-app-bg: #0e120f;
+    --k-text: #c4ccc5;
+    --k-text-muted: #9fa9a1;
+    --k-text-faint: #838d85;
+    --k-border: #353c36;
+    --k-border-strong: #454e47;
+    --k-accent: #6ec28a;
+    --k-accent-hover: #b8e2c4;
+    --k-accent-rgb: 110, 194, 138;
+    --k-code-bg: #1a1e1b;
+    --k-code-text: #c4ccc5;
+    --k-mark-bg: rgba(110, 194, 138, 0.28);
+    --k-comment: #95a097;
+    --k-keyword: #72b6d1;
+    --k-number: #e0a255;
+    --k-var2: #b599de;
+    --k-var3: #d98fa8;
+    --k-string: #86cc7e;
+    --k-tag: #72b6d1;
+    --background-modifier-form-field: #1a1e1b;
+    --interactive-normal: #1a1e1b;
+    --interactive-hover: #242a25;
+}

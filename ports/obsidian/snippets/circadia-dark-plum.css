@@ -1,0 +1,28 @@
+/* Circadia — Plum Noir (Dark Modern) Snippet */
+body.theme-dark {
+    --k-bg: #140e12;
+    --k-bg-2: #1b1419;
+    --k-bg-3: #261e23;
+    --k-app-bg: #0f0a0e;
+    --k-text: #d8c8d2;
+    --k-text-muted: #b4a3af;
+    --k-text-faint: #9a8b96;
+    --k-border: #3d3039;
+    --k-border-strong: #4f3f4a;
+    --k-accent: #e88cb8;
+    --k-accent-hover: #f5b8d0;
+    --k-accent-rgb: 232, 140, 184;
+    --k-code-bg: #1b1419;
+    --k-code-text: #d8c8d2;
+    --k-mark-bg: rgba(232, 140, 184, 0.28);
+    --k-comment: #ad9ca8;
+    --k-keyword: #82b4ea;
+    --k-number: #f0a256;
+    --k-var2: #cb94f0;
+    --k-var3: #f08bb2;
+    --k-string: #9ec97b;
+    --k-tag: #82b4ea;
+    --background-modifier-form-field: #1b1419;
+    --interactive-normal: #1b1419;
+    --interactive-hover: #261e23;
+}

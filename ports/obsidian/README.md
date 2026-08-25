@@ -102,13 +102,35 @@ Both Day and Night themes employ a continuous, non-jarring stepped hierarchy:
 
 ---
 
+## 🌓 Selecting Dark Variations (Ember, Plum, Forest)
+
+Circadia 2.0 provides 3 distinct dark variations for Obsidian:
+* **Warm Ember & Espresso (Dark Classic)**: Warm candlelight charcoal (`#17130f`) [Default]
+* **Plum Noir (Dark Modern)**: Velvet wine noir canvas (`#140e12`) with vibrant pastel syntax
+* **Obsidian Pine (Dark Focus)**: Restorative obsidian evergreen moss (`#131714`)
+
+### Method 1: Using the "Style Settings" Plugin (Recommended)
+1. In Obsidian, install the **Style Settings** community plugin (**Settings → Community plugins → Browse → Style Settings**).
+2. Go to **Settings → Style Settings → Circadia Theme**.
+3. Under **Dark Theme Flavour**, select your preferred night atmosphere:
+   - *Warm Ember & Espresso (Dark Classic)*
+   - *Plum Noir (Dark Modern)*
+   - *Obsidian Pine (Dark Focus)*
+
+### Method 2: Using CSS Snippets (Zero Plugins Required)
+1. Open your vault's `.obsidian/snippets/` folder.
+2. Copy either [`snippets/circadia-dark-plum.css`](snippets/circadia-dark-plum.css) or [`snippets/circadia-dark-forest.css`](snippets/circadia-dark-forest.css) into that folder.
+3. Open Obsidian **Settings → Appearance → CSS Snippets**, click the refresh icon, and toggle on your chosen snippet.
+
+---
+
 ## 🚀 Installation
 
 ### In Obsidian:
 1. Open **Settings → Appearance → Themes**
 2. Click **Manage**
-3. Search for **Circadia** (or clone this repository into your `.obsidian/themes/` directory)
-4. Enable the theme and switch between Light/Dark mode as desired.
+3. Search for **Circadia** (or clone/copy this folder to `<vault>/.obsidian/themes/Circadia/`)
+4. Enable the theme and enjoy circadian-aligned writing!
 
 ---
 

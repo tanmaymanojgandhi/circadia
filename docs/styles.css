@@ -500,9 +500,23 @@ code, pre {
 /* 4-Mode Toggle Cards */
 .hero-dual-modes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
   margin-top: 6px;
+}
+
+@media (max-width: 1100px) {
+  .hero-dual-modes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-dual-modes {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 .hero-mode-card {
@@ -515,7 +529,8 @@ code, pre {
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  min-width: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .hero-mode-card:hover {
@@ -523,22 +538,38 @@ code, pre {
   transform: translateY(-2px);
 }
 
+.hero-mode-card.active,
+[data-theme="light_parchment"] #modeCard_light_parchment,
+[data-theme="light"] #modeCard_light_parchment,
+[data-theme="light"] #modeCardLight,
+[data-theme="dark_ember"] #modeCard_dark_ember,
+[data-theme="dark"] #modeCard_dark_ember,
+[data-theme="dark"] #modeCardDark,
+[data-theme="dark_plum"] #modeCard_dark_plum,
+[data-theme="dark_forest"] #modeCard_dark_forest {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 4px 12px var(--accent-glow);
+}
+
 .mode-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .mode-card-title-group {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  min-width: 0;
 }
 
 .mode-dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .light-dot { background: #0048b3; }
@@ -550,51 +581,56 @@ code, pre {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mode-stat-badge {
   font-family: var(--font-mono);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  padding: 2px 7px;
+  padding: 2px 6px;
   border-radius: var(--radius-xs);
   background: var(--bg-element);
   color: var(--syn-string);
   border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .mode-card-lux {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 .mode-card-desc {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.45;
 }
 
-/* Compact Half-Height & Balanced-Width Color Ribbon */
+/* Fluid, Perfectly Scaled Responsive Color Ribbon */
 .mode-ribbon-compact {
-  display: inline-flex;
-  width: fit-content;
-  max-width: 320px;
-  gap: 5px;
-  padding: 4px 6px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 3px;
+  padding: 4px;
   border-radius: var(--radius-xs);
   background: var(--bg-element);
   border: 1px solid var(--border-subtle);
 }
 
 .ribbon-chip-compact {
-  width: 32px;
-  height: 15px;
-  border-radius: 3px;
-  flex-shrink: 0;
-  display: inline-block;
+  flex: 1 1 0;
+  min-width: 0;
+  height: 14px;
+  border-radius: 2px;
+  display: block;
 }
 
 .mode-card-footer {
@@ -604,7 +640,7 @@ code, pre {
   border-top: 1px solid var(--border-subtle);
   padding-top: 8px;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
 }
 
 .mode-click-hint {
@@ -617,11 +653,29 @@ code, pre {
   display: none;
 }
 
-[data-theme="light"] #modeCardLight .mode-active-indicator { display: inline; }
-[data-theme="light"] #modeCardLight { border-color: var(--accent); }
+.hero-mode-card.active .mode-active-indicator,
+[data-theme="light_parchment"] #modeCard_light_parchment .mode-active-indicator,
+[data-theme="light"] #modeCard_light_parchment .mode-active-indicator,
+[data-theme="light"] #modeCardLight .mode-active-indicator,
+[data-theme="dark_ember"] #modeCard_dark_ember .mode-active-indicator,
+[data-theme="dark"] #modeCard_dark_ember .mode-active-indicator,
+[data-theme="dark"] #modeCardDark .mode-active-indicator,
+[data-theme="dark_plum"] #modeCard_dark_plum .mode-active-indicator,
+[data-theme="dark_forest"] #modeCard_dark_forest .mode-active-indicator {
+  display: inline;
+}
 
-[data-theme="dark"] #modeCardDark .mode-active-indicator { display: inline; }
-[data-theme="dark"] #modeCardDark { border-color: var(--accent); }
+.hero-mode-card.active .mode-click-hint,
+[data-theme="light_parchment"] #modeCard_light_parchment .mode-click-hint,
+[data-theme="light"] #modeCard_light_parchment .mode-click-hint,
+[data-theme="light"] #modeCardLight .mode-click-hint,
+[data-theme="dark_ember"] #modeCard_dark_ember .mode-click-hint,
+[data-theme="dark"] #modeCard_dark_ember .mode-click-hint,
+[data-theme="dark"] #modeCardDark .mode-click-hint,
+[data-theme="dark_plum"] #modeCard_dark_plum .mode-click-hint,
+[data-theme="dark_forest"] #modeCard_dark_forest .mode-click-hint {
+  display: none;
+}
 
 /* --------------------------------------------------------------------------
    Page Layout & Sections (Max Width 1200px)
