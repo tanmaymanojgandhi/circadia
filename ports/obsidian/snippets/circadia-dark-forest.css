@@ -3,11 +3,11 @@ body.theme-dark {
     --k-bg: #131714;
     --k-bg-2: #1a1e1b;
     --k-bg-3: #242a25;
-    --k-app-bg: #0e120f;
+    --k-app-bg: var(--k-bg-2);
     --k-text: #c4ccc5;
     --k-text-muted: #9fa9a1;
     --k-text-faint: #838d85;
-    --k-border: #353c36;
+    --k-border: var(--k-bg-2);
     --k-border-strong: #454e47;
     --k-accent: #83b384;
     --k-accent-hover: #b8e2c4;

@@ -40,14 +40,14 @@ settings:
     /* Secondary surface / tabs (Warm Parchment Surface) */
     --k-bg-3: #e5dcc6;
     /* Hover / tertiary surface (Warm Parchment Element) */
-    --k-app-bg: #e5dcc6;
+    --k-app-bg: var(--k-bg-2);
     /* Outer app gutter */
 
     --k-text: #28323a;
     --k-text-muted: #46535f;
     --k-text-faint: #5f6d7a;
 
-    --k-border: #d7cdb7;
+    --k-border: var(--k-bg-2);
     --k-border-strong: #c9c0b1;
     --k-table-border: #d7cdb7;
 
@@ -173,14 +173,14 @@ settings:
     /* Secondary surface / tabs (Espresso Surface) */
     --k-bg-3: #29241e;
     /* Hover / tertiary surface (Espresso Element) */
-    --k-app-bg: #120e0b;
+    --k-app-bg: var(--k-bg-2);
     /* Outer app gutter */
 
     --k-text: #c9c0b1;
     --k-text-muted: #b5aba0;
     --k-text-faint: #91887d;
 
-    --k-border: #3b342b;
+    --k-border: var(--k-bg-2);
     --k-border-strong: #4f463b;
     --k-table-border: #3b342b;
 
@@ -525,7 +525,7 @@ a.tag:hover,
 .workspace-split.mod-right-split,
 .workspace-split.mod-left-split .workspace-tabs,
 .workspace-split.mod-right-split .workspace-tabs {
-    background-color: transparent;
+    background-color: var(--k-bg-2);
     border: none;
     box-shadow: none;
 }
@@ -1379,13 +1379,13 @@ body.circadia-plum .theme-dark {
     --k-bg: #140e12;
     --k-bg-2: #1b1419;
     --k-bg-3: #261e23;
-    --k-app-bg: #0f0a0e;
+    --k-app-bg: var(--k-bg-2);
 
     --k-text: #d8c8d2;
     --k-text-muted: #b4a3af;
     --k-text-faint: #9a8b96;
 
-    --k-border: #3d3039;
+    --k-border: var(--k-bg-2);
     --k-border-strong: #4f3f4a;
     --k-table-border: #3d3039;
 
@@ -1433,13 +1433,13 @@ body.circadia-forest .theme-dark {
     --k-bg: #131714;
     --k-bg-2: #1a1e1b;
     --k-bg-3: #242a25;
-    --k-app-bg: #0e120f;
+    --k-app-bg: var(--k-bg-2);
 
     --k-text: #c4ccc5;
     --k-text-muted: #9fa9a1;
     --k-text-faint: #838d85;
 
-    --k-border: #353c36;
+    --k-border: var(--k-bg-2);
     --k-border-strong: #454e47;
     --k-table-border: #353c36;
 

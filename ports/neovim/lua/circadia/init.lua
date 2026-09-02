@@ -15,7 +15,7 @@ function M.setup(opts)
 
   vim.g.colors_name = "circadia-" .. mode
   vim.o.termguicolors = true
-  vim.o.background = mode == "light" and "light" or "dark"
+  vim.o.background = (mode == "light" or mode == "light_parchment") and "light" or "dark"
 
   local highlights = {
     Normal = { fg = c.text_primary, bg = c.bg_canvas },

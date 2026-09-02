@@ -1592,6 +1592,83 @@ source-file "/path/to/circadia/ports/tmux/circadia-dark-ember.tmux"
 }
 
 // -------------------------------------------------------------
+// 14. NEOVIM
+// -------------------------------------------------------------
+function buildNeovim() {
+  const outDir = path.join(rootDir, 'ports', 'neovim', 'lua', 'circadia')
+  ensureDir(outDir)
+
+  const modes = ['light_parchment', 'dark_ember', 'dark_plum', 'dark_forest']
+  const modeData = {}
+
+  for (const modeKey of modes) {
+    const m = spec.modes[modeKey]
+    if (!m) continue
+    modeData[modeKey] = {
+      // UI tokens
+      bg_canvas: m.ui.bg_canvas.hex,
+      bg_surface: m.ui.bg_surface.hex,
+      bg_element: m.ui.bg_element.hex,
+      border: m.ui.border.hex,
+      text_primary: m.ui.text_primary.hex,
+      text_muted: m.ui.text_muted.hex,
+      text_faint: m.ui.text_faint ? m.ui.text_faint.hex : m.ui.text_muted.hex,
+      accent: m.ui.accent.hex,
+      // Syntax tokens
+      keyword: m.syntax.keyword.hex,
+      type: m.syntax.type.hex,
+      function: m.syntax.function.hex,
+      property: m.syntax.property.hex,
+      variable: m.syntax.variable.hex,
+      string: m.syntax.string.hex,
+      number: m.syntax.number.hex,
+      tag: m.syntax.tag.hex,
+      comment: m.syntax.comment.hex,
+      // Headings
+      h1: m.headings.h1.hex,
+      h2: m.headings.h2.hex,
+      h3: m.headings.h3.hex,
+      h4: m.headings.h4.hex,
+      h5: m.headings.h5.hex,
+      h6: m.headings.h6.hex,
+    }
+  }
+
+  let lua = `-- Circadia Color Palette Definitions (Derived from spec/palette.json)
+-- Perceptually uniform, WCAG AAA compliant tokens engineered in OKLCH
+
+local M = {
+`
+  for (const [modeKey, tokens] of Object.entries(modeData)) {
+    lua += `  ${modeKey} = {\n`
+    for (const [key, val] of Object.entries(tokens)) {
+      const formattedKey = key === 'function' ? '["function"]' : key.padEnd(12, ' ')
+      lua += `    ${formattedKey} = "${val}",\n`
+    }
+    lua += `  },\n`
+  }
+
+  lua += `}
+
+-- Default aliases
+M.light = M.light_parchment
+M.dark = M.dark_ember
+
+-- Expose modes table
+M.modes = {
+  light_parchment = M.light_parchment,
+  dark_ember = M.dark_ember,
+  dark_plum = M.dark_plum,
+  dark_forest = M.dark_forest,
+}
+
+return M
+`
+  fs.writeFileSync(path.join(outDir, 'palette.lua'), lua)
+  console.log('Built neovim port')
+}
+
+// -------------------------------------------------------------
 // EXECUTE ALL
 // -------------------------------------------------------------
 console.log('=== Building All Circadia Ports ===')
@@ -1608,4 +1685,6 @@ buildVitepress()
 buildXcode()
 buildZed()
 buildTmux()
-console.log('All 13 ports built successfully!')
+buildNeovim()
+console.log('All 14 ports built successfully!')
+
