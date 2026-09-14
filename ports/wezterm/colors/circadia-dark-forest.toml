@@ -1,0 +1,73 @@
+# Circadia — Circadia Dark Forest
+# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+
+[metadata]
+name = "Circadia Dark Forest"
+author = "Tanmay Manoj Gandhi <https://github.com/tanmaymanojgandhi>"
+origin_url = "https://github.com/tanmaymanojgandhi/circadia"
+
+[colors]
+foreground = "#c4ccc5"
+background = "#131714"
+
+cursor_bg = "#83b384"
+cursor_fg = "#131714"
+cursor_border = "#83b384"
+
+selection_bg = "#242a25"
+selection_fg = "#c4ccc5"
+
+scrollbar_thumb = "#353c36"
+split = "#353c36"
+
+ansi = [
+  "#131714",
+  "#d1aa73",
+  "#92b87e",
+  "#d19b66",
+  "#6cb0c5",
+  "#b29ace",
+  "#d19b66",
+  "#c4ccc5",
+]
+
+brights = [
+  "#838d85",
+  "#83bc97",
+  "#92b87e",
+  "#b8e2c4",
+  "#6cb0c5",
+  "#d092a9",
+  "#6cb0c5",
+  "#c4ccc5",
+]
+
+[colors.tab_bar]
+background = "#131714"
+inactive_tab_edge = "#353c36"
+
+[colors.tab_bar.active_tab]
+bg_color = "#1a1e1b"
+fg_color = "#83b384"
+intensity = "Bold"
+underline = "None"
+italic = false
+strikethrough = false
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#131714"
+fg_color = "#9fa9a1"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#242a25"
+fg_color = "#c4ccc5"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "#131714"
+fg_color = "#9fa9a1"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#242a25"
+fg_color = "#c4ccc5"
+italic = true

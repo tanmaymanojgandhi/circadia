@@ -1,0 +1,73 @@
+# Circadia — Circadia Light
+# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+
+[metadata]
+name = "Circadia Light"
+author = "Tanmay Manoj Gandhi <https://github.com/tanmaymanojgandhi>"
+origin_url = "https://github.com/tanmaymanojgandhi/circadia"
+
+[colors]
+foreground = "#28323a"
+background = "#f7f2e6"
+
+cursor_bg = "#0048b3"
+cursor_fg = "#f7f2e6"
+cursor_border = "#0048b3"
+
+selection_bg = "#e5dcc6"
+selection_fg = "#28323a"
+
+scrollbar_thumb = "#d7cdb7"
+split = "#d7cdb7"
+
+ansi = [
+  "#e5dcc6",
+  "#843900",
+  "#005f2f",
+  "#095b62",
+  "#0048b3",
+  "#7a1f7a",
+  "#095b62",
+  "#28323a",
+]
+
+brights = [
+  "#43505c",
+  "#1c60a2",
+  "#005f2f",
+  "#1c4470",
+  "#0048b3",
+  "#4b1fa3",
+  "#0048b3",
+  "#28323a",
+]
+
+[colors.tab_bar]
+background = "#eee7d6"
+inactive_tab_edge = "#d7cdb7"
+
+[colors.tab_bar.active_tab]
+bg_color = "#f7f2e6"
+fg_color = "#0048b3"
+intensity = "Bold"
+underline = "None"
+italic = false
+strikethrough = false
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#eee7d6"
+fg_color = "#46535f"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#e5dcc6"
+fg_color = "#28323a"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "#eee7d6"
+fg_color = "#46535f"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#e5dcc6"
+fg_color = "#28323a"
+italic = true

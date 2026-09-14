@@ -80,7 +80,7 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 
 ```
 ├── spec/                           # The Single Source of Truth (palette.json, rules.md, token-map.md)
-├── ports/                          # 19 official ports (VS Code, tmux, Neovim, Zed, Obsidian, etc.)
+├── ports/                          # 20 official ports (VS Code, tmux, Neovim, Zed, WezTerm, etc.)
 ├── scripts/                        # Automated Build & Validation Pipeline (validate.ts, generate-formats.ts, build-all-ports.js)
 ├── dist/                           # Multi-format exports for third-party tools (palette.json, palette.csv)
 ├── docs/                           # Interactive documentation & token inspector (GitHub Pages)
@@ -89,7 +89,7 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 
 ---
 
-## 🚀 Supported Ports (19 Official Ports)
+## 🚀 Supported Ports (20 Official Ports)
 
 | Application | Port Path | Flavours Supported | Type | Author |
 | :--- | :--- | :--- | :--- | :--- |
@@ -97,6 +97,7 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 | **tmux** | [`ports/tmux/`](ports/tmux) | All 4 Modes | TPM Plugin / Conf | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
 | **Neovim** | [`ports/neovim/`](ports/neovim) | All 4 Modes | Treesitter Lua Plugin | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
 | **Zed** | [`ports/zed/`](ports/zed) | All 4 Modes | Native Extension | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
+| **WezTerm** | [`ports/wezterm/`](ports/wezterm) | All 4 Modes | TOML Schemes & Lua | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
 | **Obsidian** | [`ports/obsidian/`](ports/obsidian) | Light & Dark | CSS Theme | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
 | **JetBrains IDEs** | [`ports/intellij/`](ports/intellij) | Light & Dark | ICLS Scheme | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
 | **Xcode** | [`ports/xcode/`](ports/xcode) | Light & Dark | Theme Plist | [@tanmaymanojgandhi](https://github.com/tanmaymanojgandhi) |
@@ -124,7 +125,7 @@ npm run validate
 # 2. Regenerate dist/ palette exports & 4-mode vector swatch matrix
 npm run generate
 
-# 3. Rebuild all 19 theme ports from the single-source spec
+# 3. Rebuild all 20 theme ports from the single-source spec
 npm run build:ports
 ```
 

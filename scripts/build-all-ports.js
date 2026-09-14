@@ -1669,6 +1669,433 @@ return M
 }
 
 // -------------------------------------------------------------
+// 15. WEZTERM
+// -------------------------------------------------------------
+function buildWezterm() {
+  const outDir = path.join(rootDir, 'ports', 'wezterm')
+  const colorsDir = path.join(outDir, 'colors')
+  ensureDir(colorsDir)
+
+  function getTerminalColors(modeKey) {
+    const m = spec.modes[modeKey]
+    if (modeKey === 'light_parchment') {
+      return {
+        ansi: [
+          m.ui.bg_element.hex,
+          '#843900',
+          '#005f2f',
+          '#095b62',
+          '#0048b3',
+          '#7a1f7a',
+          '#095b62',
+          m.ui.text_primary.hex,
+        ],
+        brights: [
+          '#43505c',
+          '#1c60a2',
+          '#005f2f',
+          '#1c4470',
+          '#0048b3',
+          '#4b1fa3',
+          '#0048b3',
+          m.ui.text_primary.hex,
+        ],
+      }
+    } else if (modeKey === 'dark_ember') {
+      return {
+        ansi: [
+          m.ui.bg_canvas.hex,
+          '#d9a86e',
+          '#8cbb62',
+          '#d99148',
+          '#66abc6',
+          '#b991db',
+          '#d99148',
+          m.ui.text_primary.hex,
+        ],
+        brights: [
+          '#91887d',
+          '#ea9d49',
+          '#8cbb62',
+          '#f8c88f',
+          '#66abc6',
+          '#de88a6',
+          '#66abc6',
+          m.ui.text_primary.hex,
+        ],
+      }
+    } else if (modeKey === 'dark_plum') {
+      return {
+        ansi: [
+          m.ui.bg_canvas.hex,
+          '#daa97a',
+          '#96b77b',
+          '#d49969',
+          '#75acd2',
+          '#b695cf',
+          '#d49969',
+          m.ui.text_primary.hex,
+        ],
+        brights: [
+          '#9a8b96',
+          '#da7ea0',
+          '#96b77b',
+          '#f5b8d0',
+          '#75acd2',
+          '#d38da4',
+          '#75acd2',
+          m.ui.text_primary.hex,
+        ],
+      }
+    } else if (modeKey === 'dark_forest') {
+      return {
+        ansi: [
+          m.ui.bg_canvas.hex,
+          '#d1aa73',
+          '#92b87e',
+          '#d19b66',
+          '#6cb0c5',
+          '#b29ace',
+          '#d19b66',
+          m.ui.text_primary.hex,
+        ],
+        brights: [
+          '#838d85',
+          '#83bc97',
+          '#92b87e',
+          '#b8e2c4',
+          '#6cb0c5',
+          '#d092a9',
+          '#6cb0c5',
+          m.ui.text_primary.hex,
+        ],
+      }
+    }
+  }
+
+  function generateWeztermToml(schemeName, modeKey) {
+    const m = spec.modes[modeKey]
+    const { ansi, brights } = getTerminalColors(modeKey)
+    const isParchment = modeKey === 'light_parchment'
+
+    const tabBg = isParchment ? m.ui.bg_surface.hex : m.ui.bg_canvas.hex
+    const activeTabBg = isParchment ? m.ui.bg_canvas.hex : m.ui.bg_surface.hex
+    const inactiveTabBg = isParchment ? m.ui.bg_surface.hex : m.ui.bg_canvas.hex
+
+    return `# Circadia — ${schemeName}
+# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+
+[metadata]
+name = "${schemeName}"
+author = "Tanmay Manoj Gandhi <https://github.com/tanmaymanojgandhi>"
+origin_url = "https://github.com/tanmaymanojgandhi/circadia"
+
+[colors]
+foreground = "${m.ui.text_primary.hex}"
+background = "${m.ui.bg_canvas.hex}"
+
+cursor_bg = "${m.ui.accent.hex}"
+cursor_fg = "${m.ui.bg_canvas.hex}"
+cursor_border = "${m.ui.accent.hex}"
+
+selection_bg = "${m.ui.bg_element.hex}"
+selection_fg = "${m.ui.text_primary.hex}"
+
+scrollbar_thumb = "${m.ui.border.hex}"
+split = "${m.ui.border.hex}"
+
+ansi = [
+  "${ansi[0]}",
+  "${ansi[1]}",
+  "${ansi[2]}",
+  "${ansi[3]}",
+  "${ansi[4]}",
+  "${ansi[5]}",
+  "${ansi[6]}",
+  "${ansi[7]}",
+]
+
+brights = [
+  "${brights[0]}",
+  "${brights[1]}",
+  "${brights[2]}",
+  "${brights[3]}",
+  "${brights[4]}",
+  "${brights[5]}",
+  "${brights[6]}",
+  "${brights[7]}",
+]
+
+[colors.tab_bar]
+background = "${tabBg}"
+inactive_tab_edge = "${m.ui.border.hex}"
+
+[colors.tab_bar.active_tab]
+bg_color = "${activeTabBg}"
+fg_color = "${m.ui.accent.hex}"
+intensity = "Bold"
+underline = "None"
+italic = false
+strikethrough = false
+
+[colors.tab_bar.inactive_tab]
+bg_color = "${inactiveTabBg}"
+fg_color = "${m.ui.text_muted.hex}"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "${m.ui.bg_element.hex}"
+fg_color = "${m.ui.text_primary.hex}"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "${inactiveTabBg}"
+fg_color = "${m.ui.text_muted.hex}"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "${m.ui.bg_element.hex}"
+fg_color = "${m.ui.text_primary.hex}"
+italic = true
+`
+  }
+
+  // Write TOML color schemes
+  const schemeMap = [
+    { name: 'Circadia Warm Parchment', mode: 'light_parchment', file: 'circadia-light-parchment.toml' },
+    { name: 'Circadia Light', mode: 'light_parchment', file: 'circadia-light.toml' },
+    { name: 'Circadia Dark Ember', mode: 'dark_ember', file: 'circadia-dark-ember.toml' },
+    { name: 'Circadia Dark', mode: 'dark_ember', file: 'circadia-dark.toml' },
+    { name: 'Circadia Dark Plum', mode: 'dark_plum', file: 'circadia-dark-plum.toml' },
+    { name: 'Circadia Dark Forest', mode: 'dark_forest', file: 'circadia-dark-forest.toml' },
+  ]
+
+  for (const s of schemeMap) {
+    fs.writeFileSync(path.join(colorsDir, s.file), generateWeztermToml(s.name, s.mode))
+  }
+
+  // Generate Lua module
+  function generateLuaModule() {
+    let lua = `-- Circadia Color Schemes for WezTerm
+-- Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+-- https://github.com/tanmaymanojgandhi/circadia
+
+local wezterm = require 'wezterm'
+
+local M = {}
+
+M.color_schemes = {
+`
+    const flavours = [
+      { key: 'Circadia Warm Parchment', mode: 'light_parchment' },
+      { key: 'Circadia Dark Ember', mode: 'dark_ember' },
+      { key: 'Circadia Dark Plum', mode: 'dark_plum' },
+      { key: 'Circadia Dark Forest', mode: 'dark_forest' },
+    ]
+
+    for (const f of flavours) {
+      const m = spec.modes[f.mode]
+      const { ansi, brights } = getTerminalColors(f.mode)
+      const isParchment = f.mode === 'light_parchment'
+      const tabBg = isParchment ? m.ui.bg_surface.hex : m.ui.bg_canvas.hex
+      const activeTabBg = isParchment ? m.ui.bg_canvas.hex : m.ui.bg_surface.hex
+      const inactiveTabBg = isParchment ? m.ui.bg_surface.hex : m.ui.bg_canvas.hex
+
+      lua += `  ['${f.key}'] = {\n`
+      lua += `    foreground = '${m.ui.text_primary.hex}',\n`
+      lua += `    background = '${m.ui.bg_canvas.hex}',\n`
+      lua += `    cursor_bg = '${m.ui.accent.hex}',\n`
+      lua += `    cursor_fg = '${m.ui.bg_canvas.hex}',\n`
+      lua += `    cursor_border = '${m.ui.accent.hex}',\n`
+      lua += `    selection_bg = '${m.ui.bg_element.hex}',\n`
+      lua += `    selection_fg = '${m.ui.text_primary.hex}',\n`
+      lua += `    scrollbar_thumb = '${m.ui.border.hex}',\n`
+      lua += `    split = '${m.ui.border.hex}',\n`
+      lua += `    ansi = {\n`
+      for (const col of ansi) {
+        lua += `      '${col}',\n`
+      }
+      lua += `    },\n`
+      lua += `    brights = {\n`
+      for (const col of brights) {
+        lua += `      '${col}',\n`
+      }
+      lua += `    },\n`
+      lua += `    tab_bar = {\n`
+      lua += `      background = '${tabBg}',\n`
+      lua += `      inactive_tab_edge = '${m.ui.border.hex}',\n`
+      lua += `      active_tab = {\n`
+      lua += `        bg_color = '${activeTabBg}',\n`
+      lua += `        fg_color = '${m.ui.accent.hex}',\n`
+      lua += `        intensity = 'Bold',\n`
+      lua += `        underline = 'None',\n`
+      lua += `        italic = false,\n`
+      lua += `        strikethrough = false,\n`
+      lua += `      },\n`
+      lua += `      inactive_tab = {\n`
+      lua += `        bg_color = '${inactiveTabBg}',\n`
+      lua += `        fg_color = '${m.ui.text_muted.hex}',\n`
+      lua += `      },\n`
+      lua += `      inactive_tab_hover = {\n`
+      lua += `        bg_color = '${m.ui.bg_element.hex}',\n`
+      lua += `        fg_color = '${m.ui.text_primary.hex}',\n`
+      lua += `        italic = true,\n`
+      lua += `      },\n`
+      lua += `      new_tab = {\n`
+      lua += `        bg_color = '${inactiveTabBg}',\n`
+      lua += `        fg_color = '${m.ui.text_muted.hex}',\n`
+      lua += `      },\n`
+      lua += `      new_tab_hover = {\n`
+      lua += `        bg_color = '${m.ui.bg_element.hex}',\n`
+      lua += `        fg_color = '${m.ui.text_primary.hex}',\n`
+      lua += `        italic = true,\n`
+      lua += `      },\n`
+      lua += `    },\n`
+      lua += `  },\n`
+    }
+
+    lua += `}\n\n`
+    lua += `-- Canonical Aliases\n`
+    lua += `M.color_schemes['Circadia Light'] = M.color_schemes['Circadia Warm Parchment']\n`
+    lua += `M.color_schemes['Circadia Dark'] = M.color_schemes['Circadia Dark Ember']\n`
+    lua += `M.color_schemes['circadia-light'] = M.color_schemes['Circadia Warm Parchment']\n`
+    lua += `M.color_schemes['circadia-dark'] = M.color_schemes['Circadia Dark Ember']\n`
+    lua += `M.color_schemes['circadia-light-parchment'] = M.color_schemes['Circadia Warm Parchment']\n`
+    lua += `M.color_schemes['circadia-dark-ember'] = M.color_schemes['Circadia Dark Ember']\n`
+    lua += `M.color_schemes['circadia-dark-plum'] = M.color_schemes['Circadia Dark Plum']\n`
+    lua += `M.color_schemes['circadia-dark-forest'] = M.color_schemes['Circadia Dark Forest']\n\n`
+    lua += `-- Helper to apply Circadia to a WezTerm configuration object\n`
+    lua += `function M.apply_to_config(config, opts)\n`
+    lua += `  opts = opts or {}\n`
+    lua += `  local flavour = opts.flavour or 'Circadia Dark Ember'\n\n`
+    lua += `  if not config.color_schemes then\n`
+    lua += `    config.color_schemes = {}\n`
+    lua += `  end\n`
+    lua += `  for k, v in pairs(M.color_schemes) do\n`
+    lua += `    config.color_schemes[k] = v\n`
+    lua += `  end\n\n`
+    lua += `  if opts.sync_appearance then\n`
+    lua += `    local appearance = 'Dark'\n`
+    lua += `    if wezterm.gui and wezterm.gui.get_appearance then\n`
+    lua += `      appearance = wezterm.gui.get_appearance()\n`
+    lua += `    end\n`
+    lua += `    if appearance:find('Dark') then\n`
+    lua += `      config.color_scheme = opts.dark_flavour or 'Circadia Dark Ember'\n`
+    lua += `    else\n`
+    lua += `      config.color_scheme = opts.light_flavour or 'Circadia Warm Parchment'\n`
+    lua += `    end\n`
+    lua += `  else\n`
+    lua += `    config.color_scheme = flavour\n`
+    lua += `  end\n`
+    lua += `end\n\n`
+    lua += `return M\n`
+
+    return lua
+  }
+
+  fs.writeFileSync(path.join(outDir, 'circadia.lua'), generateLuaModule())
+
+  // Write README
+  const readme = `# Circadia for WezTerm
+
+Perceptually calibrated, low-strain themes engineered in OKLCH for [WezTerm](https://wezfurlong.org/wezterm/).
+Features 100% strict WCAG 2.1 AAA contrast, halation-free dark modes, glare-free light mode, and styled tab bars.
+
+---
+
+## 🎨 Available Flavours
+
+| Flavour | Name in WezTerm | Description | Background |
+| :--- | :--- | :--- | :--- |
+| ☀️ **Warm Parchment** | \`Circadia Warm Parchment\` (or \`Circadia Light\`) | Daylight Reading | \`#f7f2e6\` |
+| ☕ **Dark Classic** | \`Circadia Dark Ember\` (or \`Circadia Dark\`) | Warm Ember & Espresso | \`#17130f\` |
+| 🍇 **Dark Modern** | \`Circadia Dark Plum\` | Plum Noir & Velvet | \`#140e12\` |
+| 🌲 **Dark Focus** | \`Circadia Dark Forest\` | Obsidian Pine | \`#131714\` |
+
+---
+
+## 🚀 Installation
+
+### Option 1: Standalone TOML Schemes (Recommended)
+
+1. Copy the files in \`ports/wezterm/colors/\` to your WezTerm colors directory:
+   - **Linux / macOS**: \`~/.config/wezterm/colors/\`
+   - **Windows**: \`%USERPROFILE%\\.config\\wezterm\\colors\\\` or the \`colors\` directory alongside \`wezterm.exe\`
+
+2. Alternatively, specify the directory in your \`~/.wezterm.lua\`:
+   \`\`\`lua
+   local wezterm = require 'wezterm'
+   local config = wezterm.config_builder()
+
+   -- Tell WezTerm where to find the Circadia schemes
+   config.color_scheme_dirs = { '/path/to/circadia/ports/wezterm/colors' }
+
+   -- Select your preferred flavour
+   config.color_scheme = 'Circadia Dark Ember'
+
+   return config
+   \`\`\`
+
+---
+
+### Option 2: Automatic OS Dark / Light Mode Switching
+
+Automatically synchronize your terminal with your operating system's light or dark mode:
+
+\`\`\`lua
+local wezterm = require 'wezterm'
+local config = wezterm.config_builder()
+
+config.color_scheme_dirs = { '/path/to/circadia/ports/wezterm/colors' }
+
+local function scheme_for_appearance(appearance)
+  if appearance:find 'Dark' then
+    return 'Circadia Dark Ember'
+  else
+    return 'Circadia Warm Parchment'
+  end
+end
+
+config.color_scheme = scheme_for_appearance(wezterm.gui.get_appearance())
+
+return config
+\`\`\`
+
+---
+
+### Option 3: Using the \`circadia.lua\` Module
+
+You can also drop \`circadia.lua\` into your WezTerm config folder and load it directly:
+
+\`\`\`lua
+local wezterm = require 'wezterm'
+local circadia = require 'circadia'
+local config = wezterm.config_builder()
+
+circadia.apply_to_config(config, {
+  sync_appearance = true, -- Automatically switches between Light Parchment and Dark Ember
+  -- Or specify a static flavour:
+  -- flavour = 'Circadia Dark Forest',
+})
+
+return config
+\`\`\`
+
+---
+
+## 🪟 Tab Bar Styling
+
+Each Circadia scheme automatically styles WezTerm's tab bar. To use the retro tab bar with custom Circadia tab styling:
+
+\`\`\`lua
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = false
+\`\`\`
+`
+
+  fs.writeFileSync(path.join(outDir, 'README.md'), readme)
+  console.log('Built wezterm port')
+}
+
+// -------------------------------------------------------------
 // EXECUTE ALL
 // -------------------------------------------------------------
 console.log('=== Building All Circadia Ports ===')
@@ -1686,5 +2113,6 @@ buildXcode()
 buildZed()
 buildTmux()
 buildNeovim()
-console.log('All 14 ports built successfully!')
+buildWezterm()
+console.log('All 15 generator ports built successfully!')
 

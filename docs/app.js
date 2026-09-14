@@ -159,6 +159,7 @@ const PORTS = [
   { name: "JetBrains", category: "editor", type: "ICLS Scheme", desc: "IntelliJ, PyCharm, WebStorm & GoLand.", path: "ports/intellij", snippet: "File -> Import Settings -> circadia.icls" },
   { name: "Xcode", category: "editor", type: "Plist Theme", desc: "Swift, C++, and Obj-C colorscheme.", path: "ports/xcode", snippet: "Copy to ~/Library/Developer/Xcode/UserData/FontAndColorThemes" },
   { name: "Alacritty", category: "terminal", type: "TOML", desc: "GPU-accelerated terminal palette.", path: "ports/alacritty", snippet: 'import = ["~/.config/alacritty/circadia-dark-ember.toml"]' },
+  { name: "WezTerm", category: "terminal", type: "TOML / Lua", desc: "Perceptually calibrated schemes and Lua module.", path: "ports/wezterm", snippet: "config.color_scheme = 'Circadia Dark Ember'" },
   { name: "Kitty", category: "terminal", type: "Conf", desc: "Truecolor configuration for Kitty.", path: "ports/kitty", snippet: "include circadia-dark-ember.conf" },
   { name: "Windows Terminal", category: "terminal", type: "JSON", desc: "Schemes for Windows Terminal & PowerShell.", path: "ports/windows-terminal", snippet: "Add scheme to settings.json" },
   { name: "iTerm2", category: "terminal", type: "Preset", desc: "Color presets for macOS iTerm2.", path: "ports/iterm2", snippet: "Profiles -> Colors -> Import Presets" },
@@ -192,7 +193,7 @@ const CODE_EXAMPLES = {
       { text: '\nWCAG 2.1 status: ', tok: 'ident' },
       { text: '`Strict AAA (>= 7.0:1)`', tok: 'code' },
       { text: '\n\n', tok: 'ident' },
-      { text: '[Explore All 18 Ports](https://github.com/tanmaymanojgandhi/circadia)\n', tok: 'link' }
+      { text: '[Explore All 20 Ports](https://github.com/tanmaymanojgandhi/circadia)\n', tok: 'link' }
     ]
   },
   typescript: {

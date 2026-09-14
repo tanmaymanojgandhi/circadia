@@ -1,0 +1,73 @@
+# Circadia — Circadia Dark Plum
+# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+
+[metadata]
+name = "Circadia Dark Plum"
+author = "Tanmay Manoj Gandhi <https://github.com/tanmaymanojgandhi>"
+origin_url = "https://github.com/tanmaymanojgandhi/circadia"
+
+[colors]
+foreground = "#d8c8d2"
+background = "#140e12"
+
+cursor_bg = "#cf8aa4"
+cursor_fg = "#140e12"
+cursor_border = "#cf8aa4"
+
+selection_bg = "#261e23"
+selection_fg = "#d8c8d2"
+
+scrollbar_thumb = "#3d3039"
+split = "#3d3039"
+
+ansi = [
+  "#140e12",
+  "#daa97a",
+  "#96b77b",
+  "#d49969",
+  "#75acd2",
+  "#b695cf",
+  "#d49969",
+  "#d8c8d2",
+]
+
+brights = [
+  "#9a8b96",
+  "#da7ea0",
+  "#96b77b",
+  "#f5b8d0",
+  "#75acd2",
+  "#d38da4",
+  "#75acd2",
+  "#d8c8d2",
+]
+
+[colors.tab_bar]
+background = "#140e12"
+inactive_tab_edge = "#3d3039"
+
+[colors.tab_bar.active_tab]
+bg_color = "#1b1419"
+fg_color = "#cf8aa4"
+intensity = "Bold"
+underline = "None"
+italic = false
+strikethrough = false
+
+[colors.tab_bar.inactive_tab]
+bg_color = "#140e12"
+fg_color = "#b4a3af"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = "#261e23"
+fg_color = "#d8c8d2"
+italic = true
+
+[colors.tab_bar.new_tab]
+bg_color = "#140e12"
+fg_color = "#b4a3af"
+
+[colors.tab_bar.new_tab_hover]
+bg_color = "#261e23"
+fg_color = "#d8c8d2"
+italic = true
