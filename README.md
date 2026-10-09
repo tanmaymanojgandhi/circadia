@@ -5,10 +5,10 @@
 <h1 align="center">Circadia</h1>
 
 <p align="center">
-  <em>Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.</em>
+  <em>Perceptually uniform, low-strain themes engineered for continuous focus.</em>
 </p>
 
-Circadia is an open color specification and multi-platform theme system engineered in OKLCH for cross-platform editors, terminal emulators, and document renderers. Built around human ocular biophysics, circadian light cycles, and strict mathematical accessibility, Circadia delivers **100% Strict WCAG 2.1 AAA contrast (>= 7.0:1)** across all UI and syntax tokens with **multi-dimensional Color Vision Deficiency (CVD) support**.
+Circadia is an open color specification and multi-platform theme system engineered in OKLCH for cross-platform editors, terminal emulators, and document renderers. Its goal is continuous focus through warm background layers, vibrant readable syntax, strict mathematical accessibility, and multi-dimensional Color Vision Deficiency (CVD) support. **The light palette validates every UI text, syntax, and heading token at WCAG 2.1 AAA contrast (>= 7.0:1) on its three base backgrounds.** Project-wide AAA coverage and CVD support across all rendered ports remain validation goals.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tanmaymanojgandhi/circadia/main/assets/swatch-matrix.svg" alt="Circadia 2.0 Color Palette Matrix (4 Modes: Warm Parchment, Dark Classic, Dark Modern, Dark Focus)" width="100%">
@@ -22,9 +22,9 @@ Circadia 2.0 provides 4 distinct modes calibrated for different ambient environm
 
 ### 1. ☀️ Circadia — Warm Parchment (Light)
 * **Target Environment**: Daylight & bright ambient lighting (**300–800+ lux**).
-* **Canvas Background**: `#f7f2e6` (`oklch(96.0% 0.013 85)` — Warm Cellulose Linen).
+* **Canvas Background**: `#f7f4ec` (`oklch(96.7% 0.011 89.7)` — Warm Cellulose Linen).
 * **Character**: Daylight / Reading / Editorial Warmth.
-* **Optical Physics**: Standard stark-white editor themes (`#ffffff`) blast excessive luminous flux into the user's dilated pupils, triggering squinting and photophobia. Warm Parchment uses a balanced warm cellulose paper base that diffuses ambient room light without glare, coupled with deep ink tones achieving **11.69:1 AAA** body text contrast.
+* **Optical Physics**: Standard stark-white editor themes (`#ffffff`) blast excessive luminous flux into the user's dilated pupils, triggering squinting and photophobia. Warm Parchment uses a balanced warm cellulose paper base that diffuses ambient room light without glare, coupled with deep ink tones achieving **11.89:1 AAA** body text contrast.
 
 ### 2. ☕ Circadia — Warm Ember & Espresso (Dark Classic)
 * **Target Environment**: Evening, night, and warm-lit rooms (**0–50 lux / 2700K ambient**).
@@ -60,19 +60,21 @@ Circadia 2.0 enforces **Multi-Dimensional Token Separation**:
 
 ## 📐 Mathematical Accessibility: 100% Strict WCAG 2.1 AAA
 
+The light palette validates all text, syntax, and heading tokens at >= 7:1 against canvas, surface, and element backgrounds. Existing dark palettes retain legacy thresholds; full cross-platform CVD and rendered-state verification remains pending. Decorative dividers are separate from text contrast.
+
 Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space** and verified through automated continuous-integration contrast checks:
 
 | Token Role | Light Parchment | Dark Classic | Dark Modern | Dark Focus | WCAG Tier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`text_primary`** | **11.69:1** | **10.26:1** | **11.91:1** | **11.02:1** | **Strict AAA** |
-| **`keyword`** | **7.29:1** | **7.22:1** | **7.88:1** | **7.91:1** | **Strict AAA** |
-| **`type`** | **7.32:1** | **8.60:1** | **8.48:1** | **8.69:1** | **Strict AAA** |
-| **`function`** | **8.16:1** | **7.16:1** | **7.42:1** | **7.59:1** | **Strict AAA** |
-| **`property`** | **9.29:1** | **7.20:1** | **7.55:1** | **7.48:1** | **Strict AAA** |
-| **`string`** | **7.02:1** | **8.27:1** | **8.78:1** | **8.82:1** | **Strict AAA** |
-| **`number`** | **7.00:1** | **7.12:1** | **7.99:1** | **7.92:1** | **Strict AAA** |
-| **`comment`** | **6.45:1 (AA+)** | **7.16:1** | **7.35:1** | **6.68:1 (AA+)** | **High Legibility** |
-| **`headings.h1-h6`** | **11.00:1 -> 4.70:1** | **12.44:1 -> 5.27:1** | **12.65:1 -> 4.60:1** | **12.35:1 -> 4.88:1** | **Monotonic Progression** |
+| **`text_primary`** | **11.89:1** | **10.26:1** | **11.91:1** | **11.02:1** | **Strict AAA** |
+| **`keyword`** | **8.61:1** | **7.22:1** | **7.88:1** | **7.91:1** | **Strict AAA** |
+| **`type`** | **8.58:1** | **8.60:1** | **8.48:1** | **8.69:1** | **Strict AAA** |
+| **`function`** | **8.55:1** | **7.16:1** | **7.42:1** | **7.59:1** | **Strict AAA** |
+| **`property`** | **9.44:1** | **7.20:1** | **7.55:1** | **7.48:1** | **Strict AAA** |
+| **`string`** | **8.53:1** | **8.27:1** | **8.78:1** | **8.82:1** | **Strict AAA** |
+| **`number`** | **8.60:1** | **7.12:1** | **7.99:1** | **7.92:1** | **Strict AAA** |
+| **`comment`** | **8.59:1** | **7.16:1** | **7.35:1** | **6.68:1 (AA+)** | **High Legibility** |
+| **`headings.h1-h6`** | **13.30:1 -> 8.55:1** | **12.44:1 -> 5.27:1** | **12.65:1 -> 4.60:1** | **12.35:1 -> 4.88:1** | **Monotonic Progression** |
 
 ---
 
@@ -119,7 +121,7 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 ## 🛠️ Tooling & Validation
 
 ```bash
-# 1. Run strict contrast & accessibility validation (56/56 checks)
+# 1. Run strict contrast & accessibility validation (strict light-theme checks across canvas, surface, and element)
 npm run validate
 
 # 2. Regenerate dist/ palette exports & 4-mode vector swatch matrix

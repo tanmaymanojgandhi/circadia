@@ -98,7 +98,46 @@ for (const [modeKey, mode] of Object.entries(spec.modes)) {
     }
   }
 
-  // Check contrast ratios for key roles
+  // The light editor palette guarantees AAA for all text roles on every base
+  // layer, including comments, metadata, and small Markdown headings.
+  if (modeKey === "light_parchment") {
+    const textGroups = [
+      { name: "ui", tokens: Object.fromEntries(Object.entries(mode.ui).filter(([key]) => key.startsWith("text_") || key === "accent")) },
+      { name: "syntax", tokens: mode.syntax },
+      { name: "headings", tokens: mode.headings },
+    ];
+    for (const background of ["bg_canvas", "bg_surface", "bg_element"]) {
+      for (const group of textGroups) {
+        for (const [name, token] of Object.entries(group.tokens)) {
+          totalChecks++;
+          const ratio = contrastRatio(token.hex, mode.ui[background].hex);
+          const passed = ratio >= 7.0;
+          if (!passed) errorsFound++;
+          console.log(`  ${passed ? "✓ PASS" : "✗ FAIL"} ${group.name}.${name} vs ${background} -> ${ratio.toFixed(2)}:1 (AAA >= 7:1)`);
+        }
+      }
+    }
+    const muted = relativeLuminance(hexToRgb(mode.ui.text_muted.hex));
+    const faint = relativeLuminance(hexToRgb(mode.ui.text_faint.hex));
+    totalChecks++;
+    if (faint <= muted) {
+      errorsFound++;
+      console.error("  ✗ FAIL light metadata must be lighter than secondary text");
+    }
+    let previous = 0;
+    for (const key of ["h1", "h2", "h3", "h4", "h5", "h6"]) {
+      const current = relativeLuminance(hexToRgb(mode.headings[key].hex));
+      totalChecks++;
+      if (current <= previous) {
+        errorsFound++;
+        console.error(`  ✗ FAIL ${key} breaks the heading lightness progression`);
+      }
+      previous = current;
+    }
+    continue;
+  }
+
+  // Existing dark-mode thresholds remain unchanged; they are not a full AAA audit.
   const checks: Array<{ name: string; hex: string; min: number; label: string }> = [
     { name: "ui.text_primary", hex: mode.ui.text_primary.hex, min: 7.0, label: "AAA Body Text (or AA min 4.5)" },
     { name: "ui.text_muted", hex: mode.ui.text_muted.hex, min: 4.5, label: "AA Secondary Text" },

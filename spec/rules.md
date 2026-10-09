@@ -9,7 +9,7 @@ All official ports and community contributions for **Circadia 2.0** must strictl
 Circadia 2.0 engineers 4 dedicated environments tailored to ambient lighting and cognitive context:
 
 1. **☀️ `light_parchment` — Warm Parchment (Daylight Reading):**
-   * *Canvas:* `#f7f2e6` (`oklch(96.0% 0.013 85)`).
+   * *Canvas:* `#f7f4ec` (`oklch(96.7% 0.011 89.7)`).
    * *Role:* Anti-glare daylight contrast for 300–800+ lux environments. Prevents pupil constriction fatigue.
 2. **☕ `dark_ember` — Dark Classic (Warm Ember & Espresso):**
    * *Canvas:* `#17130f` (`oklch(19.0% 0.010 67)`).
@@ -25,7 +25,13 @@ Circadia 2.0 engineers 4 dedicated environments tailored to ambient lighting and
 
 ### 2. Contrast Invariants (WCAG 2.1 AAA)
 
-Every foreground token must be tested against its parent canvas background (`bg_canvas`):
+For `light_parchment`, every text token (`text_primary`, `text_muted`, `text_faint`, `accent`, all syntax including comments, and H1–H6) must meet **>= 7.0:1** against **each** of `bg_canvas`, `bg_surface`, and `bg_element`. Metadata must be lighter than secondary text, and heading lightness must increase monotonically from H1 through H6. Light selection backgrounds must preserve these foreground contrasts.
+
+The dark modes currently use legacy validation thresholds and require a separate AAA audit. The intended project-wide targets below are not yet guaranteed by those modes.
+
+Decorative borders may remain subtle. Control boundaries required for identification and focus indicators must meet **>= 3.0:1** against adjacent backgrounds; background layers are not text and do not require 7:1 against each other.
+
+Project-wide targets:
 
 - **Normal Text (`text_primary`, `text_muted`, Syntax)**: Must strictly satisfy $\ge 7.0:1$ WCAG AAA.
 - **Large Text / Headings (H1–H6, `text_faint`)**: Must satisfy $\ge 4.5:1$ AA.
@@ -47,7 +53,7 @@ To ensure full accessibility for developers with Deuteranopia (green-blind), Pro
 
 Headings must progress monotonically in visual weight from H1 down to H6 without contrast inversions:
 
-- **Light Mode (`light_parchment`):** H1 is deepest blue (`L = 36%`, ~8.9:1), H6 is lightest blue (`L = 52.5%`, ~4.2:1).
+- **Light Mode (`light_parchment`):** H1 is deepest blue (13.30:1 on canvas), H6 is lightest blue (8.55:1 on canvas). Every level also exceeds 7:1 on the darker surface and element backgrounds.
 - **Dark Modes (`dark_ember`, `dark_plum`, `dark_forest`):** H1 is brightest (`L = 84%–86%`, ~11.5–12.5:1), H6 is deepest (`L = 49%–62%`, ~4.0–4.6:1).
 
 ---

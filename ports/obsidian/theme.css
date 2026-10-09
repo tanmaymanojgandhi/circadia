@@ -34,52 +34,52 @@ settings:
     color-scheme: light;
 
     /* Warm Parchment Palette */
-    --k-bg: #f7f2e6;
+    --k-bg: #f7f4ec;
     /* Editor surface (Warm Parchment Canvas) */
-    --k-bg-2: #eee7d6;
+    --k-bg-2: #efebe2;
     /* Secondary surface / tabs (Warm Parchment Surface) */
-    --k-bg-3: #e5dcc6;
+    --k-bg-3: #e5e0d5;
     /* Hover / tertiary surface (Warm Parchment Element) */
     --k-app-bg: var(--k-bg-2);
     /* Outer app gutter */
 
     --k-text: #28323a;
-    --k-text-muted: #46535f;
-    --k-text-faint: #5f6d7a;
+    --k-text-muted: #394652;
+    --k-text-faint: #3e4750;
 
     --k-border: var(--k-bg-2);
     --k-border-strong: #c9c0b1;
-    --k-table-border: #d7cdb7;
+    --k-table-border: #d2cbbf;
 
-    --k-accent: #0048b3;
-    --k-accent-hover: #1c60a2;
-    --k-accent-rgb: 0, 72, 179;
+    --k-accent: #003fa0;
+    --k-accent-hover: #0e355b;
+    --k-accent-rgb: 0, 63, 160;
 
-    --k-code-bg: #e5dcc6;
+    --k-code-bg: #e5e0d5;
     --k-code-text: #28323a;
     --k-mark-bg: #ffebb8;
 
     /* Semantic Status Colors */
     --color-red: #dc2626;
-    --color-green: #005f2f;
-    --color-orange: #843900;
+    --color-green: #015228;
+    --color-orange: #763200;
     --color-yellow: #ca8a04;
-    --color-cyan: #095b62;
-    --color-blue: #0048b3;
-    --color-purple: #7a1f7a;
+    --color-cyan: #014e55;
+    --color-blue: #003fa0;
+    --color-purple: #781c78;
     --color-pink: #4b1fa3;
 
     /* Syntax Highlighting */
-    --k-comment: #5e564d;
-    --k-keyword: #0048b3;
-    --k-number: #095b62;
-    --k-var2: #7a1f7a;
+    --k-comment: #4c453c;
+    --k-keyword: #003fa0;
+    --k-number: #014e55;
+    --k-var2: #781c78;
     --k-var3: #4b1fa3;
-    --k-string: #005f2f;
-    --k-tag: #0048b3;
+    --k-string: #015228;
+    --k-tag: #003fa0;
 
     /* Callout RGB Hues */
-    --k-note: 0, 72, 179;
+    --k-note: 0, 63, 160;
     --k-caution: 220, 38, 38;
     --k-tip: 0, 95, 47;
     --k-important: 122, 31, 122;
@@ -106,7 +106,7 @@ settings:
     --text-on-accent-inverted: var(--k-text);
     --text-accent: var(--k-accent);
     --text-accent-hover: var(--k-accent-hover);
-    --text-selection: rgba(var(--k-accent-rgb), 0.22);
+    --text-selection: var(--k-bg-3);
     --text-highlight-bg: var(--k-mark-bg);
     --caret-color: var(--k-accent);
     --tab-active-border-color: var(--k-accent);
@@ -122,12 +122,12 @@ settings:
     --hr-thickness: 1px;
 
     /* Heading Hierarchy Palette */
-    --h1-color: #1c4470;
-    --h2-color: #20538a;
-    --h3-color: #1c60a2;
-    --h4-color: #236bb5;
-    --h5-color: #286fc0;
-    --h6-color: #2f75c6;
+    --h1-color: #0d2a46;
+    --h2-color: #0d2f50;
+    --h3-color: #0e355b;
+    --h4-color: #0f3a66;
+    --h5-color: #134073;
+    --h6-color: #15477e;
 
     --link-color: var(--k-accent);
     --link-color-hover: var(--k-accent-hover);
@@ -138,7 +138,7 @@ settings:
 
     /* Shadows & Modals */
     --k-card-shadow: 0 1px 3px rgba(40, 50, 58, 0.05), 0 4px 12px rgba(40, 50, 58, 0.04);
-    --k-modal-bg: rgba(247, 242, 230, 0.97);
+    --k-modal-bg: rgba(247, 244, 236, 0.97);
     --k-modal-shadow: 0 16px 36px rgba(40, 50, 58, 0.16);
 
     /* Checkbox & List Tokens */
@@ -149,7 +149,7 @@ settings:
     --checkbox-border-color: var(--k-border-strong);
 
     /* Toggle Switches */
-    --toggle-background: #d7cdb7;
+    --toggle-background: #d2cbbf;
     --toggle-border-color: #c9c0b1;
     --toggle-thumb-color: #5f6d7a;
     --toggle-background-active: var(--k-accent);

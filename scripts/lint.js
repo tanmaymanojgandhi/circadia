@@ -179,6 +179,19 @@ try {
   logFail(`Spec validation error: ${err.message}`)
 }
 
+// Run the authoritative validator too: light syntax and secondary labels must
+// meet AAA on surfaces and elements, not just primary text on the canvas.
+totalChecks++
+const validation = require('child_process').spawnSync(
+  process.execPath, [require.resolve('tsx/cli'), path.join(rootDir, 'scripts', 'validate.ts')],
+  { cwd: rootDir, encoding: 'utf8' }
+)
+if (validation.status !== 0) {
+  logFail(`Palette validation failed:\n${validation.stdout || ''}${validation.stderr || ''}`)
+} else {
+  logPass('Full palette validator, including strict light-theme AAA across all base layers')
+}
+
 // Summary
 console.log('\n----------------------------------------')
 if (failedChecks > 0) {

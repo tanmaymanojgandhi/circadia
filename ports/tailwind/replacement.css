@@ -2,12 +2,12 @@
 
 /* Replaces default Tailwind neutral & theme palettes with Circadia */
 @theme {
-  --color-background:              #f7f2e6;
+  --color-background:              #f7f4ec;
   --color-foreground:              #28323a;
-  --color-surface:                 #eee7d6;
-  --color-element:                 #e5dcc6;
-  --color-border:                  #d7cdb7;
-  --color-primary:                 #0048b3;
+  --color-surface:                 #efebe2;
+  --color-element:                 #e5e0d5;
+  --color-border:                  #d2cbbf;
+  --color-primary:                 #003fa0;
 }
 
 @layer base {

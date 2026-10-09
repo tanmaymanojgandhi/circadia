@@ -6,19 +6,19 @@
   "theme": {
     "colors": {
       "frame": [
-        238,
-        231,
-        214
+        239,
+        235,
+        226
       ],
       "frame_inactive": [
         229,
-        220,
-        198
+        224,
+        213
       ],
       "ntp_background": [
         247,
-        242,
-        230
+        244,
+        236
       ],
       "ntp_text": [
         40,
@@ -31,9 +31,9 @@
         58
       ],
       "tab_background_text": [
+        57,
         70,
-        83,
-        95
+        82
       ],
       "bookmark_text": [
         40,
@@ -42,18 +42,18 @@
       ],
       "ntp_link": [
         0,
-        72,
-        179
+        63,
+        160
       ],
       "ntp_header": [
+        57,
         70,
-        83,
-        95
+        82
       ],
       "toolbar": [
         247,
-        242,
-        230
+        244,
+        236
       ],
       "toolbar_text": [
         40,
@@ -61,9 +61,9 @@
         58
       ],
       "toolbar_field_text": [
+        57,
         70,
-        83,
-        95
+        82
       ],
       "button_background": [
         0,

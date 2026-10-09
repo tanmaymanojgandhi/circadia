@@ -22,9 +22,9 @@ Circadia provides 4 distinct modes calibrated for different ambient environments
 
 ### 1. ☀️ Circadia — Warm Parchment (Light)
 * **Target Environment**: Daylight & bright ambient lighting (**300–800+ lux**).
-* **Canvas Background**: `#f7f2e6` (`oklch(96.0% 0.013 85)` — Warm Cellulose Linen).
+* **Canvas Background**: `#f7f4ec` (`oklch(96.7% 0.011 89.7)` — Warm Cellulose Linen).
 * **Character**: Daylight / Reading / Editorial Warmth.
-* **Optical Physics**: Standard stark-white editor themes (`#ffffff`) blast excessive luminous flux into the user's dilated pupils, triggering squinting and photophobia. Warm Parchment uses a balanced warm cellulose paper base that diffuses ambient room light without glare, coupled with deep ink tones achieving **11.69:1 AAA** body text contrast.
+* **Optical Physics**: Standard stark-white editor themes (`#ffffff`) blast excessive luminous flux into the user's dilated pupils, triggering squinting and photophobia. Warm Parchment uses a balanced warm cellulose paper base that diffuses ambient room light without glare, coupled with deep ink tones achieving **11.89:1 AAA** body text contrast.
 
 ### 2. ☕ Circadia — Warm Ember & Espresso (Dark Classic)
 * **Target Environment**: Evening, night, and warm-lit rooms (**0–50 lux / 2700K ambient**).
@@ -52,7 +52,7 @@ Every token in Circadia is engineered in **OKLCH 32-bit perceptual color space**
 
 | Token Role | Light Parchment | Dark Classic | Dark Modern | Dark Focus | WCAG Tier |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`text_primary`** | **11.69:1** | **10.26:1** | **11.91:1** | **11.02:1** | **Strict AAA** |
+| **`text_primary`** | **11.89:1** | **10.26:1** | **11.91:1** | **11.02:1** | **Strict AAA** |
 | **`keyword`** | **7.29:1** | **7.22:1** | **7.88:1** | **7.91:1** | **Strict AAA** |
 | **`type`** | **7.32:1** | **8.60:1** | **8.48:1** | **8.69:1** | **Strict AAA** |
 | **`function`** | **8.16:1** | **7.16:1** | **7.42:1** | **7.59:1** | **Strict AAA** |

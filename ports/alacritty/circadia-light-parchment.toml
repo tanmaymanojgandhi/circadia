@@ -1,32 +1,32 @@
 # Circadia — Warm Parchment
 [colors.primary]
-background = "#f7f2e6"
+background = "#f7f4ec"
 foreground = "#28323a"
 
 [colors.cursor]
-text = "#f7f2e6"
-cursor = "#0048b3"
+text = "#f7f4ec"
+cursor = "#003fa0"
 
 [colors.selection]
 text = "#28323a"
-background = "#e5dcc6"
+background = "#e5e0d5"
 
 [colors.normal]
-black   = "#e5dcc6"
-red     = "#843900"
-green   = "#005f2f"
-yellow  = "#095b62"
-blue    = "#0048b3"
-magenta = "#7a1f7a"
-cyan    = "#095b62"
+black   = "#e5e0d5"
+red     = "#763200"
+green   = "#015228"
+yellow  = "#014e55"
+blue    = "#003fa0"
+magenta = "#781c78"
+cyan    = "#014e55"
 white   = "#28323a"
 
 [colors.bright]
-black   = "#43505c"
-red     = "#1c60a2"
-green   = "#005f2f"
-yellow  = "#1c4470"
-blue    = "#0048b3"
+black   = "#3e4750"
+red     = "#0e355b"
+green   = "#015228"
+yellow  = "#0d2a46"
+blue    = "#003fa0"
 magenta = "#4b1fa3"
-cyan    = "#0048b3"
+cyan    = "#003fa0"
 white   = "#28323a"

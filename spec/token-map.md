@@ -45,14 +45,14 @@ Explicit mappings for document structures and markdown viewports (Obsidian, Typo
 
 | Element        | Day Mode Token    | Day Hex   | Night Mode Token | Night Hex | Stylistic Rule                  |
 | -------------- | ----------------- | --------- | ---------------- | --------- | ------------------------------- |
-| **H1**         | `headings.h1`     | `#1c4470` | `headings.h1`    | `#f8c88f` | **Bold**, largest visual weight |
-| **H2**         | `headings.h2`     | `#20538a` | `headings.h2`    | `#f2b26c` | **Bold**                        |
-| **H3**         | `headings.h3`     | `#1c60a2` | `headings.h3`    | `#ea9d49` | **Semi-bold**                   |
-| **H4**         | `headings.h4`     | `#236bb5` | `headings.h4`    | `#db8935` | Regular/Medium                  |
-| **H5**         | `headings.h5`     | `#286fc0` | `headings.h5`    | `#c7792e` | Regular                         |
-| **H6**         | `headings.h6`     | `#2f75c6` | `headings.h6`    | `#b56f2b` | Regular / Small caps            |
-| **Blockquote** | `text_muted`      | `#46535f` | `text_muted`     | `#b5aba0` | _Italic_, left border: `accent` |
-| **Code Span**  | `syntax.function` | `#7a1f7a` | `syntax.function`| `#b991db` | Background: `bg_element`        |
+| **H1**         | `headings.h1`     | `#0d2a46` | `headings.h1`    | `#f8c88f` | **Bold**, largest visual weight |
+| **H2**         | `headings.h2`     | `#0d2f50` | `headings.h2`    | `#f2b26c` | **Bold**                        |
+| **H3**         | `headings.h3`     | `#0e355b` | `headings.h3`    | `#ea9d49` | **Semi-bold**                   |
+| **H4**         | `headings.h4`     | `#0f3a66` | `headings.h4`    | `#db8935` | Regular/Medium                  |
+| **H5**         | `headings.h5`     | `#134073` | `headings.h5`    | `#c7792e` | Regular                         |
+| **H6**         | `headings.h6`     | `#15477e` | `headings.h6`    | `#b56f2b` | Regular / Small caps            |
+| **Blockquote** | `text_muted`      | `#394652` | `text_muted`     | `#b5aba0` | _Italic_, left border: `accent` |
+| **Code Span**  | `syntax.function` | `#781c78` | `syntax.function`| `#b991db` | Background: `bg_element`        |
 
 ---
 
@@ -62,19 +62,19 @@ Direct color slots for terminal emulators (Alacritty, Kitty, WezTerm, iTerm2, Wi
 
 | ANSI Slot | Color Name       | Day Mode Mapping  | Day Hex   | Night Mode Mapping | Night Hex |
 | --------- | ---------------- | ----------------- | --------- | ------------------ | --------- |
-| **0**     | Black (Normal)   | `ui.bg_element`   | `#e5dcc6` | `ui.bg_canvas`     | `#17130f` |
-| **1**     | Red (Normal)     | `syntax.type`     | `#843900` | `headings.h4`      | `#db8935` |
-| **2**     | Green (Normal)   | `syntax.string`   | `#005f2f` | `syntax.string`    | `#8cbb62` |
-| **3**     | Yellow (Normal)  | `syntax.type`     | `#843900` | `syntax.number`    | `#d99148` |
-| **4**     | Blue (Normal)    | `syntax.keyword`  | `#0048b3` | `syntax.keyword`   | `#66abc6` |
-| **5**     | Magenta (Normal) | `syntax.function` | `#7a1f7a` | `syntax.function`  | `#b991db` |
-| **6**     | Cyan (Normal)    | `syntax.number`   | `#095b62` | `syntax.keyword`   | `#66abc6` |
+| **0**     | Black (Normal)   | `ui.bg_element`   | `#e5e0d5` | `ui.bg_canvas`     | `#17130f` |
+| **1**     | Red (Normal)     | `syntax.type`     | `#763200` | `headings.h4`      | `#db8935` |
+| **2**     | Green (Normal)   | `syntax.string`   | `#015228` | `syntax.string`    | `#8cbb62` |
+| **3**     | Yellow (Normal)  | `syntax.type`     | `#763200` | `syntax.number`    | `#d99148` |
+| **4**     | Blue (Normal)    | `syntax.keyword`  | `#003fa0` | `syntax.keyword`   | `#66abc6` |
+| **5**     | Magenta (Normal) | `syntax.function` | `#781c78` | `syntax.function`  | `#b991db` |
+| **6**     | Cyan (Normal)    | `syntax.number`   | `#014e55` | `syntax.keyword`   | `#66abc6` |
 | **7**     | White (Normal)   | `ui.text_primary` | `#28323a` | `ui.text_primary`  | `#c9c0b1` |
-| **8**     | Bright Black     | `ui.text_faint`   | `#5f6d7a` | `ui.text_faint`    | `#91887d` |
-| **9**     | Bright Red       | `syntax.type`     | `#843900` | `headings.h3`      | `#ea9d49` |
-| **10**    | Bright Green     | `syntax.string`   | `#005f2f` | `syntax.string`    | `#8cbb62` |
-| **11**    | Bright Yellow    | `syntax.type`     | `#843900` | `headings.h1`      | `#f8c88f` |
-| **12**    | Bright Blue      | `syntax.keyword`  | `#0048b3` | `syntax.keyword`   | `#66abc6` |
+| **8**     | Bright Black     | `ui.text_faint`   | `#3e4750` | `ui.text_faint`    | `#91887d` |
+| **9**     | Bright Red       | `syntax.type`     | `#763200` | `headings.h3`      | `#ea9d49` |
+| **10**    | Bright Green     | `syntax.string`   | `#015228` | `syntax.string`    | `#8cbb62` |
+| **11**    | Bright Yellow    | `syntax.type`     | `#763200` | `headings.h1`      | `#f8c88f` |
+| **12**    | Bright Blue      | `syntax.keyword`  | `#003fa0` | `syntax.keyword`   | `#66abc6` |
 | **13**    | Bright Magenta   | `syntax.property` | `#4b1fa3` | `syntax.property`  | `#de88a6` |
-| **14**    | Bright Cyan      | `syntax.number`   | `#095b62` | `syntax.keyword`   | `#66abc6` |
+| **14**    | Bright Cyan      | `syntax.number`   | `#014e55` | `syntax.keyword`   | `#66abc6` |
 | **15**    | Bright White     | `ui.text_primary` | `#28323a` | `ui.text_primary`  | `#eae3d8` |

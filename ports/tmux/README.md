@@ -4,7 +4,7 @@ Circadian-aligned status bar and pane styling engineered in OKLCH for tmux.
 
 ## Available Flavours
 
-* **`light-parchment`**: ☀️ Warm Parchment (Daylight Reading, `#f7f2e6`)
+* **`light-parchment`**: ☀️ Warm Parchment (Daylight Reading, `#f7f4ec`)
 * **`dark-ember`**: ☕ Dark Classic — Warm Ember & Espresso (`#17130f`)
 * **`dark-plum`**: 🍇 Dark Modern — Plum Noir (`#140e12`)
 * **`dark-forest`**: 🌲 Dark Focus — Obsidian Pine (`#131714`)

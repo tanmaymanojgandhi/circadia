@@ -198,7 +198,7 @@ function generateSvgMatrix() {
   
   <!-- Header Title -->
   <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#f0ece4">Circadia 2.0 Color Specification Matrix</text>
-  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • 100% Strict WCAG AAA • Multi-Dimensional CVD Separation</text>
+  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • CVD-Oriented Syntax</text>
 `;
 
   modeKeys.forEach(cfg => {
@@ -229,7 +229,7 @@ function generateSvgMatrix() {
         ]
       },
       {
-        name: "Syntax Highlighting (Strict AAA)",
+        name: isDark ? "Syntax Highlighting" : "Syntax Highlighting (Strict AAA)",
         tokens: [
           { key: "Keyword", hex: mode.syntax.keyword.hex },
           { key: "Type", hex: mode.syntax.type.hex },

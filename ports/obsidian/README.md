@@ -28,21 +28,21 @@ $$\text{Color} = \text{oklch}(L \quad C \quad H)$$
 
 | Role / Token | Hex | RGB (32-bit) | OKLCH | Visual Swatch & Character |
 | :--- | :--- | :--- | :--- | :--- |
-| **Editor Canvas (`--k-bg`)** | `#f7f2e6` | `247, 242, 230` | `oklch(96.0% 0.013 85)` | 📜 Warm Linen Paper (Anti-glare) |
-| **Sidebar / Tabs (`--k-bg-2`)** | `#eee7d6` | `238, 231, 214` | `oklch(92.5% 0.016 85)` | 🌾 Soft Parchment |
-| **Hover / Cards (`--k-bg-3`)** | `#e5dcc6` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🌾 Muted Linen |
-| **App Gutter (`--k-app-bg`)** | `#e5dcc6` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🏜️ Warm Sand Frame |
+| **Editor Canvas (`--k-bg`)** | `#f7f4ec` | `247, 242, 230` | `oklch(96.7% 0.011 89.7)` | 📜 Warm Linen Paper (Anti-glare) |
+| **Sidebar / Tabs (`--k-bg-2`)** | `#efebe2` | `238, 231, 214` | `oklch(92.5% 0.016 85)` | 🌾 Soft Parchment |
+| **Hover / Cards (`--k-bg-3`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🌾 Muted Linen |
+| **App Gutter (`--k-app-bg`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🏜️ Warm Sand Frame |
 | **Primary Text (`--k-text`)** | `#28323a` | `40, 50, 58` | `oklch(30.0% 0.020 250)` | ✒️ Deep Slate Ink (11.3:1 Contrast) |
-| **Muted Text (`--k-text-muted`)** | `#46535f` | `70, 83, 95` | `oklch(43.0% 0.025 250)` | 🌫️ Warm Graphite (6.8:1 Contrast) |
+| **Muted Text (`--k-text-muted`)** | `#394652` | `70, 83, 95` | `oklch(43.0% 0.025 250)` | 🌫️ Warm Graphite (6.8:1 Contrast) |
 | **Faint Text (`--k-text-faint`)** | `#5f6d7a` | `95, 109, 122` | `oklch(53.0% 0.020 250)` | 🌫️ Slate Mist (4.6:1 Contrast) |
-| **Border / Divider (`--k-border`)** | `#d7cdb7` | `215, 205, 183` | `oklch(83.0% 0.022 85)` | 📏 Soft Parchment Border |
-| **Accent / Links (`--k-accent`)** | `#0048b3` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
-| **Keywords (`--k-keyword`)** | `#0048b3` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
-| **Classes / Types (`--k-var3`)** | `#843900` | `132, 57, 0` | `oklch(44.2% 0.162 62)` | 🏺 Warm Venetian Sienna |
-| **Functions (`--k-var2`)** | `#7a1f7a` | `122, 31, 122` | `oklch(42.4% 0.164 328)` | 🔮 Royal Imperial Amethyst |
-| **Strings (`--k-string`)** | `#005f2f` | `0, 95, 47` | `oklch(42.5% 0.110 153)` | 🌿 Deep Imperial Emerald |
-| **Numbers / Math (`--k-number`)** | `#095b62` | `9, 91, 98` | `oklch(42.5% 0.080 204)` | 🍯 Deep Teal Cyan |
-| **Tags / HTML (`--k-tag`)** | `#0048b3` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 📐 Royal Blue Tag |
+| **Border / Divider (`--k-border`)** | `#d2cbbf` | `215, 205, 183` | `oklch(83.0% 0.022 85)` | 📏 Soft Parchment Border |
+| **Accent / Links (`--k-accent`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
+| **Keywords (`--k-keyword`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
+| **Classes / Types (`--k-var3`)** | `#763200` | `132, 57, 0` | `oklch(44.2% 0.162 62)` | 🏺 Warm Venetian Sienna |
+| **Functions (`--k-var2`)** | `#781c78` | `122, 31, 122` | `oklch(42.4% 0.164 328)` | 🔮 Royal Imperial Amethyst |
+| **Strings (`--k-string`)** | `#015228` | `0, 95, 47` | `oklch(42.5% 0.110 153)` | 🌿 Deep Imperial Emerald |
+| **Numbers / Math (`--k-number`)** | `#014e55` | `9, 91, 98` | `oklch(42.5% 0.080 204)` | 🍯 Deep Teal Cyan |
+| **Tags / HTML (`--k-tag`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 📐 Royal Blue Tag |
 | **Comments (`--k-comment`)** | `#5e564d` | `94, 86, 77` | `oklch(45.8% 0.018 71)` | 🪵 Driftwood Gray |
 
 ---
@@ -82,12 +82,12 @@ Both Day and Night themes employ a continuous, non-jarring stepped hierarchy:
 
 | Level | ☀️ Day Mode (Sapphire Gradient) | 🌙 Night Mode (Zero-Red Warm Scale) |
 | :--- | :--- | :--- |
-| **H1** | `#1c4470` *(Deep Sapphire Navy)* | `#f8c88f` *(Warm Butter Gold)* |
-| **H2** | `#20538a` *(Royal Sapphire)* | `#f2b26c` *(Warm Amber)* |
-| **H3** | `#1c60a2` *(Bright Sapphire)* | `#ea9d49` *(Amber Gold)* |
-| **H4** | `#236bb5` *(Sky Sapphire)* | `#db8935` *(Ochre Amber)* |
-| **H5** | `#286fc0` *(Soft Cornflower)* | `#c7792e` *(Tawny Amber)* |
-| **H6** | `#2f75c6` *(Frost Ice)* | `#b56f2b` *(Deep Amber Cinnamon)* |
+| **H1** | `#0d2a46` *(Deep Sapphire Navy)* | `#f8c88f` *(Warm Butter Gold)* |
+| **H2** | `#0d2f50` *(Royal Sapphire)* | `#f2b26c` *(Warm Amber)* |
+| **H3** | `#0e355b` *(Bright Sapphire)* | `#ea9d49` *(Amber Gold)* |
+| **H4** | `#0f3a66` *(Sky Sapphire)* | `#db8935` *(Ochre Amber)* |
+| **H5** | `#134073` *(Soft Cornflower)* | `#c7792e` *(Tawny Amber)* |
+| **H6** | `#15477e` *(Frost Ice)* | `#b56f2b` *(Deep Amber Cinnamon)* |
 
 ---
 

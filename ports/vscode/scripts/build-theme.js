@@ -14,7 +14,7 @@ function buildTheme(modeKey, mode) {
   const syntax = mode.syntax;
   const headings = mode.headings;
   const isDark = mode.type === "dark" || modeKey === "dark";
-  const destructiveColor = isDark ? "#e06c75" : "#dc2626";
+  const destructiveColor = isDark ? "#e06c75" : "#86131c";
   const successColor = syntax.string.hex;
   const warningColor = syntax.number.hex;
   const badgeForeground = isDark ? ui.bg_canvas.hex : "#ffffff";
@@ -262,7 +262,35 @@ function buildTheme(modeKey, mode) {
       "welcomePage.progress.foreground": ui.accent.hex,
       "chat.slashCommandBackground": `${ui.accent.hex}33`,
       "chat.slashCommandForeground": ui.accent.hex,
-      "chat.editedFileForeground": warningColor
+      "chat.editedFileForeground": warningColor,
+
+      // Opaque light-state backgrounds retain the palette's validated AAA
+      // contrast. Blue overlays previously darkened text selections beyond
+      // the base-layer contrast budget.
+      ...(!isDark ? {
+        "selection.background": ui.bg_element.hex,
+        "editor.selectionBackground": ui.bg_element.hex,
+        "editor.inactiveSelectionBackground": ui.bg_element.hex,
+        "editor.selectionHighlightBackground": ui.bg_surface.hex,
+        "editor.wordHighlightBackground": ui.bg_surface.hex,
+        "editor.wordHighlightStrongBackground": ui.bg_element.hex,
+        "editor.findMatchBackground": ui.bg_element.hex,
+        "editor.findMatchHighlightBackground": ui.bg_surface.hex,
+        "editor.findMatchBorder": ui.accent.hex,
+        "editor.findMatchHighlightBorder": ui.border.hex,
+        "editorSuggestWidget.selectedBackground": ui.bg_element.hex,
+        "list.activeSelectionBackground": ui.bg_element.hex,
+        "list.focusBackground": ui.bg_element.hex,
+        "menu.selectionBackground": ui.bg_element.hex,
+        "peekViewResult.selectionBackground": ui.bg_element.hex,
+        "input.selectionBackground": ui.bg_surface.hex,
+        "inputOption.activeBackground": ui.bg_surface.hex,
+        "terminal.selectionBackground": ui.bg_element.hex,
+        "chat.slashCommandBackground": ui.bg_surface.hex,
+        "input.border": "#79736a",
+        "dropdown.border": "#79736a",
+        "checkbox.border": "#79736a"
+      } : {})
     },
     tokenColors: [
       {

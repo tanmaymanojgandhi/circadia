@@ -9,7 +9,7 @@ Features 100% strict WCAG 2.1 AAA contrast, halation-free dark modes, glare-free
 
 | Flavour | Name in WezTerm | Description | Background |
 | :--- | :--- | :--- | :--- |
-| ☀️ **Warm Parchment** | `Circadia Warm Parchment` (or `Circadia Light`) | Daylight Reading | `#f7f2e6` |
+| ☀️ **Warm Parchment** | `Circadia Warm Parchment` (or `Circadia Light`) | Daylight Reading | `#f7f4ec` |
 | ☕ **Dark Classic** | `Circadia Dark Ember` (or `Circadia Dark`) | Warm Ember & Espresso | `#17130f` |
 | 🍇 **Dark Modern** | `Circadia Dark Plum` | Plum Noir & Velvet | `#140e12` |
 | 🌲 **Dark Focus** | `Circadia Dark Forest` | Obsidian Pine | `#131714` |

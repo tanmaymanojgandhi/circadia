@@ -6,41 +6,41 @@
 const PALETTE = {
   name: "Circadia",
   version: "2.0.0",
-  tagline: "Perceptually uniform, circadian-aligned design tokens engineered in OKLCH.",
-  description: "Circadia delivers glare-free daylight reading and halation-free evening warmth across 4 circadian modes, strictly maintaining WCAG 2.1 AAA contrast (>= 7.0:1) with full CVD support.",
+  tagline: "Perceptually uniform, low-strain themes engineered for continuous focus.",
+  description: "Circadia targets continuous focus through warm backgrounds, vibrant syntax, OKLCH engineering, and CVD support. The light palette validates all text at >= 7.0:1 across three base backgrounds; cross-platform rendered CVD coverage remains a validation goal.",
   modes: {
     light_parchment: {
       name: "Warm Parchment",
       tagline: "Daylight • 300–800+ lux",
       type: "light",
       ui: {
-        bg_canvas:     { hex: "#f7f2e6", oklch: "oklch(96.0% 0.013 85)",  rgb: [247, 242, 230], role: "Primary canvas" },
-        bg_surface:    { hex: "#eee7d6", oklch: "oklch(92.5% 0.016 85)",  rgb: [238, 231, 214], role: "Panels & sidebars" },
-        bg_element:    { hex: "#e5dcc6", oklch: "oklch(88.5% 0.020 85)",  rgb: [229, 220, 198], role: "Inputs & active states" },
-        border:        { hex: "#d7cdb7", oklch: "oklch(83.0% 0.022 85)",  rgb: [215, 205, 183], role: "Dividers & borders" },
-        text_primary:  { hex: "#28323a", oklch: "oklch(30.0% 0.020 250)", rgb: [40, 50, 58],   role: "Body text" },
-        text_muted:    { hex: "#46535f", oklch: "oklch(43.0% 0.025 250)", rgb: [70, 83, 95],   role: "Secondary labels" },
-        text_faint:    { hex: "#43505c", oklch: "oklch(42.0% 0.020 250)", rgb: [67, 80, 92],   role: "Metadata & disabled" },
-        accent:        { hex: "#0048b3", oklch: "oklch(43.8% 0.181 260)", rgb: [0, 72, 179],   role: "Interactive accent" }
+        bg_canvas:     { hex: "#f7f4ec", oklch: "oklch(96.7% 0.011 89.7)",  rgb: [247,244,236], role: "Primary canvas" },
+        bg_surface:    { hex: "#efebe2", oklch: "oklch(94.1% 0.013 86.8)",  rgb: [239,235,226], role: "Panels & sidebars" },
+        bg_element:    { hex: "#e5e0d5", oklch: "oklch(90.8% 0.016 86.4)",  rgb: [229,224,213], role: "Inputs & active states" },
+        border:        { hex: "#d2cbbf", oklch: "oklch(84.4% 0.018 81.3)",  rgb: [210,203,191], role: "Dividers & borders" },
+        text_primary:  { hex: "#28323a", oklch: "oklch(31.1% 0.020 242.5)", rgb: [40,50,58],   role: "Body text" },
+        text_muted:    { hex: "#394652", oklch: "oklch(38.8% 0.027 246.4)", rgb: [57,70,82],   role: "Secondary labels" },
+        text_faint:    { hex: "#3e4750", oklch: "oklch(39.3% 0.019 248.3)", rgb: [62,71,80],   role: "Metadata & disabled" },
+        accent:        { hex: "#003fa0", oklch: "oklch(40.2% 0.167 260.4)", rgb: [0,63,160],   role: "Interactive accent" }
       },
       headings: {
-        h1: { hex: "#1c4470", oklch: "oklch(36.0% 0.090 250)", rgb: [28, 68, 112],  role: "Document Title (h1)" },
-        h2: { hex: "#20538a", oklch: "oklch(42.0% 0.100 250)", rgb: [32, 83, 138],  role: "Section Header (h2)" },
-        h3: { hex: "#1c60a2", oklch: "oklch(46.0% 0.110 250)", rgb: [28, 96, 162],  role: "Subsection Header (h3)" },
-        h4: { hex: "#236bb5", oklch: "oklch(49.0% 0.115 250)", rgb: [35, 107, 181], role: "Sub-subsection (h4)" },
-        h5: { hex: "#286fc0", oklch: "oklch(51.0% 0.115 250)", rgb: [40, 111, 192], role: "Minor Header (h5)" },
-        h6: { hex: "#2f75c6", oklch: "oklch(52.5% 0.115 250)", rgb: [47, 117, 198], role: "Caption / Detail (h6)" }
+        h1: { hex: "#0d2a46", oklch: "oklch(27.9% 0.062 250.4)", rgb: [13,42,70],  role: "Document Title (h1)" },
+        h2: { hex: "#0d2f50", oklch: "oklch(30.0% 0.071 251.0)", rgb: [13,47,80],  role: "Section Header (h2)" },
+        h3: { hex: "#0e355b", oklch: "oklch(32.4% 0.080 251.4)", rgb: [14,53,91],  role: "Subsection Header (h3)" },
+        h4: { hex: "#0f3a66", oklch: "oklch(34.5% 0.090 252.6)", rgb: [15,58,102], role: "Sub-subsection (h4)" },
+        h5: { hex: "#134073", oklch: "oklch(37.1% 0.100 254.4)", rgb: [19,64,115], role: "Minor Header (h5)" },
+        h6: { hex: "#15477e", oklch: "oklch(39.6% 0.107 253.9)", rgb: [21,71,126], role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#0048b3", oklch: "oklch(43.8% 0.181 260)", rgb: [0, 72, 179],   role: "Keywords & control" },
-        type:     { hex: "#843900", oklch: "oklch(44.2% 0.162 62)",  rgb: [132, 57, 0],   role: "Types & interfaces" },
-        function: { hex: "#7a1f7a", oklch: "oklch(42.4% 0.164 328)", rgb: [122, 31, 122], role: "Functions & methods" },
-        property: { hex: "#4b1fa3", oklch: "oklch(39.4% 0.192 290)", rgb: [75, 31, 163],  role: "Properties & keys" },
-        variable: { hex: "#364450", oklch: "oklch(37.9% 0.027 245)", rgb: [54, 68, 80],   role: "Variables & parameters" },
-        string:   { hex: "#005f2f", oklch: "oklch(42.5% 0.110 153)", rgb: [0, 95, 47],    role: "String literals" },
-        number:   { hex: "#095b62", oklch: "oklch(42.5% 0.080 204)", rgb: [9, 91, 98],    role: "Numeric literals" },
-        tag:      { hex: "#0048b3", oklch: "oklch(43.8% 0.181 260)", rgb: [0, 72, 179],   role: "HTML/JSX tags" },
-        comment:  { hex: "#524b42", oklch: "oklch(42.0% 0.018 71)",  rgb: [82, 75, 66],   role: "Comments" }
+        keyword:  { hex: "#003fa0", oklch: "oklch(40.2% 0.167 260.4)", rgb: [0,63,160],   role: "Keywords & control" },
+        type:     { hex: "#763200", oklch: "oklch(40.5% 0.109 48.4)",  rgb: [118,50,0],   role: "Types & interfaces" },
+        function: { hex: "#781c78", oklch: "oklch(41.7% 0.164 328.0)", rgb: [120,28,120], role: "Functions & methods" },
+        property: { hex: "#4b1fa3", oklch: "oklch(39.4% 0.192 289.5)", rgb: [75,31,163],  role: "Properties & keys" },
+        variable: { hex: "#364450", oklch: "oklch(37.9% 0.027 244.5)", rgb: [54,68,80],   role: "Variables & parameters" },
+        string:   { hex: "#015228", oklch: "oklch(38.5% 0.099 152.7)", rgb: [1,82,40],    role: "String literals" },
+        number:   { hex: "#014e55", oklch: "oklch(38.7% 0.066 205.2)", rgb: [1,78,85],    role: "Numeric literals" },
+        tag:      { hex: "#003fa0", oklch: "oklch(40.2% 0.167 260.4)", rgb: [0,63,160],   role: "HTML/JSX tags" },
+        comment:  { hex: "#4c453c", oklch: "oklch(39.5% 0.018 74.2)",  rgb: [76,69,60],   role: "Comments" }
       }
     },
     dark_ember: {
