@@ -7,39 +7,39 @@ author = "Tanmay Manoj Gandhi <https://github.com/tanmaymanojgandhi>"
 origin_url = "https://github.com/tanmaymanojgandhi/circadia"
 
 [colors]
-foreground = "#c4ccc5"
+foreground = "#cbc9c4"
 background = "#131714"
 
-cursor_bg = "#83b384"
+cursor_bg = "#a5c3a4"
 cursor_fg = "#131714"
-cursor_border = "#83b384"
+cursor_border = "#a5c3a4"
 
 selection_bg = "#242a25"
-selection_fg = "#c4ccc5"
+selection_fg = "#cbc9c4"
 
 scrollbar_thumb = "#353c36"
 split = "#353c36"
 
 ansi = [
   "#131714",
-  "#d1aa73",
-  "#92b87e",
-  "#d19b66",
-  "#6cb0c5",
-  "#b29ace",
-  "#d19b66",
-  "#c4ccc5",
+  "#dfbb87",
+  "#a9c98e",
+  "#e0b27c",
+  "#83bfd5",
+  "#c3abe0",
+  "#e0b27c",
+  "#cbc9c4",
 ]
 
 brights = [
-  "#838d85",
-  "#83bc97",
-  "#92b87e",
-  "#b8e2c4",
-  "#6cb0c5",
-  "#d092a9",
-  "#6cb0c5",
-  "#c4ccc5",
+  "#b8b4ac",
+  "#dfbb87",
+  "#a9c98e",
+  "#e0b27c",
+  "#83bfd5",
+  "#ddabc2",
+  "#e0b27c",
+  "#cbc9c4",
 ]
 
 [colors.tab_bar]
@@ -48,7 +48,7 @@ inactive_tab_edge = "#353c36"
 
 [colors.tab_bar.active_tab]
 bg_color = "#1a1e1b"
-fg_color = "#83b384"
+fg_color = "#a5c3a4"
 intensity = "Bold"
 underline = "None"
 italic = false
@@ -56,18 +56,18 @@ strikethrough = false
 
 [colors.tab_bar.inactive_tab]
 bg_color = "#131714"
-fg_color = "#9fa9a1"
+fg_color = "#bdbab3"
 
 [colors.tab_bar.inactive_tab_hover]
 bg_color = "#242a25"
-fg_color = "#c4ccc5"
+fg_color = "#cbc9c4"
 italic = true
 
 [colors.tab_bar.new_tab]
 bg_color = "#131714"
-fg_color = "#9fa9a1"
+fg_color = "#bdbab3"
 
 [colors.tab_bar.new_tab_hover]
 bg_color = "#242a25"
-fg_color = "#c4ccc5"
+fg_color = "#cbc9c4"
 italic = true

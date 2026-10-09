@@ -98,9 +98,9 @@ for (const [modeKey, mode] of Object.entries(spec.modes)) {
     }
   }
 
-  // The light editor palette guarantees AAA for all text roles on every base
+  // Validate every palette's text roles on each base
   // layer, including comments, metadata, and small Markdown headings.
-  if (modeKey === "light_parchment") {
+  {
     const textGroups = [
       { name: "ui", tokens: Object.fromEntries(Object.entries(mode.ui).filter(([key]) => key.startsWith("text_") || key === "accent")) },
       { name: "syntax", tokens: mode.syntax },
@@ -120,15 +120,15 @@ for (const [modeKey, mode] of Object.entries(spec.modes)) {
     const muted = relativeLuminance(hexToRgb(mode.ui.text_muted.hex));
     const faint = relativeLuminance(hexToRgb(mode.ui.text_faint.hex));
     totalChecks++;
-    if (faint <= muted) {
+    if (mode.type === "light" ? faint <= muted : faint >= muted) {
       errorsFound++;
-      console.error("  ✗ FAIL light metadata must be lighter than secondary text");
+      console.error(`  ✗ FAIL ${modeKey} metadata must be subordinate to secondary text`);
     }
-    let previous = 0;
+    let previous = mode.type === "light" ? 0 : 1;
     for (const key of ["h1", "h2", "h3", "h4", "h5", "h6"]) {
       const current = relativeLuminance(hexToRgb(mode.headings[key].hex));
       totalChecks++;
-      if (current <= previous) {
+      if (mode.type === "light" ? current <= previous : current >= previous) {
         errorsFound++;
         console.error(`  ✗ FAIL ${key} breaks the heading lightness progression`);
       }
@@ -137,40 +137,6 @@ for (const [modeKey, mode] of Object.entries(spec.modes)) {
     continue;
   }
 
-  // Existing dark-mode thresholds remain unchanged; they are not a full AAA audit.
-  const checks: Array<{ name: string; hex: string; min: number; label: string }> = [
-    { name: "ui.text_primary", hex: mode.ui.text_primary.hex, min: 7.0, label: "AAA Body Text (or AA min 4.5)" },
-    { name: "ui.text_muted", hex: mode.ui.text_muted.hex, min: 4.5, label: "AA Secondary Text" },
-    { name: "ui.text_faint", hex: mode.ui.text_faint.hex, min: 3.0, label: "UI / Faint Component" },
-    { name: "ui.accent", hex: mode.ui.accent.hex, min: 3.0, label: "UI / Interactive Accent" },
-    { name: "syntax.keyword", hex: mode.syntax.keyword.hex, min: 4.5, label: "AA Syntax Keyword" },
-    { name: "syntax.type", hex: mode.syntax.type.hex, min: 4.5, label: "AA Syntax Type" },
-    { name: "syntax.function", hex: mode.syntax.function.hex, min: 4.5, label: "AA Syntax Function" },
-    { name: "syntax.property", hex: mode.syntax.property.hex, min: 4.5, label: "AA Syntax Property" },
-    { name: "syntax.variable", hex: mode.syntax.variable.hex, min: 4.5, label: "AA Syntax Variable" },
-    { name: "syntax.string", hex: mode.syntax.string.hex, min: 4.5, label: "AA Syntax String" },
-    { name: "syntax.number", hex: mode.syntax.number.hex, min: 4.5, label: "AA Syntax Number" },
-    { name: "syntax.comment", hex: mode.syntax.comment.hex, min: 3.0, label: "UI Syntax Comment" },
-    { name: "headings.h1", hex: mode.headings.h1.hex, min: 4.5, label: "AA Heading H1" },
-    { name: "headings.h6", hex: mode.headings.h6.hex, min: 4.0, label: "Heading H6" },
-  ];
-
-  for (const check of checks) {
-    totalChecks++;
-    const ratio = contrastRatio(check.hex, bgHex);
-    const passed = check.name === "ui.text_primary" ? ratio >= 4.5 : ratio >= check.min;
-    const status = passed ? "✓ PASS" : "✗ FAIL";
-
-    if (!passed) {
-      errorsFound++;
-    }
-
-    console.log(
-      `  ${status.padEnd(8)} ${check.name.padEnd(20)} ${check.hex} vs ${bgHex} ` +
-        `-> ${ratio.toFixed(2)}:1 (Target: ${check.min}:1, ${check.label})`
-    );
-  }
-  console.log("");
 }
 
 console.log("====================================");

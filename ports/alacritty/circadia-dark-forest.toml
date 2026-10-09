@@ -1,32 +1,32 @@
 # Circadia — Dark Focus (Obsidian Pine)
 [colors.primary]
 background = "#131714"
-foreground = "#c4ccc5"
+foreground = "#cbc9c4"
 
 [colors.cursor]
 text = "#131714"
-cursor = "#83b384"
+cursor = "#a5c3a4"
 
 [colors.selection]
-text = "#c4ccc5"
+text = "#cbc9c4"
 background = "#242a25"
 
 [colors.normal]
-black   = "#131714"
-red     = "#d1aa73"
-green   = "#92b87e"
-yellow  = "#d19b66"
-blue    = "#6cb0c5"
-magenta = "#b29ace"
-cyan    = "#d19b66"
-white   = "#c4ccc5"
+black = "#131714"
+red = "#dfbb87"
+green = "#a9c98e"
+yellow = "#e0b27c"
+blue = "#83bfd5"
+magenta = "#c3abe0"
+cyan = "#e0b27c"
+white = "#cbc9c4"
 
 [colors.bright]
-black   = "#838d85"
-red     = "#83bc97"
-green   = "#92b87e"
-yellow  = "#b8e2c4"
-blue    = "#6cb0c5"
-magenta = "#d092a9"
-cyan    = "#6cb0c5"
-white   = "#c4ccc5"
+black = "#b8b4ac"
+red = "#c8c7c3"
+green = "#a9c98e"
+yellow = "#d4d3cf"
+blue = "#83bfd5"
+magenta = "#ddabc2"
+cyan = "#83bfd5"
+white = "#cbc9c4"

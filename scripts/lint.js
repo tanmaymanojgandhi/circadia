@@ -189,7 +189,7 @@ const validation = require('child_process').spawnSync(
 if (validation.status !== 0) {
   logFail(`Palette validation failed:\n${validation.stdout || ''}${validation.stderr || ''}`)
 } else {
-  logPass('Full palette validator, including strict light-theme AAA across all base layers')
+  logPass('Full palette validator: AAA text across all four modes and three base layers')
 }
 
 // Summary

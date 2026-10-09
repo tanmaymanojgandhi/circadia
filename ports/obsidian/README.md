@@ -11,75 +11,28 @@
 
 Circadia uses OKLCH to describe lightness, chroma, and hue. Contrast is calculated from the rendered sRGB colors. The color model alone does not guarantee readability, physiological comfort, or CVD separation. See the main README for validation coverage.
 
-## 🎨 Complete Color Palette Matrix
+## Color roles
 
-### ☀️ 1. Day Mode: Warm Parchment (Editorial Daylight)
-*Choose this variant by appearance and personal preference.*
+Dark variants share neutral text and headings, blue links, sage controls, and a common syntax palette. Their canvas and surface colors retain each variant’s identity.
 
-| Role / Token | Hex | RGB | OKLCH | Visual Swatch & Character |
-| :--- | :--- | :--- | :--- | :--- |
-| **Editor Canvas (`--k-bg`)** | `#f7f4ec` | `247, 242, 230` | `oklch(96.7% 0.011 89.7)` | 📜 Warm Linen Paper |
-| **Sidebar / Tabs (`--k-bg-2`)** | `#efebe2` | `238, 231, 214` | `oklch(92.5% 0.016 85)` | 🌾 Soft Parchment |
-| **Hover / Cards (`--k-bg-3`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🌾 Muted Linen |
-| **App Gutter (`--k-app-bg`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🏜️ Warm Sand Frame |
-| **Primary Text (`--k-text`)** | `#28323a` | `40, 50, 58` | `oklch(30.0% 0.020 250)` | ✒️ Deep Slate Ink (11.3:1 Contrast) |
-| **Muted Text (`--k-text-muted`)** | `#394652` | `70, 83, 95` | `oklch(43.0% 0.025 250)` | 🌫️ Warm Graphite (6.8:1 Contrast) |
-| **Faint Text (`--k-text-faint`)** | `#5f6d7a` | `95, 109, 122` | `oklch(53.0% 0.020 250)` | 🌫️ Slate Mist (4.6:1 Contrast) |
-| **Border / Divider (`--k-border`)** | `#d2cbbf` | `215, 205, 183` | `oklch(83.0% 0.022 85)` | 📏 Soft Parchment Border |
-| **Accent / Links (`--k-accent`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
-| **Keywords (`--k-keyword`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 🔷 Deep Royal Blue |
-| **Classes / Types (`--k-var3`)** | `#763200` | `132, 57, 0` | `oklch(44.2% 0.162 62)` | 🏺 Warm Venetian Sienna |
-| **Functions (`--k-var2`)** | `#781c78` | `122, 31, 122` | `oklch(42.4% 0.164 328)` | 🔮 Royal Imperial Amethyst |
-| **Strings (`--k-string`)** | `#015228` | `0, 95, 47` | `oklch(42.5% 0.110 153)` | 🌿 Deep Imperial Emerald |
-| **Numbers / Math (`--k-number`)** | `#014e55` | `9, 91, 98` | `oklch(42.5% 0.080 204)` | 🍯 Deep Teal Cyan |
-| **Tags / HTML (`--k-tag`)** | `#003fa0` | `0, 72, 179` | `oklch(43.8% 0.181 260)` | 📐 Royal Blue Tag |
-| **Comments (`--k-comment`)** | `#5e564d` | `94, 86, 77` | `oklch(45.8% 0.018 71)` | 🪵 Driftwood Gray |
+| Role | Light | All dark variants |
+| --- | --- | --- |
+| Body text | `#28323a` | `#cbc9c4` |
+| Secondary text | `#394652` | `#bdbab3` |
+| Metadata | `#3e4750` | `#b8b4ac` |
+| Links | `#003fa0` | `#9fc5d2` |
+| Active controls | `#003fa0` | `#a5c3a4` |
 
----
+| Heading | Light | All dark variants |
+| --- | --- | --- |
+| H1 | `#0d2a46` | `#d4d3cf` |
+| H2 | `#0d2f50` | `#cecdc9` |
+| H3 | `#0e355b` | `#c8c7c3` |
+| H4 | `#0f3a66` | `#c2c1bd` |
+| H5 | `#134073` | `#bcbbb7` |
+| H6 | `#15477e` | `#b6b5b1` |
 
-### 🌙 2. Night Mode: Warm Ember & Espresso (Circadian Night)
-*Choose this variant by appearance and personal preference.*
-
-| Role / Token | Hex | RGB | OKLCH | Visual Swatch & Character |
-| :--- | :--- | :--- | :--- | :--- |
-| **Editor Canvas (`--k-bg`)** | `#17130f` | `23, 19, 15` | `oklch(19.0% 0.010 67)` | ☕ Warm Ember & Espresso Canvas |
-| **Sidebar / Tabs (`--k-bg-2`)** | `#1e1a15` | `30, 26, 21` | `oklch(22.0% 0.012 67)` | 🪵 Espresso Surface |
-| **Hover / Cards (`--k-bg-3`)** | `#29241e` | `41, 36, 30` | `oklch(26.0% 0.015 67)` | 🌌 Espresso Element |
-| **App Gutter (`--k-app-bg`)** | `#120e0b` | `18, 14, 11` | `oklch(15.0% 0.009 67)` | 🕳️ Deep Shadow Gutter |
-| **Primary Text (`--k-text`)** | `#c9c0b1` | `201, 192, 177` | `oklch(81.1% 0.023 81)` | 📜 Warm Parchment Bone |
-| **Muted Text (`--k-text-muted`)** | `#b5aba0` | `181, 171, 160` | `oklch(75.0% 0.020 81)` | 🪵 Warm Taupe |
-| **Faint Text (`--k-text-faint`)** | `#91887d` | `145, 136, 125` | `oklch(63.0% 0.018 75)` | 🪨 Cedar Shadow |
-| **Border / Divider (`--k-border`)** | `#3b342b` | `59, 52, 43` | `oklch(33.0% 0.018 67)` | 📐 Espresso Border |
-| **Accent / Links (`--k-accent`)** | `#e89a49` | `232, 154, 73` | `oklch(75.0% 0.130 65)` | 🕯️ Warm Amber Gold |
-| **Keywords (`--k-keyword`)** | `#66abc6` | `102, 171, 198` | `oklch(70.6% 0.080 225)` | 🔷 Soft Sky Blue |
-| **Classes / Types (`--k-var3`)** | `#d9a86e` | `217, 168, 110` | `oklch(76.4% 0.095 70)` | 🏜️ Warm Sand / Clay |
-| **Functions (`--k-var2`)** | `#b991db` | `185, 145, 219` | `oklch(72.0% 0.114 308.5)` | 🌸 Soft Violet Orchid |
-| **Strings (`--k-string`)** | `#8cbb62` | `140, 187, 98` | `oklch(73.8% 0.129 132)` | 🍃 Warm Olive Sage |
-| **Numbers / Math (`--k-number`)** | `#d99148` | `217, 145, 72` | `oklch(71.5% 0.124 64)` | 🍯 Honey Amber |
-| **Tags / HTML (`--k-tag`)** | `#66abc6` | `102, 171, 198` | `oklch(70.6% 0.080 225)` | 📐 Soft Sky Tag |
-| **Comments (`--k-comment`)** | `#a9a093` | `169, 160, 147` | `oklch(71.0% 0.021 75)` | 🪵 Cedarwood Ash |
-
----
-
-## 📐 Heading Elevation Scale
-
-Both Day and Night themes employ a continuous, non-jarring stepped hierarchy:
-
-* **H1**: Top-level section anchor ($1.6\times$ font-size) with distinct bottom accent underline
-* **H2**: Major subsection divider ($1.4\times$)
-* **H3**: Topic anchor ($1.25\times$)
-* **H4–H6**: Micro-sections ($1.15\times \rightarrow 1.0\times$)
-
-| Level | ☀️ Day Mode (Sapphire Gradient) | 🌙 Night Mode (Zero-Red Warm Scale) |
-| :--- | :--- | :--- |
-| **H1** | `#0d2a46` *(Deep Sapphire Navy)* | `#f8c88f` *(Warm Butter Gold)* |
-| **H2** | `#0d2f50` *(Royal Sapphire)* | `#f2b26c` *(Warm Amber)* |
-| **H3** | `#0e355b` *(Bright Sapphire)* | `#ea9d49` *(Amber Gold)* |
-| **H4** | `#0f3a66` *(Sky Sapphire)* | `#db8935` *(Ochre Amber)* |
-| **H5** | `#134073` *(Soft Cornflower)* | `#c7792e` *(Tawny Amber)* |
-| **H6** | `#15477e` *(Frost Ice)* | `#b56f2b` *(Deep Amber Cinnamon)* |
-
----
+The base palette text pairs meet 7:1. Plugin styles and other rendered states require separate checks.
 
 ## ✨ Features
 

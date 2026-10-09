@@ -20,6 +20,3 @@ try{
  assert(result.stdout.includes('FAIL syntax.comment'),'Failure must identify the affected token');checks++;
 }finally{fs.writeFileSync('spec/palette.json',original);}
 console.log(`${checks} generated VS Code text/state/control and validator regression checks passed.`);
-const baseline=JSON.parse(cp.execFileSync('git',['show','HEAD:spec/palette.json'],{encoding:'utf8'}));
-for(const key of ['dark_ember','dark_plum','dark_forest'])assert.deepStrictEqual(spec.modes[key],baseline.modes[key]);
-console.log('All three dark palettes unchanged.');

@@ -18,23 +18,23 @@ let s:bg        = "#17130f"
 let s:bg_surf   = "#1e1a15"
 let s:bg_elem   = "#29241e"
 let s:border    = "#3b342b"
-let s:fg        = "#c9c0b1"
-let s:muted     = "#aba195"
-let s:faint     = "#91887d"
-let s:accent    = "#e89a49"
+let s:fg        = "#cbc9c4"
+let s:muted     = "#bdbab3"
+let s:faint     = "#b8b4ac"
+let s:accent    = "#d6b078"
 
-let s:keyword   = "#66abc6"
-let s:type      = "#d9a86e"
-let s:func      = "#b991db"
-let s:string    = "#8cbb62"
-let s:number    = "#d99148"
-let s:tag       = "#66abc6"
-let s:comment   = "#a69c91"
+let s:keyword   = "#83bfd5"
+let s:type      = "#dfbb87"
+let s:func      = "#c3abe0"
+let s:string    = "#a9c98e"
+let s:number    = "#e0b27c"
+let s:tag       = "#83bfd5"
+let s:comment   = "#bab6ae"
 
-let s:h1        = "#f8c88f"
-let s:h2        = "#f2b26c"
-let s:h3        = "#ea9d49"
-let s:h4        = "#db8935"
+let s:h1        = "#d4d3cf"
+let s:h2        = "#cecdc9"
+let s:h3        = "#c8c7c3"
+let s:h4        = "#c2c1bd"
 
 function! s:hi(group, guifg, guibg, attr)
   let l:cmd = "hi " . a:group
@@ -81,5 +81,5 @@ call s:hi("PreProc",       s:tag,      "",        "")
 call s:hi("Type",          s:type,     "",        "")
 call s:hi("Special",       s:tag,      "",        "")
 call s:hi("Underlined",    s:accent,   "",        "underline")
-call s:hi("Error",         "#e06c75", s:bg, "bold")
+call s:hi("Error",         "#efabb2", s:bg, "bold")
 call s:hi("Todo",          s:accent,   s:bg_elem, "bold")

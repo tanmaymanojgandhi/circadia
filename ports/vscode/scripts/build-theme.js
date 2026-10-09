@@ -14,7 +14,7 @@ function buildTheme(modeKey, mode) {
   const syntax = mode.syntax;
   const headings = mode.headings;
   const isDark = mode.type === "dark" || modeKey === "dark";
-  const destructiveColor = isDark ? "#e06c75" : "#86131c";
+  const destructiveColor = isDark ? "#efabb2" : "#86131c";
   const successColor = syntax.string.hex;
   const warningColor = syntax.number.hex;
   const badgeForeground = isDark ? ui.bg_canvas.hex : "#ffffff";
@@ -186,6 +186,22 @@ function buildTheme(modeKey, mode) {
       // Terminal
       "terminal.foreground": ui.text_primary.hex,
       "terminal.selectionBackground": isDark ? `${ui.accent.hex}48` : `${ui.accent.hex}38`,
+      "terminal.ansiBlack": isDark ? ui.bg_canvas.hex : ui.bg_element.hex,
+      "terminal.ansiRed": syntax.type.hex,
+      "terminal.ansiGreen": syntax.string.hex,
+      "terminal.ansiYellow": syntax.number.hex,
+      "terminal.ansiBlue": syntax.keyword.hex,
+      "terminal.ansiMagenta": syntax.function.hex,
+      "terminal.ansiCyan": syntax.number.hex,
+      "terminal.ansiWhite": ui.text_primary.hex,
+      "terminal.ansiBrightBlack": ui.text_faint.hex,
+      "terminal.ansiBrightRed": syntax.type.hex,
+      "terminal.ansiBrightGreen": syntax.string.hex,
+      "terminal.ansiBrightYellow": syntax.number.hex,
+      "terminal.ansiBrightBlue": syntax.keyword.hex,
+      "terminal.ansiBrightMagenta": syntax.property.hex,
+      "terminal.ansiBrightCyan": syntax.number.hex,
+      "terminal.ansiBrightWhite": ui.text_primary.hex,
       "terminal.tab.activeBorder": ui.accent.hex,
 
       // Status Bar
@@ -267,7 +283,7 @@ function buildTheme(modeKey, mode) {
       // Opaque light-state backgrounds retain the palette's validated AAA
       // contrast. Blue overlays previously darkened text selections beyond
       // the base-layer contrast budget.
-      ...(!isDark ? {
+      ...({
         "selection.background": ui.bg_element.hex,
         "editor.selectionBackground": ui.bg_element.hex,
         "editor.inactiveSelectionBackground": ui.bg_element.hex,
@@ -287,10 +303,10 @@ function buildTheme(modeKey, mode) {
         "inputOption.activeBackground": ui.bg_surface.hex,
         "terminal.selectionBackground": ui.bg_element.hex,
         "chat.slashCommandBackground": ui.bg_surface.hex,
-        "input.border": "#79736a",
-        "dropdown.border": "#79736a",
-        "checkbox.border": "#79736a"
-      } : {})
+        "input.border": isDark ? ui.text_faint.hex : "#79736a",
+        "dropdown.border": isDark ? ui.text_faint.hex : "#79736a",
+        "checkbox.border": isDark ? ui.text_faint.hex : "#79736a"
+      })
     },
     tokenColors: [
       {

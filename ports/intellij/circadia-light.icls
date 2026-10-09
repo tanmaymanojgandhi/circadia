@@ -11,9 +11,9 @@
     <option name="CARET_COLOR" value="003fa0" />
     <option name="CARET_ROW_COLOR" value="efebe2" />
     <option name="CONSOLE_BACKGROUND_KEY" value="f7f4ec" />
-    <option name="DELETED_LINES_COLOR" value="dc2626" />
+    <option name="DELETED_LINES_COLOR" value="86131c" />
     <option name="DOCUMENTATION_COLOR" value="efebe2" />
-    <option name="ERROR_HINT" value="dc2626" />
+    <option name="ERROR_HINT" value="86131c" />
     <option name="FILESTATUS_ADDED" value="015228" />
     <option name="FILESTATUS_MODIFIED" value="014e55" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="003fa0" />
@@ -121,8 +121,8 @@
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="dc2626" />
-        <option name="EFFECT_COLOR" value="dc2626" />
+        <option name="FOREGROUND" value="86131c" />
+        <option name="EFFECT_COLOR" value="86131c" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>

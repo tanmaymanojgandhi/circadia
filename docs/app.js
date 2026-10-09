@@ -5,9 +5,9 @@
 
 const PALETTE = {
   name: "Circadia",
-  version: "2.0.0",
+  version: "2.1.0",
   tagline: "OKLCH themes for code, terminals, and documents.",
-  description: "Circadia is an open color specification and theme system for code editors, terminal emulators, and document renderers. It uses OKLCH to describe background, text, and syntax colors. Automated checks measure contrast for documented color pairs. The light palette meets a 7:1 text contrast target on its three base backgrounds; the dark palettes and other rendered states need further validation. Color vision accessibility is a design goal, not a verified guarantee.",
+  description: "Circadia provides OKLCH color themes for editors, terminals, and documents. Automated checks validate text contrast on three base backgrounds in all four palettes. Rendered application states and color vision accessibility need separate validation.",
   modes: {
     light_parchment: {
       name: "Warm Parchment",
@@ -48,33 +48,33 @@ const PALETTE = {
       tagline: "Warm Ember • Dark",
       type: "dark",
       ui: {
-        bg_canvas:     { hex: "#17130f", oklch: "oklch(19.0% 0.010 67)",  rgb: [23, 19, 15],   role: "Primary canvas" },
-        bg_surface:    { hex: "#1e1a15", oklch: "oklch(22.0% 0.012 67)",  rgb: [30, 26, 21],   role: "Panels & sidebars" },
-        bg_element:    { hex: "#29241e", oklch: "oklch(26.0% 0.015 67)",  rgb: [41, 36, 30],   role: "Inputs & active states" },
-        border:        { hex: "#3b342b", oklch: "oklch(33.0% 0.018 67)",  rgb: [59, 52, 43],   role: "Dividers & borders" },
-        text_primary:  { hex: "#c9c0b1", oklch: "oklch(81.1% 0.023 81)",  rgb: [201, 192, 177], role: "Body text" },
-        text_muted:    { hex: "#aba195", oklch: "oklch(70.0% 0.018 81)",  rgb: [171, 161, 149], role: "Secondary labels" },
-        text_faint:    { hex: "#91887d", oklch: "oklch(63.0% 0.018 75)",  rgb: [145, 136, 125], role: "Metadata & disabled" },
-        accent:        { hex: "#e89a49", oklch: "oklch(75.0% 0.130 65)",  rgb: [232, 154, 73], role: "Interactive accent" }
+        bg_canvas:     { hex: "#17130f", oklch: "oklch(19.0% 0.010 67)",  rgb: [23,19,15],   role: "Primary canvas" },
+        bg_surface:    { hex: "#1e1a15", oklch: "oklch(22.0% 0.012 67)",  rgb: [30,26,21],   role: "Panels & sidebars" },
+        bg_element:    { hex: "#29241e", oklch: "oklch(26.0% 0.015 67)",  rgb: [41,36,30],   role: "Inputs & active states" },
+        border:        { hex: "#3b342b", oklch: "oklch(33.0% 0.018 67)",  rgb: [59,52,43],   role: "Dividers & borders" },
+        text_primary:  { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)",  rgb: [203,201,196], role: "Body text" },
+        text_muted:    { hex: "#bdbab3", oklch: "oklch(78.9% 0.010 87.5)",  rgb: [189,186,179], role: "Secondary labels" },
+        text_faint:    { hex: "#b8b4ac", oklch: "oklch(77.1% 0.012 84.6)",  rgb: [184,180,172], role: "Metadata & disabled" },
+        accent:        { hex: "#d6b078", oklch: "oklch(77.8% 0.085 76.7)",  rgb: [214,176,120], role: "Interactive accent" }
       },
       headings: {
-        h1: { hex: "#f8c88f", oklch: "oklch(86.0% 0.090 75)", rgb: [248, 200, 143], role: "Document Title (h1)" },
-        h2: { hex: "#f2b26c", oklch: "oklch(81.0% 0.100 70)", rgb: [242, 178, 108], role: "Section Header (h2)" },
-        h3: { hex: "#ea9d49", oklch: "oklch(76.0% 0.110 65)", rgb: [234, 157, 73],  role: "Subsection Header (h3)" },
-        h4: { hex: "#db8935", oklch: "oklch(71.0% 0.110 60)", rgb: [219, 137, 53],  role: "Sub-subsection (h4)" },
-        h5: { hex: "#c7792e", oklch: "oklch(66.0% 0.100 55)", rgb: [199, 121, 46],  role: "Minor Header (h5)" },
-        h6: { hex: "#b56f2b", oklch: "oklch(62.0% 0.090 50)", rgb: [181, 111, 43],  role: "Caption / Detail (h6)" }
+        h1: { hex: "#d4d3cf", oklch: "oklch(86.7% 0.006 95.1)", rgb: [212,211,207], role: "Document Title (h1)" },
+        h2: { hex: "#cecdc9", oklch: "oklch(84.8% 0.006 95.1)", rgb: [206,205,201], role: "Section Header (h2)" },
+        h3: { hex: "#c8c7c3", oklch: "oklch(82.9% 0.006 95.1)", rgb: [200,199,195],  role: "Subsection Header (h3)" },
+        h4: { hex: "#c2c1bd", oklch: "oklch(81.1% 0.006 95.1)", rgb: [194,193,189],  role: "Sub-subsection (h4)" },
+        h5: { hex: "#bcbbb7", oklch: "oklch(79.2% 0.006 95.1)", rgb: [188,187,183],  role: "Minor Header (h5)" },
+        h6: { hex: "#b6b5b1", oklch: "oklch(77.3% 0.006 95.1)", rgb: [182,181,177],  role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#66abc6", oklch: "oklch(70.6% 0.080 225)", rgb: [102, 171, 198], role: "Keywords & control" },
-        type:     { hex: "#d9a86e", oklch: "oklch(76.4% 0.095 70)",  rgb: [217, 168, 110], role: "Types & interfaces" },
-        function: { hex: "#b991db", oklch: "oklch(72.0% 0.114 308.5)", rgb: [185, 145, 219], role: "Functions & methods" },
-        property: { hex: "#de88a6", oklch: "oklch(72.4% 0.111 358)", rgb: [222, 136, 166], role: "Properties & keys" },
-        variable: { hex: "#c9c0b1", oklch: "oklch(81.1% 0.023 81)",  rgb: [201, 192, 177], role: "Variables & parameters" },
-        string:   { hex: "#8cbb62", oklch: "oklch(73.8% 0.129 132)", rgb: [140, 187, 98],  role: "String literals" },
-        number:   { hex: "#d99148", oklch: "oklch(71.5% 0.124 64)",  rgb: [217, 145, 72],  role: "Numeric literals" },
-        tag:      { hex: "#66abc6", oklch: "oklch(70.6% 0.080 225)", rgb: [102, 171, 198], role: "HTML/JSX tags" },
-        comment:  { hex: "#a69c91", oklch: "oklch(68.5% 0.016 75)",  rgb: [166, 156, 145], role: "Comments" }
+        keyword:  { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "Keywords & control" },
+        type:     { hex: "#dfbb87", oklch: "oklch(81.1% 0.080 76.4)",  rgb: [223,187,135], role: "Types & interfaces" },
+        function: { hex: "#c3abe0", oklch: "oklch(78.0% 0.078 305.3)", rgb: [195,171,224], role: "Functions & methods" },
+        property: { hex: "#ddabc2", oklch: "oklch(79.4% 0.066 349.4)", rgb: [221,171,194], role: "Properties & keys" },
+        variable: { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)",  rgb: [203,201,196], role: "Variables & parameters" },
+        string:   { hex: "#a9c98e", oklch: "oklch(79.7% 0.087 131.3)", rgb: [169,201,142],  role: "String literals" },
+        number:   { hex: "#e0b27c", oklch: "oklch(79.3% 0.088 70.5)",  rgb: [224,178,124],  role: "Numeric literals" },
+        tag:      { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "HTML/JSX tags" },
+        comment:  { hex: "#bab6ae", oklch: "oklch(77.7% 0.012 84.6)",  rgb: [186,182,174], role: "Comments" }
       }
     },
     dark_plum: {
@@ -82,33 +82,33 @@ const PALETTE = {
       tagline: "Plum Noir • Dark",
       type: "dark",
       ui: {
-        bg_canvas:     { hex: "#140e12", oklch: "oklch(16.5% 0.014 350)", rgb: [20, 14, 18],   role: "Primary canvas" },
-        bg_surface:    { hex: "#1b1419", oklch: "oklch(20.0% 0.015 350)", rgb: [27, 20, 25],   role: "Panels & sidebars" },
-        bg_element:    { hex: "#261e23", oklch: "oklch(24.5% 0.018 350)", rgb: [38, 30, 35],   role: "Inputs & active states" },
-        border:        { hex: "#3d3039", oklch: "oklch(32.0% 0.020 350)", rgb: [61, 48, 57],   role: "Dividers & borders" },
-        text_primary:  { hex: "#d8c8d2", oklch: "oklch(82.5% 0.022 345)", rgb: [216, 200, 210], role: "Body text" },
-        text_muted:    { hex: "#b4a3af", oklch: "oklch(71.5% 0.018 345)", rgb: [180, 163, 175], role: "Secondary labels" },
-        text_faint:    { hex: "#9a8b96", oklch: "oklch(63.5% 0.016 345)", rgb: [154, 139, 150], role: "Metadata & disabled" },
-        accent:        { hex: "#cf8aa4", oklch: "oklch(71.0% 0.090 355)", rgb: [207, 138, 164], role: "Interactive accent" }
+        bg_canvas:     { hex: "#140e12", oklch: "oklch(16.5% 0.014 350)", rgb: [20,14,18],   role: "Primary canvas" },
+        bg_surface:    { hex: "#1b1419", oklch: "oklch(20.0% 0.015 350)", rgb: [27,20,25],   role: "Panels & sidebars" },
+        bg_element:    { hex: "#261e23", oklch: "oklch(24.5% 0.018 350)", rgb: [38,30,35],   role: "Inputs & active states" },
+        border:        { hex: "#3d3039", oklch: "oklch(32.0% 0.020 350)", rgb: [61,48,57],   role: "Dividers & borders" },
+        text_primary:  { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)", rgb: [203,201,196], role: "Body text" },
+        text_muted:    { hex: "#bdbab3", oklch: "oklch(78.9% 0.010 87.5)", rgb: [189,186,179], role: "Secondary labels" },
+        text_faint:    { hex: "#b8b4ac", oklch: "oklch(77.1% 0.012 84.6)", rgb: [184,180,172], role: "Metadata & disabled" },
+        accent:        { hex: "#b6a3d1", oklch: "oklch(74.7% 0.068 303.6)", rgb: [182,163,209], role: "Interactive accent" }
       },
       headings: {
-        h1: { hex: "#fabcd8", oklch: "oklch(86.0% 0.080 350)", rgb: [250, 188, 216], role: "Document Title (h1)" },
-        h2: { hex: "#e8a8c5", oklch: "oklch(80.0% 0.085 350)", rgb: [232, 168, 197], role: "Section Header (h2)" },
-        h3: { hex: "#d793b3", oklch: "oklch(74.0% 0.090 350)", rgb: [215, 147, 179], role: "Subsection Header (h3)" },
-        h4: { hex: "#c381a0", oklch: "oklch(68.0% 0.090 350)", rgb: [195, 129, 160], role: "Sub-subsection (h4)" },
-        h5: { hex: "#ad718d", oklch: "oklch(62.0% 0.085 350)", rgb: [173, 113, 141], role: "Minor Header (h5)" },
-        h6: { hex: "#9b647e", oklch: "oklch(57.0% 0.080 350)", rgb: [155, 100, 126], role: "Caption / Detail (h6)" }
+        h1: { hex: "#d4d3cf", oklch: "oklch(86.7% 0.006 95.1)", rgb: [212,211,207], role: "Document Title (h1)" },
+        h2: { hex: "#cecdc9", oklch: "oklch(84.8% 0.006 95.1)", rgb: [206,205,201], role: "Section Header (h2)" },
+        h3: { hex: "#c8c7c3", oklch: "oklch(82.9% 0.006 95.1)", rgb: [200,199,195], role: "Subsection Header (h3)" },
+        h4: { hex: "#c2c1bd", oklch: "oklch(81.1% 0.006 95.1)", rgb: [194,193,189], role: "Sub-subsection (h4)" },
+        h5: { hex: "#bcbbb7", oklch: "oklch(79.2% 0.006 95.1)", rgb: [188,187,183], role: "Minor Header (h5)" },
+        h6: { hex: "#b6b5b1", oklch: "oklch(77.3% 0.006 95.1)", rgb: [182,181,177], role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#75acd2", oklch: "oklch(72.0% 0.080 240)", rgb: [117, 172, 210], role: "Keywords & control" },
-        type:     { hex: "#daa97a", oklch: "oklch(77.0% 0.085 65)",  rgb: [218, 169, 122], role: "Types & interfaces" },
-        function: { hex: "#b695cf", oklch: "oklch(72.0% 0.090 310)", rgb: [182, 149, 207], role: "Functions & methods" },
-        property: { hex: "#d38da4", oklch: "oklch(72.0% 0.090 358)", rgb: [211, 141, 164], role: "Properties & keys" },
-        variable: { hex: "#d8c8d2", oklch: "oklch(82.5% 0.022 345)", rgb: [216, 200, 210], role: "Variables & parameters" },
-        string:   { hex: "#96b77b", oklch: "oklch(74.0% 0.090 132)", rgb: [150, 183, 123], role: "String literals" },
-        number:   { hex: "#d49969", oklch: "oklch(73.0% 0.095 60)",  rgb: [212, 153, 105], role: "Numeric literals" },
-        tag:      { hex: "#75acd2", oklch: "oklch(72.0% 0.080 240)", rgb: [117, 172, 210], role: "HTML/JSX tags" },
-        comment:  { hex: "#a5999f", oklch: "oklch(69.5% 0.016 345)", rgb: [165, 153, 159], role: "Comments" }
+        keyword:  { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "Keywords & control" },
+        type:     { hex: "#dfbb87", oklch: "oklch(81.1% 0.080 76.4)",  rgb: [223,187,135], role: "Types & interfaces" },
+        function: { hex: "#c3abe0", oklch: "oklch(78.0% 0.078 305.3)", rgb: [195,171,224], role: "Functions & methods" },
+        property: { hex: "#ddabc2", oklch: "oklch(79.4% 0.066 349.4)", rgb: [221,171,194], role: "Properties & keys" },
+        variable: { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)", rgb: [203,201,196], role: "Variables & parameters" },
+        string:   { hex: "#a9c98e", oklch: "oklch(79.7% 0.087 131.3)", rgb: [169,201,142], role: "String literals" },
+        number:   { hex: "#e0b27c", oklch: "oklch(79.3% 0.088 70.5)",  rgb: [224,178,124], role: "Numeric literals" },
+        tag:      { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "HTML/JSX tags" },
+        comment:  { hex: "#bab6ae", oklch: "oklch(77.7% 0.012 84.6)", rgb: [186,182,174], role: "Comments" }
       }
     },
     dark_forest: {
@@ -116,33 +116,33 @@ const PALETTE = {
       tagline: "Obsidian Pine • Dark",
       type: "dark",
       ui: {
-        bg_canvas:     { hex: "#131714", oklch: "oklch(17.8% 0.010 145)", rgb: [19, 23, 20],   role: "Primary canvas" },
-        bg_surface:    { hex: "#1a1e1b", oklch: "oklch(21.0% 0.012 145)", rgb: [26, 30, 27],   role: "Panels & sidebars" },
-        bg_element:    { hex: "#242a25", oklch: "oklch(25.5% 0.015 145)", rgb: [36, 42, 37],   role: "Inputs & active states" },
-        border:        { hex: "#353c36", oklch: "oklch(33.0% 0.018 145)", rgb: [53, 60, 54],   role: "Dividers & borders" },
-        text_primary:  { hex: "#c4ccc5", oklch: "oklch(81.5% 0.018 145)", rgb: [196, 204, 197], role: "Body text" },
-        text_muted:    { hex: "#9fa9a1", oklch: "oklch(69.5% 0.016 145)", rgb: [159, 169, 161], role: "Secondary labels" },
-        text_faint:    { hex: "#838d85", oklch: "oklch(60.0% 0.014 145)", rgb: [131, 141, 133], role: "Metadata & disabled" },
-        accent:        { hex: "#83b384", oklch: "oklch(72.0% 0.085 145)", rgb: [131, 179, 132], role: "Interactive accent" }
+        bg_canvas:     { hex: "#131714", oklch: "oklch(17.8% 0.010 145)", rgb: [19,23,20],   role: "Primary canvas" },
+        bg_surface:    { hex: "#1a1e1b", oklch: "oklch(21.0% 0.012 145)", rgb: [26,30,27],   role: "Panels & sidebars" },
+        bg_element:    { hex: "#242a25", oklch: "oklch(25.5% 0.015 145)", rgb: [36,42,37],   role: "Inputs & active states" },
+        border:        { hex: "#353c36", oklch: "oklch(33.0% 0.018 145)", rgb: [53,60,54],   role: "Dividers & borders" },
+        text_primary:  { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)", rgb: [203,201,196], role: "Body text" },
+        text_muted:    { hex: "#bdbab3", oklch: "oklch(78.9% 0.010 87.5)", rgb: [189,186,179], role: "Secondary labels" },
+        text_faint:    { hex: "#b8b4ac", oklch: "oklch(77.1% 0.012 84.6)", rgb: [184,180,172], role: "Metadata & disabled" },
+        accent:        { hex: "#a5c3a4", oklch: "oklch(78.6% 0.054 144.2)", rgb: [165,195,164], role: "Interactive accent" }
       },
       headings: {
-        h1: { hex: "#b8e2c4", oklch: "oklch(86.0% 0.090 145)", rgb: [184, 226, 196], role: "Document Title (h1)" },
-        h2: { hex: "#9ecfae", oklch: "oklch(79.0% 0.100 145)", rgb: [158, 207, 174], role: "Section Header (h2)" },
-        h3: { hex: "#83bc97", oklch: "oklch(71.0% 0.100 145)", rgb: [131, 188, 151], role: "Subsection Header (h3)" },
-        h4: { hex: "#69a881", oklch: "oklch(63.0% 0.090 145)", rgb: [105, 168, 129], role: "Sub-subsection (h4)" },
-        h5: { hex: "#569970", oklch: "oklch(56.0% 0.090 145)", rgb: [86, 153, 112],  role: "Minor Header (h5)" },
-        h6: { hex: "#45875e", oklch: "oklch(49.0% 0.080 145)", rgb: [69, 135, 94],   role: "Caption / Detail (h6)" }
+        h1: { hex: "#d4d3cf", oklch: "oklch(86.7% 0.006 95.1)", rgb: [212,211,207], role: "Document Title (h1)" },
+        h2: { hex: "#cecdc9", oklch: "oklch(84.8% 0.006 95.1)", rgb: [206,205,201], role: "Section Header (h2)" },
+        h3: { hex: "#c8c7c3", oklch: "oklch(82.9% 0.006 95.1)", rgb: [200,199,195], role: "Subsection Header (h3)" },
+        h4: { hex: "#c2c1bd", oklch: "oklch(81.1% 0.006 95.1)", rgb: [194,193,189], role: "Sub-subsection (h4)" },
+        h5: { hex: "#bcbbb7", oklch: "oklch(79.2% 0.006 95.1)", rgb: [188,187,183],  role: "Minor Header (h5)" },
+        h6: { hex: "#b6b5b1", oklch: "oklch(77.3% 0.006 95.1)", rgb: [182,181,177],   role: "Caption / Detail (h6)" }
       },
       syntax: {
-        keyword:  { hex: "#6cb0c5", oklch: "oklch(72.0% 0.075 220)", rgb: [108, 176, 197], role: "Keywords & control" },
-        type:     { hex: "#d1aa73", oklch: "oklch(76.0% 0.085 75)",  rgb: [209, 170, 115], role: "Types & interfaces" },
-        function: { hex: "#b29ace", oklch: "oklch(72.5% 0.080 305)", rgb: [178, 154, 206], role: "Functions & methods" },
-        property: { hex: "#d092a9", oklch: "oklch(72.5% 0.080 355)", rgb: [208, 146, 169], role: "Properties & keys" },
-        variable: { hex: "#c4ccc5", oklch: "oklch(81.5% 0.018 145)", rgb: [196, 204, 197], role: "Variables & parameters" },
-        string:   { hex: "#92b87e", oklch: "oklch(74.0% 0.090 135)", rgb: [146, 184, 126], role: "String literals" },
-        number:   { hex: "#d19b66", oklch: "oklch(73.0% 0.095 65)",  rgb: [209, 155, 102], role: "Numeric literals" },
-        tag:      { hex: "#6cb0c5", oklch: "oklch(72.0% 0.075 220)", rgb: [108, 176, 197], role: "HTML/JSX tags" },
-        comment:  { hex: "#909890", oklch: "oklch(67.0% 0.014 145)", rgb: [144, 152, 144], role: "Comments" }
+        keyword:  { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "Keywords & control" },
+        type:     { hex: "#dfbb87", oklch: "oklch(81.1% 0.080 76.4)",  rgb: [223,187,135], role: "Types & interfaces" },
+        function: { hex: "#c3abe0", oklch: "oklch(78.0% 0.078 305.3)", rgb: [195,171,224], role: "Functions & methods" },
+        property: { hex: "#ddabc2", oklch: "oklch(79.4% 0.066 349.4)", rgb: [221,171,194], role: "Properties & keys" },
+        variable: { hex: "#cbc9c4", oklch: "oklch(83.6% 0.007 88.7)", rgb: [203,201,196], role: "Variables & parameters" },
+        string:   { hex: "#a9c98e", oklch: "oklch(79.7% 0.087 131.3)", rgb: [169,201,142], role: "String literals" },
+        number:   { hex: "#e0b27c", oklch: "oklch(79.3% 0.088 70.5)",  rgb: [224,178,124], role: "Numeric literals" },
+        tag:      { hex: "#83bfd5", oklch: "oklch(77.1% 0.069 222.9)", rgb: [131,191,213], role: "HTML/JSX tags" },
+        comment:  { hex: "#bab6ae", oklch: "oklch(77.7% 0.012 84.6)", rgb: [186,182,174], role: "Comments" }
       }
     }
   }

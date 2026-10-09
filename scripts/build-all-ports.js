@@ -47,7 +47,7 @@ function buildChrome() {
 
   const darkManifest = {
     manifest_version: 3,
-    version: '1.0.0',
+    version: spec.version,
     name: 'Circadia Dark',
     description:
       'Circadia Dark theme (Warm Ember & Espresso) for Google Chrome',
@@ -73,7 +73,7 @@ function buildChrome() {
 
   const lightManifest = {
     manifest_version: 3,
-    version: '1.0.0',
+    version: spec.version,
     name: 'Circadia Light',
     description: 'Circadia Light theme (Warm Parchment) for Google Chrome',
     theme: {
@@ -149,9 +149,9 @@ function buildIntellij() {
     <option name="CARET_COLOR" value="${ui.accent.hex.replace('#', '')}" />
     <option name="CARET_ROW_COLOR" value="${ui.bg_surface.hex.replace('#', '')}" />
     <option name="CONSOLE_BACKGROUND_KEY" value="${ui.bg_canvas.hex.replace('#', '')}" />
-    <option name="DELETED_LINES_COLOR" value="${isDark ? 'e06c75' : 'dc2626'}" />
+    <option name="DELETED_LINES_COLOR" value="${isDark ? 'efabb2' : '86131c'}" />
     <option name="DOCUMENTATION_COLOR" value="${ui.bg_surface.hex.replace('#', '')}" />
-    <option name="ERROR_HINT" value="${isDark ? 'e06c75' : 'dc2626'}" />
+    <option name="ERROR_HINT" value="${isDark ? 'efabb2' : '86131c'}" />
     <option name="FILESTATUS_ADDED" value="${syntax.string.hex.replace('#', '')}" />
     <option name="FILESTATUS_MODIFIED" value="${syntax.number.hex.replace('#', '')}" />
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="${syntax.keyword.hex.replace('#', '')}" />
@@ -259,8 +259,8 @@ function buildIntellij() {
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
       <value>
-        <option name="FOREGROUND" value="${isDark ? 'e06c75' : 'dc2626'}" />
-        <option name="EFFECT_COLOR" value="${isDark ? 'e06c75' : 'dc2626'}" />
+        <option name="FOREGROUND" value="${isDark ? 'efabb2' : '86131c'}" />
+        <option name="EFFECT_COLOR" value="${isDark ? 'efabb2' : '86131c'}" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -487,7 +487,7 @@ function buildKde() {
     const fgNormal = hexToRgb(ui.text_primary.hex).join(',')
     const fgInactive = hexToRgb(ui.text_faint.hex).join(',')
     const accent = hexToRgb(ui.accent.hex).join(',')
-    const neg = isDark ? '224,108,117' : '220,38,38'
+    const neg = isDark ? '239,171,178' : '134,19,28'
     const pos = hexToRgb(syntax.string.hex).join(',')
     const neutral = hexToRgb(syntax.number.hex).join(',')
     const visited = hexToRgb(syntax.keyword.hex).join(',')
@@ -896,7 +896,7 @@ circadiaTx2: ${ui.text_muted.hex};
 circadiaTx3: ${ui.text_faint.hex};
 circadiaAccent: ${ui.accent.hex};
 
-circadiaRe: ${isDark ? '#e06c75' : '#dc2626'};
+circadiaRe: ${isDark ? '#efabb2' : '#86131c'};
 circadiaOr: ${syntax.number.hex};
 circadiaYe: ${isDark ? '#f1be85' : '#ca8a04'};
 circadiaGr: ${syntax.string.hex};
@@ -1043,7 +1043,7 @@ call s:hi("PreProc",       s:tag,      "",        "")
 call s:hi("Type",          s:type,     "",        "")
 call s:hi("Special",       s:tag,      "",        "")
 call s:hi("Underlined",    s:accent,   "",        "underline")
-call s:hi("Error",         "${isDark ? '#e06c75' : '#dc2626'}", s:bg, "bold")
+call s:hi("Error",         "${isDark ? '#efabb2' : '#86131c'}", s:bg, "bold")
 call s:hi("Todo",          s:accent,   s:bg_elem, "bold")
 `
   }
@@ -1279,7 +1279,7 @@ function buildZed() {
 
   const extToml = `id = "circadia"
 name = "Circadia"
-version = "1.0.0"
+version = "${spec.version}"
 schema_version = 1
 authors = ["Tanmay <https://github.com/tanmaymanojgandhi>"]
 description = "OKLCH themes for code, terminals, and documents."
@@ -1389,7 +1389,7 @@ repository = "https://github.com/tanmaymanojgandhi/circadia"
           boolean: { color: syntax.number.hex },
           tag: { color: syntax.tag.hex },
           operator: { color: ui.text_muted.hex },
-          property: { color: syntax.type.hex },
+          property: { color: syntax.property.hex },
           variable: { color: ui.text_primary.hex },
           'variable.special': { color: syntax.type.hex },
           title: { color: headings.h1.hex, font_weight: 700 },
@@ -1677,99 +1677,10 @@ function buildWezterm() {
   ensureDir(colorsDir)
 
   function getTerminalColors(modeKey) {
-    const m = spec.modes[modeKey]
-    if (modeKey === 'light_parchment') {
-      return {
-        ansi: [
-          m.ui.bg_element.hex,
-          '#843900',
-          '#005f2f',
-          '#095b62',
-          '#0048b3',
-          '#7a1f7a',
-          '#095b62',
-          m.ui.text_primary.hex,
-        ],
-        brights: [
-          '#43505c',
-          '#1c60a2',
-          '#005f2f',
-          '#1c4470',
-          '#0048b3',
-          '#4b1fa3',
-          '#0048b3',
-          m.ui.text_primary.hex,
-        ],
-      }
-    } else if (modeKey === 'dark_ember') {
-      return {
-        ansi: [
-          m.ui.bg_canvas.hex,
-          '#d9a86e',
-          '#8cbb62',
-          '#d99148',
-          '#66abc6',
-          '#b991db',
-          '#d99148',
-          m.ui.text_primary.hex,
-        ],
-        brights: [
-          '#91887d',
-          '#ea9d49',
-          '#8cbb62',
-          '#f8c88f',
-          '#66abc6',
-          '#de88a6',
-          '#66abc6',
-          m.ui.text_primary.hex,
-        ],
-      }
-    } else if (modeKey === 'dark_plum') {
-      return {
-        ansi: [
-          m.ui.bg_canvas.hex,
-          '#daa97a',
-          '#96b77b',
-          '#d49969',
-          '#75acd2',
-          '#b695cf',
-          '#d49969',
-          m.ui.text_primary.hex,
-        ],
-        brights: [
-          '#9a8b96',
-          '#da7ea0',
-          '#96b77b',
-          '#f5b8d0',
-          '#75acd2',
-          '#d38da4',
-          '#75acd2',
-          m.ui.text_primary.hex,
-        ],
-      }
-    } else if (modeKey === 'dark_forest') {
-      return {
-        ansi: [
-          m.ui.bg_canvas.hex,
-          '#d1aa73',
-          '#92b87e',
-          '#d19b66',
-          '#6cb0c5',
-          '#b29ace',
-          '#d19b66',
-          m.ui.text_primary.hex,
-        ],
-        brights: [
-          '#838d85',
-          '#83bc97',
-          '#92b87e',
-          '#b8e2c4',
-          '#6cb0c5',
-          '#d092a9',
-          '#6cb0c5',
-          m.ui.text_primary.hex,
-        ],
-      }
+    const m = spec.modes[modeKey], u = m.ui, s = m.syntax
+    return {
+      ansi: [m.type === 'dark' ? u.bg_canvas.hex : u.bg_element.hex, s.type.hex, s.string.hex, s.number.hex, s.keyword.hex, s.function.hex, s.number.hex, u.text_primary.hex],
+      brights: [u.text_faint.hex, s.type.hex, s.string.hex, s.number.hex, s.keyword.hex, s.property.hex, s.number.hex, u.text_primary.hex],
     }
   }
 

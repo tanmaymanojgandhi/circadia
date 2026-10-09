@@ -4,8 +4,8 @@
   <rect width="1180" height="980" fill="#0d0c10" rx="16"/>
   
   <!-- Header Title -->
-  <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#f0ece4">Circadia 2.0 Color Specification Matrix</text>
-  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • Semantic Syntax</text>
+  <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#f0ece4">Circadia 2.1.0 Color Specification Matrix</text>
+  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Color Variants • Palette Text: WCAG AAA • Semantic Syntax</text>
 
   <!-- Card: Warm Parchment -->
   <g transform="translate(25, 85)">
@@ -58,8 +58,8 @@
       </g>
     </g>
 
-    <!-- Row: Syntax Highlighting (Strict AAA) -->
-    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#394652" letter-spacing="0.5">SYNTAX HIGHLIGHTING (STRICT AAA)</text>
+    <!-- Row: Syntax Highlighting (AAA on base layers) -->
+    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#394652" letter-spacing="0.5">SYNTAX HIGHLIGHTING (AAA ON BASE LAYERS)</text>
     <g transform="translate(20, 187)">
       <g transform="translate(0, 0)">
         <rect width="57" height="38" rx="5" fill="#003fa0" stroke="rgba(0,0,0,0.12)" stroke-width="1"/>
@@ -142,131 +142,131 @@
   <!-- Card: Dark Classic (Warm Ember &amp; Espresso) -->
   <g transform="translate(595, 85)">
     <rect width="540" height="430" rx="12" fill="#17130f" stroke="#3b342b" stroke-width="1.5"/>
-    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#c9c0b1">☕ Dark Classic (Warm Ember &amp; Espresso)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#e89a49">Warm Ember • Dark</text>
+    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#cbc9c4">☕ Dark Classic (Warm Ember &amp; Espresso)</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#d6b078">Warm Ember • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
-    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#aba195" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
     <g transform="translate(20, 82)">
       <g transform="translate(0, 0)">
         <rect width="57" height="38" rx="5" fill="#17130f" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Canvas</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#17130f</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Canvas</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#17130f</text>
       </g>
       <g transform="translate(63, 0)">
         <rect width="57" height="38" rx="5" fill="#1e1a15" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Surface</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#1e1a15</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Surface</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#1e1a15</text>
       </g>
       <g transform="translate(126, 0)">
         <rect width="57" height="38" rx="5" fill="#29241e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Element</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#29241e</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Element</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#29241e</text>
       </g>
       <g transform="translate(189, 0)">
         <rect width="57" height="38" rx="5" fill="#3b342b" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Border</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#3b342b</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Border</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#3b342b</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#c9c0b1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Text Pri</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#c9c0b1</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Pri</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#aba195" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Text Mut</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#aba195</text>
+        <rect width="57" height="38" rx="5" fill="#bdbab3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Mut</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bdbab3</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#91887d" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Text Fnt</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#91887d</text>
+        <rect width="57" height="38" rx="5" fill="#b8b4ac" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Fnt</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b8b4ac</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#e89a49" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Accent</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#e89a49</text>
+        <rect width="57" height="38" rx="5" fill="#d6b078" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Accent</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#d6b078</text>
       </g>
     </g>
 
-    <!-- Row: Syntax Highlighting -->
-    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#aba195" letter-spacing="0.5">SYNTAX HIGHLIGHTING</text>
+    <!-- Row: Syntax Highlighting (AAA on base layers) -->
+    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">SYNTAX HIGHLIGHTING (AAA ON BASE LAYERS)</text>
     <g transform="translate(20, 187)">
       <g transform="translate(0, 0)">
-        <rect width="57" height="38" rx="5" fill="#66abc6" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Keyword</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#66abc6</text>
+        <rect width="57" height="38" rx="5" fill="#83bfd5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Keyword</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#83bfd5</text>
       </g>
       <g transform="translate(63, 0)">
-        <rect width="57" height="38" rx="5" fill="#d9a86e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Type</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#d9a86e</text>
+        <rect width="57" height="38" rx="5" fill="#dfbb87" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Type</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#dfbb87</text>
       </g>
       <g transform="translate(126, 0)">
-        <rect width="57" height="38" rx="5" fill="#b991db" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Function</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#b991db</text>
+        <rect width="57" height="38" rx="5" fill="#c3abe0" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Function</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c3abe0</text>
       </g>
       <g transform="translate(189, 0)">
-        <rect width="57" height="38" rx="5" fill="#de88a6" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Property</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#de88a6</text>
+        <rect width="57" height="38" rx="5" fill="#ddabc2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Property</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#ddabc2</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#c9c0b1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Variable</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#c9c0b1</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Variable</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#8cbb62" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">String</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#8cbb62</text>
+        <rect width="57" height="38" rx="5" fill="#a9c98e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">String</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#a9c98e</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#d99148" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Number</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#d99148</text>
+        <rect width="57" height="38" rx="5" fill="#e0b27c" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Number</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#e0b27c</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#a69c91" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">Comment</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#a69c91</text>
+        <rect width="57" height="38" rx="5" fill="#bab6ae" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Comment</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bab6ae</text>
       </g>
     </g>
 
     <!-- Row: Headings Scale (H1–H6) -->
-    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#aba195" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
+    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
     <g transform="translate(20, 292)">
       <g transform="translate(0, 0)">
-        <rect width="78" height="38" rx="5" fill="#f8c88f" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H1</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#f8c88f</text>
+        <rect width="78" height="38" rx="5" fill="#d4d3cf" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H1</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#d4d3cf</text>
       </g>
       <g transform="translate(84, 0)">
-        <rect width="78" height="38" rx="5" fill="#f2b26c" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H2</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#f2b26c</text>
+        <rect width="78" height="38" rx="5" fill="#cecdc9" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H2</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cecdc9</text>
       </g>
       <g transform="translate(168, 0)">
-        <rect width="78" height="38" rx="5" fill="#ea9d49" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H3</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#ea9d49</text>
+        <rect width="78" height="38" rx="5" fill="#c8c7c3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H3</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c8c7c3</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="78" height="38" rx="5" fill="#db8935" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H4</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#db8935</text>
+        <rect width="78" height="38" rx="5" fill="#c2c1bd" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H4</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c2c1bd</text>
       </g>
       <g transform="translate(336, 0)">
-        <rect width="78" height="38" rx="5" fill="#c7792e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H5</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#c7792e</text>
+        <rect width="78" height="38" rx="5" fill="#bcbbb7" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H5</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bcbbb7</text>
       </g>
       <g transform="translate(420, 0)">
-        <rect width="78" height="38" rx="5" fill="#b56f2b" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c9c0b1">H6</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#aba195">#b56f2b</text>
+        <rect width="78" height="38" rx="5" fill="#b6b5b1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H6</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b6b5b1</text>
       </g>
     </g>
   </g>
@@ -274,131 +274,131 @@
   <!-- Card: Dark Modern (Plum Noir) -->
   <g transform="translate(25, 530)">
     <rect width="540" height="430" rx="12" fill="#140e12" stroke="#3d3039" stroke-width="1.5"/>
-    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#d8c8d2">🍇 Dark Modern (Plum Noir)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#cf8aa4">Plum Noir • Dark</text>
+    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#cbc9c4">🍇 Dark Modern (Plum Noir)</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#b6a3d1">Plum Noir • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
-    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#b4a3af" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
     <g transform="translate(20, 82)">
       <g transform="translate(0, 0)">
         <rect width="57" height="38" rx="5" fill="#140e12" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Canvas</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#140e12</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Canvas</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#140e12</text>
       </g>
       <g transform="translate(63, 0)">
         <rect width="57" height="38" rx="5" fill="#1b1419" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Surface</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#1b1419</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Surface</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#1b1419</text>
       </g>
       <g transform="translate(126, 0)">
         <rect width="57" height="38" rx="5" fill="#261e23" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Element</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#261e23</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Element</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#261e23</text>
       </g>
       <g transform="translate(189, 0)">
         <rect width="57" height="38" rx="5" fill="#3d3039" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Border</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#3d3039</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Border</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#3d3039</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#d8c8d2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Text Pri</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#d8c8d2</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Pri</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#b4a3af" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Text Mut</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#b4a3af</text>
+        <rect width="57" height="38" rx="5" fill="#bdbab3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Mut</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bdbab3</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#9a8b96" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Text Fnt</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#9a8b96</text>
+        <rect width="57" height="38" rx="5" fill="#b8b4ac" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Fnt</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b8b4ac</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#cf8aa4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Accent</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#cf8aa4</text>
+        <rect width="57" height="38" rx="5" fill="#b6a3d1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Accent</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b6a3d1</text>
       </g>
     </g>
 
-    <!-- Row: Syntax Highlighting -->
-    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#b4a3af" letter-spacing="0.5">SYNTAX HIGHLIGHTING</text>
+    <!-- Row: Syntax Highlighting (AAA on base layers) -->
+    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">SYNTAX HIGHLIGHTING (AAA ON BASE LAYERS)</text>
     <g transform="translate(20, 187)">
       <g transform="translate(0, 0)">
-        <rect width="57" height="38" rx="5" fill="#75acd2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Keyword</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#75acd2</text>
+        <rect width="57" height="38" rx="5" fill="#83bfd5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Keyword</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#83bfd5</text>
       </g>
       <g transform="translate(63, 0)">
-        <rect width="57" height="38" rx="5" fill="#daa97a" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Type</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#daa97a</text>
+        <rect width="57" height="38" rx="5" fill="#dfbb87" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Type</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#dfbb87</text>
       </g>
       <g transform="translate(126, 0)">
-        <rect width="57" height="38" rx="5" fill="#b695cf" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Function</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#b695cf</text>
+        <rect width="57" height="38" rx="5" fill="#c3abe0" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Function</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c3abe0</text>
       </g>
       <g transform="translate(189, 0)">
-        <rect width="57" height="38" rx="5" fill="#d38da4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Property</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#d38da4</text>
+        <rect width="57" height="38" rx="5" fill="#ddabc2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Property</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#ddabc2</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#d8c8d2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Variable</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#d8c8d2</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Variable</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#96b77b" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">String</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#96b77b</text>
+        <rect width="57" height="38" rx="5" fill="#a9c98e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">String</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#a9c98e</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#d49969" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Number</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#d49969</text>
+        <rect width="57" height="38" rx="5" fill="#e0b27c" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Number</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#e0b27c</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#a5999f" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">Comment</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#a5999f</text>
+        <rect width="57" height="38" rx="5" fill="#bab6ae" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Comment</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bab6ae</text>
       </g>
     </g>
 
     <!-- Row: Headings Scale (H1–H6) -->
-    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#b4a3af" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
+    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
     <g transform="translate(20, 292)">
       <g transform="translate(0, 0)">
-        <rect width="78" height="38" rx="5" fill="#fabcd8" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H1</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#fabcd8</text>
+        <rect width="78" height="38" rx="5" fill="#d4d3cf" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H1</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#d4d3cf</text>
       </g>
       <g transform="translate(84, 0)">
-        <rect width="78" height="38" rx="5" fill="#e8a8c5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H2</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#e8a8c5</text>
+        <rect width="78" height="38" rx="5" fill="#cecdc9" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H2</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cecdc9</text>
       </g>
       <g transform="translate(168, 0)">
-        <rect width="78" height="38" rx="5" fill="#d793b3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H3</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#d793b3</text>
+        <rect width="78" height="38" rx="5" fill="#c8c7c3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H3</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c8c7c3</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="78" height="38" rx="5" fill="#c381a0" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H4</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#c381a0</text>
+        <rect width="78" height="38" rx="5" fill="#c2c1bd" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H4</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c2c1bd</text>
       </g>
       <g transform="translate(336, 0)">
-        <rect width="78" height="38" rx="5" fill="#ad718d" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H5</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#ad718d</text>
+        <rect width="78" height="38" rx="5" fill="#bcbbb7" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H5</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bcbbb7</text>
       </g>
       <g transform="translate(420, 0)">
-        <rect width="78" height="38" rx="5" fill="#9b647e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#d8c8d2">H6</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#b4a3af">#9b647e</text>
+        <rect width="78" height="38" rx="5" fill="#b6b5b1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H6</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b6b5b1</text>
       </g>
     </g>
   </g>
@@ -406,131 +406,131 @@
   <!-- Card: Dark Focus (Obsidian Pine) -->
   <g transform="translate(595, 530)">
     <rect width="540" height="430" rx="12" fill="#131714" stroke="#353c36" stroke-width="1.5"/>
-    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#c4ccc5">🌲 Dark Focus (Obsidian Pine)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#83b384">Obsidian Pine • Dark</text>
+    <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#cbc9c4">🌲 Dark Focus (Obsidian Pine)</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#a5c3a4">Obsidian Pine • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
-    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#9fa9a1" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
+    <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
     <g transform="translate(20, 82)">
       <g transform="translate(0, 0)">
         <rect width="57" height="38" rx="5" fill="#131714" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Canvas</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#131714</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Canvas</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#131714</text>
       </g>
       <g transform="translate(63, 0)">
         <rect width="57" height="38" rx="5" fill="#1a1e1b" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Surface</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#1a1e1b</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Surface</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#1a1e1b</text>
       </g>
       <g transform="translate(126, 0)">
         <rect width="57" height="38" rx="5" fill="#242a25" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Element</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#242a25</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Element</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#242a25</text>
       </g>
       <g transform="translate(189, 0)">
         <rect width="57" height="38" rx="5" fill="#353c36" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Border</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#353c36</text>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Border</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#353c36</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#c4ccc5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Text Pri</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#c4ccc5</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Pri</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#9fa9a1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Text Mut</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#9fa9a1</text>
+        <rect width="57" height="38" rx="5" fill="#bdbab3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Mut</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bdbab3</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#838d85" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Text Fnt</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#838d85</text>
+        <rect width="57" height="38" rx="5" fill="#b8b4ac" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Text Fnt</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b8b4ac</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#83b384" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Accent</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#83b384</text>
+        <rect width="57" height="38" rx="5" fill="#a5c3a4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Accent</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#a5c3a4</text>
       </g>
     </g>
 
-    <!-- Row: Syntax Highlighting -->
-    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#9fa9a1" letter-spacing="0.5">SYNTAX HIGHLIGHTING</text>
+    <!-- Row: Syntax Highlighting (AAA on base layers) -->
+    <text x="20" y="179" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">SYNTAX HIGHLIGHTING (AAA ON BASE LAYERS)</text>
     <g transform="translate(20, 187)">
       <g transform="translate(0, 0)">
-        <rect width="57" height="38" rx="5" fill="#6cb0c5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Keyword</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#6cb0c5</text>
+        <rect width="57" height="38" rx="5" fill="#83bfd5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Keyword</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#83bfd5</text>
       </g>
       <g transform="translate(63, 0)">
-        <rect width="57" height="38" rx="5" fill="#d1aa73" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Type</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#d1aa73</text>
+        <rect width="57" height="38" rx="5" fill="#dfbb87" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Type</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#dfbb87</text>
       </g>
       <g transform="translate(126, 0)">
-        <rect width="57" height="38" rx="5" fill="#b29ace" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Function</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#b29ace</text>
+        <rect width="57" height="38" rx="5" fill="#c3abe0" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Function</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c3abe0</text>
       </g>
       <g transform="translate(189, 0)">
-        <rect width="57" height="38" rx="5" fill="#d092a9" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Property</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#d092a9</text>
+        <rect width="57" height="38" rx="5" fill="#ddabc2" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Property</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#ddabc2</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="57" height="38" rx="5" fill="#c4ccc5" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Variable</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#c4ccc5</text>
+        <rect width="57" height="38" rx="5" fill="#cbc9c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Variable</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cbc9c4</text>
       </g>
       <g transform="translate(315, 0)">
-        <rect width="57" height="38" rx="5" fill="#92b87e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">String</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#92b87e</text>
+        <rect width="57" height="38" rx="5" fill="#a9c98e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">String</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#a9c98e</text>
       </g>
       <g transform="translate(378, 0)">
-        <rect width="57" height="38" rx="5" fill="#d19b66" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Number</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#d19b66</text>
+        <rect width="57" height="38" rx="5" fill="#e0b27c" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Number</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#e0b27c</text>
       </g>
       <g transform="translate(441, 0)">
-        <rect width="57" height="38" rx="5" fill="#909890" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">Comment</text>
-        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#909890</text>
+        <rect width="57" height="38" rx="5" fill="#bab6ae" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="28.5" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">Comment</text>
+        <text x="28.5" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bab6ae</text>
       </g>
     </g>
 
     <!-- Row: Headings Scale (H1–H6) -->
-    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#9fa9a1" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
+    <text x="20" y="284" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#bdbab3" letter-spacing="0.5">HEADINGS SCALE (H1–H6)</text>
     <g transform="translate(20, 292)">
       <g transform="translate(0, 0)">
-        <rect width="78" height="38" rx="5" fill="#b8e2c4" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H1</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#b8e2c4</text>
+        <rect width="78" height="38" rx="5" fill="#d4d3cf" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H1</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#d4d3cf</text>
       </g>
       <g transform="translate(84, 0)">
-        <rect width="78" height="38" rx="5" fill="#9ecfae" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H2</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#9ecfae</text>
+        <rect width="78" height="38" rx="5" fill="#cecdc9" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H2</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#cecdc9</text>
       </g>
       <g transform="translate(168, 0)">
-        <rect width="78" height="38" rx="5" fill="#83bc97" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H3</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#83bc97</text>
+        <rect width="78" height="38" rx="5" fill="#c8c7c3" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H3</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c8c7c3</text>
       </g>
       <g transform="translate(252, 0)">
-        <rect width="78" height="38" rx="5" fill="#69a881" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H4</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#69a881</text>
+        <rect width="78" height="38" rx="5" fill="#c2c1bd" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H4</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#c2c1bd</text>
       </g>
       <g transform="translate(336, 0)">
-        <rect width="78" height="38" rx="5" fill="#569970" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H5</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#569970</text>
+        <rect width="78" height="38" rx="5" fill="#bcbbb7" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H5</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#bcbbb7</text>
       </g>
       <g transform="translate(420, 0)">
-        <rect width="78" height="38" rx="5" fill="#45875e" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#c4ccc5">H6</text>
-        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#9fa9a1">#45875e</text>
+        <rect width="78" height="38" rx="5" fill="#b6b5b1" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+        <text x="39" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#cbc9c4">H6</text>
+        <text x="39" y="63" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="8.5" fill="#bdbab3">#b6b5b1</text>
       </g>
     </g>
   </g>

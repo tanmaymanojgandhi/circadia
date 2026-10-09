@@ -9,7 +9,7 @@ Includes four color variants and styled tab bars. See the main README for contra
 
 | Flavour | Name in WezTerm | Description | Background |
 | :--- | :--- | :--- | :--- |
-| ☀️ **Warm Parchment** | `Circadia Warm Parchment` (or `Circadia Light`) | Daylight Reading | `#f7f4ec` |
+| ☀️ **Warm Parchment** | `Circadia Warm Parchment` (or `Circadia Light`) | Daylight Reading | `#f7f2e6` |
 | ☕ **Dark Classic** | `Circadia Dark Ember` (or `Circadia Dark`) | Warm Ember & Espresso | `#17130f` |
 | 🍇 **Dark Modern** | `Circadia Dark Plum` | Plum Noir & Velvet | `#140e12` |
 | 🌲 **Dark Focus** | `Circadia Dark Forest` | Obsidian Pine | `#131714` |

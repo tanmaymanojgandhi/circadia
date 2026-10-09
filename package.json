@@ -1,6 +1,6 @@
 {
   "name": "circadia",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "private": true,
   "description": "OKLCH color themes for code editors, terminals, and document renderers, with automated contrast checks.",
   "license": "MIT",
@@ -23,7 +23,8 @@
     "build:vscode": "node ports/vscode/scripts/build-theme.js",
     "package:vscode": "npm --prefix ports/vscode run package",
     "publish:vscode": "npm --prefix ports/vscode run publish",
-    "build:ports": "node scripts/build-all-ports.js"
+    "build:ports": "node scripts/build-all-ports.js && node scripts/sync-consumers.cjs",
+    "test:themes": "node scripts/test-themes.cjs"
   },
   "devDependencies": {
     "@types/luaparse": "^0.2.13",

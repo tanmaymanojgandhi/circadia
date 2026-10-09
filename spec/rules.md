@@ -15,9 +15,9 @@ Variant names describe appearance. They do not imply measured effects on sleep, 
 
 ## Contrast validation
 
-For `light_parchment`, every text token (`text_primary`, `text_muted`, `text_faint`, `accent`, all syntax including comments, and H1–H6) must meet **>= 7:1** against each of `bg_canvas`, `bg_surface`, and `bg_element`. Metadata must be lighter than secondary text. Heading lightness must increase from H1 to H6. The generated VS Code selection and search backgrounds have additional contrast checks.
+For all four palettes, every text token (`text_primary`, `text_muted`, `text_faint`, `accent`, all syntax including comments, and H1–H6) must meet **>= 7:1** against each of `bg_canvas`, `bg_surface`, and `bg_element`. Metadata is lighter than secondary text in light mode and darker in dark mode. Heading lightness increases from H1 to H6 in light mode and decreases in dark mode. Generated VS Code selection and search backgrounds have additional contrast checks.
 
-Dark modes retain legacy thresholds in the validator. They contain text tokens below 7:1 and require a separate audit before claiming AAA text contrast throughout.
+All four modes enforce the same 7:1 text threshold on these three base backgrounds.
 
 The project target is >= 7:1 for normal text. Required control boundaries and focus indicators should meet >= 3:1 against adjacent backgrounds. Decorative dividers and background layers are separate from text contrast.
 
@@ -31,9 +31,9 @@ There is no enforced minimum lightness difference between confusable syntax pair
 
 ## Heading hierarchy
 
-The light validator checks an ordered heading lightness progression. Its H1 and H6 contrast ratios on canvas are 13.30:1 and 8.55:1; all six levels also meet 7:1 on the other two base layers.
+The validator checks an ordered heading lightness progression in every mode. Its H1 and H6 contrast ratios on canvas are 13.30:1 and 8.55:1; all six levels also meet 7:1 on the other two base layers.
 
-Dark heading colors have not been brought to the same all-layer text target. Use size and weight to supplement color when mapping headings to an application.
+Dark headings use a shared neutral ladder. Obsidian uses blue links and sage controls in all dark variants. Size and weight supplement heading color.
 
 ## Color model
 

@@ -1,6 +1,6 @@
 id = "circadia"
 name = "Circadia"
-version = "1.0.0"
+version = "2.1.0"
 schema_version = 1
 authors = ["Tanmay <https://github.com/tanmaymanojgandhi>"]
 description = "OKLCH themes for code, terminals, and documents."

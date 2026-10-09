@@ -4,7 +4,7 @@ Status bar and pane styling using the Circadia palette for tmux.
 
 ## Available Flavours
 
-* **`light-parchment`**: ☀️ Warm Parchment (Daylight Reading, `#f7f4ec`)
+* **`light-parchment`**: ☀️ Warm Parchment (Daylight Reading, `#f7f2e6`)
 * **`dark-ember`**: ☕ Dark Classic — Warm Ember & Espresso (`#17130f`)
 * **`dark-plum`**: 🍇 Dark Modern — Plum Noir (`#140e12`)
 * **`dark-forest`**: 🌲 Dark Focus — Obsidian Pine (`#131714`)

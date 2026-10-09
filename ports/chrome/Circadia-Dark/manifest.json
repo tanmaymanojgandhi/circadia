@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "1.0.0",
+  "version": "2.1.0",
   "name": "Circadia Dark",
   "description": "Circadia Dark theme (Warm Ember & Espresso) for Google Chrome",
   "theme": {
@@ -21,34 +21,34 @@
         15
       ],
       "ntp_text": [
+        203,
         201,
-        192,
-        177
+        196
       ],
       "tab_text": [
+        203,
         201,
-        192,
-        177
+        196
       ],
       "tab_background_text": [
-        171,
-        161,
-        149
+        189,
+        186,
+        179
       ],
       "bookmark_text": [
+        203,
         201,
-        192,
-        177
+        196
       ],
       "ntp_link": [
-        232,
-        154,
-        73
+        214,
+        176,
+        120
       ],
       "ntp_header": [
-        171,
-        161,
-        149
+        189,
+        186,
+        179
       ],
       "toolbar": [
         23,
@@ -56,14 +56,14 @@
         15
       ],
       "toolbar_text": [
+        203,
         201,
-        192,
-        177
+        196
       ],
       "toolbar_field_text": [
-        171,
-        161,
-        149
+        189,
+        186,
+        179
       ],
       "button_background": [
         0,

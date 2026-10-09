@@ -1,32 +1,32 @@
 # Circadia — Dark Classic (Warm Ember & Espresso)
 [colors.primary]
 background = "#17130f"
-foreground = "#c9c0b1"
+foreground = "#cbc9c4"
 
 [colors.cursor]
 text = "#17130f"
-cursor = "#e89a49"
+cursor = "#d6b078"
 
 [colors.selection]
-text = "#c9c0b1"
+text = "#cbc9c4"
 background = "#29241e"
 
 [colors.normal]
-black   = "#17130f"
-red     = "#d9a86e"
-green   = "#8cbb62"
-yellow  = "#d99148"
-blue    = "#66abc6"
-magenta = "#b991db"
-cyan    = "#d99148"
-white   = "#c9c0b1"
+black = "#17130f"
+red = "#dfbb87"
+green = "#a9c98e"
+yellow = "#e0b27c"
+blue = "#83bfd5"
+magenta = "#c3abe0"
+cyan = "#e0b27c"
+white = "#cbc9c4"
 
 [colors.bright]
-black   = "#91887d"
-red     = "#ea9d49"
-green   = "#8cbb62"
-yellow  = "#f8c88f"
-blue    = "#66abc6"
-magenta = "#de88a6"
-cyan    = "#66abc6"
-white   = "#c9c0b1"
+black = "#b8b4ac"
+red = "#c8c7c3"
+green = "#a9c98e"
+yellow = "#d4d3cf"
+blue = "#83bfd5"
+magenta = "#ddabc2"
+cyan = "#83bfd5"
+white = "#cbc9c4"
