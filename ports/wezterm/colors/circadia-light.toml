@@ -1,5 +1,5 @@
 # Circadia — Circadia Light
-# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+# OKLCH color theme; see spec/rules.md for contrast validation coverage
 
 [metadata]
 name = "Circadia Light"

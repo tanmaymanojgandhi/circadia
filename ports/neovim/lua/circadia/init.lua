@@ -1,5 +1,5 @@
 -- Circadia for Neovim
--- Perceptually uniform, low-strain colorscheme engineered for continuous focus
+-- An OKLCH colorscheme for Neovim
 
 local palette = require("circadia.palette")
 local M = {}

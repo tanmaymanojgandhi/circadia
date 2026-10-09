@@ -1,5 +1,5 @@
 " Circadia Dark
-" Perceptually uniform, low-strain themes engineered for continuous focus.
+" OKLCH themes for code, terminals, and documents.
 
 set background=dark
 hi clear

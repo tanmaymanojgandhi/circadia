@@ -6,12 +6,12 @@
 const PALETTE = {
   name: "Circadia",
   version: "2.0.0",
-  tagline: "Perceptually uniform, low-strain themes engineered for continuous focus.",
-  description: "Circadia targets continuous focus through warm backgrounds, vibrant syntax, OKLCH engineering, and CVD support. The light palette validates all text at >= 7.0:1 across three base backgrounds; cross-platform rendered CVD coverage remains a validation goal.",
+  tagline: "OKLCH themes for code, terminals, and documents.",
+  description: "Circadia is an open color specification and theme system for code editors, terminal emulators, and document renderers. It uses OKLCH to describe background, text, and syntax colors. Automated checks measure contrast for documented color pairs. The light palette meets a 7:1 text contrast target on its three base backgrounds; the dark palettes and other rendered states need further validation. Color vision accessibility is a design goal, not a verified guarantee.",
   modes: {
     light_parchment: {
       name: "Warm Parchment",
-      tagline: "Daylight • 300–800+ lux",
+      tagline: "Warm Parchment • Light",
       type: "light",
       ui: {
         bg_canvas:     { hex: "#f7f4ec", oklch: "oklch(96.7% 0.011 89.7)",  rgb: [247,244,236], role: "Primary canvas" },
@@ -45,7 +45,7 @@ const PALETTE = {
     },
     dark_ember: {
       name: "Warm Ember & Espresso",
-      tagline: "Evening Classic • 0–50 lux",
+      tagline: "Warm Ember • Dark",
       type: "dark",
       ui: {
         bg_canvas:     { hex: "#17130f", oklch: "oklch(19.0% 0.010 67)",  rgb: [23, 19, 15],   role: "Primary canvas" },
@@ -79,7 +79,7 @@ const PALETTE = {
     },
     dark_plum: {
       name: "Plum Noir",
-      tagline: "Modern Velvet • 0–50 lux",
+      tagline: "Plum Noir • Dark",
       type: "dark",
       ui: {
         bg_canvas:     { hex: "#140e12", oklch: "oklch(16.5% 0.014 350)", rgb: [20, 14, 18],   role: "Primary canvas" },
@@ -113,7 +113,7 @@ const PALETTE = {
     },
     dark_forest: {
       name: "Obsidian Pine",
-      tagline: "Deep Focus • 0–50 lux",
+      tagline: "Obsidian Pine • Dark",
       type: "dark",
       ui: {
         bg_canvas:     { hex: "#131714", oklch: "oklch(17.8% 0.010 145)", rgb: [19, 23, 20],   role: "Primary canvas" },
@@ -159,7 +159,7 @@ const PORTS = [
   { name: "JetBrains", category: "editor", type: "ICLS Scheme", desc: "IntelliJ, PyCharm, WebStorm & GoLand.", path: "ports/intellij", snippet: "File -> Import Settings -> circadia.icls" },
   { name: "Xcode", category: "editor", type: "Plist Theme", desc: "Swift, C++, and Obj-C colorscheme.", path: "ports/xcode", snippet: "Copy to ~/Library/Developer/Xcode/UserData/FontAndColorThemes" },
   { name: "Alacritty", category: "terminal", type: "TOML", desc: "GPU-accelerated terminal palette.", path: "ports/alacritty", snippet: 'import = ["~/.config/alacritty/circadia-dark-ember.toml"]' },
-  { name: "WezTerm", category: "terminal", type: "TOML / Lua", desc: "Perceptually calibrated schemes and Lua module.", path: "ports/wezterm", snippet: "config.color_scheme = 'Circadia Dark Ember'" },
+  { name: "WezTerm", category: "terminal", type: "TOML / Lua", desc: "Color schemes and a Lua module.", path: "ports/wezterm", snippet: "config.color_scheme = 'Circadia Dark Ember'" },
   { name: "Kitty", category: "terminal", type: "Conf", desc: "Truecolor configuration for Kitty.", path: "ports/kitty", snippet: "include circadia-dark-ember.conf" },
   { name: "Windows Terminal", category: "terminal", type: "JSON", desc: "Schemes for Windows Terminal & PowerShell.", path: "ports/windows-terminal", snippet: "Add scheme to settings.json" },
   { name: "iTerm2", category: "terminal", type: "Preset", desc: "Color presets for macOS iTerm2.", path: "ports/iterm2", snippet: "Profiles -> Colors -> Import Presets" },
@@ -179,18 +179,18 @@ const CODE_EXAMPLES = {
     lang: "Markdown",
     tokens: [
       { text: '# Circadia Open Specification\n\n', tok: 'h1' },
-      { text: '> Low-strain themes engineered in OKLCH for continuous focus.\n\n', tok: 'quote' },
-      { text: '## Circadian Ambient Modes\n\n', tok: 'h2' },
+      { text: '> OKLCH themes for code, terminals, and documents.\n\n', tok: 'quote' },
+      { text: '## Color Variants\n\n', tok: 'h2' },
       { text: '- ', tok: 'bullet' },
       { text: 'Warm Parchment: ', tok: 'bold' },
-      { text: '300–800+ lux (Glare-free daylight)\n', tok: 'ident' },
+      { text: 'Warm paper background\n', tok: 'ident' },
       { text: '- ', tok: 'bullet' },
       { text: 'Warm Ember: ', tok: 'bold' },
-      { text: '0–50 lux (Halation-free obsidian)\n\n', tok: 'ident' },
+      { text: 'Warm dark background\n\n', tok: 'ident' },
       { text: '### Specification Values\n\n', tok: 'h3' },
       { text: 'Primary accent: ', tok: 'ident' },
       { text: '`oklch(75.0% 0.130 65)`', tok: 'code' },
-      { text: '\nWCAG 2.1 status: ', tok: 'ident' },
+      { text: '\nLight palette text target: ', tok: 'ident' },
       { text: '`Strict AAA (>= 7.0:1)`', tok: 'code' },
       { text: '\n\n', tok: 'ident' },
       { text: '[Explore All 20 Ports](https://github.com/tanmaymanojgandhi/circadia)\n', tok: 'link' }

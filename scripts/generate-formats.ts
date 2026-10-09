@@ -185,10 +185,10 @@ function generateSvgMatrix() {
   const cardH = 430;
 
   const modeKeys = [
-    { id: "light_parchment", icon: "☀️", x: 25, y: 85, lux: "300–800+ lux • Daylight & High Ambient" },
-    { id: "dark_ember", icon: "☕", x: 595, y: 85, lux: "0–50 lux • Candlelight & Warm Lighting" },
-    { id: "dark_plum", icon: "🍇", x: 25, y: 530, lux: "0–50 lux • Velvet Plum & Modern UI" },
-    { id: "dark_forest", icon: "🌲", x: 595, y: 530, lux: "0–50 lux • Obsidian Pine & Deep Focus" }
+    { id: "light_parchment", icon: "☀️", x: 25, y: 85, lux: "Warm Parchment • Light" },
+    { id: "dark_ember", icon: "☕", x: 595, y: 85, lux: "Warm Ember • Dark" },
+    { id: "dark_plum", icon: "🍇", x: 25, y: 530, lux: "Plum Noir • Dark" },
+    { id: "dark_forest", icon: "🌲", x: 595, y: 530, lux: "Obsidian Pine • Dark" }
   ];
 
   let svg = `<?xml version="1.0" encoding="UTF-8"?>
@@ -198,7 +198,7 @@ function generateSvgMatrix() {
   
   <!-- Header Title -->
   <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#f0ece4">Circadia 2.0 Color Specification Matrix</text>
-  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • CVD-Oriented Syntax</text>
+  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • Semantic Syntax</text>
 `;
 
   modeKeys.forEach(cfg => {

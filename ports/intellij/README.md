@@ -1,6 +1,6 @@
 # Circadia for JetBrains IDEs
 
-Perceptually calibrated color schemes for IntelliJ IDEA, PyCharm, WebStorm, CLion, Rider, GoLand, and Android Studio.
+Color schemes for IntelliJ IDEA, PyCharm, WebStorm, CLion, Rider, GoLand, and Android Studio.
 
 - **Circadia Dark** (`circadia-dark.icls`): Warm Ember & Espresso
 - **Circadia Light** (`circadia-light.icls`): Warm Parchment

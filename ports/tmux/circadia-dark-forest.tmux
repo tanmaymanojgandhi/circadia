@@ -1,5 +1,5 @@
 # Circadia — Dark Focus (Obsidian Pine)
-# Theme configuration for tmux (100% Strict WCAG AAA)
+# Theme configuration for tmux
 
 # Status bar
 set -g status-style "bg=#1a1e1b,fg=#c4ccc5"

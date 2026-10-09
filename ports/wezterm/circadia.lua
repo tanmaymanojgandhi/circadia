@@ -1,5 +1,5 @@
 -- Circadia Color Schemes for WezTerm
--- Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+-- OKLCH color theme; see spec/rules.md for contrast validation coverage
 -- https://github.com/tanmaymanojgandhi/circadia
 
 local wezterm = require 'wezterm'

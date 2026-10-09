@@ -1,5 +1,5 @@
 # Circadia — Dark Modern (Plum Noir)
-# Theme configuration for tmux (100% Strict WCAG AAA)
+# Theme configuration for tmux
 
 # Status bar
 set -g status-style "bg=#1b1419,fg=#d8c8d2"

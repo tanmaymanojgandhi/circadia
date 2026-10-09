@@ -1,5 +1,5 @@
 -- Circadia Color Palette Definitions (Derived from spec/palette.json)
--- Perceptually uniform, WCAG AAA compliant tokens engineered in OKLCH
+-- OKLCH color tokens; see spec/rules.md for contrast validation coverage
 
 local M = {
   light_parchment = {

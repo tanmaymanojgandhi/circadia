@@ -1,34 +1,24 @@
 # Circadia
 
 > **Warm Parchment by day. Quiet Ember & Obsidian by night.**  
-> A perceptually calibrated, circadian dual-mode theme engineered for long hours of writing, note-taking, and code reading.
+> An OKLCH theme for writing, note-taking, and code reading.
 
 ![Circadia Preview](./screenshot.png)
 
 ---
 
-## 🏛️ OKLCH 32-Bit Color Architecture
+## Color model
 
-**Circadia** is architected using the **OKLCH** color model (*Oklab Lightness, Chroma, Hue*), standardizing all surfaces and syntax on a 32-bit perceptual color pipeline:
-
-$$\text{Color} = \text{oklch}(L \quad C \quad H)$$
-
-### Why OKLCH?
-1. **Perceptual Uniformity ($L$):** Traditional RGB and HSL fail to account for human ocular sensitivity (yellow appears artificially brighter than blue at identical lightness values). OKLCH guarantees constant perceived luminance across different hues.
-2. **Zero Chromatic Aberration ($C$):** Chromatic intensity is strictly clamped to avoid fluorescent glare, eye strain, and retina fatigue.
-3. **Circadian Hue Mapping ($H$):** Night mode completely eliminates high-energy blue wavelengths (450–480nm), replacing them with warm ember, terracotta, and gold wavelengths to support melatonin preservation.
-4. **Zero-Red Semantic Cleanliness:** Red (`#dc2626` / `#e06c75`) is strictly quarantined for syntax errors, merge conflicts, and critical alert badges. Keywords and classes use Royal Amethyst, Heather Orchid, and Sand Gold to eliminate cognitive alarm fatigue.
-
----
+Circadia uses OKLCH to describe lightness, chroma, and hue. Contrast is calculated from the rendered sRGB colors. The color model alone does not guarantee readability, physiological comfort, or CVD separation. See the main README for validation coverage.
 
 ## 🎨 Complete Color Palette Matrix
 
 ### ☀️ 1. Day Mode: Warm Parchment (Editorial Daylight)
-*Calibrated for ambient light and bright daylight environments (300–800+ lux).*
+*Choose this variant by appearance and personal preference.*
 
-| Role / Token | Hex | RGB (32-bit) | OKLCH | Visual Swatch & Character |
+| Role / Token | Hex | RGB | OKLCH | Visual Swatch & Character |
 | :--- | :--- | :--- | :--- | :--- |
-| **Editor Canvas (`--k-bg`)** | `#f7f4ec` | `247, 242, 230` | `oklch(96.7% 0.011 89.7)` | 📜 Warm Linen Paper (Anti-glare) |
+| **Editor Canvas (`--k-bg`)** | `#f7f4ec` | `247, 242, 230` | `oklch(96.7% 0.011 89.7)` | 📜 Warm Linen Paper |
 | **Sidebar / Tabs (`--k-bg-2`)** | `#efebe2` | `238, 231, 214` | `oklch(92.5% 0.016 85)` | 🌾 Soft Parchment |
 | **Hover / Cards (`--k-bg-3`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🌾 Muted Linen |
 | **App Gutter (`--k-app-bg`)** | `#e5e0d5` | `229, 220, 198` | `oklch(88.5% 0.020 85)` | 🏜️ Warm Sand Frame |
@@ -48,9 +38,9 @@ $$\text{Color} = \text{oklch}(L \quad C \quad H)$$
 ---
 
 ### 🌙 2. Night Mode: Warm Ember & Espresso (Circadian Night)
-*Calibrated for dark rooms, night shifts, and low ambient light (0–50 lux).*
+*Choose this variant by appearance and personal preference.*
 
-| Role / Token | Hex | RGB (32-bit) | OKLCH | Visual Swatch & Character |
+| Role / Token | Hex | RGB | OKLCH | Visual Swatch & Character |
 | :--- | :--- | :--- | :--- | :--- |
 | **Editor Canvas (`--k-bg`)** | `#17130f` | `23, 19, 15` | `oklch(19.0% 0.010 67)` | ☕ Warm Ember & Espresso Canvas |
 | **Sidebar / Tabs (`--k-bg-2`)** | `#1e1a15` | `30, 26, 21` | `oklch(22.0% 0.012 67)` | 🪵 Espresso Surface |
@@ -130,7 +120,7 @@ Circadia 2.0 provides 3 distinct dark variations for Obsidian:
 1. Open **Settings → Appearance → Themes**
 2. Click **Manage**
 3. Search for **Circadia** (or clone/copy this folder to `<vault>/.obsidian/themes/Circadia/`)
-4. Enable the theme and enjoy circadian-aligned writing!
+4. Enable the theme and use Circadia.
 
 ---
 

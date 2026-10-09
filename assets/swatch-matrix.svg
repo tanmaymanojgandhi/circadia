@@ -5,13 +5,13 @@
   
   <!-- Header Title -->
   <text x="30" y="42" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="22" font-weight="700" fill="#f0ece4">Circadia 2.0 Color Specification Matrix</text>
-  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • CVD-Oriented Syntax</text>
+  <text x="30" y="65" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" fill="#e89a49">4 Circadian Modes • Light Text: Strict WCAG AAA • Semantic Syntax</text>
 
   <!-- Card: Warm Parchment -->
   <g transform="translate(25, 85)">
     <rect width="540" height="430" rx="12" fill="#f7f4ec" stroke="#d2cbbf" stroke-width="1.5"/>
     <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#28323a">☀️ Warm Parchment</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#003fa0">300–800+ lux • Daylight &amp; High Ambient</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#003fa0">Warm Parchment • Light</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
     <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#394652" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
@@ -143,7 +143,7 @@
   <g transform="translate(595, 85)">
     <rect width="540" height="430" rx="12" fill="#17130f" stroke="#3b342b" stroke-width="1.5"/>
     <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#c9c0b1">☕ Dark Classic (Warm Ember &amp; Espresso)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#e89a49">0–50 lux • Candlelight &amp; Warm Lighting</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#e89a49">Warm Ember • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
     <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#aba195" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
@@ -275,7 +275,7 @@
   <g transform="translate(25, 530)">
     <rect width="540" height="430" rx="12" fill="#140e12" stroke="#3d3039" stroke-width="1.5"/>
     <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#d8c8d2">🍇 Dark Modern (Plum Noir)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#cf8aa4">0–50 lux • Velvet Plum &amp; Modern UI</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#cf8aa4">Plum Noir • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
     <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#b4a3af" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>
@@ -407,7 +407,7 @@
   <g transform="translate(595, 530)">
     <rect width="540" height="430" rx="12" fill="#131714" stroke="#353c36" stroke-width="1.5"/>
     <text x="20" y="30" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="15" font-weight="700" fill="#c4ccc5">🌲 Dark Focus (Obsidian Pine)</text>
-    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#83b384">0–50 lux • Obsidian Pine &amp; Deep Focus</text>
+    <text x="20" y="47" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" fill="#83b384">Obsidian Pine • Dark</text>
 
     <!-- Row: UI Surfaces &amp; Typography -->
     <text x="20" y="74" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#9fa9a1" letter-spacing="0.5">UI SURFACES &amp; TYPOGRAPHY</text>

@@ -1,6 +1,6 @@
 # Circadia for tmux
 
-Circadian-aligned status bar and pane styling engineered in OKLCH for tmux.
+Status bar and pane styling using the Circadia palette for tmux.
 
 ## Available Flavours
 

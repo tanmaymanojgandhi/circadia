@@ -1,6 +1,6 @@
 # Circadia for Google Chrome
 
-Perceptually calibrated, low-strain browser themes for Google Chrome.
+Color themes for Google Chrome.
 
 - **Circadia Light**: Warm Parchment (`#f7f4ec`)
 - **Circadia Dark**: Warm Ember & Espresso (`#17130f`)

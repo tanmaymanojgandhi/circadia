@@ -2,9 +2,9 @@
 
 Thank you for your interest in contributing to Circadia!
 
-> **Perceptually uniform, low-strain themes engineered for continuous focus.**
+> **OKLCH themes for code, terminals, and documents.**
 
-Circadia is an open color specification engineered in OKLCH for cross-platform editors, document renderers, and terminal tools. Built around circadian light science, it delivers glare-free daylight contrast (Warm Parchment) and halation-free evening warmth (Warm Ember & Espresso)—strictly maintaining WCAG 2.1 AAA legibility for long coding and writing sessions.
+Circadia provides OKLCH color themes for editors, document renderers, and terminals. See the main README and spec/rules.md for measured contrast coverage and remaining validation work.
 
 ---
 

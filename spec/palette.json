@@ -1,8 +1,8 @@
 {
   "name": "Circadia",
   "version": "2.0.0",
-  "tagline": "Perceptually uniform, low-strain themes engineered for continuous focus.",
-  "description": "Circadia targets continuous focus through warm backgrounds, vibrant syntax, OKLCH color engineering, and multi-dimensional CVD support. The light palette validates all UI text, syntax, and heading tokens at >= 7.0:1 across canvas, surface, and element backgrounds; dark palettes and rendered cross-platform CVD coverage require further auditing.",
+  "tagline": "OKLCH themes for code, terminals, and documents.",
+  "description": "Circadia is an open color specification and theme system for code editors, terminal emulators, and document renderers. It uses OKLCH to describe background, text, and syntax colors. Automated checks measure contrast for documented color pairs. The light palette meets a 7:1 text contrast target on its three base backgrounds; the dark palettes and other rendered states need further validation. Color vision accessibility is a design goal, not a verified guarantee.",
   "modes": {
     "light_parchment": {
       "name": "Warm Parchment",

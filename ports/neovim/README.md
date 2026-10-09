@@ -1,6 +1,6 @@
 # Circadia for Neovim
 
-Perceptually uniform, low-strain colorscheme engineered for continuous focus in Neovim.
+An OKLCH colorscheme for Neovim.
 
 - **Circadia Dark** (`circadia-dark`): Warm Ember & Espresso
 - **Circadia Light** (`circadia-light`): Warm Parchment

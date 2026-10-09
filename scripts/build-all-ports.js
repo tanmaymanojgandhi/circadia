@@ -107,7 +107,7 @@ function buildChrome() {
 
   const readme = `# Circadia for Google Chrome
 
-Perceptually calibrated, low-strain browser themes for Google Chrome.
+Color themes for Google Chrome.
 
 - **Circadia Light**: Warm Parchment (\`${light.ui.bg_canvas.hex}\`)
 - **Circadia Dark**: Warm Ember & Espresso (\`${dark.ui.bg_canvas.hex}\`)
@@ -343,7 +343,7 @@ function buildIntellij() {
 
   const readme = `# Circadia for JetBrains IDEs
 
-Perceptually calibrated color schemes for IntelliJ IDEA, PyCharm, WebStorm, CLion, Rider, GoLand, and Android Studio.
+Color schemes for IntelliJ IDEA, PyCharm, WebStorm, CLion, Rider, GoLand, and Android Studio.
 
 - **Circadia Dark** (\`circadia-dark.icls\`): Warm Ember & Espresso
 - **Circadia Light** (\`circadia-light.icls\`): Warm Parchment
@@ -961,7 +961,7 @@ function buildVim() {
     const headings = mode.headings
 
     return `" Circadia ${isDark ? 'Dark' : 'Light'}
-" Perceptually uniform, low-strain themes engineered for continuous focus.
+" OKLCH themes for code, terminals, and documents.
 
 set background=${isDark ? 'dark' : 'light'}
 hi clear
@@ -1282,7 +1282,7 @@ name = "Circadia"
 version = "1.0.0"
 schema_version = 1
 authors = ["Tanmay <https://github.com/tanmaymanojgandhi>"]
-description = "Perceptually uniform, low-strain themes engineered for continuous focus."
+description = "OKLCH themes for code, terminals, and documents."
 repository = "https://github.com/tanmaymanojgandhi/circadia"
 `
 
@@ -1475,7 +1475,7 @@ function buildTmux() {
     const ui = mode.ui
     return [
       `# Circadia — ${mode.name}`,
-      `# Theme configuration for tmux (100% Strict WCAG AAA)`,
+      `# Theme configuration for tmux`,
       ``,
       `# Status bar`,
       `set -g status-style "bg=${ui.bg_surface.hex},fg=${ui.text_primary.hex}"`,
@@ -1547,7 +1547,7 @@ fi
 
   const tmuxReadme = `# Circadia for tmux
 
-Circadian-aligned status bar and pane styling engineered in OKLCH for tmux.
+Status bar and pane styling using the Circadia palette for tmux.
 
 ## Available Flavours
 
@@ -1635,7 +1635,7 @@ function buildNeovim() {
   }
 
   let lua = `-- Circadia Color Palette Definitions (Derived from spec/palette.json)
--- Perceptually uniform, WCAG AAA compliant tokens engineered in OKLCH
+-- OKLCH color tokens; see spec/rules.md for contrast validation coverage
 
 local M = {
 `
@@ -1783,7 +1783,7 @@ function buildWezterm() {
     const inactiveTabBg = isParchment ? m.ui.bg_surface.hex : m.ui.bg_canvas.hex
 
     return `# Circadia — ${schemeName}
-# Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+# OKLCH color theme; see spec/rules.md for contrast validation coverage
 
 [metadata]
 name = "${schemeName}"
@@ -1875,7 +1875,7 @@ italic = true
   // Generate Lua module
   function generateLuaModule() {
     let lua = `-- Circadia Color Schemes for WezTerm
--- Engineered in OKLCH • 100% Strict WCAG 2.1 AAA Legibility
+-- OKLCH color theme; see spec/rules.md for contrast validation coverage
 -- https://github.com/tanmaymanojgandhi/circadia
 
 local wezterm = require 'wezterm'
@@ -1996,8 +1996,8 @@ M.color_schemes = {
   // Write README
   const readme = `# Circadia for WezTerm
 
-Perceptually calibrated, low-strain themes engineered in OKLCH for [WezTerm](https://wezfurlong.org/wezterm/).
-Features 100% strict WCAG 2.1 AAA contrast, halation-free dark modes, glare-free light mode, and styled tab bars.
+OKLCH color themes for [WezTerm](https://wezfurlong.org/wezterm/).
+Includes four color variants and styled tab bars. See the main README for contrast validation coverage.
 
 ---
 

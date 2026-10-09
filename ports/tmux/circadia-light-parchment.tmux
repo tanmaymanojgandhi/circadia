@@ -1,5 +1,5 @@
 # Circadia — Warm Parchment
-# Theme configuration for tmux (100% Strict WCAG AAA)
+# Theme configuration for tmux
 
 # Status bar
 set -g status-style "bg=#efebe2,fg=#28323a"

@@ -1,7 +1,7 @@
 # Circadia for WezTerm
 
-Perceptually calibrated, low-strain themes engineered in OKLCH for [WezTerm](https://wezfurlong.org/wezterm/).
-Features 100% strict WCAG 2.1 AAA contrast, halation-free dark modes, glare-free light mode, and styled tab bars.
+OKLCH color themes for [WezTerm](https://wezfurlong.org/wezterm/).
+Includes four color variants and styled tab bars. See the main README for contrast validation coverage.
 
 ---
 
